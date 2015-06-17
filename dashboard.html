@@ -7,7 +7,7 @@
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'>
     <!-- Site Properities -->
-    <title>Homepage</title>
+    <title>Dashboard</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
     <link href='dist/semantic.css' rel='stylesheet' type='text/css'>
     <script src='js/jquery.js'></script>
@@ -16,31 +16,146 @@
     <script src='js/main.js'></script>
   </head>
   <body>
-    <div class="ui vertical labeled icon menu">
-      <a class="purple item">
-      <i class="inbox icon"></i>
-      Inbox
-      </a>
-      <a class="teal item">
-      <i class="users icon"></i>
-      Contacts
-      </a>
-      <a class="green item">
-      <i class="retro camera icon"></i>
-      Media
-      </a>
-       <a class="red item">
-      <i class="mail icon"></i>
-      Mail
-      </a>
-      <a class="teal item">
-      <i class="lab icon"></i>
-      Lab
-      </a>
-      <a class="green item">
-      <i class="star icon"></i>
-      Favorites
-      </a>
-    </div>
+        <div class="ui vertical labeled icon left inline visible sidebar menu icon_tabs">
+            <a class="item">
+              <img src="images/o.png" style="width: 50px;">
+            </a>
+          <a class="orange active item" data-tab="inbox">
+            <i class="inbox icon"></i>
+            Inbox
+             <div class="floating ui purple tiny circular label">9</div>
+          </a>
+          <a class="teal item" data-tab="contacts">
+            <i class="users icon"></i>
+            Contacts
+            <div class="floating ui red tiny circular label">3</div>
+          </a>
+          <a class="green item" data-tab="media">
+            <i class="retro camera icon"></i>
+            Media
+          </a>
+          <a class="red item" data-tab="accounts">
+            <i class="random icon"></i>
+            Accounts
+          </a>
+          <a class="teal item" data-tab="reports">
+            <i class="bar graph icon"></i>
+            Reports
+          </a>
+          <a class="green item" data-tab="settings">
+            <i class="settings icon"></i>
+            Settings
+          </a>
+        </div>
+        <div class="ui grid right_content">
+        <div class="five wide column">
+          <div class="item search">
+            <div class="ui icon input">
+              <input type="text">
+              <i class="search icon"></i>
+            </div>
+          </div>
+<!-- all tabs require the class name as below -->
+          <div class="ui active tab very relaxed divided link list tab_content" data-tab="inbox">
+              <a class="item">
+                <i class="large green circle thin icon"></i>
+                <div class="content">
+                  <div class="header">Kenneth Jones</div>
+                  <div class="description">Scientists discover new breed of dog</div>
+                </div>
+              </a>
+              <a class="item">
+                <i class="large green circle thin icon"></i>
+                <div class="content">
+                  <div class="header">Dwight Mance</div>
+                  <div class="description">Scientists discover new breed of dog</div>
+                </div>
+              </a>
+              <a class="item">
+                <i class="large red circle thin icon"></i>
+                <div class="content">
+                  <div class="header">Grey Pyke</div>
+                  <div class="description">Scientists discover new breed of dog</div>
+                </div>
+              </a>
+              <a class="item">
+                <i class="large purple circle thin icon"></i>
+                <div class="content">
+                  <div class="header">John Smalls</div>
+                  <div class="description">Scientists discover new breed of dog</div>
+                </div>
+              </a>
+              <a class="item">
+                <i class="large green circle thin icon"></i>
+                <div class="content">
+                  <div class="header">Jayne Poole</div>
+                  <div class="description">Scientists discover new breed of dog</div>
+                </div>
+              </a>
+              <a class="item">
+                <i class="large green circle thin icon"></i>
+                <div class="content">
+                  <div class="header">Mary Marlow</div>
+                  <div class="description">Scientists discover new breed of dog</div>
+                </div>
+              </a>
+          </div>
+          <div class="ui tab very relaxed divided link list tab_content" data-tab="contacts">
+            <a class="item">
+              <div class="description">contacts</div>
+            </a>
+            <a class="active item">
+              <div class="description">contacts</div>
+            </a>
+            <a class="item">
+              <div class="description">contacts</div>
+            </a>
+          </div>
+          <div class="ui tab very relaxed divided link list tab_content" data-tab="media">
+            <a class="item">
+              <div class="description">media</div>
+            </a>
+            <a class="active item">
+              <div class="description">media</div>
+            </a>
+            <a class="item">
+              <div class="description">media</div>
+            </a>
+          </div>
+          <div class="ui tab very relaxed divided link list tab_content" data-tab="accounts">
+            <a class="item">
+              <div class="description">accounts</div>
+            </a>
+            <a class="active item">
+              <div class="description">accounts</div>
+            </a>
+            <a class="item">
+              <div class="description">accounts</div>
+            </a>
+          </div>
+          <div class="ui tab very relaxed divided link list tab_content" data-tab="reports">
+            <a class="item">
+              <div class="description">reports</div>
+            </a>
+            <a class="active item">
+              <div class="description">reports</div>
+            </a>
+            <a class="item">
+              <div class="description">reports</div>
+            </a>
+          </div>
+          <div class="ui tab very relaxed divided link list tab_content" data-tab="settings">
+            <a class="item">
+              <div class="description">settings</div>
+            </a>
+            <a class="active item">
+              <div class="description">settings</div>
+            </a>
+            <a class="item">
+              <div class="description">settings</div>
+            </a>
+          </div>
+          </div>
+        </div>
   </body>
 </html>

@@ -87,6 +87,27 @@ a:active {
 
 /* Import Layout */
 /* ==================================================== */
+body {
+  overflow-x: hidden; }
+  body .icon_tabs .item {
+    padding: 1.5rem !important; }
+    body .icon_tabs .item .ui.floating.label {
+      top: 0.6rem;
+      left: 68%; }
+  body .right_content {
+    left: 100px !important;
+    position: relative; }
+    body .right_content .search {
+      height: 101px;
+      padding: 1.8rem;
+      background-color: #cccccc; }
+      body .right_content .search .ui.input {
+        width: 100%; }
+        body .right_content .search .ui.input input {
+          width: 100%; }
+    body .right_content .tab_content .item {
+      padding-left: 1.8rem; }
+
 /* Import Media Queries */
 /* ==================================================== */
 /* Print Styles */
