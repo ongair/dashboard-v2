@@ -96,17 +96,36 @@ body {
       left: 68%; }
   body .right_content {
     left: 100px !important;
-    position: relative; }
+    position: relative;
+    height: 100%; }
     body .right_content .search {
-      height: 101px;
-      padding: 1.8rem;
+      height: 100px;
+      padding: 26px;
       background-color: #cccccc; }
       body .right_content .search .ui.input {
         width: 100%; }
         body .right_content .search .ui.input input {
-          width: 100%; }
-    body .right_content .tab_content .item {
-      padding-left: 1.8rem; }
+          width: 100%;
+          height: 40px;
+          border-radius: 20px; }
+    body .right_content .all_tabs {
+      padding-right: 0 !important;
+      border-right: 1px solid #ddd;
+      height: 100%; }
+      body .right_content .all_tabs .tab_content .item {
+        padding-left: 1.8rem; }
+    body .right_content .conversation_section {
+      padding-top: 2rem !important;
+      height: 100%;
+      border-right: 1px solid #ddd; }
+      body .right_content .conversation_section .reply_field {
+        bottom: 5px; }
+        body .right_content .conversation_section .reply_field textarea {
+          min-height: 5rem !important;
+          height: auto !important;
+          overflow-y: hidden; }
+    body .right_content .profile {
+      padding-top: 2rem !important; }
 
 /* Import Media Queries */
 /* ==================================================== */

@@ -16,146 +16,269 @@
     <script src='js/main.js'></script>
   </head>
   <body>
-        <div class="ui vertical labeled icon left inline visible sidebar menu icon_tabs">
-            <a class="item">
-              <img src="images/o.png" style="width: 50px;">
-            </a>
-          <a class="orange active item" data-tab="inbox">
-            <i class="inbox icon"></i>
-            Inbox
-             <div class="floating ui purple tiny circular label">9</div>
+    <div class="ui vertical labeled icon left inline visible sidebar menu icon_tabs">
+      <a class="item">
+      <img src="images/o.png" style="width: 50px;">
+      </a>
+      <a class="orange active item" data-tab="inbox">
+        <i class="inbox icon"></i>
+        Inbox
+        <div class="floating ui purple tiny circular label">9</div>
+      </a>
+      <a class="teal item" data-tab="contacts">
+        <i class="users icon"></i>
+        Contacts
+        <div class="floating ui red tiny circular label">3</div>
+      </a>
+      <a class="green item" data-tab="media">
+      <i class="retro camera icon"></i>
+      Media
+      </a>
+      <a class="red item" data-tab="accounts">
+      <i class="random icon"></i>
+      Accounts
+      </a>
+      <a class="teal item" data-tab="reports">
+      <i class="bar graph icon"></i>
+      Reports
+      </a>
+      <a class="green item" data-tab="settings">
+      <i class="settings icon"></i>
+      Settings
+      </a>
+    </div>
+    <div class="ui grid right_content">
+      <div class="four wide column all_tabs">
+        <div class="item search">
+          <div class="ui input">
+            <input type="text" placeholder="Search...">
+          </div>
+        </div>
+        <!-- all tabs require the class name as below -->
+        <div class="ui active tab very relaxed divided link list tab_content" data-tab="inbox">
+          <a class="item">
+            <i class="large green circle thin icon"></i>
+            <div class="content">
+              <div class="header">Kenneth Jones</div>
+              <div class="description">Scientists discover new breed of dog</div>
+            </div>
           </a>
-          <a class="teal item" data-tab="contacts">
-            <i class="users icon"></i>
-            Contacts
-            <div class="floating ui red tiny circular label">3</div>
+          <a class="item">
+            <i class="large green circle thin icon"></i>
+            <div class="content">
+              <div class="header">Dwight Mance</div>
+              <div class="description">Scientists discover new breed of dog</div>
+            </div>
           </a>
-          <a class="green item" data-tab="media">
-            <i class="retro camera icon"></i>
-            Media
+          <a class="item">
+            <i class="large red circle thin icon"></i>
+            <div class="content">
+              <div class="header">Grey Pyke</div>
+              <div class="description">Scientists discover new breed of dog</div>
+            </div>
           </a>
-          <a class="red item" data-tab="accounts">
-            <i class="random icon"></i>
-            Accounts
+          <a class="item">
+            <i class="large purple circle thin icon"></i>
+            <div class="content">
+              <div class="header">John Smalls</div>
+              <div class="description">Scientists discover new breed of dog</div>
+            </div>
           </a>
-          <a class="teal item" data-tab="reports">
-            <i class="bar graph icon"></i>
-            Reports
+          <a class="item">
+            <i class="large green circle thin icon"></i>
+            <div class="content">
+              <div class="header">Jayne Poole</div>
+              <div class="description">Scientists discover new breed of dog</div>
+            </div>
           </a>
-          <a class="green item" data-tab="settings">
-            <i class="settings icon"></i>
-            Settings
+          <a class="item">
+            <i class="large green circle thin icon"></i>
+            <div class="content">
+              <div class="header">Mary Marlow</div>
+              <div class="description">Scientists discover new breed of dog</div>
+            </div>
           </a>
         </div>
-        <div class="ui grid right_content">
-        <div class="five wide column">
-          <div class="item search">
-            <div class="ui icon input">
-              <input type="text">
-              <i class="search icon"></i>
+        <div class="ui tab very relaxed divided link list tab_content" data-tab="contacts">
+          <a class="item">
+            <div class="description">contacts</div>
+          </a>
+          <a class="active item">
+            <div class="description">contacts</div>
+          </a>
+          <a class="item">
+            <div class="description">contacts</div>
+          </a>
+        </div>
+        <div class="ui tab very relaxed divided link list tab_content" data-tab="media">
+          <a class="item">
+            <div class="description">media</div>
+          </a>
+          <a class="active item">
+            <div class="description">media</div>
+          </a>
+          <a class="item">
+            <div class="description">media</div>
+          </a>
+        </div>
+        <div class="ui tab very relaxed divided link list tab_content" data-tab="accounts">
+          <a class="item">
+            <div class="description">accounts</div>
+          </a>
+          <a class="active item">
+            <div class="description">accounts</div>
+          </a>
+          <a class="item">
+            <div class="description">accounts</div>
+          </a>
+        </div>
+        <div class="ui tab very relaxed divided link list tab_content" data-tab="reports">
+          <a class="item">
+            <div class="description">reports</div>
+          </a>
+          <a class="active item">
+            <div class="description">reports</div>
+          </a>
+          <a class="item">
+            <div class="description">reports</div>
+          </a>
+        </div>
+        <div class="ui tab very relaxed divided link list tab_content" data-tab="settings">
+          <a class="item">
+            <div class="description">settings</div>
+          </a>
+          <a class="active item">
+            <div class="description">settings</div>
+          </a>
+          <a class="item">
+            <div class="description">settings</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="six wide column conversation_section">
+
+
+        <div class="ui text menu">
+          <a class="icon item"><i class=" circular inverted left chevron icon"></i></a>
+          <a class="icon item"><i class=" circular inverted right chevron icon"></i></a>
+          <div class="current item">Showing <b>6</b> of 213</div>
+        </div>
+
+
+
+        <div class="ui comments">
+          <h3 class="ui dividing header">Comments</h3>
+          <div class="comment">
+            <a class="avatar">
+            <img src="images/user1.jpg">
+            </a>
+            <div class="content">
+              <a class="author">Matt</a>
+              <div class="metadata">
+                <span class="date">Today at 5:42PM</span>
+              </div>
+              <div class="text">
+                How artistic!
+              </div>
+              <div class="actions">
+                <a class="reply">Reply</a>
+              </div>
             </div>
           </div>
-<!-- all tabs require the class name as below -->
-          <div class="ui active tab very relaxed divided link list tab_content" data-tab="inbox">
-              <a class="item">
-                <i class="large green circle thin icon"></i>
+          <div class="comment">
+            <a class="avatar">
+            <img src="images/user2.jpg">
+            </a>
+            <div class="content">
+              <a class="author">Elliot Fu</a>
+              <div class="metadata">
+                <span class="date">Yesterday at 12:30AM</span>
+              </div>
+              <div class="text">
+                <p>This has been very useful for my research. Thanks as well!</p>
+              </div>
+              <div class="actions">
+                <a class="reply">Reply</a>
+              </div>
+            </div>
+            <div class="comments">
+              <div class="comment">
+                <a class="avatar">
+                <img src="images/user3.jpg">
+                </a>
                 <div class="content">
-                  <div class="header">Kenneth Jones</div>
-                  <div class="description">Scientists discover new breed of dog</div>
+                  <a class="author">Jenny Hess</a>
+                  <div class="metadata">
+                    <span class="date">Just now</span>
+                  </div>
+                  <div class="text">
+                    Elliot you are always so right :)
+                  </div>
+                  <div class="actions">
+                    <a class="reply">Reply</a>
+                  </div>
                 </div>
-              </a>
-              <a class="item">
-                <i class="large green circle thin icon"></i>
-                <div class="content">
-                  <div class="header">Dwight Mance</div>
-                  <div class="description">Scientists discover new breed of dog</div>
-                </div>
-              </a>
-              <a class="item">
-                <i class="large red circle thin icon"></i>
-                <div class="content">
-                  <div class="header">Grey Pyke</div>
-                  <div class="description">Scientists discover new breed of dog</div>
-                </div>
-              </a>
-              <a class="item">
-                <i class="large purple circle thin icon"></i>
-                <div class="content">
-                  <div class="header">John Smalls</div>
-                  <div class="description">Scientists discover new breed of dog</div>
-                </div>
-              </a>
-              <a class="item">
-                <i class="large green circle thin icon"></i>
-                <div class="content">
-                  <div class="header">Jayne Poole</div>
-                  <div class="description">Scientists discover new breed of dog</div>
-                </div>
-              </a>
-              <a class="item">
-                <i class="large green circle thin icon"></i>
-                <div class="content">
-                  <div class="header">Mary Marlow</div>
-                  <div class="description">Scientists discover new breed of dog</div>
-                </div>
-              </a>
+              </div>
+            </div>
           </div>
-          <div class="ui tab very relaxed divided link list tab_content" data-tab="contacts">
-            <a class="item">
-              <div class="description">contacts</div>
+          <div class="comment">
+            <a class="avatar">
+            <img src="images/user4.png">
             </a>
-            <a class="active item">
-              <div class="description">contacts</div>
-            </a>
-            <a class="item">
-              <div class="description">contacts</div>
-            </a>
+            <div class="content">
+              <a class="author">Joe Henderson</a>
+              <div class="metadata">
+                <span class="date">5 days ago</span>
+              </div>
+              <div class="text">
+                Dude, this is awesome. Thanks so much
+              </div>
+              <div class="actions">
+                <a class="reply">Reply</a>
+              </div>
+            </div>
           </div>
-          <div class="ui tab very relaxed divided link list tab_content" data-tab="media">
-            <a class="item">
-              <div class="description">media</div>
-            </a>
-            <a class="active item">
-              <div class="description">media</div>
-            </a>
-            <a class="item">
-              <div class="description">media</div>
-            </a>
-          </div>
-          <div class="ui tab very relaxed divided link list tab_content" data-tab="accounts">
-            <a class="item">
-              <div class="description">accounts</div>
-            </a>
-            <a class="active item">
-              <div class="description">accounts</div>
-            </a>
-            <a class="item">
-              <div class="description">accounts</div>
-            </a>
-          </div>
-          <div class="ui tab very relaxed divided link list tab_content" data-tab="reports">
-            <a class="item">
-              <div class="description">reports</div>
-            </a>
-            <a class="active item">
-              <div class="description">reports</div>
-            </a>
-            <a class="item">
-              <div class="description">reports</div>
-            </a>
-          </div>
-          <div class="ui tab very relaxed divided link list tab_content" data-tab="settings">
-            <a class="item">
-              <div class="description">settings</div>
-            </a>
-            <a class="active item">
-              <div class="description">settings</div>
-            </a>
-            <a class="item">
-              <div class="description">settings</div>
-            </a>
-          </div>
-          </div>
+          <form class="ui reply form reply_field">
+            <div class="field">
+              <textarea></textarea>
+            </div>
+            <div class="ui blue labeled submit icon button">
+              <i class="icon edit"></i> Add Reply
+            </div>
+          </form>
         </div>
+      </div>
+
+      <div class="six wide column profile">
+        <div class="ui cards">
+<div class="card">
+    <div class="image">
+      <img src="images/user3.jpg">
+    </div>
+    <div class="content">
+      <div class="header">Jenny Hess</div>
+      <div class="meta">
+        <a>Friends</a>
+      </div>
+      <div class="description">
+        Veronika Ossi is a set designer living in New York who enjoys kittens, music, and partying.
+      </div>
+    </div>
+    <div class="extra content">
+      <p>
+        <i class="marker icon"></i>
+        Tampa, Florida, United States 
+      </p>
+      <p>
+        <i class="mail icon"></i>
+        jennyhess@gmail.com
+      </p>
+    </div>
+  </div>
+        </div>
+
+      </div>
+    </div>
   </body>
 </html>
