@@ -1,12 +1,11 @@
 $(document).ready(function() { 	
   $('.icon_tabs .item').tab();
 
-  $('.icon_tabs').first()
-  //.sidebar('attach events', '.toggle.button')
-  ;
-
-  $('.toggle.button')
-    .removeClass('disabled')
-  ;
-  
+  $('.profile_toggle').click(function(){
+       $('.profile')
+		  .transition('fade left')
+		;
+		// var myElement = document.querySelector(".conversation_section");
+		// myElement.style.width = "70%";
+    });
 });

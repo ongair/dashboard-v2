@@ -109,12 +109,14 @@ body {
           height: 40px;
           border-radius: 20px; }
     body .right_content .all_tabs {
+      width: calc(30% - 50px) !important;
       padding-right: 0 !important;
       border-right: 1px solid #ddd;
       height: 100%; }
       body .right_content .all_tabs .tab_content .item {
         padding-left: 1.8rem; }
     body .right_content .conversation_section {
+      width: calc(40% - 50px) !important;
       padding-top: 2rem !important;
       height: 100%;
       border-right: 1px solid #ddd; }
@@ -125,6 +127,7 @@ body {
           height: auto !important;
           overflow-y: hidden; }
     body .right_content .profile {
+      width: 30% !important;
       padding-top: 2rem !important; }
 
 /* Import Media Queries */
