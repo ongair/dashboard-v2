@@ -1,7 +1,7 @@
 $(document).ready(function() { 	
 var myElement = document.querySelector(".conversation_section")
 
- //  $('.icon_tabs .item').tab();
+   $('.icon_tabs .item').tab();
 
 	// $('.button.profile_toggle').click(function hide_profile(){
  //       $('.profile')
