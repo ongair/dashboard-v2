@@ -120,18 +120,28 @@ body {
       padding-top: 2rem !important;
       height: 100%;
       border-right: 1px solid #ddd; }
-      body .right_content .conversation_section .reply_field {
-        bottom: 5px; }
-        body .right_content .conversation_section .reply_field textarea {
-          min-height: 5rem !important;
-          height: auto !important;
-          overflow-y: hidden; }
+      body .right_content .conversation_section .ui.comments {
+        height: 100%; }
+      body .right_content .conversation_section .reply_field textarea {
+        min-height: 5rem !important;
+        height: auto !important;
+        overflow-y: hidden; }
     body .right_content .profile {
       width: 30% !important;
       padding-top: 2rem !important; }
+      body .right_content .profile .card {
+        margin-left: auto;
+        margin-right: auto; }
 
 /* Import Media Queries */
 /* ==================================================== */
+@media only screen and (max-width: 768px) {
+  body .right_content .all_tabs {
+    width: calc(40% - 50px) !important; }
+  body .right_content .conversation_section {
+    width: calc(60% - 50px) !important; }
+  body .right_content .profile {
+    display: none !important; } }
 /* Print Styles */
 /* ==================================================== */
 @media print {

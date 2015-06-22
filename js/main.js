@@ -1,11 +1,22 @@
 $(document).ready(function() { 	
-  $('.icon_tabs .item').tab();
+var myElement = document.querySelector(".conversation_section")
 
-  $('.profile_toggle').click(function(){
-       $('.profile')
-		  .transition('fade left')
-		;
-		// var myElement = document.querySelector(".conversation_section");
-		// myElement.style.width = "70%";
-    });
+ //  $('.icon_tabs .item').tab();
+
+	// $('.button.profile_toggle').click(function hide_profile(){
+ //       $('.profile')
+	// 		.transition('toggle')
+	// 		$(this).toggle()
+	// 	;
+	// 	myElement.style.cssText = 'width:calc(70% - 50px)!important'
+ //    });
+
+ //    $('.button.profile_toggle.show').click(function show_profile(){
+ //       $('.profile')
+	// 		.transition('toggle')
+	// 		$(this).toggle()
+	// 	;
+	// 	myElement.style.cssText = 'width:calc(40% - 50px)!important'
+ //    });
+
 });

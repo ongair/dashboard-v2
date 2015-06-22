@@ -22,7 +22,21 @@
 }//max width 960
 
 @media only screen and (max-width: 768px){
+	body{
+		.right_content{
+			.all_tabs{
+				width: calc(40% - 50px) !important;
+			}
 
+			.conversation_section{
+				width: calc(60% - 50px) !important;
+			}
+
+			.profile{
+				display: none !important;
+			}
+		}
+	}
 }//max width 768
 
 
