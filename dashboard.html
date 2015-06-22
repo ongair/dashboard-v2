@@ -21,7 +21,7 @@
       <img src="images/o.png" style="width: 50px;">
       </a>
       <a class="item search computer_hide">
-        <form class="ui input">
+        <form class="ui fluid input">
           <input type="text" placeholder="Search...">
         </form>
       </a>
@@ -59,8 +59,8 @@
             <input type="text" placeholder="Search...">
           </form>
         </div>
-        <a class="item logo sidebar_toggle computer_hide">
-          <img src="images/o.png" style="width: 40px;">
+        <a class="item sidebar_toggle computer_hide">
+          <i class="black big content icon"></i>
         </a>
         <!-- all tabs require the class name as below -->
         <div class="ui active tab very relaxed divided link list tab_content" data-tab="inbox">
@@ -163,17 +163,16 @@
           </a>
         </div>
       </div>
-      
-        <div class="column conversation_section">
+      <div class=" ui column grid conversation_section"> 
+        <div class="column ">
 
-
-          <div class="ui text menu">
+          <div class="ui text menu tablet_hide">
             <a class="icon item"><i class=" circular inverted left chevron icon"></i></a>
             <a class="icon item"><i class=" circular inverted right chevron icon"></i></a>
             <div class="current item">Showing <b>6</b> of 213</div>
-            <!-- <div class="item"><div class="ui button profile_toggle">toggle</div></div>
-            <div class="item"><div class="ui button profile_toggle show">toggle_hide</div></div>
- -->          </div>
+          </div>
+
+          <div class="ui button hide_conversation computer_hide"><i class=" circular inverted left chevron icon"></i> Back</div>
 
 
 
@@ -259,39 +258,39 @@
             </form>
           </div>
         </div>
+      </div>
 
         <div class="column profile">
-          <div class="ui cards">
-            <div class="card">
-                <div class="image">
-                  <img src="images/user4.png">
+          <div class="profile_image">
+            <img class="ui centered circular image" src="images/user4.png">
+          </div>
+          <div class="ui card">
+              <div class="content">
+                <div class="header">Joe Henderson
                 </div>
-                <div class="content">
-                  <div class="header">Joe Henderson
-                  </div>
-                  <div class="meta">
-                    <a>Friends</a>
-                  </div>
-                  <div class="description">
-                    Veronika Ossi is a set designer living in New York who enjoys kittens, music, and partying.
-                  </div>
+                <div class="meta">
+                  <a>Friends</a>
                 </div>
-                <div class="extra content">
-                  <p>
-                    <i class="marker icon"></i>
-                    Tampa, Florida, United States 
-                  </p>
-                  <p>
-                    <i class="mail icon"></i>
-                    jennyhess@gmail.com
-                  </p>
-                </div>
-                <div class="ui bottom attached button">
-                  <i class="remove icon"></i>
-                  Remove from Group
+                <div class="description">
+                  Veronika Ossi is a set designer living in New York who enjoys kittens, music, and partying.
                 </div>
               </div>
-          </div>
+              <div class="extra content">
+                <p>
+                  <i class="marker icon"></i>
+                  Tampa, Florida, United States 
+                </p>
+                <p>
+                  <i class="mail icon"></i>
+                  jennyhess@gmail.com
+                </p>
+              </div>
+              <div class="ui bottom attached button">
+                <i class="remove icon"></i>
+                Remove from Group
+              </div>
+            </div>
+         
         </div>
       
     </div>

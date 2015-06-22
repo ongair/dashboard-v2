@@ -1,4 +1,3 @@
-var myElement = document.querySelector(".conversation_section")
 var width = $(window).width();
 $(document).ready(function() { 	
 
@@ -13,14 +12,23 @@ $(document).ready(function() {
 	       	.removeClass('labeled icon'); 
 
 	       $('#icon_tabs')
-			  .sidebar('attach events', '.sidebar_toggle', 'push page' )
+			  .sidebar('attach events', '.sidebar_toggle' )
 			;
-			$('.sidebar_toggle')
-			  .removeClass('disabled')
+			
+
+			$('.conversation_section')//opens sidebar conversation on all items in .tab_content
+			  .sidebar('attach events', '.tab_content .item' )
+			  .sidebar('attach events', '.hide_conversation', 'hide' )
+			  .addClass('ui right wide sidebar segment')
 			;
+			
+
 	   }
 	   else{
-	       $('#icon_tabs').addClass('visible');
+	       $('#icon_tabs').addClass('visible')
+	       $('.conversation_section')//opens sidebar conversation on all items in .tab_content
+			  .removeClass('ui right wide sidebar segment')
+			;
 	   }
 
 	})

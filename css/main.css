@@ -94,8 +94,6 @@ body {
     body #icon_tabs .item .ui.floating.label {
       top: 0.6rem;
       left: 68%; }
-  body .search {
-    text-align: center; }
   body .right_content {
     left: 100px !important;
     position: relative;
@@ -105,9 +103,9 @@ body {
       padding-right: 0 !important;
       border-right: 1px solid #ddd;
       height: 100%; }
-      body .right_content .all_tabs .logo {
-        text-align: center;
-        padding-top: 10px; }
+      body .right_content .all_tabs .item.sidebar_toggle.computer_hide {
+        padding-top: 10px;
+        padding-left: 10px; }
       body .right_content .all_tabs .search {
         height: 100px;
         padding: 26px;
@@ -133,7 +131,10 @@ body {
         overflow-y: hidden; }
     body .right_content .profile {
       width: 30% !important;
-      padding-top: 2rem !important; }
+      padding-top: 2rem !important;
+      padding-left: 0 !important; }
+      body .right_content .profile .profile_image .ui.image {
+        width: 45%; }
       body .right_content .profile .card {
         margin-left: auto;
         margin-right: auto; }
@@ -151,7 +152,7 @@ body {
   body .right_content {
     left: 0 !important; }
     body .right_content .all_tabs {
-      width: 40% !important; }
+      width: 100% !important; }
     body .right_content .conversation_section {
       width: 60% !important; }
     body .right_content .profile {
