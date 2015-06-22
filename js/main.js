@@ -1,22 +1,30 @@
-$(document).ready(function() { 	
 var myElement = document.querySelector(".conversation_section")
+var width = $(window).width();
+$(document).ready(function() { 	
 
-   $('.icon_tabs .item').tab();
+   $('#icon_tabs .item').tab();
 
-	// $('.button.profile_toggle').click(function hide_profile(){
- //       $('.profile')
-	// 		.transition('toggle')
-	// 		$(this).toggle()
-	// 	;
-	// 	myElement.style.cssText = 'width:calc(70% - 50px)!important'
- //    });
 
- //    $('.button.profile_toggle.show').click(function show_profile(){
- //       $('.profile')
-	// 		.transition('toggle')
-	// 		$(this).toggle()
-	// 	;
-	// 	myElement.style.cssText = 'width:calc(40% - 50px)!important'
- //    });
+	$(window).resize(function(){
+	   console.log('resize called');
+	   if(width <= 768){
+	       $('#icon_tabs')
+	       	.removeClass('visible')
+	       	.removeClass('labeled icon'); 
+
+	       $('#icon_tabs')
+			  .sidebar('attach events', '.sidebar_toggle', 'push page' )
+			;
+			$('.sidebar_toggle')
+			  .removeClass('disabled')
+			;
+	   }
+	   else{
+	       $('#icon_tabs').addClass('visible');
+	   }
+
+	})
+	.resize();//trigger the resize event on page load.
+
 
 });

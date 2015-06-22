@@ -89,30 +89,35 @@ a:active {
 /* ==================================================== */
 body {
   overflow-x: hidden; }
-  body .icon_tabs .item {
+  body #icon_tabs .item {
     padding: 1.5rem !important; }
-    body .icon_tabs .item .ui.floating.label {
+    body #icon_tabs .item .ui.floating.label {
       top: 0.6rem;
       left: 68%; }
+  body .search {
+    text-align: center; }
   body .right_content {
     left: 100px !important;
     position: relative;
     height: 100%; }
-    body .right_content .search {
-      height: 100px;
-      padding: 26px;
-      background-color: #cccccc; }
-      body .right_content .search .ui.input {
-        width: 100%; }
-        body .right_content .search .ui.input input {
-          width: 100%;
-          height: 40px;
-          border-radius: 20px; }
     body .right_content .all_tabs {
       width: calc(30% - 50px) !important;
       padding-right: 0 !important;
       border-right: 1px solid #ddd;
       height: 100%; }
+      body .right_content .all_tabs .logo {
+        text-align: center;
+        padding-top: 10px; }
+      body .right_content .all_tabs .search {
+        height: 100px;
+        padding: 26px;
+        background-color: #cccccc; }
+        body .right_content .all_tabs .search .ui.input {
+          width: 100%; }
+          body .right_content .all_tabs .search .ui.input input {
+            width: 100%;
+            height: 40px;
+            border-radius: 20px; }
       body .right_content .all_tabs .tab_content .item {
         padding-left: 1.8rem; }
     body .right_content .conversation_section {
@@ -135,13 +140,22 @@ body {
 
 /* Import Media Queries */
 /* ==================================================== */
-@media only screen and (max-width: 768px) {
-  body .right_content .all_tabs {
-    width: calc(40% - 50px) !important; }
-  body .right_content .conversation_section {
-    width: calc(60% - 50px) !important; }
-  body .right_content .profile {
+@media only screen and (max-width: 1500px) {
+  body .computer_hide {
     display: none !important; } }
+@media only screen and (max-width: 768px) {
+  body .computer_hide {
+    display: block !important; }
+  body .tablet_hide {
+    display: none !important; }
+  body .right_content {
+    left: 0 !important; }
+    body .right_content .all_tabs {
+      width: 40% !important; }
+    body .right_content .conversation_section {
+      width: 60% !important; }
+    body .right_content .profile {
+      display: none !important; } }
 /* Print Styles */
 /* ==================================================== */
 @media print {

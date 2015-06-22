@@ -1,7 +1,7 @@
 //Here you add the page structure
 body{
   overflow-x: hidden;
-  .icon_tabs{
+  #icon_tabs{
     .item{
       padding: 1.5rem !important;
       .ui.floating.label{
@@ -10,11 +10,24 @@ body{
       }
     }
   }
+  .search{/// centers searchbar on responsive
+    text-align: center;
+  }
   .right_content{
     left: 100px !important;
     position: relative;
     height: 100%;
-    .search{
+
+    .all_tabs{
+      width: calc(30% - 50px) !important;
+      padding-right: 0 !important;
+      border-right : 1px solid #ddd;
+      height: 100%;
+      .logo{// centers logo sidebar-link on responsive
+        text-align: center;
+        padding-top:10px;
+      }
+      .search{
       height: 100px;
       padding: 26px;
       background-color: #cccccc;
@@ -27,11 +40,6 @@ body{
         }
       }
     }
-    .all_tabs{
-      width: calc(30% - 50px) !important;
-      padding-right: 0 !important;
-      border-right : 1px solid #ddd;
-      height: 100%;
       .tab_content{
         .item{
           padding-left: 1.8rem;

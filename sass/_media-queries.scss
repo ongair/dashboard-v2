@@ -1,5 +1,9 @@
 @media only screen and (max-width: 1500px){
- 
+ body{
+	.computer_hide{
+		display: none !important;
+	}
+ }
 
 }//max width 1500
 
@@ -23,13 +27,20 @@
 
 @media only screen and (max-width: 768px){
 	body{
+		.computer_hide{
+				display: block !important;
+			}
+			.tablet_hide{
+			 	display: none !important;
+			 }
 		.right_content{
+			left: 0 !important;
 			.all_tabs{
-				width: calc(40% - 50px) !important;
+				width: 40% !important;
 			}
 
 			.conversation_section{
-				width: calc(60% - 50px) !important;
+				width: 60% !important;
 			}
 
 			.profile{

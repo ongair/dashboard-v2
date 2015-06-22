@@ -16,9 +16,14 @@
     <script src='js/main.js'></script>
   </head>
   <body>
-    <div class="ui vertical labeled icon left inline visible sidebar menu icon_tabs">
-      <a class="item">
+    <div class="ui vertical labeled icon left inline visible sidebar menu" id="icon_tabs">
+      <a class="item tablet_hide">
       <img src="images/o.png" style="width: 50px;">
+      </a>
+      <a class="item search computer_hide">
+        <form class="ui input">
+          <input type="text" placeholder="Search...">
+        </form>
       </a>
       <a class="orange active item" data-tab="inbox">
         <i class="inbox icon"></i>
@@ -49,11 +54,14 @@
     </div>
     <div class="ui grid right_content">
       <div class="column all_tabs">
-        <div class="item search">
-          <div class="ui input">
+        <div class="item search tablet_hide">
+          <form class="ui input">
             <input type="text" placeholder="Search...">
-          </div>
+          </form>
         </div>
+        <a class="item logo sidebar_toggle computer_hide">
+          <img src="images/o.png" style="width: 40px;">
+        </a>
         <!-- all tabs require the class name as below -->
         <div class="ui active tab very relaxed divided link list tab_content" data-tab="inbox">
           <a class="item">
