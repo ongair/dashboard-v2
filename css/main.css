@@ -155,7 +155,10 @@ body {
     body .right_content .mobile_menu .item {
       background: none !important; }
     body .right_content .all_tabs {
-      width: 100% !important; }
+      width: 100% !important;
+      padding-top: 0 !important; }
+      body .right_content .all_tabs .tab_content {
+        margin-top: 0; }
     body .right_content .conversation_section {
       width: 60% !important; }
     body .right_content .profile {
