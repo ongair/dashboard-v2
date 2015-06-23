@@ -13,6 +13,7 @@ $(document).ready(function() {
 
 	       $('#icon_tabs')
 			  .sidebar('attach events', '.sidebar_toggle' )
+			  .sidebar('attach events', '#icon_tabs .item', 'hide' )
 			;
 			
 
