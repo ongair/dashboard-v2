@@ -53,15 +53,20 @@
       </a>
     </div>
     <div class="ui grid right_content">
+    <div class="ui large borderless attached menu mobile_menu computer_hide">
+          <div class="item sidebar_toggle">
+            <i class="black big content icon"></i>
+          </div>
+        <div class="header down item"> Inbox</div>
+        </div>
       <div class="column all_tabs">
         <div class="item search tablet_hide">
           <form class="ui input">
             <input type="text" placeholder="Search...">
           </form>
         </div>
-        <a class="item sidebar_toggle computer_hide">
-          <i class="black big content icon"></i>
-        </a>
+        
+       
         <!-- all tabs require the class name as below -->
         <div class="ui active tab very relaxed divided link list tab_content" data-tab="inbox">
           <a class="item">
@@ -166,19 +171,22 @@
       <div class=" ui column grid conversation_section"> 
         <div class="column ">
 
-          <div class="ui text menu tablet_hide">
-            <a class="icon item"><i class=" circular inverted left chevron icon"></i></a>
-            <a class="icon item"><i class=" circular inverted right chevron icon"></i></a>
+          <div class="ui text menu ">
+            <div class="item">
+              <a class="ui left attached button"><i class="left chevron icon"></i></a>
+              <a class="ui right attached button"><i class="right chevron icon"></i></a>
+            </div>
             <div class="current item">Showing <b>6</b> of 213</div>
           </div>
 
-          <div class="ui button hide_conversation computer_hide"><i class=" circular inverted left chevron icon"></i> Back</div>
+          <div class="ui labeled icon tiny button hide_conversation computer_hide"><i class="left arrow icon"></i> Back</div>
+
 
 
 
           <div class="ui comments">
             <h3 class="ui dividing header">Comments</h3>
-            <!-- <div class="comment">
+            <div class="comment">
               <a class="avatar">
               <img src="images/user1.jpg">
               </a>
@@ -194,7 +202,7 @@
                   <a class="reply">Reply</a>
                 </div>
               </div>
-            </div> -->
+            </div>
             <div class="comment">
               <a class="avatar">
               <img src="images/user2.jpg">

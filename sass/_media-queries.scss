@@ -28,13 +28,19 @@
 @media only screen and (max-width: 768px){
 	body{
 		.computer_hide{
-				display: block !important;
+				display: inherit !important;
 			}
 			.tablet_hide{
 			 	display: none !important;
 			 }
 		.right_content{
 			left: 0 !important;
+			margin-top: 0 !important;
+			.mobile_menu{
+				.item{
+					background: none !important;
+				}
+			}
 			.all_tabs{
 				width: 100% !important;
 			}
