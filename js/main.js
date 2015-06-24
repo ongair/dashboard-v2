@@ -1,3 +1,4 @@
+var width = $(window).width();
 $(document).ready(function() { 	
 
    $('#icon_tabs .item').tab();
@@ -15,7 +16,7 @@ $(document).ready(function() {
 			;
 			
 
-			$('.conversation_section')//opens sidebar conversation on all items in .tab_content
+			$('.column2')//opens sidebar conversation on all items in .tab_content
 			  .sidebar('attach events', '.tab_content .item' )
 			  .sidebar('attach events', '.hide_conversation', 'hide' )
 			  .addClass('ui right wide sidebar segment')
@@ -25,7 +26,7 @@ $(document).ready(function() {
 	   }
 	   else{
 	       $('#icon_tabs').addClass('visible')
-	       $('.conversation_section')//opens sidebar conversation on all items in .tab_content
+	       $('.column2')//opens sidebar conversation on all items in .tab_content
 			  .removeClass('ui right wide sidebar segment')
 			;
 	   }

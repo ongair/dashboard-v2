@@ -89,50 +89,65 @@ a:active {
 /* ==================================================== */
 body {
   overflow-x: hidden; }
-  body #icon_tabs .item {
-    padding: 1.5rem !important; }
-    body #icon_tabs .item .ui.floating.label {
-      top: 0.6rem;
-      left: 68%; }
+  body #icon_tabs {
+    background: #eaeaea; }
+    body #icon_tabs .item {
+      padding: 1.5rem !important; }
+      body #icon_tabs .item .ui.floating.label {
+        top: 0.6rem;
+        left: 68%; }
   body .right_content {
     left: 100px !important;
     position: relative;
-    height: 100%; }
+    height: 100%;
+    margin-top: 0 !important; }
     body .right_content .all_tabs {
-      width: calc(30% - 50px) !important;
-      padding-right: 0 !important;
+      width: calc(20% - 50px) !important;
       border-right: 1px solid #ddd;
-      height: 100%; }
+      height: 100%;
+      background: #f0f0f0; }
       body .right_content .all_tabs .item.sidebar_toggle.computer_hide {
         padding-top: 10px;
-        padding-left: 10px; }
-      body .right_content .all_tabs .search {
-        height: 100px;
-        padding: 26px;
-        background-color: #cccccc; }
-        body .right_content .all_tabs .search .ui.input {
-          width: 100%; }
-          body .right_content .all_tabs .search .ui.input input {
-            width: 100%;
-            height: 40px;
-            border-radius: 20px; }
-      body .right_content .all_tabs .tab_content .item {
-        padding-left: 1.8rem; }
-    body .right_content .conversation_section {
-      width: calc(40% - 50px) !important;
-      padding-top: 2rem !important;
+        padding-left: 15px; }
+      body .right_content .all_tabs .tab_content {
+        padding-top: 10px;
+        color: #7a418f !important; }
+        body .right_content .all_tabs .tab_content .tab_content_header {
+          padding-left: 1.8rem;
+          padding-bottom: 10px; }
+        body .right_content .all_tabs .tab_content .item {
+          padding-left: 1.8rem; }
+    body .right_content .column2 {
+      width: calc(55% - 50px) !important;
+      padding: 0 !important;
       height: 100%;
-      border-right: 1px solid #ddd; }
-      body .right_content .conversation_section .ui.comments {
+      border-right: 1px solid #ddd;
+      margin: 0 !important;
+      background: #ffffff; }
+      body .right_content .column2 .dashboard_menu {
+        background: #eaeaea; }
+        body .right_content .column2 .dashboard_menu .item:hover {
+          background: inherit !important; }
+        body .right_content .column2 .dashboard_menu .ui.input {
+          padding-top: 7px;
+          padding-bottom: 7px; }
+          body .right_content .column2 .dashboard_menu .ui.input input {
+            width: 100%;
+            height: 35px;
+            border-radius: 70px; }
+      body .right_content .column2 .ui.comments {
         height: 100%; }
-      body .right_content .conversation_section .reply_field textarea {
+      body .right_content .column2 .inbox_content {
+        margin: 0 !important; }
+      body .right_content .column2 .reply_field textarea {
         min-height: 5rem !important;
         height: auto !important;
         overflow-y: hidden; }
     body .right_content .profile {
-      width: 30% !important;
+      width: 25% !important;
       padding-top: 2rem !important;
-      padding-left: 0 !important; }
+      padding-left: 0 !important;
+      position: relative; }
       body .right_content .profile .profile_image .ui.image {
         width: 45%; }
       body .right_content .profile .card {
@@ -159,7 +174,7 @@ body {
       padding-top: 0 !important; }
       body .right_content .all_tabs .tab_content {
         margin-top: 0; }
-    body .right_content .ui.conversation_section.sidebar {
+    body .right_content .ui.column2.sidebar {
       min-width: 60% !important;
       height: 100px; }
     body .right_content .profile {
