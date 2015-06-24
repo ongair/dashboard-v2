@@ -1,9 +1,7 @@
-var width = $(window).width();
 $(document).ready(function() { 	
 
    $('#icon_tabs .item').tab();
-
-
+   
 	$(window).resize(function(){
 	   console.log('resize called');
 	   if(width <= 768){

@@ -49,8 +49,9 @@
 					}
 			}
 
-			.conversation_section{
-				width: 60% !important;
+			.ui.conversation_section.sidebar{
+				min-width: 60% !important;
+				height: 100px;
 			}
 
 			.profile{

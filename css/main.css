@@ -159,8 +159,9 @@ body {
       padding-top: 0 !important; }
       body .right_content .all_tabs .tab_content {
         margin-top: 0; }
-    body .right_content .conversation_section {
-      width: 60% !important; }
+    body .right_content .ui.conversation_section.sidebar {
+      min-width: 60% !important;
+      height: 100px; }
     body .right_content .profile {
       display: none !important; } }
 /* Print Styles */

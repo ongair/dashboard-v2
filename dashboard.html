@@ -52,7 +52,7 @@
       Settings
       </a>
     </div>
-    <div class="ui grid right_content">
+    <div class="ui grid right_content"><!-- additional class names are added from the javascript required for the sidebar -->
     <div class="ui large borderless attached menu mobile_menu computer_hide">
           <div class="item sidebar_toggle">
             <i class="black big content icon"></i>
@@ -168,17 +168,13 @@
           </a>
         </div>
       </div>
-      <div class=" ui column grid conversation_section"> 
+      <div class=" ui column grid conversation_section" id="column2"> 
         <div class="column ">
 
           <div class="ui labeled icon tiny button hide_conversation computer_hide"><i class="left arrow icon"></i> Back</div>
 
-
-
-
           <div class="ui comments">
-            <h3 class="ui dividing header">Comments</h3>
-            <div class="comment">
+          <div class="comment">
               <a class="avatar">
               <img src="images/user1.jpg">
               </a>
@@ -195,6 +191,7 @@
                 </div>
               </div>
             </div>
+            <div class="ui horizontal divider">Today</div>
             <div class="comment">
               <a class="avatar">
               <img src="images/user2.jpg">
@@ -260,7 +257,7 @@
         </div>
       </div>
 
-        <div class="column profile">
+        <div class="column profile" id="column3">
           <div class="profile_image">
             <img class="ui centered circular image" src="images/user4.png">
           </div>
