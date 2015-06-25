@@ -4,6 +4,7 @@ $(document).ready(function() {
    $('#icon_tabs .item').tab();
 
 $('.toggle_column3').click(function() {
+
   var clicks = $(this).data('clicks');
   if (clicks) {
 	$(".conversation_section").css({"width": "75%"});
@@ -15,6 +16,7 @@ $('.toggle_column3').click(function() {
   $(this).data("clicks", !clicks);
 });
 
+
 $('.setting_popup i')
  .popup({
     popup : $('.setting_popup_content'),
@@ -22,6 +24,7 @@ $('.setting_popup i')
     position : 'bottom right'
   })
 ;
+
 
    
 	$(window).resize(function(){
