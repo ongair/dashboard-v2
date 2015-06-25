@@ -15,6 +15,13 @@ $('.toggle_column3').click(function() {
   $(this).data("clicks", !clicks);
 });
 
+$('.setting_popup i')
+ .popup({
+    popup : $('.setting_popup_content'),
+    on    : 'click',
+    position : 'bottom right'
+  })
+;
 
    
 	$(window).resize(function(){

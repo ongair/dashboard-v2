@@ -1,113 +1,172 @@
 //Here you add the page structure
 body{
   overflow-x: hidden;
-  #icon_tabs{
-    background: #eaeaea;
-    .item{
-      padding: 1.5rem !important;
-      .ui.floating.label{
-        top: 0.6rem;
-        left: 68%;
+  }
+#icon_tabs{
+  background: #eaeaea;
+  .item{
+    padding: 1rem;
+    color: #7a418f;
+    .ui.floating.label{
+      top: 0.3rem;
+      left: 73%;
+    }
+    i{
+      color: #b33679;
+    }
+    .label{
+      background-color: #7a418f;
+    }
+  }
+  .btn_item{
+      padding: 7px;
+      .ui.button{
+        margin: 0;
+        color: #ffffff;
+        background-color: #b33679;
+        padding: 7px 7px;
+        font-size: 13px;
+      }
+    }
+}
+
+.right_content{
+  left: 100px !important;
+  position: relative;
+  height: 100%;
+  margin-top: 0 !important;
+
+  .all_tabs{
+    width: calc(20% - 50px) !important;
+    //border-right : 1px solid #ddd;
+    height: 100%;
+    background: #f0f0f0;
+    .item.sidebar_toggle.computer_hide{// centers logo sidebar-link on responsive
+     // text-align: center;
+      padding-top:10px;
+      padding-left: 15px;
+    }
+
+    .tab_content{
+      padding-top: 10px;
+      color: #7a418f !important;
+      .tab_content_header{
+        padding-left: 1.8rem;
+        padding-bottom: 10px;
+        color: #7a418f;
+      }
+      .item{
+        margin-left: 0.5rem;
+        padding-left: 0.8rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius:5px;
+        font-size: 0.875rem;
+        line-height: 1.4rem;
+      }
+      .active.item{
+        background-color: #ffffff;
+      }
+      .ui.list .item{
+         color: #7a418f;
       }
     }
   }
-  
-  .right_content{
-    left: 100px !important;
-    position: relative;
+  .column2{
+    width: calc(80% - 50px);
     height: 100%;
-    margin-top: 0 !important;
-
-    .all_tabs{
-      width: calc(20% - 50px) !important;
-      //border-right : 1px solid #ddd;
-      height: 100%;
-      background: #f0f0f0;
-      .item.sidebar_toggle.computer_hide{// centers logo sidebar-link on responsive
-       // text-align: center;
-        padding-top:10px;
-        padding-left: 15px;
-      }
-
-      .tab_content{
-        padding-top: 10px;
-        color: #7a418f !important;
-        .tab_content_header{
-          padding-left: 1.8rem;
-          padding-bottom: 10px;
-        }
-        .item{
-          padding-left: 1.8rem;
-        }
-      }
-    }
-    .column2{
-      width: calc(80% - 50px);
-      padding-left: 0 ;
-      height: 100%;
+    padding-left: 0 ;
+    border-right : 1px solid #ddd;
+    margin: 0;
+    background: #ffffff;
+    display: inline-block;
+    position: relative;
+    .conversation{
+      width: 25%;
+      font-size: 1rem;
+      display: inline-block;
       border-right : 1px solid #ddd;
-      margin: 0;
-      background: #ffffff;
+      height: 100%;
+      padding: 0;
+      .ui.list .item{
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .ui.list .active.item{
+       background: rgba(0, 0, 0, 0.03);
+      border-radius: 0em;
+      box-shadow: -2px 0em 0em inset;
+      }
+
+    }
+    .conversation_section{
+      width: 75% ;
+      font-size: 1rem;
       display: inline-block;
       position: relative;
-      .conversation{
-        width: 25%;
-        font-size: 1rem;
-        display: inline-block;
-      }
-      .conversation_section{
-        width: 75% ;
-        font-size: 1rem;
-        display: inline-block;
-        position: relative;
-      }
-      .dashboard_menu{
-        background: #eaeaea;
-        .item:hover{
-          background: inherit !important;
-        }
-        .ui.input{
-          padding-top: 7px;
-          padding-bottom: 7px;
-        input{
-          width: 100%;
-          height: 35px;
-          border-radius: 70px;
-        }
-      }
-      }
-      .ui.comments{
-        height: 100%;
-      }
-      .inbox_content{
-        margin: 0 !important;
-      }
-      .reply_field{
-        textarea{
-          min-height: 5rem !important;
-          height: auto !important;
-          overflow-y: hidden;
-        }
-      }
-      .column3{
-      width: 35%;
-      padding-top: 2rem !important;
-      padding-left: 0;
-      right: 0;
-      font-size: 1rem;
-      display: none;
       vertical-align: top;
-      .profile_image{
-        .ui.image{
-          width: 45%;
+    }
+    .dashboard_menu{
+      background: #eaeaea;
+      .item:hover{
+        background: inherit !important;
+      }
+      .setting_popup_content{
+        border-radius: 10px;
+        .ui.list{
+          padding: 10px;
+          width: 150px;
+          .item{
+            font-size: 13px;
+            color: #000000;
+          }
         }
       }
-      .card{
-        margin-left: auto;
-        margin-right: auto;
+      .ui.input{
+        padding-top: 7px;
+        padding-bottom: 7px;
+      input{
+        width: 100%;
+        height: 35px;
+        border-radius: 70px;
       }
     }
     }
-    
+    .ui.comments{
+      height: 100%;
+    }
+    .inbox_content{
+      margin: 0 !important;
+      height: calc(100% - 55px);//full height minus topbar mwnu height
+    }
+    .reply_field{
+      textarea{
+        min-height: 5rem !important;
+        height: auto !important;
+        overflow-y: hidden;
+      }
+    }
+    .column3{
+    width: 35%;
+    height: 100%;
+    padding-top: 2rem !important;
+    padding-left: 0;
+    padding-right: 0;
+    right: 0;
+    font-size: 1rem;
+    display: none;
+    vertical-align: top;
+     border-left : 1px solid #ddd;
+    .profile_image{
+      .ui.image{
+        width: 45%;
+      }
+    }
+    .card{
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
+  }
+  
 }
