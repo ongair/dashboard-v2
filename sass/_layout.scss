@@ -20,7 +20,7 @@ body{
 
     .all_tabs{
       width: calc(20% - 50px) !important;
-      border-right : 1px solid #ddd;
+      //border-right : 1px solid #ddd;
       height: 100%;
       background: #f0f0f0;
       .item.sidebar_toggle.computer_hide{// centers logo sidebar-link on responsive
@@ -42,12 +42,25 @@ body{
       }
     }
     .column2{
-      width: calc(55% - 50px) !important;
-      padding: 0 !important;
+      width: calc(80% - 50px);
+      padding-left: 0 ;
       height: 100%;
       border-right : 1px solid #ddd;
-      margin: 0 !important;
+      margin: 0;
       background: #ffffff;
+      display: inline-block;
+      position: relative;
+      .conversation{
+        width: 25%;
+        font-size: 1rem;
+        display: inline-block;
+      }
+      .conversation_section{
+        width: 75% ;
+        font-size: 1rem;
+        display: inline-block;
+        position: relative;
+      }
       .dashboard_menu{
         background: #eaeaea;
         .item:hover{
@@ -76,23 +89,25 @@ body{
           overflow-y: hidden;
         }
       }
-    }
-    .profile{
-      width: 25% !important;
+      .column3{
+      width: 35%;
       padding-top: 2rem !important;
-      padding-left: 0 !important;
-      position: relative;
-      //right: 00px;
+      padding-left: 0;
+      right: 0;
+      font-size: 1rem;
+      display: none;
+      vertical-align: top;
       .profile_image{
         .ui.image{
           width: 45%;
         }
       }
-
       .card{
         margin-left: auto;
         margin-right: auto;
       }
     }
+    }
+    
   }
 }

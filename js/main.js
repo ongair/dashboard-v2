@@ -2,6 +2,20 @@ var width = $(window).width();
 $(document).ready(function() { 	
 
    $('#icon_tabs .item').tab();
+
+$('a').click(function() {
+  var clicks = $(this).data('clicks');
+  if (clicks) {
+	$(".conversation_section").css({"width": "75%"});
+	$(".column3").css({"display": "none"});
+  } else {
+  	$(".conversation_section").css({"width": "40%"});
+  	$(".column3").css({"display": "inline-block"});
+  }
+  $(this).data("clicks", !clicks);
+});
+
+
    
 	$(window).resize(function(){
 	   console.log('resize called');

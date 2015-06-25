@@ -103,7 +103,6 @@ body {
     margin-top: 0 !important; }
     body .right_content .all_tabs {
       width: calc(20% - 50px) !important;
-      border-right: 1px solid #ddd;
       height: 100%;
       background: #f0f0f0; }
       body .right_content .all_tabs .item.sidebar_toggle.computer_hide {
@@ -118,12 +117,23 @@ body {
         body .right_content .all_tabs .tab_content .item {
           padding-left: 1.8rem; }
     body .right_content .column2 {
-      width: calc(55% - 50px) !important;
-      padding: 0 !important;
+      width: calc(80% - 50px);
+      padding-left: 0;
       height: 100%;
       border-right: 1px solid #ddd;
-      margin: 0 !important;
-      background: #ffffff; }
+      margin: 0;
+      background: #ffffff;
+      display: inline-block;
+      position: relative; }
+      body .right_content .column2 .conversation {
+        width: 25%;
+        font-size: 1rem;
+        display: inline-block; }
+      body .right_content .column2 .conversation_section {
+        width: 75%;
+        font-size: 1rem;
+        display: inline-block;
+        position: relative; }
       body .right_content .column2 .dashboard_menu {
         background: #eaeaea; }
         body .right_content .column2 .dashboard_menu .item:hover {
@@ -143,16 +153,19 @@ body {
         min-height: 5rem !important;
         height: auto !important;
         overflow-y: hidden; }
-    body .right_content .profile {
-      width: 25% !important;
-      padding-top: 2rem !important;
-      padding-left: 0 !important;
-      position: relative; }
-      body .right_content .profile .profile_image .ui.image {
-        width: 45%; }
-      body .right_content .profile .card {
-        margin-left: auto;
-        margin-right: auto; }
+      body .right_content .column2 .column3 {
+        width: 35%;
+        padding-top: 2rem !important;
+        padding-left: 0;
+        right: 0;
+        font-size: 1rem;
+        display: none;
+        vertical-align: top; }
+        body .right_content .column2 .column3 .profile_image .ui.image {
+          width: 45%; }
+        body .right_content .column2 .column3 .card {
+          margin-left: auto;
+          margin-right: auto; }
 
 /* Import Media Queries */
 /* ==================================================== */
@@ -177,7 +190,7 @@ body {
     body .right_content .ui.column2.sidebar {
       min-width: 60% !important;
       height: 100px; }
-    body .right_content .profile {
+    body .right_content .column3 {
       display: none !important; } }
 /* Print Styles */
 /* ==================================================== */
