@@ -97,7 +97,7 @@ body {
     color: #7a418f; }
     #icon_tabs .item .ui.floating.label {
       top: 0.3rem;
-      left: 73%; }
+      left: 68%; }
     #icon_tabs .item i {
       color: #b33679; }
     #icon_tabs .item .label {
@@ -167,10 +167,24 @@ body {
         box-shadow: -2px 0em 0em inset; }
     .right_content .column2 .conversation_section {
       width: 75%;
+      height: calc(100% - 1.5em);
       font-size: 1rem;
       display: inline-block;
       position: relative;
-      vertical-align: top; }
+      vertical-align: top;
+      -webkit-transition: all 500ms ease;
+      -moz-transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+      -ms-transition: all 500ms ease;
+      transition: all 500ms ease; }
+      .right_content .column2 .conversation_section .ui.comments {
+        height: 100%; }
+        .right_content .column2 .conversation_section .ui.comments .reply_field {
+          width: 100%;
+          bottom: 0;
+          left: 0;
+          position: absolute;
+          display: block; }
     .right_content .column2 .dashboard_menu {
       background: #eaeaea; }
       .right_content .column2 .dashboard_menu .item:hover {
@@ -187,11 +201,8 @@ body {
         padding-top: 7px;
         padding-bottom: 7px; }
         .right_content .column2 .dashboard_menu .ui.input input {
-          width: 100%;
           height: 35px;
           border-radius: 70px; }
-    .right_content .column2 .ui.comments {
-      height: 100%; }
     .right_content .column2 .inbox_content {
       margin: 0 !important;
       height: calc(100% - 55px); }
