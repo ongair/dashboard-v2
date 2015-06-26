@@ -37,7 +37,7 @@ body{
   margin-top: 0 !important;
 
   .all_tabs{
-    width: calc(20% - 50px) !important;
+    width: calc(18% - 50px) !important;
     //border-right : 1px solid #ddd;
     height: 100%;
     background: #f0f0f0;
@@ -73,7 +73,7 @@ body{
     }
   }
   .column2{
-    width: calc(80% - 50px);
+    width: calc(82% - 50px);
     height: 100%;
     padding-left: 0 ;
     border-right : 1px solid #ddd;
@@ -112,13 +112,45 @@ body{
       -ms-transition: all 500ms ease;
       transition: all 500ms ease;
       .ui.comments{
-        height: 100%;
-        .reply_field{
-          width: 100%;
+        //height: 100%;
+        max-width: 100%;
+        .reply_form{
+          width: 90%;
+          height: 42px;
           bottom: 0;
-          left: 0;
+          left: 5%;
           position: absolute;
           display: block;
+          border: 1px solid rgba(39, 41, 43, 0.15);
+          .reply_icon{
+            float: left;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            padding: 6px 2px 0 3px;
+            border-right : 1px solid #ddd;
+          }
+          .reply_field{
+            display: inline-block;
+            height: 40px;
+            width:calc(100% - 120px); //full width minus icon and button width. give this class borders while adjusting
+            textarea{
+              min-height: 40px;
+              height: 40px;
+              overflow-y: hidden;
+              resize: none;
+              border: none;
+            }
+          }
+          .reply_button{
+            margin: 0;
+            float: right;
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+          }
         }
       }
     }
@@ -152,13 +184,7 @@ body{
       margin: 0 !important;
       height: calc(100% - 55px);//full height minus topbar menu height
     }
-    .reply_field{
-      textarea{
-        min-height: 5rem !important;
-        height: auto !important;
-        overflow-y: hidden;
-      }
-    }
+    
     .column3{
     width: 35%;
     height: 100%;
@@ -169,7 +195,7 @@ body{
     font-size: 1rem;
     display: none;
     vertical-align: top;
-     border-left : 1px solid #ddd;
+    border-left : 1px solid #ddd;
     .profile_image{
       .ui.image{
         width: 45%;

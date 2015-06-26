@@ -22,7 +22,7 @@
       </a>
       <div class="item btn_item"><a class="ui button">COMPOSE</a></div>
       <a class="item search computer_hide">
-        <form class="ui fluid input">
+        <form class="ui  search">
           <input type="text" placeholder="Search...">
         </form>
       </a>
@@ -159,8 +159,8 @@
       <div class=" column2 ">
        <div class="ui top attached large borderless menu dashboard_menu">
         <div class="item">
-          <div class="ui icon input">
-            <input type="text" placeholder="Search...">
+          <div class="ui icon small input">
+            <input type="text" placeholder="Search..." class="prompt">
             <i class="search icon"></i>
           </div>
         </div>
@@ -187,42 +187,42 @@
                   <i class="large green circle thin icon"></i>
                   <div class="content">
                     <div class="header">Kenneth Jones</div>
-                    <div class="description">Scientists discover new breed of dog</div>
+                    <p class="description">Scientists discover new breed of dog</p>
                   </div>
                 </a>
                 <a class="active item">
                   <i class="large green circle thin icon"></i>
                   <div class="content">
                     <div class="header">Dwight Mance</div>
-                    <div class="description">Scientists discover new breed of dog</div>
+                    <p class="description">Scientists discover new breed of dog</p>
                   </div>
                 </a>
                 <a class="item">
                   <i class="large red circle thin icon"></i>
                   <div class="content">
                     <div class="header">Grey Pyke</div>
-                    <div class="description">Scientists discover new breed of dog</div>
+                    <p class="description">Scientists discover new breed of dog</p>
                   </div>
                 </a>
                 <a class="item">
                   <i class="large purple circle thin icon"></i>
                   <div class="content">
                     <div class="header">John Smalls</div>
-                    <div class="description">Scientists discover new breed of dog</div>
+                    <p class="description">Scientists discover new breed of dog</p>
                   </div>
                 </a>
                 <a class="item">
                   <i class="large green circle thin icon"></i>
                   <div class="content">
                     <div class="header">Jayne Poole</div>
-                    <div class="description">Scientists discover new breed of dog</div>
+                    <p class="description">Scientists discover new breed of dog</p>
                   </div>
                 </a>
                 <a class="item">
                   <i class="large green circle thin icon"></i>
                   <div class="content">
                     <div class="header">Mary Marlow</div>
-                    <div class="description">Scientists discover new breed of dog</div>
+                    <p class="description">Scientists discover new breed of dog</p>
                   </div>
                 </a>
             </div>
@@ -303,22 +303,24 @@
                   </div>
                 </div>
               </div>
-              <form class="ui form reply_field">
-                <div class="ui  action field">
-                  <textarea></textarea>
-                  <div class="ui blue labeled submit icon button">
-                  <i class="icon edit"></i> Add Reply
-                </div>
-                </div>
-                
-              </form>
+              <div class="reply_form">   
+                <form class="ui form">
+                  <div class="reply_icon"><i class="big attach icon"></i></div>
+                  <div class="ui action field reply_field">
+                    <textarea></textarea>
+                  </div>
+                  <div class="ui purple submit button reply_button">
+                    Reply
+                  </div>
+                </form>
+              </div>
+          </div>
+           </div>
+        <div class="column3">
+            <div class="profile_image">
+              <img class="ui centered circular image" src="images/user4.png">
             </div>
-          </div>
-          <div class="column3" id="column3">
-          <div class="profile_image">
-            <img class="ui centered circular image" src="images/user4.png">
-          </div>
-          <div class="ui card">
+            <div class="ui card">
               <div class="content">
                 <div class="header">Joe Henderson
                 </div>
@@ -346,7 +348,7 @@
             </div>
          
         </div>
-        </div>
+       
       </div>
       
     </div>
