@@ -36,10 +36,6 @@
         Contacts
         <span class="floating ui tiny circular label">3</span>
       </a>
-      <a class="item" data-tab="accounts">
-      <i class="random icon"></i>
-      Accounts
-      </a>
       <a class="item" data-tab="reports">
       <i class="bar graph icon"></i>
       Reports
@@ -47,6 +43,14 @@
       <a class="item" data-tab="settings">
       <i class="settings icon"></i>
       Settings
+      </a>
+      <a class="item" data-tab="accounts">
+      <i class="random icon"></i>
+      Accounts
+      </a>
+      <a class="item logout" data-tab="accounts">
+      <i class="power icon"></i>
+      Logout
       </a>
     </div>
     <div class="ui grid right_content"><!-- additional class names are added from the javascript required for the sidebar -->
@@ -183,11 +187,14 @@
         <div class=" ui grid inbox_content"> 
           <div class="conversation">
             <div class="ui very relaxed divided list">   
+                <a class="item message">
+                  <p class="description"> <i class="arrow up icon"></i>...3 new messages <i class="arrow up icon"></i></p>
+                </a>
                 <a class="item">
                   <i class="large green circle thin icon"></i>
                   <div class="content">
                     <div class="header">Kenneth Jones</div>
-                    <p class="description">Scientists discover new breed of dog</p>
+                    <p class="description">...is typing</p>
                   </div>
                 </a>
                 <a class="active item">
@@ -317,6 +324,33 @@
           </div>
            </div>
         <div class="column3">
+        <div class="user_info">
+          <div class="info_and_notes">
+            <h2>User info and notes</h2>
+            <h3>John Smalls</h3>
+            <p>Johnsmail@gmail.com</p>
+            <p>Kakamega Ingo</p>
+          </div>
+          <div class="files_and_media">
+            <h2>User files and media</h2>
+            <p>12 images</p>
+            <p>2 videos</p>
+          </div>
+          <div class="sticky_notes">
+            <h2>Notes on user</h2>
+            <p>Kakamega ingo</p>
+            <form class="ui reply form">
+              <div class=" field">
+                <textarea></textarea>
+              </div>
+              <div class="ui purple submit button">
+                Add
+              </div>
+            </form>
+          </div>
+
+        </div>
+        <!-- <div class="user_profile">
             <div class="profile_image">
               <img class="ui centered circular image" src="images/user4.png">
             </div>
@@ -345,9 +379,8 @@
                 <i class="remove icon"></i>
                 Remove from Group
               </div>
-            </div>
-         
-        </div>
+            </div></div>
+        </div> -->
        
       </div>
       

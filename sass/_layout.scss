@@ -64,7 +64,7 @@ body{
         font-size: 0.875rem;
         line-height: 1.4rem;
       }
-      .active.item{
+      .active.item,.item:hover{
         background-color: #ffffff;
       }
       .ui.list .item{
@@ -88,14 +88,23 @@ body{
       border-right : 1px solid #ddd;
       height: 100%;
       padding: 0;
+      .ui.list .item.message{
+         background: rgba(0, 0, 0, 0.03);
+        i,p{
+          text-align: center;
+          color: #b33679 !important;
+        }
+      }
       .ui.list .item{
         padding-left: 15px;
         padding-right: 15px;
       }
       .ui.list .active.item{
-       background: rgba(0, 0, 0, 0.03);
-      border-radius: 0em;
+      background: rgba(0, 0, 0, 0.03);
       box-shadow: -2px 0em 0em inset;
+      }
+      .ui.list .item:hover{
+        background: rgba(0, 0, 0, 0.03);
       }
 
     }
@@ -122,18 +131,20 @@ body{
           position: absolute;
           display: block;
           border: 1px solid rgba(39, 41, 43, 0.15);
+          border-radius: 5px;
+          background: #ffffff;
           .reply_icon{
             float: left;
             display: inline-block;
-            width: 40px;
+            width: 44px;
             height: 40px;
-            padding: 6px 2px 0 3px;
+            padding: 6px 2px 0 4px;
             border-right : 1px solid #ddd;
           }
           .reply_field{
             display: inline-block;
             height: 40px;
-            width:calc(100% - 120px); //full width minus icon and button width. give this class borders while adjusting
+            width:calc(100% - 124px); //full width minus icon and button width. give this class borders while adjusting
             textarea{
               min-height: 40px;
               height: 40px;
@@ -158,6 +169,9 @@ body{
       background: #eaeaea;
       .item:hover{
         background: inherit !important;
+        i{
+          color: #b33679;
+        }
       }
       .setting_popup_content{
         border-radius: 10px;
@@ -186,26 +200,52 @@ body{
     }
     
     .column3{
-    width: 35%;
-    height: 100%;
-    padding-top: 2rem !important;
-    padding-left: 0;
-    padding-right: 0;
-    right: 0;
-    font-size: 1rem;
-    display: none;
-    vertical-align: top;
-    border-left : 1px solid #ddd;
-    .profile_image{
-      .ui.image{
-        width: 45%;
+      width: 35%;
+      height: 100%;
+      padding-top: 2rem !important;
+      padding-left: 0;
+      padding-right: 0;
+      right: 0;
+      font-size: 1rem;
+      display: none;
+      vertical-align: top;
+      border-left : 1px solid #ddd;
+      .user_profile{
+        .profile_image{
+          .ui.image{
+            width: 45%;
+          }
+        }
+        .card{
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .user_info{
+        padding: 0 15px;
+        .ui.button{
+          float: right;
+          margin: 0;
+        }
+        textarea{
+          min-height: 3.5rem;
+          max-height: 4.5rem;
+          resize: none;
+        }
+        h2{
+          margin: 0;
+          margin-bottom: 15px;
+        }
+        h3{
+          margin: 0;
+          padding-bottom: 8px;
+        }
+        p{
+          margin: 0;
+          padding-bottom: 8px;
+        }
       }
     }
-    .card{
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
   }
   
 }
