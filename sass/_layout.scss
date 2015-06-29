@@ -63,6 +63,8 @@ body{
         border-radius:5px;
         font-size: 0.875rem;
         line-height: 1.4rem;
+        margin-top: 2px;
+        margin-bottom: 2px;
       }
       .active.item,.item:hover{
         background-color: #ffffff;
@@ -88,6 +90,7 @@ body{
       border-right : 1px solid #ddd;
       height: 100%;
       padding: 0;
+      overflow-y: auto;
       .ui.list .item.message{
          background: rgba(0, 0, 0, 0.03);
         i,p{
@@ -123,11 +126,14 @@ body{
       .ui.comments{
         //height: 100%;
         max-width: 100%;
+        .metadata{
+          float: right;
+        }
         .reply_form{
           width: 90%;
           height: 42px;
           bottom: 0;
-          left: 5%;
+          left: 1.8%;
           position: absolute;
           display: block;
           border: 1px solid rgba(39, 41, 43, 0.15);
@@ -138,7 +144,7 @@ body{
             display: inline-block;
             width: 44px;
             height: 40px;
-            padding: 6px 2px 0 4px;
+            padding: 9px 0px 0 8px;
             border-right : 1px solid #ddd;
           }
           .reply_field{
@@ -155,9 +161,11 @@ body{
           }
           .reply_button{
             margin: 0;
+            background-color:  #b33679;
             float: right;
             display: inline-block;
             width: 80px;
+            font-size: 14px; 
             height: 40px;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
@@ -167,6 +175,9 @@ body{
     }
     .dashboard_menu{
       background: #eaeaea;
+      .search.item{
+        width: 25%;
+      }
       .item:hover{
         background: inherit !important;
         i{
@@ -226,11 +237,13 @@ body{
         .ui.button{
           float: right;
           margin: 0;
+          background-color: #b33679;
         }
         textarea{
           min-height: 3.5rem;
           max-height: 4.5rem;
           resize: none;
+          border: 1px solid rgba(39, 41, 43, 0.5);
         }
         h2{
           margin: 0;

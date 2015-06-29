@@ -2,6 +2,7 @@ var width = $(window).width();
 $(document).ready(function() { 	
 
    $('#icon_tabs .item').tab();
+   $(".conversation").tinyscrollbar();
 
 $('.toggle_column3').click(function() {
 
