@@ -190,13 +190,13 @@ body {
         .right_content .column2 .conversation_section .ui.comments .metadata {
           float: right; }
         .right_content .column2 .conversation_section .ui.comments .reply_form {
-          width: 90%;
+          width: 96.7%;
           height: 42px;
           bottom: 0;
           left: 1.8%;
           position: absolute;
           display: block;
-          border: 1px solid rgba(39, 41, 43, 0.15);
+          border: 2px solid rgba(39, 41, 43, 0.15);
           border-radius: 5px;
           background: #ffffff; }
           .right_content .column2 .conversation_section .ui.comments .reply_form .reply_icon {
@@ -211,8 +211,8 @@ body {
             height: 40px;
             width: calc(100% - 124px); }
             .right_content .column2 .conversation_section .ui.comments .reply_form .reply_field textarea {
-              min-height: 40px;
-              height: 40px;
+              min-height: 37px;
+              height: 37px;
               overflow-y: hidden;
               resize: none;
               border: none; }
@@ -223,7 +223,7 @@ body {
             display: inline-block;
             width: 80px;
             font-size: 14px;
-            height: 40px;
+            height: 38px;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0; }
     .right_content .column2 .dashboard_menu {

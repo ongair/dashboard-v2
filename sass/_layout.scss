@@ -130,15 +130,16 @@ body{
           float: right;
         }
         .reply_form{
-          width: 90%;
+          width: 96.7%;//full width minus 
           height: 42px;
           bottom: 0;
           left: 1.8%;
           position: absolute;
           display: block;
-          border: 1px solid rgba(39, 41, 43, 0.15);
+          border: 2px solid rgba(39, 41, 43, 0.15);
           border-radius: 5px;
           background: #ffffff;
+
           .reply_icon{
             float: left;
             display: inline-block;
@@ -152,8 +153,8 @@ body{
             height: 40px;
             width:calc(100% - 124px); //full width minus icon and button width. give this class borders while adjusting
             textarea{
-              min-height: 40px;
-              height: 40px;
+              min-height: 37px;
+              height: 37px;
               overflow-y: hidden;
               resize: none;
               border: none;
@@ -166,7 +167,7 @@ body{
             display: inline-block;
             width: 80px;
             font-size: 14px; 
-            height: 40px;
+            height: 38px;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
           }
