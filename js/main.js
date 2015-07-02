@@ -19,7 +19,7 @@ $('.toggle_column3').click(function() {
 	$(".conversation_section").css({"width": "75%"});
 	$(".column3").css({"display": "none"});
   } else {
-  	$(".conversation_section").css({"width": "40%"});
+  	$(".conversation_section").css({"width": "45%"});
   	$(".column3").css({"display": "inline-block"});
   }
   $(this).data("clicks", !clicks);

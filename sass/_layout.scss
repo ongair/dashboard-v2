@@ -36,13 +36,13 @@ body{
 }
 
 .right_content{
-  left: 100px !important;
+  left: 90px !important;
   position: relative;
   height: 100%;
-  margin-top: 0 !important;
+  margin: 0 !important;
 
   .all_tabs{
-    width: calc(18% - 50px) !important;
+    width: calc(22% - 90px) !important;
     //border-right : 1px solid #ddd;
     height: 100%;
     background: #f0f0f0;
@@ -80,9 +80,9 @@ body{
     }
   }
   .column2{
-    width: calc(82% - 50px);
+    width: 78%;
     height: 100%;
-    padding-left: 0 ;
+    padding: 0 ;
     border-right : 1px solid #ddd;
     margin: 0;
     background: #ffffff;
@@ -118,7 +118,8 @@ body{
     }
     .conversation_section{
       width: 75% ;
-      height: calc(100% - 1.5em);////full height minus topbar menu height minus ui.comments margin-top
+      height: 100%;////full height minus topbar menu height minus ui.comments margin-top
+      padding-right: 0;
       font-size: 1rem;
       display: inline-block;
       position: relative;
@@ -128,24 +129,29 @@ body{
       -o-transition: all 500ms ease;
       -ms-transition: all 500ms ease;
       transition: all 500ms ease;
-      overflow-y: auto;
       .ui.comments{
-        //height: 100%;
+        overflow-y: auto;
+        height: 100%;
         max-width: 100%;
         .metadata{
           float: right;
         }
-        .reply_form{
-          width: 96.7%;//full width minus 
+      }
+      .reply_form{
+        width: 100%;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        height: 60px;
+        z-index: 3;
+        background: #ffffff;
+        .ui.form{
+          width: 95%;//full width minus 
           height: 42px;
-          bottom: 0;
-          left: 1.8%;
-          position: absolute;
-          display: block;
+          left: 1.6%;
           border: 2px solid rgba(39, 41, 43, 0.15);
           border-radius: 5px;
-          background: #ffffff;
-          z-index: 3;
 
           .reply_icon{
             float: left;
@@ -185,6 +191,9 @@ body{
       background: #eaeaea;
       .search.item{
         width: 25%;
+        input{
+          width: 100%;
+        }
       }
       .item:hover{
         background: inherit !important;
@@ -219,7 +228,7 @@ body{
     }
     
     .column3{
-      width: 35%;
+      width: 30%;
       height: 100%;
       padding-top: 2rem !important;
       padding-left: 0;
@@ -256,6 +265,7 @@ body{
         h2{
           margin: 0;
           margin-bottom: 15px;
+          font-size: 20px;
         }
         h3{
           margin: 0;
