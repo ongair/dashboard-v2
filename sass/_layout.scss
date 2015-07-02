@@ -1,6 +1,6 @@
 //Here you add the page structure
 body{
-  overflow-x: hidden;
+  overflow: hidden;
   }
 #icon_tabs{
   background: #eaeaea;
@@ -18,16 +18,21 @@ body{
       background-color: #7a418f;
     }
   }
+  .item.logout{
+    position: fixed;
+    width: 100%;
+    bottom: 13px;
+  }
   .btn_item{
-      padding: 7px;
-      .ui.button{
-        margin: 0;
-        color: #ffffff;
-        background-color: #b33679;
-        padding: 7px 7px;
-        font-size: 13px;
-      }
+    padding: 7px;
+    .ui.button{
+      margin: 0;
+      color: #ffffff;
+      background-color: #b33679;
+      padding: 7px 7px;
+      font-size: 13px;
     }
+  }
 }
 
 .right_content{
@@ -123,6 +128,7 @@ body{
       -o-transition: all 500ms ease;
       -ms-transition: all 500ms ease;
       transition: all 500ms ease;
+      overflow-y: auto;
       .ui.comments{
         //height: 100%;
         max-width: 100%;
@@ -139,6 +145,7 @@ body{
           border: 2px solid rgba(39, 41, 43, 0.15);
           border-radius: 5px;
           background: #ffffff;
+          z-index: 3;
 
           .reply_icon{
             float: left;

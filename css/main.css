@@ -87,7 +87,7 @@ a:active {
 /* Import Layout */
 /* ==================================================== */
 body {
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 #icon_tabs {
   background: #eaeaea; }
@@ -101,6 +101,10 @@ body {
       color: #b33679; }
     #icon_tabs .item .label {
       background-color: #7a418f; }
+  #icon_tabs .item.logout {
+    position: fixed;
+    width: 100%;
+    bottom: 13px; }
   #icon_tabs .btn_item {
     padding: 7px; }
     #icon_tabs .btn_item .ui.button {
@@ -184,7 +188,8 @@ body {
       -moz-transition: all 500ms ease;
       -o-transition: all 500ms ease;
       -ms-transition: all 500ms ease;
-      transition: all 500ms ease; }
+      transition: all 500ms ease;
+      overflow-y: auto; }
       .right_content .column2 .conversation_section .ui.comments {
         max-width: 100%; }
         .right_content .column2 .conversation_section .ui.comments .metadata {
@@ -198,7 +203,8 @@ body {
           display: block;
           border: 2px solid rgba(39, 41, 43, 0.15);
           border-radius: 5px;
-          background: #ffffff; }
+          background: #ffffff;
+          z-index: 3; }
           .right_content .column2 .conversation_section .ui.comments .reply_form .reply_icon {
             float: left;
             display: inline-block;

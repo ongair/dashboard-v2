@@ -2,7 +2,15 @@ var width = $(window).width();
 $(document).ready(function() { 	
 
    $('#icon_tabs .item').tab();
-  // $(".conversation").tinyscrollbar();
+
+   $('.conversation .item')
+	  .on('click', function() {
+	    $(this)
+	      .closest('.message')
+	      .transition('slide down')
+	    ;
+	  })
+	;
 
 $('.toggle_column3').click(function() {
 
