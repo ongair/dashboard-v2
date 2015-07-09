@@ -209,7 +209,8 @@ body {
           .right_content .column2 .conversation_section .ui.comments .comment.from_me .avatar {
             float: right; }
           .right_content .column2 .conversation_section .ui.comments .comment.from_me .content {
-            background-color: #eaaeaf;
+            box-shadow: 1px 1px 3px 2px rgba(39, 41, 43, 0.1);
+            background-color: #eaeaea;
             padding: 5px 10px;
             border-radius: 10px;
             margin-right: 3.5em;
@@ -235,12 +236,14 @@ body {
           .right_content .column2 .conversation_section .ui.comments .comment.from_them .avatar {
             float: left; }
           .right_content .column2 .conversation_section .ui.comments .comment.from_them .content {
-            background-color: #aeaeae;
+            box-shadow: 2px 1px 4px rgba(39, 41, 43, 0.15);
+            background-color: #edf9ff;
             padding: 5px 10px;
             border-radius: 10px;
             margin-left: 3.5em;
             margin-right: 0;
-            max-width: 90%; }
+            max-width: 90%;
+            outline: 1px solid #f9f9f9 inset; }
           .right_content .column2 .conversation_section .ui.comments .comment.from_them .content:before {
             top: 1.25em;
             bottom: auto;

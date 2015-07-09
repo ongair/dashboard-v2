@@ -153,8 +153,8 @@ body{
             float: right;
           }
           .content{
-
-            background-color: #eaaeaf;
+             box-shadow: 1px 1px 3px 2px rgba(39, 41, 43, 0.1);
+            background-color: #eaeaea;
             padding: 5px 10px;
             border-radius:10px;
             margin-right: 3.5em;
@@ -163,6 +163,7 @@ body{
             width: inherit;
           }
           .content:after {
+            
             top: 1.25em;
             bottom: auto;
             right: 45px;
@@ -185,13 +186,14 @@ body{
             float: left;
           }
          .content{  
-            
-            background-color: #aeaeae;
+             box-shadow: 2px 1px 4px rgba(39, 41, 43, 0.15);
+            background-color: #edf9ff;
             padding: 5px 10px;
             border-radius:10px;
             margin-left: 3.5em;
             margin-right: 0; 
             max-width: 90%;
+            outline: 1px solid #f9f9f9 inset;
           }
           .content:before {
             top: 1.25em;
