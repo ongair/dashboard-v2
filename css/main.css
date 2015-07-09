@@ -196,7 +196,35 @@ body {
         max-width: 100%;
         padding-right: 1rem;
         padding-top: 1rem;
-        margin-top: 0; }
+        margin-top: 0;
+        padding-bottom: 60px; }
+        .right_content .column2 .conversation_section .ui.comments .ui.divider {
+          clear: both; }
+        .right_content .column2 .conversation_section .ui.comments .comment.from_me {
+          float: right;
+          clear: both; }
+          .right_content .column2 .conversation_section .ui.comments .comment.from_me .avatar {
+            float: right; }
+          .right_content .column2 .conversation_section .ui.comments .comment.from_me .content {
+            background-color: #eaaeaf;
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin-right: 3.5em;
+            margin-left: 0;
+            max-width: 85%;
+            width: inherit; }
+        .right_content .column2 .conversation_section .ui.comments .comment.from_them {
+          clear: both;
+          float: left; }
+          .right_content .column2 .conversation_section .ui.comments .comment.from_them .avatar {
+            float: left; }
+          .right_content .column2 .conversation_section .ui.comments .comment.from_them .content {
+            background-color: #aeaeae;
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin-left: 3.5em;
+            margin-right: 0;
+            max-width: 90%; }
         .right_content .column2 .conversation_section .ui.comments .metadata {
           float: right; }
       .right_content .column2 .conversation_section .reply_form {
