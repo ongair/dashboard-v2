@@ -702,15 +702,14 @@ input::selection {
   text-align: center;
   text-decoration: none;
   background-image: none;
-  border-radius: 0.2857rem;
+  border-radius: 5px;
   box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(39, 41, 43, 0.15) inset;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
-  transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
-  will-change: '';
+  -webkit-transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.1s ease, background 0.1s ease;
+  transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -727,6 +726,7 @@ input::selection {
   background-image: none;
   box-shadow: '';
   color: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
 }
 
 .ui.button:hover .icon {
@@ -10835,6 +10835,8 @@ ol.ui.list ol,
 .ui.list > .item .description {
   display: block;
   color: rgba(0, 0, 0, 0.8);
+  font-size: 0.875em;
+  margin-top:0.5em;
 }
 
 /* Floated Content */
@@ -11015,8 +11017,8 @@ ol.ui.list ol,
 .ui.link.list a.item,
 .ui.link.list .item a {
   color: rgba(0, 0, 0, 0.4);
-  -webkit-transition: 0.2s color ease;
-  transition: 0.2s color ease;
+  -webkit-transition: 0.5s color ease;
+  transition: 0.5s  ease;
 }
 
 .ui.link.list a.item:hover,
@@ -21552,7 +21554,7 @@ a.ui.card:hover,
   margin: 0em auto;
   width: 100%;
   height: 100%;
-  border-radius: 0.25rem;
+  border-radius: 50%;
 }
 
 /*--------------
@@ -21965,8 +21967,8 @@ a.ui.card:hover,
 
 .ui.feed > .event > .content .meta .like {
   color: '';
-  -webkit-transition: 0.2s color ease;
-  transition: 0.2s color ease;
+  -webkit-transition: 0.5s color ease;
+  transition: 0.5s color ease;
 }
 
 .ui.feed > .event > .content .meta .like:hover .icon {
@@ -27571,7 +27573,7 @@ body.pushable > .pusher {
 
 .ui.left.visible.sidebar,
 .ui.right.visible.sidebar {
-  box-shadow: 0px 0px 20px rgba(39, 41, 43, 0.15);
+  box-shadow: 0px 0px 20px rgba(39, 41, 43, 0.5);
 }
 
 .ui.top.visible.sidebar,

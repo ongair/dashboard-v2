@@ -7,6 +7,7 @@ body{
   .item{
     padding: 1rem;
     color: #7a418f;
+
     .ui.floating.label{
       top: 0.3rem;
       left: 68%;
@@ -29,8 +30,8 @@ body{
       margin: 0;
       color: #ffffff;
       background-color: #b33679;
-      padding: 7px 7px;
-      font-size: 13px;
+      padding: 9px;
+      font-size: 12px;
     }
   }
 }
@@ -46,7 +47,8 @@ body{
     //border-right : 1px solid #ddd;
     height: 100%;
     background: #f0f0f0;
-    .item.sidebar_toggle.computer_hide{// centers logo sidebar-link on responsive
+    .item.sidebar_toggle.computer_hide{
+      // centers logo sidebar-link on responsive
      // text-align: center;
       padding-top:10px;
       padding-left: 15px;
@@ -106,6 +108,9 @@ body{
       .ui.list .item{
         padding-left: 15px;
         padding-right: 15px;
+        -webkit-transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
+  transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
+  
       }
       .ui.list .active.item{
       background: rgba(0, 0, 0, 0.03);
@@ -113,6 +118,7 @@ body{
       }
       .ui.list .item:hover{
         background: rgba(0, 0, 0, 0.03);
+        opacity: 0.8;
       }
 
     }
@@ -244,7 +250,6 @@ body{
           }
           .reply_button{
             margin: 0;
-            background-color:  #b33679;
             float: right;
             display: inline-block;
             width: 80px;
@@ -297,7 +302,7 @@ body{
     }
     
     .column3{
-      width: 30%;
+      width: 25%;
       height: 100%;
       padding-top: 2rem !important;
       padding-left: 0;
