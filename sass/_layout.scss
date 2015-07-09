@@ -136,17 +136,11 @@ body{
         padding-right: 1rem;
         padding-top: 1rem;
         margin-top: 0;
-        padding-bottom: 60px;//added to compensate for reply textarea
+        padding-bottom: 73px;//added to compensate for reply textarea
         .ui.divider{
           clear: both;
         }
         .comment.from_me {
-          //position:relative;
-         // padding:10px 20px;
-         // color:white; 
-         // background:#0B93F6;
-         //border-radius:25px;
-          //float: right;
           float: right;
             clear: both;
           .avatar{
@@ -161,40 +155,26 @@ body{
             margin-left: 0;
             max-width: 85%;
             width: inherit;
-            &:before {
-              // content:"";
-              // position:absolute;
-              // z-index:-1;
-              // bottom:-2px;
-              // right:-7px;
-              // height:20px;
-              // border-right:20px solid #0B93F6;
-              // border-bottom-left-radius: 16px 14px;
-              // -webkit-transform:translate(0, -2px);
-            }
-            &:after {
-              // content:"";
-              // position:absolute;
-              // z-index:1;
-              // bottom:-2px;
-              // right:-56px;
-              // width:26px;
-              // height:20px;
-              // background:white;
-              // border-bottom-left-radius: 10px;
-              // -webkit-transform:translate(-30px, -2px);
-            }
           }
+          .content:after {
+            top: 1.25em;
+            bottom: auto;
+            right: 45px;
+            margin-left: 0em;
+            position: absolute;
+            content: '';
+            width: 0.75em;
+            height: 0.75em;
+            background: inherit;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+          
         }
         .comment.from_them {
-         // position:relative;
-          // padding:10px 20px;
-          // background:#E5E5EA;
-          // border-radius:25px;
-          // color: black;
-         // float: left;
          clear: both;
-            float: left;
+          float: left;
          .avatar{
             float: left;
           }
@@ -206,29 +186,20 @@ body{
             margin-left: 3.5em;
             margin-right: 0; 
             max-width: 90%;
-            &:before {
-             //  content:"";
-             //  position:absolute;
-             //  z-index:2;
-             //  bottom:-2px;
-             // // left:-7px;
-             //  height:20px;
-             //  border-left:20px solid #E5E5EA;
-             //  border-bottom-right-radius: 16px 14px;
-             //  -webkit-transform:translate(0, -2px);
-            }
-            &:after {
-              // content:"";
-              // position:absolute;
-              // z-index:3;
-              // bottom:-2px;
-              // left:4px;
-              // width:26px;
-              // height:20px;
-              // background:white;
-              // border-bottom-right-radius: 10px;
-              // -webkit-transform:translate(-30px, -2px);
-            }
+          }
+          .content:before {
+            top: 1.25em;
+            bottom: auto;
+            left: 45px;
+            margin-left: 0em;
+            position: absolute;
+            content: '';
+            width: 0.75em;
+            height: 0.75em;
+            background: inherit;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
           }
         }
         .metadata{

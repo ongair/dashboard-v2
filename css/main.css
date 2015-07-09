@@ -197,7 +197,7 @@ body {
         padding-right: 1rem;
         padding-top: 1rem;
         margin-top: 0;
-        padding-bottom: 60px; }
+        padding-bottom: 73px; }
         .right_content .column2 .conversation_section .ui.comments .ui.divider {
           clear: both; }
         .right_content .column2 .conversation_section .ui.comments .comment.from_me {
@@ -213,6 +213,19 @@ body {
             margin-left: 0;
             max-width: 85%;
             width: inherit; }
+          .right_content .column2 .conversation_section .ui.comments .comment.from_me .content:after {
+            top: 1.25em;
+            bottom: auto;
+            right: 45px;
+            margin-left: 0em;
+            position: absolute;
+            content: '';
+            width: 0.75em;
+            height: 0.75em;
+            background: inherit;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
         .right_content .column2 .conversation_section .ui.comments .comment.from_them {
           clear: both;
           float: left; }
@@ -225,6 +238,19 @@ body {
             margin-left: 3.5em;
             margin-right: 0;
             max-width: 90%; }
+          .right_content .column2 .conversation_section .ui.comments .comment.from_them .content:before {
+            top: 1.25em;
+            bottom: auto;
+            left: 45px;
+            margin-left: 0em;
+            position: absolute;
+            content: '';
+            width: 0.75em;
+            height: 0.75em;
+            background: inherit;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
         .right_content .column2 .conversation_section .ui.comments .metadata {
           float: right; }
       .right_content .column2 .conversation_section .reply_form {
