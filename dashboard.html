@@ -16,10 +16,20 @@
     <script src='js/jquery.js'></script>
     <script src='dist/semantic.js'></script>
     <link href='css/main.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/emoji.min.css">
     <script src='js/main.js'></script>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/emoji.min.js"></script>
+    <script>
+           var app =  angular.module("app", ["emoji"])
+            app.controller("AppCtrl", function ($scope) {
+                    $scope.message = "String including Emoji codes :smiley:";
+                });
+        </script>
 </head>
 
-<body>
+<body ng-app ng-controller="AppCtrl">
     <div class=
     "ui vertical labeled borderless icon left inline visible sidebar menu" id=
     "icon_tabs">
@@ -320,7 +330,7 @@
                     <span class="sent"></span>
                   </div>
                   <div class="text">
-                    How artistic!
+                    How artistic! :email:
                   </div>
                   <div class="actions">
                   </div>
@@ -487,25 +497,30 @@
                     <span class="date">5 days ago</span>
                   </div>
                   <div class="text">
-                    Dude, this is awesome. Thankss so much
-                  </div>
-                  <div class="actions">
+                    Dude, this is awesome. Thankss so much :smiley:
                   </div>
                 </div>                
             </div>
         </div>
+
         <div class="reply_form">
+
                             <form class="ui form">
-                                <div class="reply_icon large attach icon" style="font-style: italic"></div>
+                            <label for="file-upload" class="reply_icon">
+                                
+                                    <i class="large attach icon">
+                                        <input id="file-upload" type="file"/>
+                                    </i>
+                            </label>
+                                
 
                                 <div class="ui action field reply_field">
-                                    <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+                                    <textarea placeholder="Please describe why" ng-model="message">   
+                                    </textarea>
+                                    <p ng-bind-html-unsafe="message | emoji"></p>
                                 </div>
-
-                                <div class=
-                                "ui green submit button reply_button">
-                                    Reply
-                                </div>
+                                <input class="ui green submit button reply_button" type="submit" value="Reply">
+                               
                             </form>
                         </div>
                     </div><!-- sidebar -->

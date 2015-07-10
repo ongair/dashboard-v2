@@ -254,6 +254,10 @@ body{
             height: 40px;
             padding: 9px 0px 0 8px;
             border-right : 1px solid #ddd;
+            cursor: pointer;
+            input[type="file"] {
+              display: none;
+            }
           }
           .reply_field{
             display: inline-block;

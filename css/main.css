@@ -296,7 +296,10 @@ body {
             width: 44px;
             height: 40px;
             padding: 9px 0px 0 8px;
-            border-right: 1px solid #ddd; }
+            border-right: 1px solid #ddd;
+            cursor: pointer; }
+            .right_content .column2 .conversation_section .reply_form .ui.form .reply_icon input[type="file"] {
+              display: none; }
           .right_content .column2 .conversation_section .reply_form .ui.form .reply_field {
             display: inline-block;
             height: 40px;
