@@ -145,6 +145,13 @@ body {
         margin-bottom: 2px; }
       .right_content .all_tabs .tab_content .active.item, .right_content .all_tabs .tab_content .item:hover {
         background-color: #ffffff; }
+      .right_content .all_tabs .tab_content .ui.button.tab_button {
+        margin: 0;
+        margin-bottom: 15px;
+        color: #ffffff !important;
+        background-color: #b33679;
+        padding: 5px 3px;
+        font-size: 12px; }
       .right_content .all_tabs .tab_content .ui.list .item {
         color: #7a418f; }
   .right_content .column2 {
@@ -366,8 +373,7 @@ body {
         padding: 0 15px; }
         .right_content .column2 .column3 .user_info .ui.button {
           float: right;
-          margin: 0;
-          background-color: #b33679; }
+          margin: 0; }
         .right_content .column2 .column3 .user_info textarea {
           min-height: 3.5rem;
           max-height: 4.5rem;
