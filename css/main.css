@@ -51,7 +51,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent; }
 
 img, a img {
@@ -355,6 +355,7 @@ body {
       right: 0;
       font-size: 1rem;
       display: none;
+      vertical-align: top;
       border-left: 1px solid #ddd; }
       .right_content .column2 .column3 .user_profile .profile_image .ui.image {
         width: 45%; }
@@ -450,6 +451,7 @@ body {
 
   @page {
     margin: 0.5cm; }
+
   p,
   h2,
   h3 {
@@ -461,5 +463,3 @@ body {
     page-break-after: avoid; } }
 /* Import Cross-browser Compaitibility Files */
 /* ==================================================== */
-
-/*# sourceMappingURL=main.css.map */

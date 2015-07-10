@@ -34,6 +34,15 @@ $('.setting_popup i')
   })
 ;
 
+$('.ui.comments .from_them .content .author')
+ .popup({
+    on    : 'hover',
+    position : 'top left',
+    exclusive: true,
+    //inline:  true
+  })
+;
+
 
    
 	$(window).resize(function(){
