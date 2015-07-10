@@ -2,6 +2,11 @@ var width = $(window).width();
 $(document).ready(function() { 	
 
    $('#icon_tabs .item').tab();
+   $('.ui.dropdown')
+  .dropdown({
+    allowAdditions: true
+  })
+;
 
    $('.conversation .item')
 	  .on('click', function() {
