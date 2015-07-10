@@ -218,6 +218,11 @@ body {
             width: 15px;
             height: 12px;
             display: inline-block; }
+          .right_content .column2 .conversation_section .ui.comments .comment.from_me .metadata .sent {
+            background: url("../images/sent.png");
+            width: 11px;
+            height: 10px;
+            display: inline-block; }
           .right_content .column2 .conversation_section .ui.comments .comment.from_me .content {
             box-shadow: 1px 1px 3px 2px rgba(39, 41, 43, 0.1);
             background-color: #eaeaea;
