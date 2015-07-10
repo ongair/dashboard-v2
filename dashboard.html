@@ -1,58 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta content='text/html; charset=CP850' http-equiv='Content-Type'>
+<head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <!-- Standard Meta -->
     <meta charset='utf-8'>
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'>
-    <!-- Site Properities -->
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0'
+    name='viewport'><!-- Site Properities -->
+
     <title>Dashboard</title>
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link href=
+    'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700'
+    rel='stylesheet' type='text/css'>
     <link href='dist/semantic.css' rel='stylesheet' type='text/css'>
     <script src='js/jquery.js'></script>
     <script src='dist/semantic.js'></script>
     <link href='css/main.css' rel='stylesheet' type='text/css'>
     <script src='js/main.js'></script>
-  </head>
-  <body>
-    <div class="ui vertical labeled borderless icon left inline visible sidebar menu" id="icon_tabs">
-      <a class="item tablet_hide">
-      <img src="images/o.png" style="width: 50px;">
-      </a>
-      <div class="item btn_item"><a class="ui button">COMPOSE</a></div>
-      <a class="item search computer_hide">
+</head>
+
+<body>
+    <div class=
+    "ui vertical labeled borderless icon left inline visible sidebar menu" id=
+    "icon_tabs">
+        <a class="item tablet_hide"><img src="images/o.png" style=
+        "width: 50px;"></a> <!-- Compose button-->
+
+        <div class="item btn_item">
+            <a class="ui button">COMPOSE</a>
+        </div><a class="item search computer_hide">
         <form class="ui search form">
-          <input type="text" placeholder="Search...">
-        </form>
-      </a>
-      <a class="active item" data-tab="inbox">
-        <i class="inbox icon"></i>
-        Inbox
-        <span class="floating ui tiny circular label">9</span>
-      </a>
-      <a class="item" data-tab="contacts">
-        <i class="users icon"></i>
-        Contacts
-        <span class="floating ui tiny circular label">3</span>
-      </a>
-      <a class="item" data-tab="reports">
-      <i class="bar graph icon"></i>
-      Reports
-      </a>
-      <a class="item" data-tab="settings">
-      <i class="settings icon"></i>
-      Settings
-      </a>
-      <a class="item" data-tab="accounts">
-      <i class="random icon"></i>
-      Accounts
-      </a>
-      <a class="item logout">
-      <i class="power icon"></i>
-      Logout
-      </a>
+            <input placeholder="Search..." type="text">
+        </form></a> <!-- inbox button-->
+         <a class="active item" data-tab="inbox"><i class="inbox icon"></i>
+        Inbox <span class="floating ui tiny circular label">9</span></a> 
+        <!-- contacts button-->
+         <a class="item" data-tab="contacts"><i class="users icon"></i>
+        Contacts <span class="floating ui tiny circular label">3</span></a> 
+        <!-- reports button-->
+         <a class="item" data-tab="reports"><i class="bar graph icon"></i>
+        Reports</a> <!-- settings button-->
+         <a class="item" data-tab="settings"><i class="settings icon"></i>
+        Settings</a> <!-- logout button-->
+         <a class="item logout"><i class="power icon"></i> Logout</a>
     </div>
+
     <div class="ui grid right_content"><!-- additional class names are added from the javascript required for the sidebar -->
     <div class="ui large borderless attached menu mobile_menu computer_hide">
           <div class="item sidebar_toggle">
@@ -60,101 +52,114 @@
           </div>
         <div class="header item"> Inbox</div>
         </div>
-      <div class="column all_tabs">
-        
-       
-        <!-- all tabs require the class name as below -->
-        <div class="ui active tab tab_content" data-tab="inbox">
-          <h2 class="ui header tab_content_header">Inbox</h2>
-          <div class="ui link list">
-            <a class="active item "><b>Open Conversations</b></a>
-            <a class="item">Group Messages</a>
-            <a class="item">Favorite Messages</a>
-            <a class="item">Media(audio/images)</a>
-            <a class="item">Locations</a>         
-          </div>
-          <div class="ui divider"></div>
-          <div class="ui link list">
-            <a class="item "><b>Closed Conversations</b></a>
-            <a class="item">Group Messages</a>
-            <a class="item">Favorite Messages</a>
-            <a class="item">Media(audio/images)</a>
-            <a class="item">Locations</a>         
-          </div>
+    <div class="column all_tabs">
+            <!-- all tabs require the class name as below -->
+            <!-- Inbox begins here-->
+
+            <div class="ui active tab tab_content" data-tab="inbox">
+                <h2 class="ui header tab_content_header">Inbox</h2>
+
+                <div class="ui link list">
+                    <a class="active item" style="font-weight: bold">Open
+                    Conversations</a> <a class="item">Group Messages</a>
+                    <a class="item">Favorite Messages</a> <a class=
+                    "item">Media(audio/images)</a> <a class=
+                    "item">Locations</a>
+                </div>
+
+                <div class="ui divider"></div>
+
+                <div class="ui link list">
+                    <a class="item" style="font-weight: bold">Closed
+                    Conversations</a> <a class="item">Group Messages</a>
+                    <a class="item">Favorite Messages</a> <a class=
+                    "item">Media(audio/images)</a> <a class=
+                    "item">Locations</a>
+                </div>
+            </div><!-- Contacts begins here-->
+
+            <div class="ui tab tab_content" data-tab="contacts">
+                <h2 class="ui header tab_content_header">Contacts</h2>
+
+                <div class="ui link list">
+                    <a class="ui button">ADD CONTACTS</a> <a class=
+                    "active item" style="font-weight: bold">All Contacts</a>
+                    <a class="item">Groups</a> <a class="item">Lists</a>
+                </div>
+
+                <div class="ui divider"></div>
+
+                <div class="ui link list">
+                    <a class="item">Create Group</a> <a class="item">Create
+                    List</a>
+                </div>
+            </div><!-- Reports begins here-->
+
+            <div class="ui tab tab_content" data-tab="reports">
+                <h2 class="ui header tab_content_header">Reports</h2>
+
+                <div class="ui link list">
+                    <a class="active item" style="font-weight: bold">Opened
+                    Conversations</a> <a class="item">Group Messages</a>
+                    <a class="item">Favorite Messages</a> <a class=
+                    "item">Media(audio/images)</a> <a class=
+                    "item">Locations</a>
+                </div>
+
+                <div class="ui divider"></div>
+
+                <div class="ui link list">
+                    <a class="item" style="font-weight: bold">Closed
+                    Conversations</a> <a class="item">Group Messages</a>
+                    <a class="item">Favorite Messages</a> <a class=
+                    "item">Media(audio/images)</a> <a class=
+                    "item">Locations</a>
+                </div>
+            </div><!-- settings begins here-->
+
+            <div class="ui tab tab_content" data-tab="settings">
+                <h2 class="ui header tab_content_header">Settings</h2>
+
+                <div class="item btn_item">
+                    <a class="ui button">SET AUTORESPONDERS</a>
+                </div>
+
+                <div class="ui link list">
+                    <a class="item" style="font-weight: bold">Manage
+                    Autoresponders</a>
+
+                    <div class="ui divider"></div><a class="item" style=
+                    "font-weight: bold">Profile & Status</a>
+
+                    <div class="ui divider"></div><a class="item" style=
+                    "font-weight: bold">Manage Notifications</a>
+                </div>
+
+                <div class="ui divider"></div>
+
+                <div class="ui link list">
+                    <a class="item" style="font-weight: bold">Manage
+                    Accounts</a> <a class="item">New Account</a> <a class=
+                    "item">Add Account</a> <a class="item">Change Password</a>
+                </div>
+
+                <div class="ui divider"></div>
+
+                <div class="ui link list">
+                    <a class="item" style="font-weight: bold">Manage Users</a>
+                    <a class="item">New User</a>
+                </div>
+
+                <div class="ui divider"></div>
+
+                <div class="ui link list">
+                    <a class="item" style="font-weight: bold">Manage
+                    Integrations</a> <a class="item">Zendesk</a> <a class=
+                    "item">Freshdesk</a>
+                </div>
+            </div>
         </div>
-        <div class="ui tab tab_content" data-tab="contacts">
-          <h2 class="ui header tab_content_header">Contacts</h2>
-          <div class="ui link list">
-            <a class="active item "><b>Opened Conversations</b></a>
-            <a class="item">Group Messages</a>
-            <a class="item">Favorite Messages</a>
-            <a class="item">Media(audio/images)</a>
-            <a class="item">Locations</a>         
-          </div>
-          <div class="ui divider"></div>
-          <div class="ui link list">
-            <a class="item "><b>Closed Conversations</b></a>
-            <a class="item">Group Messages</a>
-            <a class="item">Favorite Messages</a>
-            <a class="item">Media(audio/images)</a>
-            <a class="item">Locations</a>         
-          </div>
-        </div>
-        <div class="ui tab tab_content" data-tab="accounts">
-          <h2 class="ui header tab_content_header">Accounts</h2>
-          <div class="ui link list">
-            <a class="active item "><b>Opened Conversations</b></a>
-            <a class="item">Group Messages</a>
-            <a class="item">Favorite Messages</a>
-            <a class="item">Media(audio/images)</a>
-            <a class="item">Locations</a>         
-          </div>
-          <div class="ui divider"></div>
-          <div class="ui link list">
-            <a class="item "><b>Closed Conversations</b></a>
-            <a class="item">Group Messages</a>
-            <a class="item">Favorite Messages</a>
-            <a class="item">Media(audio/images)</a>
-            <a class="item">Locations</a>         
-          </div>
-        </div>
-        <div class="ui tab tab_content" data-tab="reports">
-          <h2 class="ui header tab_content_header">Reports</h2>
-          <div class="ui link list">
-            <a class="active item "><b>Opened Conversations</b></a>
-            <a class="item">Group Messages</a>
-            <a class="item">Favorite Messages</a>
-            <a class="item">Media(audio/images)</a>
-            <a class="item">Locations</a>         
-          </div>
-          <div class="ui divider"></div>
-          <div class="ui link list">
-            <a class="item "><b>Closed Conversations</b></a>
-            <a class="item">Group Messages</a>
-            <a class="item">Favorite Messages</a>
-            <a class="item">Media(audio/images)</a>
-            <a class="item">Locations</a>         
-          </div>
-        </div>
-        <div class="ui tab tab_content" data-tab="settings">
-          <h2 class="ui header tab_content_header">Settings</h2>
-          <div class="ui link list">
-            <a class="active item "><b>Opened Conversations</b></a>
-            <a class="item">Group Messages</a>
-            <a class="item">Favorite Messages</a>
-            <a class="item">Media(audio/images)</a>
-            <a class="item">Locations</a>         
-          </div>
-          <div class="ui divider"></div>
-          <div class="ui link list">
-            <a class="item "><b>Closed Conversations</b></a>
-            <a class="item">Group Messages</a>
-            <a class="item">Favorite Messages</a>
-            <a class="item">Media(audio/images)</a>
-            <a class="item">Locations</a>         
-          </div>
-        </div>
-      </div>
+
       <div class=" column2">
        <div class="ui top attached large borderless menu dashboard_menu tablet_hide">
         <div class="search item">
@@ -189,7 +194,7 @@
                   <i class="large green circle thin icon"></i>
                   <div class="content">
                     <div class="header">Kenneth Jones</div>
-                    <p class="description">...is typing</p>
+                    <p class="description"><i>...is typing</i></p>
                   </div>
                 </a>
                 <a class="active item">
@@ -255,12 +260,54 @@
                     <p class="description">Scientists discover new breed of dog</p>
                   </div>
                 </a>
+                <a class="item">
+                  <i class="large red circle thin icon"></i>
+                  <div class="content">
+                    <div class="header">Grey Pyke</div>
+                    <p class="description">Scientists discover new breed of dog</p>
+                  </div>
+                </a>
+                <a class="item">
+                  <i class="large red circle thin icon"></i>
+                  <div class="content">
+                    <div class="header">Grey Pyke</div>
+                    <p class="description">Scientists discover new breed of dog</p>
+                  </div>
+                </a>
+                <a class="item">
+                  <i class="large red circle thin icon"></i>
+                  <div class="content">
+                    <div class="header">Grey Pyke</div>
+                    <p class="description">Scientists discover new breed of dog</p>
+                  </div>
+                </a>
+                <a class="item">
+                  <i class="large red circle thin icon"></i>
+                  <div class="content">
+                    <div class="header">Grey Pyke</div>
+                    <p class="description">Scientists discover new breed of dog</p>
+                  </div>
+                </a>
+                <a class="item">
+                  <i class="large red circle thin icon"></i>
+                  <div class="content">
+                    <div class="header">Grey Pyke</div>
+                    <p class="description">Scientists discover new breed of dog</p>
+                  </div>
+                </a>
+                <a class="item">
+                  <i class="large red circle thin icon"></i>
+                  <div class="content">
+                    <div class="header">Grey Pyke</div>
+                    <p class="description">Scientists discover new breed of dog</p>
+                  </div>
+                </a>
             </div>
           </div>
           <div class=" conversation_section">
 
-            <div class="ui labeled icon tiny button hide_conversation computer_hide"><i class="left arrow icon"></i> Back</div>
-
+            <div class="ui labeled icon tiny button hide_conversation computer_hide"><i class="left arrow icon"></i> Back
+            </div>
             <div class="ui comments">
               <div class="comment from_me">
                 <a class="avatar">
@@ -270,6 +317,7 @@
                   <a class="author">Matt</a>
                   <div class="metadata">
                     <span class="date">5:42PM</span>
+                    <span class="sent"></span>
                   </div>
                   <div class="text">
                     How artistic!
@@ -289,7 +337,17 @@
                     <span class="date">12:30AM</span>
                   </div>
                   <div class="text">
-                    <p>This has been very useful for my research. Thanks as well!</p>
+                    <p>Jenny you are always so right even when you thought you were wrong, you were still right,
+                    kenny you are always so right even when you thought you were wrong, you were still right,
+                    kenny you are always so right even when you thought you were wrong, you were still right,
+                    kenny you are always so right even when you thought you were wrong, you were still right,
+                    kenny you are always so right even when you thought you were wrong, you were still right,
+
+
+                    kenny you are always so right even when you thought you were wrong, you were still right,
+                    kenny you are always so right even when you thought you were wrong, you were still right,
+                    kenny you are always so right even when you thought you were wrong, you were still right,
+                    kenny you are always so right even when you thought you were wrong, you were still right.</p>
                   </div>
                   <div class="actions">
                   </div>
@@ -303,9 +361,10 @@
                   <a class="author">Jenny Hess</a>
                   <div class="metadata">
                     <span class="date">Just now</span>
+                    <span class="read"></span>
                   </div>
                   <div class="text">
-                    Elliot you are always so right :)
+                    <p>Elliot you are always so right :)</p>
                   </div>
                   <div class="actions">
                   </div>
@@ -321,7 +380,7 @@
                     <span class="date">10:15PM</span>
                   </div>
                   <div class="text">
-                    Dude, this is awesome. Thanks so much
+                    <p>Dude, this is awesome. Thanks so much</p>
                   </div>
                   <div class="actions">
                   </div>
@@ -344,22 +403,33 @@
                 </div>
               </div>
               <div class="ui horizontal divider">Today</div>
+
               <div class="comment from_me">
                 <a class="avatar">
-                <img src="images/user2.jpg">
+                <img src="images/user3.jpg">
                 </a>
                 <div class="content">
                   <a class="author">Elliot Fu</a>
                   <div class="metadata">
-                    <span class="date">12:30AM</span>
+                    <span class="date">Just now</span>
+                    <span class="read"></span>
                   </div>
                   <div class="text">
-                    <p>This has been very useful for my research. Thanks as well!</p>
-                  </div>
-                  <div class="actions">
+                  <p>
+                    Jenny you are always so right even when you thought you were wrong, you were still right,
+                    kenny you are always so right even when you thought you were wrong, you were still right,
+                    kenny you are always so right even when you thought you were wrong, you were still right,
+                    kenny you are always so right even when you thought you were wrong, you were still right,
+                    kenny you are always so right even when you thought you were wrong, you were still right,
+                    kenny you are always so right even when you thought you were wrong, you were still right,
+                    kenny you are always so right even when you thought you were wrong, you were still right,
+                    kenny you are always so right even when you thought you were wrong, you were still right,
+                    kenny you are always so right even when you thought you were wrong, you were still right.
+                    </p>
                   </div>
                 </div>
               </div>
+
               <div class="comment from_me">
                 <a class="avatar">
                 <img src="images/user3.jpg">
@@ -368,12 +438,14 @@
                   <a class="author">Jenny Hess</a>
                   <div class="metadata">
                     <span class="date">Just now</span>
+                    <span class="read"></span>
                   </div>
                   <div class="text">
                     Elliot you are always so right :)
                   </div>
                 </div>
               </div>
+
               <div class="comment from_them">
                 <a class="avatar">
                 <img src="images/user2.jpg">
@@ -419,82 +491,65 @@
                   </div>
                   <div class="actions">
                   </div>
-                </div>
-              </div>
-          </div>
-          <div class="reply_form">   
-            <form class="ui form">
-              <div class="reply_icon"><i class="large attach icon"></i></div>
-              <div class="ui action field reply_field">
-                <textarea></textarea>
-              </div>
-              <div class="ui purple submit button reply_button">
-                Reply
-              </div>
-            </form>
-          </div>
-          </div>
-        <div class="column3">
-        <div class="user_info">
-          <div class="info_and_notes">
-            <h2>User info and notes</h2>
-            <p><b>John Smalls</b></p>
-            <p>Johnsmail@gmail.com</p>
-            <p>Kakamega Ingo</p>
-          </div>
-          <div class="files_and_media">
-            <h2>User files and media</h2>
-            <p>12 images</p>
-            <p>2 videos</p>
-          </div>
-          <div class="sticky_notes">
-            <h2>Notes on user</h2>
-            <p>Kakamega ingo</p>
-            <form class="ui form">
-              <div class=" field">
-                <textarea></textarea>
-              </div>
-              <div class="ui tiny blue submit button">
-                Add
-              </div>
-            </form>
-          </div>
-
-        </div>
-        <!-- <div class="user_profile">
-            <div class="profile_image">
-              <img class="ui centered circular image" src="images/user4.png">
+                </div>                
             </div>
-            <div class="ui card">
-              <div class="content">
-                <div class="header">Joe Henderson
+        </div>
+        <div class="reply_form">
+                            <form class="ui form">
+                                <div class="reply_icon large attach icon" style="font-style: italic"></div>
+
+                                <div class="ui action field reply_field">
+                                    <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+                                </div>
+
+                                <div class=
+                                "ui green submit button reply_button">
+                                    Reply
+                                </div>
+                            </form>
+                        </div>
+                    </div><!-- sidebar -->
                 </div>
-                <div class="meta">
-                  <a>Friends</a>
+                <div class="column3">
+                    <div class="user_info">
+                        <div class="info_and_notes">
+                            <h2>User info and notes</h2>
+
+                            <p style="font-weight: bold">John Smalls</p>
+
+                            <p><a href="">Johnsmail@gmail.com</a></p>
+
+                            <p>Kakamega Ingo</p>
+                        </div>
+
+                        <div class="files_and_media">
+                            <h2>User files and media</h2>
+
+                            <p><a href="">12 images</a></p>
+
+                            <p><a href="">2 videos</a></p>
+                        </div>
+
+                        <div class="sticky_notes">
+                            <h2>Notes on user</h2>
+
+                            <p>Kakamega ingo</p>
+
+                            <form class="ui form">
+                                <div class="field">
+                                    <textarea>
+                                    </textarea>
+                                </div>
+
+                                <div class="ui tiny blue submit button">
+                                    Add
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="description">
-                  Veronika Ossi is a set designer living in New York who enjoys kittens, music, and partying.
                 </div>
-              </div>
-              <div class="extra content">
-                <p>
-                  <i class="marker icon"></i>
-                  Tampa, Florida, United States 
-                </p>
-                <p>
-                  <i class="mail icon"></i>
-                  jennyhess@gmail.com
-                </p>
-              </div>
-              <div class="ui bottom attached button">
-                <i class="remove icon"></i>
-                Remove from Group
-              </div>
-            </div></div>
-        </div> -->
-       
-      </div>
-      
+            </div>
     </div>
-  </body>
+</body>
 </html>

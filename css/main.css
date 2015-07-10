@@ -51,7 +51,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent; }
 
 img, a img {
@@ -111,8 +111,8 @@ body {
       margin: 0;
       color: #ffffff;
       background-color: #b33679;
-      padding: 7px 7px;
-      font-size: 13px; }
+      padding: 9px;
+      font-size: 12px; }
 
 .right_content {
   left: 90px !important;
@@ -171,12 +171,15 @@ body {
           color: #b33679 !important; }
       .right_content .column2 .conversation .ui.list .item {
         padding-left: 15px;
-        padding-right: 15px; }
+        padding-right: 15px;
+        -webkit-transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
+        transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease; }
       .right_content .column2 .conversation .ui.list .active.item {
         background: rgba(0, 0, 0, 0.03);
         box-shadow: -2px 0em 0em inset; }
       .right_content .column2 .conversation .ui.list .item:hover {
-        background: rgba(0, 0, 0, 0.03); }
+        background: rgba(0, 0, 0, 0.03);
+        opacity: 0.8; }
     .right_content .column2 .conversation_section {
       width: 75%;
       height: 100%;
@@ -205,18 +208,35 @@ body {
           clear: both; }
           .right_content .column2 .conversation_section .ui.comments .comment.from_me .avatar {
             float: right; }
+          .right_content .column2 .conversation_section .ui.comments .comment.from_me .metadata .read {
+            background: url("../images/read.png");
+            width: 15px;
+            height: 12px;
+            display: inline-block; }
+          .right_content .column2 .conversation_section .ui.comments .comment.from_me .metadata .received {
+            background: url("../images/received.png");
+            width: 15px;
+            height: 12px;
+            display: inline-block; }
+          .right_content .column2 .conversation_section .ui.comments .comment.from_me .metadata .sent {
+            background: url("../images/sent.png");
+            width: 11px;
+            height: 10px;
+            display: inline-block; }
           .right_content .column2 .conversation_section .ui.comments .comment.from_me .content {
-            background-color: #eaaeaf;
+            box-shadow: 1px 1px 3px 2px rgba(39, 41, 43, 0.1);
+            background-color: #eaeaea;
             padding: 5px 10px;
             border-radius: 10px;
-            margin-right: 3.5em;
+            margin-right: 1em;
+            float: right;
             margin-left: 0;
-            max-width: 85%;
+            max-width: 80%;
             width: inherit; }
           .right_content .column2 .conversation_section .ui.comments .comment.from_me .content:after {
             top: 1.25em;
             bottom: auto;
-            right: 45px;
+            right: 41px;
             margin-left: 0em;
             position: absolute;
             content: '';
@@ -232,16 +252,18 @@ body {
           .right_content .column2 .conversation_section .ui.comments .comment.from_them .avatar {
             float: left; }
           .right_content .column2 .conversation_section .ui.comments .comment.from_them .content {
-            background-color: #aeaeae;
+            box-shadow: 2px 1px 4px rgba(39, 41, 43, 0.15);
+            background-color: #edf9ff;
             padding: 5px 10px;
             border-radius: 10px;
             margin-left: 3.5em;
             margin-right: 0;
-            max-width: 90%; }
+            max-width: 80%;
+            width: inherit; }
           .right_content .column2 .conversation_section .ui.comments .comment.from_them .content:before {
             top: 1.25em;
             bottom: auto;
-            left: 45px;
+            left: 44px;
             margin-left: 0em;
             position: absolute;
             content: '';
@@ -254,7 +276,7 @@ body {
         .right_content .column2 .conversation_section .ui.comments .metadata {
           float: right; }
       .right_content .column2 .conversation_section .reply_form {
-        width: 100%;
+        width: calc(100% - 15px);
         position: absolute;
         display: block;
         bottom: 0;
@@ -263,7 +285,7 @@ body {
         z-index: 3;
         background: #ffffff; }
         .right_content .column2 .conversation_section .reply_form .ui.form {
-          width: 95%;
+          width: 97%;
           height: 42px;
           left: 1.6%;
           border: 2px solid rgba(39, 41, 43, 0.15);
@@ -287,7 +309,6 @@ body {
               border: none; }
           .right_content .column2 .conversation_section .reply_form .ui.form .reply_button {
             margin: 0;
-            background-color: #b33679;
             float: right;
             display: inline-block;
             width: 80px;
@@ -323,7 +344,7 @@ body {
       margin: 0 !important;
       height: calc(100% - 55px); }
     .right_content .column2 .column3 {
-      width: 30%;
+      width: 25%;
       height: 100%;
       padding-top: 2rem !important;
       padding-left: 0;
@@ -426,7 +447,6 @@ body {
 
   @page {
     margin: 0.5cm; }
-
   p,
   h2,
   h3 {
@@ -438,3 +458,5 @@ body {
     page-break-after: avoid; } }
 /* Import Cross-browser Compaitibility Files */
 /* ==================================================== */
+
+/*# sourceMappingURL=main.css.map */
