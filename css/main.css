@@ -51,7 +51,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent; }
 
 img, a img {
@@ -317,6 +317,14 @@ body {
               overflow-y: hidden;
               resize: none;
               border: none; }
+            .right_content .column2 .conversation_section .reply_form .ui.form .reply_field #emojibtn {
+              position: absolute;
+              right: 11%;
+              bottom: 10px;
+              border: none;
+              background: none; }
+              .right_content .column2 .conversation_section .reply_form .ui.form .reply_field #emojibtn i:hover {
+                color: #f00; }
           .right_content .column2 .conversation_section .reply_form .ui.form .reply_button {
             margin: 0;
             float: right;
@@ -457,7 +465,6 @@ body {
 
   @page {
     margin: 0.5cm; }
-
   p,
   h2,
   h3 {
@@ -469,3 +476,5 @@ body {
     page-break-after: avoid; } }
 /* Import Cross-browser Compaitibility Files */
 /* ==================================================== */
+
+/*# sourceMappingURL=main.css.map */

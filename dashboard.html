@@ -22,14 +22,20 @@
     <script src="js/angular.min.js"></script>
     <script src="js/emoji.min.js"></script>
     <script>
-           var app =  angular.module("app", ["emoji"])
-            app.controller("AppCtrl", function ($scope) {
-                    $scope.message = "String including Emoji codes :smiley:";
-                });
+
+          angular.module("app", ["emoji"]).controller("AppCtrl", function ($scope) {
+            $scope.messages = [
+                "Animals: :dog: :cat: :snake:",
+                "People: :smile: :confused: :angry:",
+                "Places: :house: :school: :hotel:"
+            ];
+        });
+
+          
         </script>
 </head>
 
-<body ng-app ng-controller="AppCtrl">
+<body ng-app="app" ng-controller="AppCtrl">
     <div class=
     "ui vertical labeled borderless icon left inline visible sidebar menu" id=
     "icon_tabs">
@@ -347,7 +353,7 @@
                     <span class="date">5:42PM</span>
                     <span class="sent"></span>
                   </div>
-                  <div class="text">
+                  <div class="text" ng-repeat="message in messages" ng-bind-html-unsafe="message | emoji">
                     How artistic! :email:
                   </div>
                   <div class="actions">
@@ -514,7 +520,7 @@
                   <div class="metadata">
                     <span class="date">5 days ago</span>
                   </div>
-                  <div class="text">
+                  <div class="text" ng-repeat="message in messages" ng-bind-html-unsafe="message | emoji">
                     Dude, this is awesome. Thankss so much :smiley:
                   </div>
                 </div>                
@@ -535,7 +541,9 @@
                                 <div class="ui action field reply_field">
                                     <textarea placeholder="Please describe why" ng-model="message">   
                                     </textarea>
-                                    <p ng-bind-html-unsafe="message | emoji"></p>
+                                    <button id="emojibtn">
+                                       <i class="large smile icon"></i>
+                                    </button>
                                 </div>
                                 <input class="ui green submit button reply_button" type="submit" value="Reply">
                                

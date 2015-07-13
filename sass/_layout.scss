@@ -278,6 +278,17 @@ body{
               resize: none;
               border: none;
             }
+            #emojibtn{
+              position: absolute;
+              right: 11%;
+              bottom: 10px;
+              border: none;
+              background: none;
+              i:hover{
+                color: #f00;
+                
+              }
+            }
           }
           .reply_button{
             margin: 0;
