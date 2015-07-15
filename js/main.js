@@ -2,11 +2,7 @@ var width = $(window).width();
 $(document).ready(function() { 	
 
    $('#icon_tabs .item').tab();
-   $('.ui.dropdown')
-  .dropdown({
-    allowAdditions: true
-  })
-;
+   $('.ui.dropdown').dropdown();
 
    $('.conversation .item')
 	  .on('click', function() {
@@ -53,11 +49,11 @@ $('.ui.comments .from_them .content .author')
 	$(window).resize(function(){
 	   console.log('resize called');
 	   if(width <= 768){
-	       $('#icon_tabs')
+	       $('#sidebar')
 	       	.removeClass('visible')
 	       	.removeClass('labeled icon'); 
 
-	       $('#icon_tabs')
+	       $('#sidebar')
 			  .sidebar('attach events', '.sidebar_toggle' )
 			  .sidebar('attach events', '#icon_tabs .item', 'hide' )
 			;
@@ -72,7 +68,7 @@ $('.ui.comments .from_them .content .author')
 
 	   }
 	   else{
-	       $('#icon_tabs').addClass('visible')
+	       $('#sidebar').addClass('visible')
 	       $('.column2')//opens sidebar conversation on all items in .tab_content
 			  .removeClass('ui right wide sidebar segment')
 			;
