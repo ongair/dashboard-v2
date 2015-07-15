@@ -25,12 +25,12 @@ body{
       }
       .label{
         background: #ffffff;
-        color: #7a418f;
+        color: #b33679;
       }
     }
     .active.item{
       background: #ffffff;
-      color: #7a418f;
+      color: #b33679;
       box-shadow: 0 0 0;
     }
     .item.green_alert{
@@ -328,6 +328,17 @@ body{
               overflow-y: hidden;
               resize: none;
               border: none;
+            }
+            #emojibtn{
+              position: absolute;
+              right: 11%;
+              bottom: 10px;
+              border: none;
+              background: none;
+              i:hover{
+                color: #f00;
+                
+              }
             }
           }
           .reply_button{
