@@ -90,7 +90,7 @@ body {
   overflow: hidden; }
 
 #sidebar {
-  width: 170px;
+  width: 150px;
   display: inline-flex; }
   #sidebar #account_chooser {
     margin: 0;
@@ -98,40 +98,46 @@ body {
     height: 100%;
     display: inline-block;
     vertical-align: top;
-    width: 78px;
+    width: 60px;
     padding: 0 9px; }
     #sidebar #account_chooser .item {
       border-radius: 14px;
-      min-width: 4em;
+      min-width: 3em;
       margin-top: 20px;
-      height: 60px !important;
-      width: 60px !important;
       background: #333844; }
+      #sidebar #account_chooser .item .account_image {
+        max-width: 100%; }
+      #sidebar #account_chooser .item .label {
+        background: #ffffff;
+        color: #7a418f; }
     #sidebar #account_chooser .active.item {
       background: #ffffff;
-      color: #7a418f; }
-    #sidebar #account_chooser .item.alert {
+      color: #7a418f;
+      box-shadow: 0 0 0; }
+    #sidebar #account_chooser .item.green_alert {
       border: 2px solid #6b8e5c;
-      box-shadow: -25px 0px 0px -20px #6b8e5c; }
-    #sidebar #account_chooser .item.u_alert {
+      box-shadow: -17px 0px 0px -14px #6b8e5c; }
+    #sidebar #account_chooser .item.grey_alert {
+      border: 2px solid #414652;
+      box-shadow: -17px 0px 0px -14px #414652; }
+    #sidebar #account_chooser .item.red_alert {
       border: 2px solid #a91217;
-      box-shadow: -25px 0px 0px -20px #a91217; }
+      box-shadow: -17px 0px 0px -14px #a91217; }
   #sidebar #icon_tabs {
     margin: 0;
     background: #eaeaea;
     height: 100%;
-    width: 92px;
+    width: 90px;
     display: inline-block; }
     #sidebar #icon_tabs .item {
       padding: 1rem;
       color: #7a418f; }
-      #sidebar #icon_tabs .item .ui.floating.label {
+      #sidebar #icon_tabs .item .label {
         top: 0.3rem;
-        left: 68%; }
+        left: 68%;
+        background-color: #7a418f; }
       #sidebar #icon_tabs .item i {
         color: #b33679; }
-      #sidebar #icon_tabs .item .label {
-        background-color: #7a418f; }
     #sidebar #icon_tabs .item.logout {
       position: fixed;
       width: 100%;
@@ -146,12 +152,12 @@ body {
         font-size: 12px; }
 
 .right_content {
-  left: 90px !important;
+  left: 150px !important;
   position: relative;
   height: 100%;
   margin: 0 !important; }
   .right_content .all_tabs {
-    width: calc(22% - 90px) !important;
+    width: 16% !important;
     min-width: 180px;
     height: 100%;
     background: #f0f0f0; }
@@ -187,7 +193,7 @@ body {
       .right_content .all_tabs .tab_content .ui.list .item {
         color: #7a418f; }
   .right_content .column2 {
-    width: 78%;
+    width: calc(84% - 150px);
     height: 100%;
     padding: 0;
     border-right: 1px solid #ddd;

@@ -3,7 +3,7 @@ body{
   overflow: hidden;
 }
 #sidebar{
-  width: 170px;
+  width: 150px;
   display: inline-flex;
   #account_chooser{
     margin: 0;
@@ -11,48 +11,58 @@ body{
     height: 100%;
     display: inline-block;
     vertical-align: top;
-    width: 78px;
+    width: 60px;
     padding: 0 9px;
     .item{
       border-radius: 14px;
-      min-width: 4em;
+      min-width: 3em;
       margin-top: 20px;
-      height: 60px !important;
-      width: 60px !important;
+      // height: 60px !important;
+      // width: 60px !important;
       background: #333844;
+      .account_image{
+        max-width: 100%;
+      }
+      .label{
+        background: #ffffff;
+        color: #7a418f;
+      }
     }
     .active.item{
       background: #ffffff;
       color: #7a418f;
+      box-shadow: 0 0 0;
     }
-    .item.alert{
+    .item.green_alert{
       border: 2px solid #6b8e5c;
-      box-shadow: -25px 0px 0px -20px #6b8e5c;
+      box-shadow:  -17px 0px 0px -14px #6b8e5c;
     }
-    .item.u_alert{
+    .item.grey_alert{
+      border: 2px solid #414652;
+      box-shadow:  -17px 0px 0px -14px #414652;
+    }
+    .item.red_alert{
       border: 2px solid #a91217;
-      box-shadow: -25px 0px 0px -20px #a91217;
+      box-shadow:  -17px 0px 0px -14px #a91217;
     }
   }
   #icon_tabs{
     margin: 0;
     background: #eaeaea;
     height: 100%;
-    width: 92px;
+    width: 90px;
     display: inline-block;
     .item{
       padding: 1rem;
       color: #7a418f;
 
-      .ui.floating.label{
+      .label{
         top: 0.3rem;
         left: 68%;
+        background-color: #7a418f;
       }
       i{
         color: #b33679;
-      }
-      .label{
-        background-color: #7a418f;
       }
     }
     .item.logout{
@@ -75,13 +85,14 @@ body{
 }
 
 .right_content{
-  left: 90px !important;
+  //left: 90px !important;
+  left: 150px !important;//used when account sidebar is visible
   position: relative;
   height: 100%;
   margin: 0 !important;
 
   .all_tabs{
-    width: calc(22% - 90px) !important;
+    width: 16% !important;
     min-width: 180px;
     //border-right : 1px solid #ddd;
     height: 100%;
@@ -129,7 +140,7 @@ body{
     }
   }
   .column2{
-    width: 78%;
+    width: calc(84% - 150px);//used when account sidebar is visible
     height: 100%;
     padding: 0 ;
     border-right : 1px solid #ddd;
