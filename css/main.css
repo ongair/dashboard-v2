@@ -90,16 +90,32 @@ body {
   overflow: hidden; }
 
 #sidebar {
-  width: 184px;
+  width: 170px;
   display: inline-flex; }
   #sidebar #account_chooser {
     margin: 0;
-    background: #cccccc;
+    background: #282d39;
     height: 100%;
     display: inline-block;
     vertical-align: top;
-    width: 92px;
-    padding-top: 15px; }
+    width: 78px;
+    padding: 0 9px; }
+    #sidebar #account_chooser .item {
+      border-radius: 14px;
+      min-width: 4em;
+      margin-top: 20px;
+      height: 60px !important;
+      width: 60px !important;
+      background: #333844; }
+    #sidebar #account_chooser .active.item {
+      background: #ffffff;
+      color: #7a418f; }
+    #sidebar #account_chooser .item.alert {
+      border: 2px solid #6b8e5c;
+      box-shadow: -25px 0px 0px -20px #6b8e5c; }
+    #sidebar #account_chooser .item.u_alert {
+      border: 2px solid #a91217;
+      box-shadow: -25px 0px 0px -20px #a91217; }
   #sidebar #icon_tabs {
     margin: 0;
     background: #eaeaea;
