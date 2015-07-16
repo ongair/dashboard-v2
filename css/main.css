@@ -321,58 +321,58 @@ body {
             transform: rotate(45deg); }
         .right_content .column2 .conversation_section .ui.comments .metadata {
           float: right; }
-      .right_content .column2 .conversation_section .reply_form {
-        width: calc(100% - 15px);
-        position: absolute;
-        display: block;
-        bottom: 0;
-        left: 0;
-        height: 60px;
-        z-index: 3;
-        background: #ffffff; }
-        .right_content .column2 .conversation_section .reply_form .ui.form {
-          width: 97%;
-          height: 42px;
-          left: 1.6%;
-          border: 2px solid rgba(39, 41, 43, 0.15);
-          border-radius: 5px; }
-          .right_content .column2 .conversation_section .reply_form .ui.form .reply_icon {
-            float: left;
-            display: inline-block;
-            width: 44px;
-            height: 40px;
-            padding: 9px 0px 0 8px;
-            border-right: 1px solid #ddd;
-            cursor: pointer; }
-            .right_content .column2 .conversation_section .reply_form .ui.form .reply_icon input[type="file"] {
-              display: none; }
-          .right_content .column2 .conversation_section .reply_form .ui.form .reply_field {
-            display: inline-block;
-            height: 40px;
-            width: calc(100% - 124px); }
-            .right_content .column2 .conversation_section .reply_form .ui.form .reply_field textarea {
-              min-height: 37px;
-              height: 37px;
-              overflow-y: hidden;
-              resize: none;
-              border: none; }
-            .right_content .column2 .conversation_section .reply_form .ui.form .reply_field #emojibtn {
-              position: absolute;
-              right: 11%;
-              bottom: 10px;
-              border: none;
-              background: none; }
-              .right_content .column2 .conversation_section .reply_form .ui.form .reply_field #emojibtn i:hover {
-                color: #f00; }
-          .right_content .column2 .conversation_section .reply_form .ui.form .reply_button {
-            margin: 0;
-            float: right;
-            display: inline-block;
-            width: 80px;
-            font-size: 14px;
-            height: 38px;
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0; }
+    .right_content .column2 .reply_form {
+      width: calc(100% - 15px);
+      position: absolute;
+      display: block;
+      bottom: 0;
+      left: 0;
+      height: 60px;
+      z-index: 3;
+      background: #ffffff; }
+      .right_content .column2 .reply_form .ui.form {
+        width: 97%;
+        height: 42px;
+        left: 1.6%;
+        border: 2px solid rgba(39, 41, 43, 0.15);
+        border-radius: 5px; }
+        .right_content .column2 .reply_form .ui.form .reply_icon {
+          float: left;
+          display: inline-block;
+          width: 44px;
+          height: 40px;
+          padding: 9px 0px 0 8px;
+          border-right: 1px solid #ddd;
+          cursor: pointer; }
+          .right_content .column2 .reply_form .ui.form .reply_icon input[type="file"] {
+            display: none; }
+        .right_content .column2 .reply_form .ui.form .reply_field {
+          display: inline-block;
+          height: 40px;
+          width: calc(100% - 124px); }
+          .right_content .column2 .reply_form .ui.form .reply_field textarea {
+            min-height: 37px;
+            height: 37px;
+            overflow-y: hidden;
+            resize: none;
+            border: none; }
+          .right_content .column2 .reply_form .ui.form .reply_field #emojibtn {
+            position: absolute;
+            right: 11%;
+            bottom: 10px;
+            border: none;
+            background: none; }
+            .right_content .column2 .reply_form .ui.form .reply_field #emojibtn i:hover {
+              color: #f00; }
+        .right_content .column2 .reply_form .ui.form .reply_button {
+          margin: 0;
+          float: right;
+          display: inline-block;
+          width: 80px;
+          font-size: 14px;
+          height: 38px;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0; }
     .right_content .column2 .dashboard_menu {
       background: #eaeaea; }
       .right_content .column2 .dashboard_menu .search.item {
@@ -443,11 +443,19 @@ body {
       margin-top: 0; }
     .right_content .column2.full_width .compose_content {
       margin: 0;
-      font-size: 1rem; }
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      width: 60%;
+      height: 80%; }
       .right_content .column2.full_width .compose_content h2 {
         color: #7a418f; }
+      .right_content .column2.full_width .compose_content p {
+        margin-left: 20px; }
       .right_content .column2.full_width .compose_content .ui.dropdown {
-        width: 60%; }
+        margin-left: 20px; }
+      .right_content .column2.full_width .compose_content .reply_form {
+        width: 100%; }
 
 /* Import Media Queries */
 /* ==================================================== */

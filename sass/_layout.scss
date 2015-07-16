@@ -291,7 +291,8 @@ body{
           float: right;
         }
       }
-      .reply_form{
+    }
+    .reply_form{
         width: calc(100% - 15px);
         position: absolute;
         display: block;
@@ -354,7 +355,6 @@ body{
           }
         }
       }
-    }
     .dashboard_menu{
       background: #eaeaea;
       .search.item{
@@ -453,12 +453,22 @@ body{
     }
     .compose_content{//for compose page
       margin: 0;
+      position: relative;
       font-size: 1rem;
+      display: block;
+      width: 60%;
+      height: 80%;
       h2{
         color: #7a418f;
       }
+      p{
+         margin-left: 20px;
+      }
       .ui.dropdown{
-        width: 60%;
+        margin-left: 20px;
+      }
+      .reply_form{
+        width: 100%;
       }
     }
   }
