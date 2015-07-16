@@ -13,6 +13,15 @@ $(document).ready(function() {
 	  })
 	;
 
+	$('.compose_content .ui.dropdown')
+	  .dropdown({
+	    allowAdditions: true
+	    apiSettings: {
+	      url: '//api.semantic-ui.com/tags/{query}'
+	    }
+	  })
+	;
+
 $('.toggle_column3').click(function() {
 
   var clicks = $(this).data('clicks');
