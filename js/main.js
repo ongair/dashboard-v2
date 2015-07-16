@@ -16,9 +16,9 @@ $(document).ready(function() {
 	$('.compose_content .ui.dropdown')
 	  .dropdown({
 	    allowAdditions: true
-	    apiSettings: {
-	      url: '//api.semantic-ui.com/tags/{query}'
-	    }
+	    // apiSettings: {
+	    //   url: '//api.semantic-ui.com/tags/{query}'
+	    // }
 	  })
 	;
 

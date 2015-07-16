@@ -192,16 +192,6 @@ body {
         font-size: 12px; }
       .right_content .all_tabs .tab_content .ui.list .item {
         color: #7a418f; }
-  .right_content .column2.full_width {
-    font-size: 1rem;
-    width: calc(100% - 150px); }
-    .right_content .column2.full_width .ui.message {
-      margin-top: 0; }
-    .right_content .column2.full_width .compose_content {
-      margin: 0;
-      font-size: 1rem; }
-      .right_content .column2.full_width .compose_content h2 {
-        color: #7a418f; }
   .right_content .column2 {
     width: calc(84% - 150px);
     height: 100%;
@@ -446,6 +436,18 @@ body {
         .right_content .column2 .column3 .user_info p {
           margin: 0;
           padding-bottom: 8px; }
+  .right_content .column2.full_width {
+    font-size: 1rem;
+    width: calc(100% - 150px); }
+    .right_content .column2.full_width .ui.message {
+      margin-top: 0; }
+    .right_content .column2.full_width .compose_content {
+      margin: 0;
+      font-size: 1rem; }
+      .right_content .column2.full_width .compose_content h2 {
+        color: #7a418f; }
+      .right_content .column2.full_width .compose_content .ui.dropdown {
+        width: 60%; }
 
 /* Import Media Queries */
 /* ==================================================== */
