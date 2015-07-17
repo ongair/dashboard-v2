@@ -1,50 +1,101 @@
 //Here you add the page structure
 body{
   overflow: hidden;
-  }
-#icon_tabs{
-  background: #eaeaea;
-  .item{
-    padding: 1rem;
-    color: #7a418f;
-
-    .ui.floating.label{
-      top: 0.3rem;
-      left: 68%;
+}
+#sidebar{
+  width: 150px;
+  display: inline-flex;
+  #account_chooser{
+    margin: 0;
+    background: #282d39;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+    padding: 0 9px;
+    .item{
+      border-radius: 14px;
+      min-width: 3em;
+      margin-top: 20px;
+      // height: 60px !important;
+      // width: 60px !important;
+      background: #333844;
+      .account_image{
+        max-width: 100%;
+      }
+      .label{
+        background: #ffffff;
+        color: #b33679;
+      }
     }
-    i{
+    .active.item{
+      background: #ffffff;
       color: #b33679;
+      box-shadow: 0 0 0;
     }
-    .label{
-      background-color: #7a418f;
+    .item.green_alert{
+      border: 2px solid #6b8e5c;
+      box-shadow:  -17px 0px 0px -14px #6b8e5c;
     }
-  }
-  .item.logout{
-    position: fixed;
-    width: 100%;
-    bottom: 13px;
-  }
-  .btn_item{
-    padding: 7px;
-    .ui.button{
-      margin: 0;
-      color: #ffffff;
-      background-color: #b33679;
-      padding: 9px;
-      font-size: 12px;
+    .item.grey_alert{
+      border: 2px solid #414652;
+      box-shadow:  -17px 0px 0px -14px #414652;
+    }
+    .item.red_alert{
+      border: 2px solid #a91217;
+      box-shadow:  -17px 0px 0px -14px #a91217;
     }
   }
+  #icon_tabs{
+    margin: 0;
+    background: #eaeaea;
+    height: 100%;
+    width: 90px;
+    display: inline-block;
+    .item{
+      padding: 1rem;
+      color: #7a418f;
+
+      .label{
+        top: 0.3rem;
+        left: 68%;
+        background-color: #7a418f;
+      }
+      i{
+        color: #b33679;
+      }
+    }
+    .item.logout{
+      position: fixed;
+      width: 100%;
+      bottom: 13px;
+    }
+    .btn_item{
+      padding: 7px;
+      .ui.button{
+        margin: 0;
+        color: #ffffff;
+        background-color: #b33679;
+        padding: 9px;
+        font-size: 12px;
+      }
+    }
+  }
+
 }
 
 .right_content{
-  left: 90px !important;
+  //left: 90px !important;
+  left: 150px !important;//used when account sidebar is visible
   position: relative;
   height: 100%;
   margin: 0 !important;
 
   .all_tabs{
+
     width: calc(22% - 90px) !important;
     min-width: 220px;
+
     //border-right : 1px solid #ddd;
     height: 100%;
     background: #f0f0f0;
@@ -90,8 +141,9 @@ body{
       }
     }
   }
+  
   .column2{
-    width: 78%;
+    width: calc(84% - 150px);//used when account sidebar is visible
     height: 100%;
     padding: 0 ;
     border-right : 1px solid #ddd;
@@ -101,7 +153,7 @@ body{
     position: relative;
     .conversation{
       width: 25%;
-      min-width: 250px;
+      min-width: 230px;
       font-size: 1rem;
       display: inline-block;
       border-right : 1px solid #ddd;
@@ -119,7 +171,7 @@ body{
         padding-left: 15px;
         padding-right: 15px;
         -webkit-transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
-  transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
+        transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
   
       }
       .ui.list .active.item{
@@ -241,7 +293,8 @@ body{
           float: right;
         }
       }
-      .reply_form{
+    }
+    .reply_form{
         width: calc(100% - 15px);
         position: absolute;
         display: block;
@@ -304,7 +357,6 @@ body{
           }
         }
       }
-    }
     .dashboard_menu{
       background: #eaeaea;
       .search.item{
@@ -395,6 +447,32 @@ body{
       }
     }
   }
-  
+  .column2.full_width{
+    font-size: 1rem;
+    width: calc(100% - 150px);
+    .ui.message{
+      margin-top: 0;
+    }
+    .compose_content{//for compose page
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      width: 60%;
+      height: 80%;
+      h2{
+        color: #7a418f;
+      }
+      p{
+         margin-left: 20px;
+      }
+      .ui.dropdown{
+        margin-left: 20px;
+      }
+      .reply_form{
+        width: 100%;
+      }
+    }
+  }
 }
 /** Mobile view starts here **/
