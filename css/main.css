@@ -90,7 +90,7 @@ body {
   overflow: hidden; }
 
 #sidebar {
-  width: 150px;
+  width: 10.7rem;
   display: inline-flex; }
   #sidebar #account_chooser {
     margin: 0;
@@ -98,12 +98,12 @@ body {
     height: 100%;
     display: inline-block;
     vertical-align: top;
-    width: 60px;
-    padding: 0 9px; }
+    width: 4.5rem;
+    padding: 0 0.56rem; }
     #sidebar #account_chooser .item {
       border-radius: 14px;
       min-width: 3em;
-      margin-top: 20px;
+      margin-top: 1.25rem;
       background: #333844; }
       #sidebar #account_chooser .item .account_image {
         max-width: 100%; }
@@ -127,7 +127,7 @@ body {
     margin: 0;
     background: #eaeaea;
     height: 100%;
-    width: 90px;
+    width: 7rem;
     display: inline-block; }
     #sidebar #icon_tabs .item {
       padding: 1rem;
@@ -141,31 +141,31 @@ body {
     #sidebar #icon_tabs .item.logout {
       position: fixed;
       width: 100%;
-      bottom: 13px; }
+      bottom: 1rem; }
     #sidebar #icon_tabs .btn_item {
-      padding: 7px; }
+      padding: 0.45rem; }
       #sidebar #icon_tabs .btn_item .ui.button {
         margin: 0;
         color: #ffffff;
         background-color: #b33679;
-        padding: 9px;
-        font-size: 12px; }
+        padding: 0.56rem;
+        font-size: 0.75em; }
 
 .right_content {
-  left: 150px !important;
+  left: 10rem !important;
   position: relative;
   height: 100%;
   margin: 0 !important; }
   .right_content .all_tabs {
     width: calc(22% - 90px) !important;
-    min-width: 220px;
+    min-width: 15rem;
     height: 100%;
     background: #f0f0f0; }
     .right_content .all_tabs .item.sidebar_toggle.computer_hide {
-      padding-top: 10px;
-      padding-left: 15px; }
+      padding-top: 0.625rem;
+      padding-left: 0.938rem; }
     .right_content .all_tabs .tab_content {
-      padding-top: 10px;
+      padding-top: 0.625rem;
       color: #7a418f !important; }
       .right_content .all_tabs .tab_content .tab_content_header {
         padding-left: 1.8rem;
@@ -185,15 +185,15 @@ body {
         background-color: #ffffff; }
       .right_content .all_tabs .tab_content .ui.button.tab_button {
         margin: 0;
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
         color: #ffffff !important;
         background-color: #b33679;
         padding: 5px 3px;
-        font-size: 12px; }
+        font-size: 0.75em; }
       .right_content .all_tabs .tab_content .ui.list .item {
         color: #7a418f; }
   .right_content .column2 {
-    width: calc(84% - 150px);
+    width: calc(84% - 10rem);
     height: 100%;
     padding: 0;
     border-right: 1px solid #ddd;
@@ -203,7 +203,7 @@ body {
     position: relative; }
     .right_content .column2 .conversation {
       width: 25%;
-      min-width: 250px;
+      min-width: 16rem;
       font-size: 1rem;
       display: inline-block;
       border-right: 1px solid #ddd;
@@ -216,8 +216,7 @@ body {
           text-align: center;
           color: #b33679 !important; }
       .right_content .column2 .conversation .ui.list .item {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 1rem;
         -webkit-transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
         transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease; }
       .right_content .column2 .conversation .ui.list .active.item {
@@ -246,7 +245,7 @@ body {
         padding-right: 1rem;
         padding-top: 1rem;
         margin-top: 0;
-        padding-bottom: 73px; }
+        padding-bottom: 12rem; }
         .right_content .column2 .conversation_section .ui.comments .ui.divider {
           clear: both; }
         .right_content .column2 .conversation_section .ui.comments .comment.from_me {
@@ -282,7 +281,7 @@ body {
           .right_content .column2 .conversation_section .ui.comments .comment.from_me .content:after {
             top: 1.25em;
             bottom: auto;
-            right: 41px;
+            right: 3rem;
             margin-left: 0em;
             position: absolute;
             content: '';
@@ -309,7 +308,7 @@ body {
           .right_content .column2 .conversation_section .ui.comments .comment.from_them .content:before {
             top: 1.25em;
             bottom: auto;
-            left: 44px;
+            left: 3rem;
             margin-left: 0em;
             position: absolute;
             content: '';
@@ -322,25 +321,25 @@ body {
         .right_content .column2 .conversation_section .ui.comments .metadata {
           float: right; }
     .right_content .column2 .reply_form {
-      width: calc(100% - 15px);
+      width: calc(100% - 1rem);
       position: absolute;
       display: block;
-      bottom: 0;
+      bottom: 0.1rem;
       left: 0;
-      height: 60px;
+      height: 3.75rem;
       z-index: 3;
       background: #ffffff; }
       .right_content .column2 .reply_form .ui.form {
         width: 97%;
-        height: 42px;
+        height: 3rem;
         left: 1.6%;
         border: 2px solid rgba(39, 41, 43, 0.15);
         border-radius: 5px; }
         .right_content .column2 .reply_form .ui.form .reply_icon {
           float: left;
           display: inline-block;
-          width: 44px;
-          height: 40px;
+          width: 3rem;
+          height: 2.8rem;
           padding: 9px 0px 0 8px;
           border-right: 1px solid #ddd;
           cursor: pointer; }
@@ -348,7 +347,7 @@ body {
             display: none; }
         .right_content .column2 .reply_form .ui.form .reply_field {
           display: inline-block;
-          height: 40px;
+          height: 2.9rem;
           width: calc(100% - 124px); }
           .right_content .column2 .reply_form .ui.form .reply_field textarea {
             min-height: 37px;
@@ -358,8 +357,8 @@ body {
             border: none; }
           .right_content .column2 .reply_form .ui.form .reply_field #emojibtn {
             position: absolute;
-            right: 11%;
-            bottom: 10px;
+            right: 12%;
+            bottom: 0.625rem;
             border: none;
             background: none; }
             .right_content .column2 .reply_form .ui.form .reply_field #emojibtn i:hover {
@@ -368,9 +367,9 @@ body {
           margin: 0;
           float: right;
           display: inline-block;
-          width: 80px;
-          font-size: 14px;
-          height: 38px;
+          width: 5.8rem;
+          font-size: 0.9375em;
+          height: 2.8rem;
           border-top-left-radius: 0;
           border-bottom-left-radius: 0; }
     .right_content .column2 .dashboard_menu {
@@ -386,20 +385,20 @@ body {
       .right_content .column2 .dashboard_menu .setting_popup_content {
         border-radius: 10px; }
         .right_content .column2 .dashboard_menu .setting_popup_content .ui.list {
-          padding: 10px;
-          width: 150px; }
+          padding: 0.65rem;
+          width: 10rem; }
           .right_content .column2 .dashboard_menu .setting_popup_content .ui.list .item {
-            font-size: 13px;
+            font-size: 0.875em;
             color: #000000; }
       .right_content .column2 .dashboard_menu .ui.input {
         padding-top: 7px;
         padding-bottom: 7px; }
         .right_content .column2 .dashboard_menu .ui.input input {
-          height: 35px;
-          border-radius: 70px; }
+          height: 2rem;
+          border-radius: 10rem; }
     .right_content .column2 .inbox_content {
       margin: 0 !important;
-      height: calc(100% - 55px); }
+      height: calc(100% - 5rem); }
     .right_content .column2 .column3 {
       width: 25%;
       height: 100%;
@@ -417,7 +416,7 @@ body {
         margin-left: auto;
         margin-right: auto; }
       .right_content .column2 .column3 .user_info {
-        padding: 0 15px; }
+        padding: 0 1rem; }
         .right_content .column2 .column3 .user_info .ui.button {
           float: right;
           margin: 0; }
@@ -428,17 +427,17 @@ body {
           border: 1px solid rgba(39, 41, 43, 0.5); }
         .right_content .column2 .column3 .user_info h2 {
           margin: 0;
-          margin-bottom: 15px;
-          font-size: 20px; }
+          margin-bottom: 1rem;
+          font-size: 1.25em; }
         .right_content .column2 .column3 .user_info h3 {
           margin: 0;
-          padding-bottom: 8px; }
+          padding-bottom: 0.5rem; }
         .right_content .column2 .column3 .user_info p {
           margin: 0;
-          padding-bottom: 8px; }
+          padding-bottom: 0.5rem; }
   .right_content .column2.full_width {
     font-size: 1rem;
-    width: calc(100% - 150px); }
+    width: calc(100% - 10rem); }
     .right_content .column2.full_width .ui.message {
       margin-top: 0; }
     .right_content .column2.full_width .compose_content {
@@ -451,9 +450,9 @@ body {
       .right_content .column2.full_width .compose_content h2 {
         color: #7a418f; }
       .right_content .column2.full_width .compose_content p {
-        margin-left: 20px; }
+        margin-left: 1.25rem; }
       .right_content .column2.full_width .compose_content .ui.dropdown {
-        margin-left: 20px; }
+        margin-left: 1.25rem; }
       .right_content .column2.full_width .compose_content .reply_form {
         width: 100%; }
 

@@ -3,7 +3,7 @@ body{
   overflow: hidden;
 }
 #sidebar{
-  width: 150px;
+  width:10.7rem;
   display: inline-flex;
   #account_chooser{
     margin: 0;
@@ -11,14 +11,14 @@ body{
     height: 100%;
     display: inline-block;
     vertical-align: top;
-    width: 60px;
-    padding: 0 9px;
+    width: 4.5rem;
+    padding: 0 0.56rem;
     .item{
       border-radius: 14px;
       min-width: 3em;
-      margin-top: 20px;
-      // height: 60px !important;
-      // width: 60px !important;
+      margin-top: 1.25rem;
+      // height: 4.5rem !important;
+      // width: 4.5rem !important;
       background: #333844;
       .account_image{
         max-width: 100%;
@@ -50,7 +50,7 @@ body{
     margin: 0;
     background: #eaeaea;
     height: 100%;
-    width: 90px;
+    width: 7rem;
     display: inline-block;
     .item{
       padding: 1rem;
@@ -68,16 +68,16 @@ body{
     .item.logout{
       position: fixed;
       width: 100%;
-      bottom: 13px;
+      bottom: 1rem;
     }
     .btn_item{
-      padding: 7px;
+      padding: 0.45rem;
       .ui.button{
         margin: 0;
         color: #ffffff;
         background-color: #b33679;
-        padding: 9px;
-        font-size: 12px;
+        padding: 0.56rem;
+        font-size: 0.75em;
       }
     }
   }
@@ -85,27 +85,27 @@ body{
 }
 
 .right_content{
-  //left: 90px !important;
-  left: 150px !important;//used when account sidebar is visible
+  //left: 7rem !important;
+  left: 10rem !important;//used when account sidebar is visible
   position: relative;
   height: 100%;
   margin: 0 !important;
 
   .all_tabs{
     width: calc(22% - 90px) !important;
-    min-width: 220px;
+    min-width: 15rem;
     //border-right : 1px solid #ddd;
     height: 100%;
     background: #f0f0f0;
     .item.sidebar_toggle.computer_hide{
       // centers logo sidebar-link on responsive
      // text-align: center;
-      padding-top:10px;
-      padding-left: 15px;
+      padding-top:0.625rem;
+      padding-left: 0.938rem;
     }
 
     .tab_content{
-      padding-top: 10px;
+      padding-top: 0.625rem;
       color: #7a418f !important;
       .tab_content_header{
         padding-left: 1.8rem;
@@ -128,20 +128,19 @@ body{
       }
       .ui.button.tab_button{
         margin: 0;
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
         color: #ffffff !important;
         background-color: #b33679;
         padding: 5px 3px;
-        font-size: 12px;
+        font-size: 0.75em;
       }
       .ui.list .item{
          color: #7a418f;
       }
     }
   }
-  
   .column2{
-    width: calc(84% - 150px);//used when account sidebar is visible
+    width: calc(84% - 10rem);//used when account sidebar is visible
     height: 100%;
     padding: 0 ;
     border-right : 1px solid #ddd;
@@ -151,7 +150,7 @@ body{
     position: relative;
     .conversation{
       width: 25%;
-      min-width: 250px;
+      min-width: 16rem;
       font-size: 1rem;
       display: inline-block;
       border-right : 1px solid #ddd;
@@ -166,8 +165,7 @@ body{
         }
       }
       .ui.list .item{
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 1rem;
         -webkit-transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
         transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
   
@@ -202,7 +200,7 @@ body{
         padding-right: 1rem;
         padding-top: 1rem;
         margin-top: 0;
-        padding-bottom: 73px;//added to compensate for reply textarea
+        padding-bottom: 12rem;//added to compensate for reply textarea
         .ui.divider{
           clear: both;
         }
@@ -241,7 +239,7 @@ body{
 
             top: 1.25em;
             bottom: auto;
-            right: 41px;
+            right: 3rem;
             margin-left: 0em;
             position: absolute;
             content: '';
@@ -275,7 +273,7 @@ body{
           .content:before {
             top: 1.25em;
             bottom: auto;
-            left: 44px;
+            left: 3rem;
             margin-left: 0em;
             position: absolute;
             content: '';
@@ -293,17 +291,17 @@ body{
       }
     }
     .reply_form{
-        width: calc(100% - 15px);
+        width: calc(100% - 1rem);
         position: absolute;
         display: block;
-        bottom: 0;
+        bottom: 0.1rem;
         left: 0;
-        height: 60px;
+        height: 3.75rem;
         z-index: 3;
         background: #ffffff;
         .ui.form{
           width: 97%;//full width minus 
-          height: 42px;
+          height: 3rem;
           left: 1.6%;
           border: 2px solid rgba(39, 41, 43, 0.15);
           border-radius: 5px;
@@ -311,8 +309,8 @@ body{
           .reply_icon{
             float: left;
             display: inline-block;
-            width: 44px;
-            height: 40px;
+            width: 3rem;
+            height: 2.8rem;
             padding: 9px 0px 0 8px;
             border-right : 1px solid #ddd;
             cursor: pointer;
@@ -322,7 +320,7 @@ body{
           }
           .reply_field{
             display: inline-block;
-            height: 40px;
+            height: 2.9rem;
             width:calc(100% - 124px); //full width minus icon and button width. give this class borders while adjusting
             textarea{
               min-height: 37px;
@@ -333,8 +331,8 @@ body{
             }
             #emojibtn{
               position: absolute;
-              right: 11%;
-              bottom: 10px;
+              right: 12%;
+              bottom: 0.625rem;
               border: none;
               background: none;
               i:hover{
@@ -347,9 +345,9 @@ body{
             margin: 0;
             float: right;
             display: inline-block;
-            width: 80px;
-            font-size: 14px; 
-            height: 38px;
+            width: 5.8rem;
+            font-size:0.9375em; 
+            height: 2.8rem;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
           }
@@ -372,10 +370,10 @@ body{
       .setting_popup_content{
         border-radius: 10px;
         .ui.list{
-          padding: 10px;
-          width: 150px;
+          padding: 0.65rem;
+          width: 10rem;
           .item{
-            font-size: 13px;
+            font-size: 0.875em;
             color: #000000;
           }
         }
@@ -385,14 +383,14 @@ body{
         padding-bottom: 7px;
         input{
           //width: 100%;
-          height: 35px;
-          border-radius: 70px;
+          height: 2rem;
+          border-radius: 10rem;
         }
       }
     }
     .inbox_content{
       margin: 0 !important;
-      height: calc(100% - 55px);//full height minus topbar menu height
+      height: calc(100% - 5rem);//full height minus topbar menu height
     }
     
     .column3{
@@ -418,7 +416,7 @@ body{
         }
       }
       .user_info{
-        padding: 0 15px;
+        padding: 0 1rem;
         .ui.button{
           float: right;
           margin: 0;
@@ -431,23 +429,23 @@ body{
         }
         h2{
           margin: 0;
-          margin-bottom: 15px;
-          font-size: 20px;
+          margin-bottom: 1rem;
+          font-size: 1.25em;
         }
         h3{
           margin: 0;
-          padding-bottom: 8px;
+          padding-bottom: 0.5rem;
         }
         p{
           margin: 0;
-          padding-bottom: 8px;
+          padding-bottom: 0.5rem;
         }
       }
     }
   }
   .column2.full_width{
     font-size: 1rem;
-    width: calc(100% - 150px);
+    width: calc(100% - 10rem);
     .ui.message{
       margin-top: 0;
     }
@@ -462,10 +460,10 @@ body{
         color: #7a418f;
       }
       p{
-         margin-left: 20px;
+         margin-left: 1.25rem;
       }
       .ui.dropdown{
-        margin-left: 20px;
+        margin-left: 1.25rem;
       }
       .reply_form{
         width: 100%;
