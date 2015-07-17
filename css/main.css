@@ -121,6 +121,7 @@ body {
   margin: 0 !important; }
   .right_content .all_tabs {
     width: calc(22% - 90px) !important;
+    min-width: 220px;
     height: 100%;
     background: #f0f0f0; }
     .right_content .all_tabs .item.sidebar_toggle.computer_hide {
@@ -165,6 +166,7 @@ body {
     position: relative; }
     .right_content .column2 .conversation {
       width: 25%;
+      min-width: 250px;
       font-size: 1rem;
       display: inline-block;
       border-right: 1px solid #ddd;
@@ -398,6 +400,7 @@ body {
           margin: 0;
           padding-bottom: 8px; }
 
+/** Mobile view starts here **/
 /* Import Media Queries */
 /* ==================================================== */
 @media only screen and (max-width: 1500px) {

@@ -44,6 +44,7 @@ body{
 
   .all_tabs{
     width: calc(22% - 90px) !important;
+    min-width: 220px;
     //border-right : 1px solid #ddd;
     height: 100%;
     background: #f0f0f0;
@@ -100,6 +101,7 @@ body{
     position: relative;
     .conversation{
       width: 25%;
+      min-width: 250px;
       font-size: 1rem;
       display: inline-block;
       border-right : 1px solid #ddd;
@@ -395,3 +397,4 @@ body{
   }
   
 }
+/** Mobile view starts here **/

@@ -195,7 +195,7 @@
         </div>
 
       <div class=" column2">
-       <div class="ui top attached large borderless menu dashboard_menu tablet_hide">
+       <div class="ui top attached large borderless menu dashboard_menu ">
         <div class="search item">
           <div class="ui icon small input">
             <input type="text" placeholder="Search..." class="prompt">
@@ -474,7 +474,7 @@
                     <span class="date">Just now</span>
                     <span class="read"></span>
                   </div>
-                  <div class="text">
+                  <div class="text" ng-repeat="message in message" ng-bind-html-unsafe="message | emoji">
                     Elliot you are always so right :)
                   </div>
                 </div>
@@ -520,8 +520,8 @@
                   <div class="metadata">
                     <span class="date">5 days ago</span>
                   </div>
-                  <div class="text" ng-repeat="message in messages" ng-bind-html-unsafe="message | emoji">
-                    Dude, this is awesome. Thankss so much :smiley:
+                  <div class="text" ng-repeat="message in messages" ng-bind-html-unsafe="emoji">
+                    Dude, this is awesome. Thankss so much :smiley: 
                   </div>
                 </div>                
             </div>
@@ -539,10 +539,10 @@
                                 
 
                                 <div class="ui action field reply_field">
-                                    <textarea placeholder="Please describe why" ng-model="message">   
+                                    <textarea id="messageInput" placeholder="Please describe why" ng-model="message">   
                                     </textarea>
                                     <button id="emojibtn">
-                                       <i class="large smile icon"></i>
+                                       <i class="large smile icon transition"></i>
                                     </button>
                                 </div>
                                 <input class="ui green submit button reply_button" type="submit" value="Reply">
