@@ -51,7 +51,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent; }
 
 img, a img {
@@ -157,8 +157,8 @@ body {
   height: 100%;
   margin: 0 !important; }
   .right_content .all_tabs {
-    width: 16% !important;
-    min-width: 180px;
+    width: calc(22% - 90px) !important;
+    min-width: 220px;
     height: 100%;
     background: #f0f0f0; }
     .right_content .all_tabs .item.sidebar_toggle.computer_hide {
@@ -203,7 +203,7 @@ body {
     position: relative; }
     .right_content .column2 .conversation {
       width: 25%;
-      min-width: 230px;
+      min-width: 250px;
       font-size: 1rem;
       display: inline-block;
       border-right: 1px solid #ddd;
@@ -457,6 +457,7 @@ body {
       .right_content .column2.full_width .compose_content .reply_form {
         width: 100%; }
 
+/** Mobile view starts here **/
 /* Import Media Queries */
 /* ==================================================== */
 @media only screen and (max-width: 1500px) {
@@ -524,7 +525,6 @@ body {
 
   @page {
     margin: 0.5cm; }
-
   p,
   h2,
   h3 {
@@ -536,3 +536,5 @@ body {
     page-break-after: avoid; } }
 /* Import Cross-browser Compaitibility Files */
 /* ==================================================== */
+
+/*# sourceMappingURL=main.css.map */
