@@ -37,22 +37,34 @@
     </div>
     <div class="ui left vertical visible sidebar" id="sidebar">
       <div class="ui vertical labeled borderless icon menu" id="account_chooser">
-        <a class="active item">
-          <p>#1</p>
-        </a>
+        <a class="active item"><p>#1</p></a>
         <a class="item green_alert">
-        <img class="account_image" src="images/o.png" />
-        <span class="floating ui tiny circular label">9</span>
+          <span class="image">
+            <img class="account_image" src="images/account1.png" />
+            <span class="floating ui tiny circular label">9</span>
+          </span>
         </a>
-        <a class="item"><img class="account_image" src="images/o.png" /></a>
+        <a class="item">
+          <span class="image">
+            <img class="account_image" src="images/account1.png" />
+          </span>
+        </a>
         <a class="item grey_alert">
-        <img class="account_image" src="images/o.png" />
-        <span class="floating ui tiny circular label">9</span>
+          <span class="image">
+            <img class="account_image" src="images/o.png" />
+            <span class="floating ui tiny circular label">9</span>
+          </span>
         </a>
-        <a class="item"><img class="account_image" src="images/o.png" /></a>
+        <a class="item">
+          <span class="image">
+            <img class="image account_image" src="images/account1.png" />
+          </span>
+        </a>
         <a class="item red_alert">
-        <img class="account_image" src="images/o.png" />
-        <span class="floating ui tiny circular label">9</span>
+          <span class="image">
+            <img class="account_image" src="images/account2.png" />
+            <span class="floating ui tiny circular label">9</span>
+          </span>
         </a>
       </div>
       <div class="ui vertical labeled borderless icon menu" id="icon_tabs">
@@ -116,30 +128,61 @@
         <div class=" ui grid compose_content">
           <h2>Compose Message</h2>
           <p class="ui sub header">To</p>
-            <div class="ui multiple fluid large search selection dropdown">
-              <input name="tags" type="hidden">
-              <i class="dropdown icon"></i>
-              <div class="menu">
-                <div class="item" data-value="angular">Angular</div>
-                <div class="item" data-value="css">CSS</div>
-                <div class="item" data-value="design">Graphic Design</div>
-                <div class="item" data-value="ember">Ember</div>
-                <div class="item" data-value="html">HTML</div>
-                <div class="item" data-value="ia">Information Architecture</div>
-                <div class="item" data-value="javascript">Javascript</div>
-                <div class="item" data-value="mech">Mechanical Engineering</div>
-                <div class="item" data-value="meteor">Meteor</div>
-                <div class="item" data-value="node">NodeJS</div>
-                <div class="item" data-value="plumbing">Plumbing</div>
-                <div class="item" data-value="python">Python</div>
-                <div class="item" data-value="rails">Rails</div>
-                <div class="item" data-value="react">React</div>
-                <div class="item" data-value="repair">Kitchen Repair</div>
-                <div class="item" data-value="ruby">Ruby</div>
-                <div class="item" data-value="ui">UI Design</div>
-                <div class="item" data-value="ux">User Experience</div>
-              </div>
-            </div>
+          <select class="ui fluid search dropdown" multiple="">
+          <option value="">State</option>
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA">California</option>
+          <option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="DC">District Of Columbia</option>
+          <option value="FL">Florida</option>
+          <option value="GA">Georgia</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option>
+          <option value="IL">Illinois</option>
+          <option value="IN">Indiana</option>
+          <option value="IA">Iowa</option>
+          <option value="KS">Kansas</option>
+          <option value="KY">Kentucky</option>
+          <option value="LA">Louisiana</option>
+          <option value="ME">Maine</option>
+          <option value="MD">Maryland</option>
+          <option value="MA">Massachusetts</option>
+          <option value="MI">Michigan</option>
+          <option value="MN">Minnesota</option>
+          <option value="MS">Mississippi</option>
+          <option value="MO">Missouri</option>
+          <option value="MT">Montana</option>
+          <option value="NE">Nebraska</option>
+          <option value="NV">Nevada</option>
+          <option value="NH">New Hampshire</option>
+          <option value="NJ">New Jersey</option>
+          <option value="NM">New Mexico</option>
+          <option value="NY">New York</option>
+          <option value="NC">North Carolina</option>
+          <option value="ND">North Dakota</option>
+          <option value="OH">Ohio</option>
+          <option value="OK">Oklahoma</option>
+          <option value="OR">Oregon</option>
+          <option value="PA">Pennsylvania</option>
+          <option value="RI">Rhode Island</option>
+          <option value="SC">South Carolina</option>
+          <option value="SD">South Dakota</option>
+          <option value="TN">Tennessee</option>
+          <option value="TX">Texas</option>
+          <option value="UT">Utah</option>
+          <option value="VT">Vermont</option>
+          <option value="VA">Virginia</option>
+          <option value="WA">Washington</option>
+          <option value="WV">West Virginia</option>
+          <option value="WI">Wisconsin</option>
+          <option value="WY">Wyoming</option>
+          </select>
+        </div>
             <div class="reply_form">
               <form class="ui form">
               <label for="file-upload" class="reply_icon">

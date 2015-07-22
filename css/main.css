@@ -51,7 +51,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent; }
 
 img, a img {
@@ -104,9 +104,12 @@ body {
       border-radius: 14px;
       min-width: 3em;
       margin-top: 1.25rem;
+      min-height: 3rem;
+      padding: 4px;
       background: #333844; }
       #sidebar #account_chooser .item .account_image {
-        max-width: 100%; }
+        max-width: 100%;
+        display: inline-block; }
       #sidebar #account_chooser .item .label {
         background: #ffffff;
         color: #b33679; }
@@ -524,6 +527,7 @@ body {
 
   @page {
     margin: 0.5cm; }
+
   p,
   h2,
   h3 {
@@ -535,5 +539,3 @@ body {
     page-break-after: avoid; } }
 /* Import Cross-browser Compaitibility Files */
 /* ==================================================== */
-
-/*# sourceMappingURL=main.css.map */

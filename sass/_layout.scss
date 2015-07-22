@@ -17,11 +17,14 @@ body{
       border-radius: 14px;
       min-width: 3em;
       margin-top: 1.25rem;
+      min-height: 3rem;
+      padding: 4px;
       // height: 4.5rem !important;
       // width: 4.5rem !important;
       background: #333844;
       .account_image{
         max-width: 100%;
+        display: inline-block;
       }
       .label{
         background: #ffffff;
