@@ -7,19 +7,12 @@ $(document).ready(function() {
    $('.conversation .item')
 	  .on('click', function() {
 	    $(this)
-	      .closest('.message')
+	      .hide('.item.message')
 	      .transition('slide down')
 	    ;
 	  })
 	;
-	$('.message .close')
-	  .on('click', function() {
-	    $(this)
-	      .closest('.message')
-	      .transition('fade')
-	    ;
-	  })
-	;
+
 
 	$('.compose_content .ui.dropdown')
 	  .dropdown({
@@ -63,7 +56,7 @@ $('.ui.comments .from_them .content .author')
 
 
    
-	$(window).resize(function(){
+	$(window).resize(function(){//handles some stuff on mobile 
 	   console.log('resize called');
 	   if(width <= 768){
 	       $('#sidebar')
@@ -76,17 +69,16 @@ $('.ui.comments .from_them .content .author')
 			;
 			
 
-			$('.column2')//opens sidebar conversation on all items in .tab_content
-			  .sidebar('attach events', '.tab_content .item' )
-			  .sidebar('attach events', '.hide_conversation', 'hide' )
-			  .addClass('ui right wide sidebar segment')
+			$('.all_tabs')//opens sidebar conversation on all items in .tab_content
+			  .sidebar('attach events', '.inbox_content .item' )
+			  .addClass('ui left wide sidebar segment')
 			;
 			
 
 	   }
 	   else{
 	       $('#sidebar').addClass('visible')
-	       $('.column2')//opens sidebar conversation on all items in .tab_content
+	       $('.all_tabs')//opens sidebar conversation on all items in .tab_content
 			  .removeClass('ui right wide sidebar segment')
 			;
 	   }

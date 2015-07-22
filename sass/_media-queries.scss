@@ -1,9 +1,7 @@
 @media only screen and (max-width: 1500px){
- body{
 	.computer_hide{
 		display: none !important;
 	}
- }
 
 }//max width 1500
 
@@ -27,36 +25,42 @@
 
 @media only screen and (max-width: 768px){
 	body{
-		.computer_hide{
-				display: inherit !important;
+		overflow-y: scroll;
+	}
+	.computer_hide{
+		display: inherit !important;
+	}
+	.tablet_hide{
+	 	display: none !important;
+	 }
+	.conversation_section{//hiding this div temporarily
+		display: none !important;
+	}
+	.right_content{
+		left: 0 !important;
+		margin-top: 0 !important;
+		.mobile_menu{
+			.item{
+				background: none !important;
 			}
-			.tablet_hide{
-			 	display: none !important;
-			 }
-		.right_content{
-			left: 0 !important;
-			margin-top: 0 !important;
-			.mobile_menu{
-				.item{
-					background: none !important;
-				}
+		}
+		.all_tabs{
+			width: 100% !important;
+			padding-top: 0 !important;
+			.tab_content{
+				margin-top: 0;
 			}
-			.all_tabs{
-				width: 100% !important;
-				padding-top: 0 !important;
-				.tab_content{
-						margin-top: 0;
-					}
-			}
+		}
 
-			.ui.column2.sidebar{
-				min-width: 60% !important;
-				height: 100px;
+		.column2{
+			width: 100%;
+			.conversation{
+				width: 100%;
 			}
+		}
 
-			.column3{
-				display: none !important;
-			}
+		.column3{
+			display: none !important;
 		}
 	}
 }//max width 768
