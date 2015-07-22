@@ -116,7 +116,8 @@ body {
     #sidebar #account_chooser .active.item {
       background: #ffffff;
       color: #b33679;
-      box-shadow: 0 0 0; }
+      box-shadow: 0 0 0;
+      padding: 12px; }
     #sidebar #account_chooser .item.green_alert {
       border: 2px solid #6b8e5c;
       box-shadow: -17px 0px 0px -14px #6b8e5c; }
