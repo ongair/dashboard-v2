@@ -4,7 +4,7 @@ $(document).ready(function() {
    $('#icon_tabs .item').tab();
    $('.ui.dropdown').dropdown();
 
-   $('.conversation .item.message')
+  $('.conversation .item.message')//used in dashboard 
 	  .on('click', function() {
 	    $(this)
 	      .hide('.item.message')
@@ -13,6 +13,14 @@ $(document).ready(function() {
 	  })
 	;
 
+	$('.compose_message .close')//used in compose page for important messages
+	  .on('click', function() {
+	    $(this)
+	      .closest('.message')
+	      .transition('fade')
+	    ;
+	  })
+	;
 
 	$('.compose_content .ui.dropdown')
 	  .dropdown({
@@ -67,6 +75,7 @@ $('.ui.comments .from_them .content .author')
 			  .sidebar('attach events', '.sidebar_toggle' )
 			  .sidebar('attach events', '#icon_tabs .item', 'hide' )
 			;
+			
 			
 
 			$('.all_tabs')//opens sidebar conversation on all items in .tab_content
