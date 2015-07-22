@@ -4,7 +4,7 @@ $(document).ready(function() {
    $('#icon_tabs .item').tab();
    $('.ui.dropdown').dropdown();
 
-   $('.conversation .item')
+   $('.conversation .item.message')
 	  .on('click', function() {
 	    $(this)
 	      .hide('.item.message')
