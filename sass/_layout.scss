@@ -190,10 +190,24 @@ body{
       position: relative;
       font-size: 1rem;
       display: block;
-     
-      .all_contacts{
+      .item{// makes a single contact
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+
+      .item.contacts_top{
+        background-color: #cccccc;
+      }
+
+      .all_contacts{//div that changes width when column3 is toggled
         display: inline-block;
         width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
       }
       .contact_list{
         width: 100%;
@@ -202,10 +216,10 @@ body{
           margin: 0;
         }
         .c_checkbox{
-          width: 5%;
+          width: 3%;
         }
         .c_image{
-          width: 5%;
+         min-width: 8%;
         }
         .c_name{
           width: 27%;

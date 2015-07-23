@@ -234,18 +234,29 @@ body {
       position: relative;
       font-size: 1rem;
       display: block; }
+      .right_content .column2 .contacts_content .item {
+        padding-right: 1rem;
+        padding-left: 1rem; }
+      .right_content .column2 .contacts_content .item.contacts_top {
+        background-color: #cccccc; }
       .right_content .column2 .contacts_content .all_contacts {
         display: inline-block;
-        width: 100%; }
+        width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease; }
       .right_content .column2 .contacts_content .contact_list {
         width: 100%;
         padding: 10px 0; }
         .right_content .column2 .contacts_content .contact_list .item {
           margin: 0; }
         .right_content .column2 .contacts_content .contact_list .c_checkbox {
-          width: 5%; }
+          width: 3%; }
         .right_content .column2 .contacts_content .contact_list .c_image {
-          width: 5%; }
+          min-width: 8%; }
         .right_content .column2 .contacts_content .contact_list .c_name {
           width: 27%; }
         .right_content .column2 .contacts_content .contact_list .c_number {
