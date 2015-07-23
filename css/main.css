@@ -233,12 +233,13 @@ body {
       margin: 0;
       position: relative;
       font-size: 1rem;
-      display: block;
-      width: 100%;
-      height: 80%; }
+      display: block; }
+      .right_content .column2 .contacts_content .all_contacts {
+        display: inline-block;
+        width: 100%; }
       .right_content .column2 .contacts_content .contact_list {
         width: 100%;
-        padding-left: 0; }
+        padding: 10px 0; }
         .right_content .column2 .contacts_content .contact_list .item {
           margin: 0; }
         .right_content .column2 .contacts_content .contact_list .c_checkbox {
@@ -250,7 +251,7 @@ body {
         .right_content .column2 .contacts_content .contact_list .c_number {
           width: 30%; }
         .right_content .column2 .contacts_content .contact_list .c_edit {
-          width: 15%; }
+          width: 10%; }
         .right_content .column2 .contacts_content .contact_list .c_verify {
           width: 15%;
           text-align: right; }

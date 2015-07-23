@@ -32,18 +32,22 @@ $(document).ready(function() {
 	  })
 	;
 
-$('.toggle_column3').click(function() {
+$('.toggle_column3').click(function() {// used in the dashboard
 
   var clicks = $(this).data('clicks');
   if (clicks) {
-	$(".conversation_section").css({"width": "75%"});
+	$(".conversation_section").css({"width": "75%"});// in dashboard
+	$(".all_contacts").css({"width": "100%"});// in contacts
 	$(".column3").css({"display": "none"});
   } else {
-  	$(".conversation_section").css({"width": "50%"});
+  	$(".conversation_section").css({"width": "50%"});// in dashboard
+  	$(".all_contacts").css({"width": "70%"});// in contacts
   	$(".column3").css({"display": "inline-block"});
   }
   $(this).data("clicks", !clicks);
 });
+
+
 
 
 $('.setting_popup i')
