@@ -229,6 +229,21 @@ body {
       .right_content .column2 .conversation .ui.list .item:hover {
         background: rgba(0, 0, 0, 0.03);
         opacity: 0.8; }
+    .right_content .column2 .contacts_content {
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      width: 100%;
+      height: 80%; }
+      .right_content .column2 .contacts_content h2 {
+        color: #7a418f; }
+      .right_content .column2 .contacts_content p {
+        margin-left: 1.25rem; }
+      .right_content .column2 .contacts_content .ui.dropdown {
+        margin-left: 1.25rem; }
+      .right_content .column2 .contacts_content .reply_form {
+        width: 100%; }
     .right_content .column2 .conversation_section {
       width: 75%;
       height: 100%;
@@ -458,21 +473,6 @@ body {
       .right_content .column2.full_width .compose_content .ui.dropdown {
         margin-left: 1.25rem; }
       .right_content .column2.full_width .compose_content .reply_form {
-        width: 100%; }
-    .right_content .column2.full_width .contacts_content {
-      margin: 0;
-      position: relative;
-      font-size: 1rem;
-      display: block;
-      width: 100%;
-      height: 80%; }
-      .right_content .column2.full_width .contacts_content h2 {
-        color: #7a418f; }
-      .right_content .column2.full_width .contacts_content p {
-        margin-left: 1.25rem; }
-      .right_content .column2.full_width .contacts_content .ui.dropdown {
-        margin-left: 1.25rem; }
-      .right_content .column2.full_width .contacts_content .reply_form {
         width: 100%; }
 
 /** Mobile view starts here **/

@@ -3,6 +3,7 @@ $(document).ready(function() {
 
    $('#icon_tabs .item').tab();
    $('.ui.dropdown').dropdown();
+   $('.ui.checkbox').checkbox();
 
   $('.conversation .item.message')//used in dashboard 
 	  .on('click', function() {
