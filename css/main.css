@@ -236,14 +236,24 @@ body {
       display: block;
       width: 100%;
       height: 80%; }
-      .right_content .column2 .contacts_content h2 {
-        color: #7a418f; }
-      .right_content .column2 .contacts_content p {
-        margin-left: 1.25rem; }
-      .right_content .column2 .contacts_content .ui.dropdown {
-        margin-left: 1.25rem; }
-      .right_content .column2 .contacts_content .reply_form {
-        width: 100%; }
+      .right_content .column2 .contacts_content .contact_list {
+        width: 100%;
+        padding-left: 0; }
+        .right_content .column2 .contacts_content .contact_list .item {
+          margin: 0; }
+        .right_content .column2 .contacts_content .contact_list .c_checkbox {
+          width: 5%; }
+        .right_content .column2 .contacts_content .contact_list .c_image {
+          width: 5%; }
+        .right_content .column2 .contacts_content .contact_list .c_name {
+          width: 27%; }
+        .right_content .column2 .contacts_content .contact_list .c_number {
+          width: 30%; }
+        .right_content .column2 .contacts_content .contact_list .c_edit {
+          width: 15%; }
+        .right_content .column2 .contacts_content .contact_list .c_verify {
+          width: 15%;
+          text-align: right; }
     .right_content .column2 .conversation_section {
       width: 75%;
       height: 100%;

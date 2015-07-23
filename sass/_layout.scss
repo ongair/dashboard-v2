@@ -191,20 +191,35 @@ body{
       display: block;
       width: 100%;
       height: 80%;
-      h2{
-        color: #7a418f;
-      }
-      p{
-         margin-left: 1.25rem;
-      }
-      .ui.dropdown{
-        margin-left: 1.25rem;
-      }
-      .reply_form{
+      .contact_list{
         width: 100%;
+        padding-left: 0;
+        .item{
+          margin: 0;
+        }
+        .c_checkbox{
+          width: 5%;
+        }
+        .c_image{
+          width: 5%;
+        }
+        .c_name{
+          width: 27%;
+        }
+        .c_number{
+          width: 30%;
+        }
+        .c_edit{
+          width: 15%;
+        }
+        .c_verify{
+          width: 15%;
+          text-align: right;
+        }
       }
+      
     }
-    
+
     .conversation_section{
       width: 75% ;
       height: 100%;////full height minus topbar menu height minus ui.comments margin-top
