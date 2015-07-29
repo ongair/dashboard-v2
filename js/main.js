@@ -39,11 +39,13 @@ $('.toggle_column3').click(function() {// used in the dashboard
 	$(".conversation_section").css({"width": "75%"});// in dashboard
 	$(".all_contacts").css({"width": "100%"});// in contacts
 	$(".all_autoresponders").css({"width": "100%"});// in autoresponders
+	$(".all_media").css({"width": "100%"});// in autoresponders
 	$(".column3").css({"display": "none"});
   } else {
   	$(".conversation_section").css({"width": "50%"});// in dashboard
   	$(".all_contacts").css({"width": "70%"});// in contacts
   	$(".all_autoresponders").css({"width": "70%"});// in autoresponders
+  	$(".all_media").css({"width": "70%"});// in autoresponders
   	$(".column3").css({"display": "inline-block"});
   }
   $(this).data("clicks", !clicks);

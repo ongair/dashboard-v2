@@ -248,11 +248,9 @@ body{
       .media_menu{
         .item.media_filter{
           color: #b33679;
-
         }
       }
-
-      .all_contacts{//div that changes width when column3 is toggled
+      .all_media{//div that changes width when column3 is toggled
         display: inline-block;
         width: 100%;
         padding: 0;
@@ -262,7 +260,25 @@ body{
         -ms-transition: all 500ms ease;
         transition: all 500ms ease;
       }
-      
+
+      .media_items{
+        .header{
+          font-size: 1rem;
+          float: left;
+        }
+        .meta{
+          font-size: 0.8rem;
+          float: right;
+        }
+        .image{
+          padding: 2em;
+          img{
+            max-height: 150px;
+            width: initial;
+            margin: 0 auto;
+          }
+        }
+      }
       
     }
 
