@@ -84,12 +84,12 @@
         <a class="item" data-tab="inbox"><i class="inbox icon"></i>
         Inbox <span class="floating ui tiny circular label">9</span></a> 
         <!-- contacts button-->
-        <a class="active item" data-tab="contacts"><i class="users icon"></i>
+        <a class="item" data-tab="contacts"><i class="users icon"></i>
         Contacts <span class="floating ui tiny circular label">3</span></a> 
         <!-- reports button-->
         <a class="item" data-tab="reports"><i class="bar graph icon"></i>
         Reports</a> <!-- settings button-->
-        <a class="item" data-tab="settings"><i class="settings icon"></i>
+        <a class="active item" data-tab="settings"><i class="settings icon"></i>
         Settings</a> <!-- logout button-->
         <a class="item logout"><i class="power icon"></i> Logout</a>
       </div>
@@ -124,7 +124,7 @@
           </div>
         </div>
         <!-- Contacts begins here-->
-        <div class="ui active tab tab_content" data-tab="contacts">
+        <div class="ui tab tab_content" data-tab="contacts">
           <h2 class="ui header tab_content_header">Contacts</h2>
           <div class="ui link list">
             <a class="ui floating right labeled icon dropdown button item tab_button">
@@ -175,11 +175,11 @@
           </div>
         </div>
         <!-- settings begins here-->
-        <div class="ui tab tab_content" data-tab="settings">
+        <div class="ui active tab tab_content" data-tab="settings">
           <h2 class="ui header tab_content_header">Settings</h2>
           <div class="ui link list">
             <a class="ui item button tab_button">SET AUTORESPONDERS</a>
-            <a class="item" style="font-weight: bold">Manage
+            <a class="active item" style="font-weight: bold">Manage
             Autoresponders</a>
             <div class="ui divider"></div>
             <a class="item" style=
@@ -222,7 +222,7 @@
         <div class=" ui grid autoresponder_content">
           <div class="ui middle aligned divided list all_autoresponders">
             <ul class="item autoresponder_top">
-              <li class="ui large horizontal list contact_list">
+              <li class="ui horizontal list contact_list">
                 <span class="item a_type">
                 Respond To
                 </span>
@@ -242,7 +242,7 @@
             </ul>
 
             <ul class="item">
-              <li class="ui large horizontal list contact_list">
+              <li class="ui horizontal list contact_list">
                 <span class="item a_type">
                   <i class="write icon"></i>
                   Text
@@ -258,9 +258,71 @@
                     <input type="checkbox" name="" tabindex="0" class="hidden">
                   </div>
                 </span>
-                <span class="item a_edit">
-                <i class="setting icon"></i>
+                <a class="item a_edit">
+                 <i class="setting icon"></i>
+                </a>
+                <div class="ui flowing popup setting_popup_content">
+                  <div class="ui link list">
+                    <a class="item">View media in thread</a>
+                    <a class="item">Archive</a>
+                    <a class="item">Report spam/abuse</a>
+                    <a class="item">Delete conversation</a>         
+                  </div>
+                </div>
+              </li>
+            </ul>
+            
+            <ul class="item">
+              <li class="ui horizontal list contact_list">
+                <span class="item a_type">
+                  <i class="photo icon"></i>
+                  Image
                 </span>
+                <span class="item a_keyword">
+                Amref
+                </span>
+                <span class="item a_message">
+                Hi {{contact_name}}. Thanks for contacting us. How can we help you today?
+                </span>
+                <span class="item a_active">
+                  <div class="ui toggle checkbox">
+                    <input type="checkbox" name="" tabindex="0" class="hidden">
+                  </div>
+                </span>
+                <a class="item a_edit">
+                  <i class="setting icon"></i>
+                </a>
+                <div class="ui flowing popup setting_popup_content">
+                  <div class="ui link list">
+                    <a class="item">View media in thread</a>
+                    <a class="item">Archive</a>
+                    <a class="item">Report spam/abuse</a>
+                    <a class="item">Delete conversation</a>         
+                  </div>
+                </div>
+              </li>
+            </ul>
+            
+            <ul class="item">
+              <li class="ui horizontal list contact_list">
+                <span class="item a_type">
+                  <i class="write icon"></i>
+                  Text
+                </span>
+                <span class="item a_keyword">
+                Amref
+                </span>
+                <span class="item a_message">
+                Hi {{contact_name}}. Thanks for contacting us. How can we help you today?
+                </span>
+                <span class="item a_active">
+                  <div class="ui toggle checkbox">
+                    <input type="checkbox" name="" tabindex="0" class="hidden">
+                  </div>
+                </span>
+                <a class="item a_edit">
+                <i class="setting icon"></i>
+                </a>
               </li>
             </ul>
             

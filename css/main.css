@@ -291,17 +291,18 @@ body {
         width: 100%;
         padding: 10px 0; }
         .right_content .column2 .autoresponder_content .contact_list .item {
-          margin: 0; }
-        .right_content .column2 .autoresponder_content .contact_list .c_image {
-          min-width: 8%; }
-        .right_content .column2 .autoresponder_content .contact_list .c_name {
-          width: 27%; }
-        .right_content .column2 .autoresponder_content .contact_list .c_number {
-          width: 30%; }
-        .right_content .column2 .autoresponder_content .contact_list .c_edit {
+          margin: 0;
+          vertical-align: middle; }
+        .right_content .column2 .autoresponder_content .contact_list .a_type {
+          min-width: 15%; }
+        .right_content .column2 .autoresponder_content .contact_list .a_keyword {
+          width: 15%; }
+        .right_content .column2 .autoresponder_content .contact_list .a_message {
+          width: 35%; }
+        .right_content .column2 .autoresponder_content .contact_list .a_active {
           width: 10%; }
-        .right_content .column2 .autoresponder_content .contact_list .c_verify {
-          width: 15%;
+        .right_content .column2 .autoresponder_content .contact_list .a_edit {
+          width: 20%;
           text-align: right; }
     .right_content .column2 .conversation_section {
       width: 75%;

@@ -38,10 +38,12 @@ $('.toggle_column3').click(function() {// used in the dashboard
   if (clicks) {
 	$(".conversation_section").css({"width": "75%"});// in dashboard
 	$(".all_contacts").css({"width": "100%"});// in contacts
+	$(".all_autoresponders").css({"width": "100%"});// in autoresponders
 	$(".column3").css({"display": "none"});
   } else {
   	$(".conversation_section").css({"width": "50%"});// in dashboard
   	$(".all_contacts").css({"width": "70%"});// in contacts
+  	$(".all_autoresponders").css({"width": "70%"});// in autoresponders
   	$(".column3").css({"display": "inline-block"});
   }
   $(this).data("clicks", !clicks);
@@ -50,7 +52,7 @@ $('.toggle_column3').click(function() {// used in the dashboard
 
 
 
-$('.setting_popup i')
+$('.setting_popup i')// used in dashboard_menu
  .popup({
     popup : $('.setting_popup_content'),
     on    : 'click',
@@ -58,7 +60,15 @@ $('.setting_popup i')
   })
 ;
 
-$('.ui.comments .from_them .content .author')
+$('.a_edit i')// used in dashboard_menu
+ .popup({
+    popup : $('.setting_popup_content'),
+    on    : 'click',
+    position : 'bottom right'
+  })
+;
+
+$('.ui.comments .from_them .content .author')// used in contacts page
  .popup({
     on    : 'hover',
     position : 'top left',

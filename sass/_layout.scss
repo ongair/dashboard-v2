@@ -271,21 +271,22 @@ body{
         padding: 10px 0;
         .item{
           margin: 0;
+          vertical-align: middle;
         }
-        .c_image{
-         min-width: 8%;
+        .a_type{
+         min-width: 15%;
         }
-        .c_name{
-          width: 27%;
+        .a_keyword{
+          width: 15%;
         }
-        .c_number{
-          width: 30%;
+        .a_message{
+          width: 35%;
         }
-        .c_edit{
+        .a_active{
           width: 10%;
         }
-        .c_verify{
-          width: 15%;
+        .a_edit{
+          width: 20%;
           text-align: right;
         }
       }
