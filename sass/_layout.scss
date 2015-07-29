@@ -96,7 +96,7 @@ body{
   margin: 0 !important;
 
   .all_tabs{
-    width: calc(22% - 90px) !important;
+    width: calc(16% ) !important;
     min-width: 15rem;
     //border-right : 1px solid #ddd;
     height: 100%;
@@ -246,6 +246,7 @@ body{
       display: block;
       height: calc(100% - 55px);//full height minus topbar menu height
       .media_menu{
+        border-radius: 0;
         .item.media_filter{
           color: #b33679;
         }
@@ -262,6 +263,7 @@ body{
       }
 
       .media_items{
+        margin: 0;
         .header{
           font-size: 1rem;
           float: left;
@@ -269,14 +271,6 @@ body{
         .meta{
           font-size: 0.8rem;
           float: right;
-        }
-        .image{
-          padding: 2em;
-          img{
-            max-height: 150px;
-            width: initial;
-            margin: 0 auto;
-          }
         }
       }
       
