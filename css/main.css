@@ -267,6 +267,23 @@ body {
         .right_content .column2 .contacts_content .contact_list .c_verify {
           width: 15%;
           text-align: right; }
+    .right_content .column2 .media_content {
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px); }
+      .right_content .column2 .media_content .media_menu .item.media_filter {
+        color: #b33679; }
+      .right_content .column2 .media_content .all_contacts {
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease; }
     .right_content .column2 .autoresponder_content {
       margin: 0;
       position: relative;
@@ -287,21 +304,21 @@ body {
         -o-transition: all 500ms ease;
         -ms-transition: all 500ms ease;
         transition: all 500ms ease; }
-      .right_content .column2 .autoresponder_content .contact_list {
+      .right_content .column2 .autoresponder_content .autoresponder_list {
         width: 100%;
         padding: 10px 0; }
-        .right_content .column2 .autoresponder_content .contact_list .item {
+        .right_content .column2 .autoresponder_content .autoresponder_list .item {
           margin: 0;
           vertical-align: middle; }
-        .right_content .column2 .autoresponder_content .contact_list .a_type {
+        .right_content .column2 .autoresponder_content .autoresponder_list .a_type {
           min-width: 15%; }
-        .right_content .column2 .autoresponder_content .contact_list .a_keyword {
+        .right_content .column2 .autoresponder_content .autoresponder_list .a_keyword {
           width: 15%; }
-        .right_content .column2 .autoresponder_content .contact_list .a_message {
+        .right_content .column2 .autoresponder_content .autoresponder_list .a_message {
           width: 35%; }
-        .right_content .column2 .autoresponder_content .contact_list .a_active {
+        .right_content .column2 .autoresponder_content .autoresponder_list .a_active {
           width: 10%; }
-        .right_content .column2 .autoresponder_content .contact_list .a_edit {
+        .right_content .column2 .autoresponder_content .autoresponder_list .a_edit {
           width: 20%;
           text-align: right; }
     .right_content .column2 .conversation_section {

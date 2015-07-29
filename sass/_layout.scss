@@ -239,6 +239,33 @@ body{
     }
 
 
+    .media_content{//for media page
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      .media_menu{
+        .item.media_filter{
+          color: #b33679;
+
+        }
+      }
+
+      .all_contacts{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      
+      
+    }
+
 
     .autoresponder_content{//for autoresponders page
       margin: 0;
@@ -266,7 +293,7 @@ body{
         -ms-transition: all 500ms ease;
         transition: all 500ms ease;
       }
-      .contact_list{
+      .autoresponder_list{
         width: 100%;
         padding: 10px 0;
         .item{
