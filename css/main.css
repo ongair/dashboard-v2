@@ -239,18 +239,24 @@ body {
       border-right: 1px solid #ddd;
       height: 100%;
       padding-top: 1rem;
-      overflow-y: auto;
-      margin: 0 auto; }
+      overflow-y: auto; }
       .right_content .column2 .edit_profile .ui.card {
-        margin: 0 auto; }
-      .right_content .column2 .edit_profile .status_update .ui.button {
-        float: right;
-        margin: 0; }
-      .right_content .column2 .edit_profile .status_update textarea {
-        min-height: 3.5rem;
-        max-height: 4.5rem;
-        resize: none;
-        border: 1px solid rgba(39, 41, 43, 0.5); }
+        margin: 0 auto;
+        box-shadow: none; }
+      .right_content .column2 .edit_profile img {
+        border-radius: 1rem; }
+      .right_content .column2 .edit_profile .status_update {
+        padding-top: 0; }
+        .right_content .column2 .edit_profile .status_update .ui.button {
+          float: right;
+          margin: 0;
+          background-color: #7a418f;
+          color: #ffffff; }
+        .right_content .column2 .edit_profile .status_update textarea {
+          min-height: 3.5rem;
+          max-height: 4.5rem;
+          resize: none;
+          border: 1px solid rgba(39, 41, 43, 0.5); }
     .right_content .column2 .contacts_content {
       margin: 0;
       position: relative;

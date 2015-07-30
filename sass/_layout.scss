@@ -197,23 +197,30 @@ body{
       height: 100%;
       padding-top: 1rem;
       overflow-y: auto;
-      margin: 0 auto;
       .ui.card{
         margin: 0 auto;
+        box-shadow: none;
+      }
+
+      img{
+        border-radius: 1rem;
       }
       
-    .status_update{
-      .ui.button{
-        float: right;
-        margin: 0;
+      .status_update{// form for status update
+        padding-top: 0;
+        .ui.button{
+          float: right;
+          margin: 0;
+          background-color: #7a418f;
+          color: #ffffff;
+        }
+        textarea{
+          min-height: 3.5rem;
+          max-height: 4.5rem;
+          resize: none;
+          border: 1px solid rgba(39, 41, 43, 0.5);
+        }
       }
-      textarea{
-        min-height: 3.5rem;
-        max-height: 4.5rem;
-        resize: none;
-        border: 1px solid rgba(39, 41, 43, 0.5);
-      }
-    }
     }
 
     .contacts_content{//for contacts page
