@@ -231,13 +231,7 @@ body{
       padding-top: 1rem;
       display: inline-block;
       position: relative;
-      vertical-align: top;
-      -webkit-transition: all 500ms ease;
-      -moz-transition: all 500ms ease;
-      -o-transition: all 500ms ease;
-      -ms-transition: all 500ms ease;
-      transition: all 500ms ease;
-      
+      vertical-align: top;      
     }
 
     .contacts_content{//for contacts page
@@ -352,6 +346,53 @@ body{
       .all_autoresponders{//div that changes width when column3 is toggled
         display: inline-block;
         width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      .autoresponder_list{
+        width: 100%;
+        padding: 10px 0;
+        .item{
+          margin: 0;
+          vertical-align: middle;
+        }
+        .a_type{
+         min-width: 15%;
+        }
+        .a_keyword{
+          width: 15%;
+        }
+        .a_message{
+          width: 35%;
+        }
+        .a_active{
+          width: 10%;
+        }
+        .a_edit{
+          width: 20%;
+          text-align: right;
+        }
+      }
+      
+    }
+
+
+    .locations_content{//for autoresponders page
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      
+
+      .all_locations{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 500px;
+        height: 400px;
         padding: 0;
         -webkit-transition: all 500ms ease;
         -moz-transition: all 500ms ease;
