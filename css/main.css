@@ -142,6 +142,8 @@ body {
         background-color: #7a418f; }
       #sidebar #icon_tabs .item i {
         color: #b33679; }
+      #sidebar #icon_tabs .item img {
+        margin: 0 auto; }
     #sidebar #icon_tabs .item.logout {
       position: fixed;
       width: 100%;
@@ -229,6 +231,26 @@ body {
       .right_content .column2 .conversation .ui.list .item:hover {
         background: rgba(0, 0, 0, 0.03);
         opacity: 0.8; }
+    .right_content .column2 .edit_profile {
+      width: 40%;
+      min-width: 16rem;
+      font-size: 1rem;
+      display: inline-block;
+      border-right: 1px solid #ddd;
+      height: 100%;
+      padding-top: 1rem;
+      overflow-y: auto;
+      margin: 0 auto; }
+      .right_content .column2 .edit_profile .ui.card {
+        margin: 0 auto; }
+      .right_content .column2 .edit_profile .status_update .ui.button {
+        float: right;
+        margin: 0; }
+      .right_content .column2 .edit_profile .status_update textarea {
+        min-height: 3.5rem;
+        max-height: 4.5rem;
+        resize: none;
+        border: 1px solid rgba(39, 41, 43, 0.5); }
     .right_content .column2 .contacts_content {
       margin: 0;
       position: relative;
@@ -426,6 +448,18 @@ body {
             transform: rotate(45deg); }
         .right_content .column2 .conversation_section .ui.comments .metadata {
           float: right; }
+    .right_content .column2 .status_messages {
+      width: 60%;
+      height: 100%;
+      padding-right: 0;
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      -webkit-transition: all 500ms ease;
+      -moz-transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+      -ms-transition: all 500ms ease;
+      transition: all 500ms ease; }
     .right_content .column2 .reply_form {
       width: calc(100% - 1rem);
       position: absolute;

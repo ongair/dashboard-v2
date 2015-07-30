@@ -68,6 +68,9 @@ body{
       i{
         color: #b33679;
       }
+      img{
+        margin: 0 auto;
+      }
     }
     .item.logout{
       position: fixed;
@@ -182,6 +185,35 @@ body{
         background: rgba(0, 0, 0, 0.03);
         opacity: 0.8;
       }
+    }
+
+
+    .edit_profile{// used in status and profile page
+      width: 40%;
+      min-width: 16rem;
+      font-size: 1rem;
+      display: inline-block;
+      border-right : 1px solid #ddd;
+      height: 100%;
+      padding-top: 1rem;
+      overflow-y: auto;
+      margin: 0 auto;
+      .ui.card{
+        margin: 0 auto;
+      }
+      
+    .status_update{
+      .ui.button{
+        float: right;
+        margin: 0;
+      }
+      textarea{
+        min-height: 3.5rem;
+        max-height: 4.5rem;
+        resize: none;
+        border: 1px solid rgba(39, 41, 43, 0.5);
+      }
+    }
     }
 
     .contacts_content{//for contacts page
@@ -440,6 +472,25 @@ body{
         }
       }
     }
+
+
+
+    .status_messages{//used in profile page
+      width: 60% ;
+      height: 100%;////full height minus topbar menu height minus ui.comments margin-top
+      padding-right: 0;
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      -webkit-transition: all 500ms ease;
+      -moz-transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+      -ms-transition: all 500ms ease;
+      transition: all 500ms ease;
+      
+    }
+
+
     .reply_form{
         width: calc(100% - 1rem);
         position: absolute;
