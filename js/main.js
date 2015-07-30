@@ -4,7 +4,7 @@ $(document).ready(function() {
    $('#icon_tabs .item').tab();
    $('.ui.dropdown').dropdown();
    $('.ui.checkbox').checkbox();
-   $('.ui.card .image').dimmer({
+   $('.ui.card.edit_profile_image .image').dimmer({
 	  on: 'hover'
 	});
 
@@ -42,14 +42,20 @@ $('.toggle_column3').click(function() {// used in the dashboard
 	$(".conversation_section").css({"width": "75%"});// in dashboard
 	$(".all_contacts").css({"width": "100%"});// in contacts
 	$(".all_autoresponders").css({"width": "100%"});// in autoresponders
-	$(".all_media").css({"width": "100%"});// in autoresponders
+	$(".all_media").css({"width": "100%"});// in media_items
+	$(".media_items")
+		.removeClass('ui three column grid')
+		.addClass('ui four column grid');// in media
 	$(".all_locations").css({"width": "100%"});// in locations
 	$(".column3").css({"display": "none"});
   } else {
   	$(".conversation_section").css({"width": "50%"});// in dashboard
   	$(".all_contacts").css({"width": "70%"});// in contacts
   	$(".all_autoresponders").css({"width": "70%"});// in autoresponders
-  	$(".all_media").css({"width": "70%"});// in autoresponders
+  	$(".all_media").css({"width": "70%"});// in media
+  	$(".media_items")
+		.removeClass('ui four column grid')
+		.addClass('ui three column grid');// in media
   	$(".all_locations").css({"width": "70%"});// in locations
   	$(".column3").css({"display": "inline-block"});
   }
