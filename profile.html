@@ -234,7 +234,14 @@
             <div class="ui card">
               <h3>Personalize your Ongair - Whatsapp Account</h3>
               <p>Add a Profile Picture (must be 480px wide)</p>
-              <a class="image">
+              <a class="blurring dimmable image">
+                <div class="ui dimmer">
+                  <div class="content">
+                    <div class="center">
+                      <div class="ui inverted button">Edit Profile image</div>
+                    </div>
+                  </div>
+                </div>
                 <img src="images/user2.jpg">
               </a>
               <div class="content">
@@ -273,208 +280,42 @@
             </div>
           </div>
           <div class="status_messages">
-            <div class="ui labeled icon tiny button computer_hide"><i class="left arrow icon"></i> Back
-            </div>
-            <div class="ui comments">
-              <div class="comment from_me">
-                <a class="avatar">
-                <img src="images/user1.jpg">
-                </a>
-                <div class="content">
-                  <a class="author">Matt</a>
-                  <div class="metadata">
-                    <span class="date">5:42PM</span>
-                    <span class="sent"></span>
-                  </div>
-                  <div class="text" ng-repeat="message in messages" ng-bind-html-unsafe="message | emoji">
-                    How artistic! :email:
-                  </div>
-                  <div class="actions">
-                  </div>
+            <h3>Saved status messages</h3>
+            <p>Select one to set it as a status message</p>
+            <div class="ui two column six wide grid">
+              <div class="column">
+                <div class="ui segment">
+                  Business. Technology. Culture. Design
                 </div>
               </div>
-              <div class="ui horizontal divider">Yesterday</div>
-              <div class="comment from_them">
-                <a class="avatar">
-                <img src="images/user2.jpg">
-                </a>
-                <div class="content">
-                  <a class="author" data-content="+254712345678">Elliot Fu</a>
-                  <div class="metadata">
-                    <span class="date">12:30AM</span>
-                  </div>
-                  <div class="text">
-                    <p>Jenny you are always so right even when you thought you were wrong, you were still right,
-                      kenny you are always so right even when you thought you were wrong, you were still right,
-                      kenny you are always so right even when you thought you were wrong, you were still right,
-                      kenny you are always so right even when you thought you were wrong, you were still right,
-                      kenny you are always so right even when you thought you were wrong, you were still right,
-                      kenny you are always so right even when you thought you were wrong, you were still right,
-                      kenny you are always so right even when you thought you were wrong, you were still right,
-                      kenny you are always so right even when you thought you were wrong, you were still right,
-                      kenny you are always so right even when you thought you were wrong, you were still right.
-                    </p>
-                  </div>
-                  <div class="actions">
-                  </div>
+              <div class="column">
+                <div class="ui segment">
+                   Business. Technology. Culture. 
                 </div>
               </div>
-              <div class="comment from_me">
-                <a class="avatar">
-                <img src="images/user3.jpg">
-                </a>
-                <div class="content">
-                  <a class="author">Jenny Hess</a>
-                  <div class="metadata">
-                    <span class="date">Just now</span>
-                    <span class="read"></span>
-                  </div>
-                  <div class="text">
-                    <p>Elliot you are always so right :)</p>
-                  </div>
-                  <div class="actions">
-                  </div>
+              <div class="column">
+                <div class="ui segment">
+                   Business. Technology. Culture. Design
                 </div>
               </div>
-              <div class="comment from_them">
-                <a class="avatar">
-                <img src="images/user4.png">
-                </a>
-                <div class="content">
-                  <a class="author"  data-content="+254712345678">Joe Henderson</a>
-                  <div class="metadata">
-                    <span class="date">10:15PM</span>
-                  </div>
-                  <div class="text">
-                    <p>Dude, this is awesome. Thanks so much</p>
-                  </div>
-                  <div class="actions">
-                  </div>
+              <div class="column">
+                <div class="ui segment">
+                   Business. Culture. Design
                 </div>
               </div>
-              <div class="comment from_them">
-                <a class="avatar">
-                <img src="images/user1.jpg">
-                </a>
-                <div class="content">
-                  <a class="author" data-content="+254734567890">Matt</a>
-                  <div class="metadata">
-                    <span class="date">5:42PM</span>
-                  </div>
-                  <div class="text">
-                    How artistic!
-                  </div>
-                  <div class="actions">
-                  </div>
+              <div class="column">
+                <div class="ui segment">
+                   Business. Technology. Culture.
                 </div>
               </div>
-              <div class="ui horizontal divider">Today</div>
-              <div class="comment from_me">
-                <a class="avatar">
-                <img src="images/user3.jpg">
-                </a>
-                <div class="content">
-                  <a class="author">Elliot Fu</a>
-                  <div class="metadata">
-                    <span class="date">Just now</span>
-                    <span class="read"></span>
-                  </div>
-                  <div class="text">
-                    <p>
-                      Jenny you are always so right even when you thought you were wrong, you were still right,
-                      kenny you are always so right even when you thought you were wrong, you were still right,
-                      kenny you are always so right even when you thought you were wrong, you were still right,
-                      kenny you are always so right even when you thought you were wrong, you were still right,
-                      kenny you are always so right even when you thought you were wrong, you were still right,
-                      kenny you are always so right even when you thought you were wrong, you were still right,
-                      kenny you are always so right even when you thought you were wrong, you were still right,
-                      kenny you are always so right even when you thought you were wrong, you were still right,
-                      kenny you are always so right even when you thought you were wrong, you were still right.
-                    </p>
-                  </div>
+              <div class="column">
+                <div class="ui segment">
+                   Business. Technology. Culture. Design
                 </div>
-              </div>
-              <div class="comment from_me">
-                <a class="avatar">
-                <img src="images/user3.jpg">
-                </a>
-                <div class="content">
-                  <a class="author">Jenny Hess</a>
-                  <div class="metadata">
-                    <span class="date">Just now</span>
-                    <span class="read"></span>
-                  </div>
-                  <div class="text" ng-repeat="message in message" ng-bind-html-unsafe="message | emoji">
-                    Elliot you are always so right :)
-                  </div>
-                </div>
-              </div>
-              <div class="comment from_them">
-                <a class="avatar">
-                <img src="images/user2.jpg">
-                </a>
-                <div class="content">
-                  <a class="author" data-content="+25490123456">Elliot Fu</a>
-                  <div class="metadata">
-                    <span class="date">12:30AM</span>
-                  </div>
-                  <div class="text">
-                    <p>This has been very useful for my research. Thanks as well!</p>
-                  </div>
-                  <div class="actions">
-                  </div>
-                </div>
-              </div>
-              <div class="comment from_them">
-                <a class="avatar">
-                <img src="images/user3.jpg">
-                </a>
-                <div class="content">
-                  <a class="author" data-content="+25456789012">Jenny Hess</a>
-                  <div class="metadata">
-                    <span class="date">Just now</span>
-                  </div>
-                  <div class="text">
-                    Elliot you are always so right :)
-                  </div>
-                  <div class="actions">
-                  </div>
-                </div>
-                <div class="comment from_them">
-                  <a class="avatar">
-                  <img src="images/user4.png">
-                  </a>
-                  <div class="content">
-                    <a class="author"data-content="+25434679832">Joe Henderson</a>
-                    <div class="metadata">
-                      <span class="date">5 days ago</span>
-                    </div>
-                    <div class="text" ng-repeat="message in messages" ng-bind-html-unsafe="emoji">
-                      Dude, this is awesome. Thankss so much :smiley: 
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="reply_form">
-                <form class="ui form">
-                  <label for="file-upload" class="reply_icon">
-                  <i class="large attach icon">
-                  <input id="file-upload" type="file"/>
-                  </i>
-                  </label>
-                  <div class="ui action field reply_field">
-                    <textarea id="messageInput" placeholder="Please describe why" ng-model="message">   
-                    </textarea>
-                    <button id="emojibtn">
-                    <i class="large smile icon transition"></i>
-                    </button>
-                  </div>
-                  <input class="ui green submit button reply_button" type="submit" value="Reply">
-                </form>
               </div>
             </div>
-            <!-- sidebar -->
           </div>
+           <!-- sidebar -->
           <div class="column3">
             <div class="user_info">
               <div class="info_and_notes">

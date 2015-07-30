@@ -4,6 +4,9 @@ $(document).ready(function() {
    $('#icon_tabs .item').tab();
    $('.ui.dropdown').dropdown();
    $('.ui.checkbox').checkbox();
+   $('.ui.card .image').dimmer({
+	  on: 'hover'
+	});
 
   $('.conversation .item.message')//used in dashboard 
 	  .on('click', function() {
