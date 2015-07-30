@@ -372,11 +372,12 @@ body {
       position: relative;
       font-size: 1rem;
       display: block;
-      height: calc(100% - 55px); }
+      height: calc(100% - 55px);
+      padding: 1rem; }
       .right_content .column2 .locations_content .all_locations {
         display: inline-block;
-        width: 500px;
-        height: 400px;
+        width: 100%;
+        height: 100%;
         padding: 0;
         -webkit-transition: all 500ms ease;
         -moz-transition: all 500ms ease;
