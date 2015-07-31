@@ -43,21 +43,20 @@ $('.toggle_column3').click(function() {// used in the dashboard
 	$(".all_contacts").css({"width": "100%"});// in contacts
 	$(".all_autoresponders").css({"width": "100%"});// in autoresponders
 	$(".all_media").css({"width": "100%"});// in media_items
-	$(".media_items")
-		.removeClass('ui three column grid')
-		.addClass('ui four column grid');// in media
 	$(".all_locations").css({"width": "100%"});// in locations
+	$(".all_profile").css({"width": "100%"});// in profile
+	$(".media_items").removeClass('ui three column grid').addClass('ui four column grid');// in media
 	$(".column3").css({"display": "none"});
-  } else {
-  	$(".conversation_section").css({"width": "50%"});// in dashboard
+  } 
+  else {
+  	$(".conversation_section").css({"width": "45%"});// in dashboard
   	$(".all_contacts").css({"width": "70%"});// in contacts
   	$(".all_autoresponders").css({"width": "70%"});// in autoresponders
   	$(".all_media").css({"width": "70%"});// in media
-  	$(".media_items")
-		.removeClass('ui four column grid')
-		.addClass('ui three column grid');// in media
   	$(".all_locations").css({"width": "70%"});// in locations
+  	$(".all_profile").css({"width": "70%"});// in profile
   	$(".column3").css({"display": "inline-block"});
+  	$(".media_items").removeClass('ui four column grid').addClass('ui three column grid');// in media
   }
   $(this).data("clicks", !clicks);
 });

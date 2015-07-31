@@ -231,40 +231,36 @@ body {
       .right_content .column2 .conversation .ui.list .item:hover {
         background: rgba(0, 0, 0, 0.03);
         opacity: 0.8; }
-    .right_content .column2 .edit_profile {
-      width: 40%;
-      min-width: 16rem;
+    .right_content .column2 .profile_content {
+      margin: 0;
+      position: relative;
       font-size: 1rem;
-      display: inline-block;
-      border-right: 1px solid #ddd;
-      height: 100%;
-      padding-top: 1rem;
-      overflow-y: auto; }
-      .right_content .column2 .edit_profile .ui.card {
-        margin: 0 auto;
+      display: block;
+      height: calc(100% - 55px); }
+      .right_content .column2 .profile_content .all_profile {
+        display: inline-block;
+        width: 100%;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease; }
+      .right_content .column2 .profile_content .ui.card {
         box-shadow: none; }
-      .right_content .column2 .edit_profile .image {
+      .right_content .column2 .profile_content .image {
         border-radius: 1rem; }
-      .right_content .column2 .edit_profile .status_update {
+      .right_content .column2 .profile_content .status_update {
         padding-top: 0; }
-        .right_content .column2 .edit_profile .status_update .ui.button {
+        .right_content .column2 .profile_content .status_update .ui.button {
           float: right;
           margin: 0;
           background-color: #7a418f;
           color: #ffffff; }
-        .right_content .column2 .edit_profile .status_update textarea {
+        .right_content .column2 .profile_content .status_update textarea {
           min-height: 3.5rem;
           max-height: 4.5rem;
           resize: none;
           border: 1px solid rgba(39, 41, 43, 0.5); }
-    .right_content .column2 .status_messages {
-      width: 60%;
-      font-size: 1rem;
-      height: 100%;
-      padding-top: 1rem;
-      display: inline-block;
-      position: relative;
-      vertical-align: top; }
     .right_content .column2 .contacts_content {
       margin: 0;
       position: relative;
@@ -578,11 +574,9 @@ body {
       margin: 0 !important;
       height: calc(100% - 55px); }
     .right_content .column2 .column3 {
-      width: 25%;
+      width: 29%;
       height: 100%;
-      padding-top: 2rem !important;
-      padding-left: 0;
-      padding-right: 0;
+      padding: 1rem;
       right: 0;
       font-size: 1rem;
       display: none;
@@ -615,6 +609,15 @@ body {
         .right_content .column2 .column3 .user_info p {
           margin: 0;
           padding-bottom: 0.5rem; }
+      .right_content .column2 .column3 .status_messages {
+        font-size: 1rem;
+        height: 100%;
+        padding-top: 1rem;
+        display: inline-block;
+        position: relative;
+        margin: 0 auto; }
+        .right_content .column2 .column3 .status_messages .ui.segment {
+          margin-bottom: 1rem; }
   .right_content .column2.full_width {
     font-size: 1rem;
     width: calc(100% - 10rem); }
