@@ -325,6 +325,42 @@ body{
     }
 
 
+    .activity_content{//for media page
+      margin: 0;
+      overflow-y: auto;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      
+      .all_activity{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+
+      .activity_items{
+        padding: 0 1rem 1rem 1rem;
+         text-align: center;
+        .ui.card{
+          background-color: #eaeaea;
+          .content{
+            text-align: center;
+            .meta{
+              color: #7a418f;
+            }
+          }
+        }
+      }
+      
+    }
+
+
     .autoresponder_content{//for autoresponders page
       margin: 0;
       position: relative;

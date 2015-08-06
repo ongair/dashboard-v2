@@ -326,6 +326,31 @@ body {
         .right_content .column2 .media_content .media_items .meta {
           font-size: 0.8rem;
           float: right; }
+    .right_content .column2 .activity_content {
+      margin: 0;
+      overflow-y: auto;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px); }
+      .right_content .column2 .activity_content .all_activity {
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease; }
+      .right_content .column2 .activity_content .activity_items {
+        padding: 0 1rem 1rem 1rem;
+        text-align: center; }
+        .right_content .column2 .activity_content .activity_items .ui.card {
+          background-color: #eaeaea; }
+          .right_content .column2 .activity_content .activity_items .ui.card .content {
+            text-align: center; }
+            .right_content .column2 .activity_content .activity_items .ui.card .content .meta {
+              color: #7a418f; }
     .right_content .column2 .autoresponder_content {
       margin: 0;
       position: relative;
