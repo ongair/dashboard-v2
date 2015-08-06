@@ -685,7 +685,10 @@ body {
       .right_content .column2.full_width .compose_content .ui.dropdown {
         margin-left: 1.25rem; }
       .right_content .column2.full_width .compose_content .reply_form {
+        padding-right: 0;
         width: 100%; }
+        .right_content .column2.full_width .compose_content .reply_form .ui.form {
+          width: 100%; }
 
 /** Mobile view starts here **/
 /* Import Media Queries */

@@ -801,7 +801,11 @@ body{
         margin-left: 1.25rem;
       }
       .reply_form{
-        width: 100%;
+        padding-right: 0;
+         width: 100%;
+        .ui.form{
+          width: 100%;
+        }
       }
     }
   }
