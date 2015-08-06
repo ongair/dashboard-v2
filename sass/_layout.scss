@@ -121,14 +121,14 @@ body{
       }
       .item{
         margin-left: 0.5rem;
+        margin-top: 2px;
+        margin-bottom: 2px;
         padding-left: 0.8rem;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
         border-radius:5px;
         font-size: 0.875rem;
         line-height: 1.4rem;
-        margin-top: 2px;
-        margin-bottom: 2px;
       }
       .active.item,.item:hover{
         background-color: #ffffff;
@@ -143,6 +143,9 @@ body{
       }
       .ui.list .item{
          color: #7a418f;
+      }
+      .ui.divider{
+        margin: 0.5rem 0; 
       }
     }
   }

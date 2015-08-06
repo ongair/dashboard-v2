@@ -179,14 +179,14 @@ body {
         color: #7a418f; }
       .right_content .all_tabs .tab_content .item {
         margin-left: 0.5rem;
+        margin-top: 2px;
+        margin-bottom: 2px;
         padding-left: 0.8rem;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
         border-radius: 5px;
         font-size: 0.875rem;
-        line-height: 1.4rem;
-        margin-top: 2px;
-        margin-bottom: 2px; }
+        line-height: 1.4rem; }
       .right_content .all_tabs .tab_content .active.item, .right_content .all_tabs .tab_content .item:hover {
         background-color: #ffffff; }
       .right_content .all_tabs .tab_content .ui.button.tab_button {
@@ -198,6 +198,8 @@ body {
         font-size: 0.75em; }
       .right_content .all_tabs .tab_content .ui.list .item {
         color: #7a418f; }
+      .right_content .all_tabs .tab_content .ui.divider {
+        margin: 0.5rem 0; }
   .right_content .column2 {
     width: calc(84% - 10.4rem);
     height: 100%;
