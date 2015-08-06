@@ -312,6 +312,25 @@ body {
         .right_content .column2 .contacts_content .contact_list .c_verify {
           width: 15%;
           text-align: right; }
+    .right_content .column2 .new_contacts_content {
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      vertical-align: top;
+      display: block;
+      height: calc(100% - 55px); }
+      .right_content .column2 .new_contacts_content .new_contact_form {
+        display: inline-block;
+        width: 50%;
+        padding: 1rem;
+        vertical-align: top;
+        margin: 0; }
+      .right_content .column2 .new_contacts_content .new_contact_message {
+        display: inline-block;
+        width: 40%;
+        padding: 6.6rem 1rem 1rem 1rem;
+        margin: 0;
+        vertical-align: top; }
     .right_content .column2 .media_content {
       margin: 0;
       position: relative;
