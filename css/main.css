@@ -198,6 +198,13 @@ body {
         font-size: 0.75em; }
       .right_content .all_tabs .tab_content .ui.list .item {
         color: #7a418f; }
+      .right_content .all_tabs .tab_content .ui.statistic .label {
+        color: #7a418f;
+        text-align: left; }
+      .right_content .all_tabs .tab_content .ui.statistic .value {
+        color: #7a418f;
+        text-align: left;
+        font-weight: 600; }
       .right_content .all_tabs .tab_content .ui.divider {
         margin: 0.5rem 0; }
   .right_content .column2 {
@@ -278,6 +285,7 @@ body {
         display: inline-block;
         width: 100%;
         padding: 0;
+        overflow-x: auto;
         -webkit-transition: all 500ms ease;
         -moz-transition: all 500ms ease;
         -o-transition: all 500ms ease;
