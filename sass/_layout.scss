@@ -327,7 +327,7 @@ body{
 
     .activity_content{//for media page
       margin: 0;
-      overflow-y: auto;
+      overflow-x: auto;
       position: relative;
       font-size: 1rem;
       display: block;
@@ -343,17 +343,36 @@ body{
         -ms-transition: all 500ms ease;
         transition: all 500ms ease;
       }
-
+      .activity_message{
+        i.icon:not(.close){
+          font-size: 2rem;
+        }
+      }
       .activity_items{
         padding: 0 1rem 1rem 1rem;
-         text-align: center;
+        margin: 0;
         .ui.card{
           background-color: #eaeaea;
+          .ui.statistic{
+            padding: 3.5rem 0;
+            margin: 0;
+          }
           .content{
             text-align: center;
             .meta{
               color: #7a418f;
             }
+          }
+        }
+      }
+
+      .r_inbox{// special kind of statistic
+        .ui.statistics{
+          margin: 0;
+          .statistic{
+            width: 100%;
+            margin: 0;
+            padding: 0.7rem 0;
           }
         }
       }
