@@ -93,7 +93,7 @@ body{
 
 .right_content{
   //left: 7rem !important;
-  left: 10rem !important;//used when account sidebar is visible
+  left: 10.4rem !important;//used when account sidebar is visible
   position: relative;
   height: 100%;
   margin: 0 !important;
@@ -115,7 +115,7 @@ body{
       padding-top: 0.625rem;
       color: #7a418f !important;
       .tab_content_header{
-        padding-left: 1.8rem;
+        padding-left: 1rem;
         padding-bottom: 10px;
         color: #7a418f;
       }
@@ -147,7 +147,7 @@ body{
     }
   }
   .column2{
-    width: calc(84% - 10rem);//used when account sidebar is visible
+    width: calc(84% - 10.4rem);//used when account sidebar is visible
     height: 100%;
     padding: 0 ;
     border-right : 1px solid #ddd;
@@ -344,6 +344,7 @@ body{
         transition: all 500ms ease;
       }
       .activity_message{
+        border-radius: 0;
         i.icon:not(.close){
           font-size: 2rem;
         }
