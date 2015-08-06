@@ -148,6 +148,7 @@ body{
         .label{
           color: #7a418f;
           text-align: left;
+          font-size: 1rem;
         }
         .value{
           color: #7a418f;
@@ -372,6 +373,9 @@ body{
           .ui.statistic{
             padding: 3.5rem 0;
             margin: 0;
+            .label{
+              font-size: 0.8rem;
+            }
           }
           .content{
             text-align: center;
