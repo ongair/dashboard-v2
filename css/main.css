@@ -198,14 +198,16 @@ body {
         font-size: 0.75em; }
       .right_content .all_tabs .tab_content .ui.list .item {
         color: #7a418f; }
-      .right_content .all_tabs .tab_content .ui.statistic .label {
-        color: #7a418f;
-        text-align: left;
-        font-size: 1rem; }
-      .right_content .all_tabs .tab_content .ui.statistic .value {
-        color: #7a418f;
-        text-align: left;
-        font-weight: 600; }
+      .right_content .all_tabs .tab_content .ui.statistic {
+        padding-left: 1rem; }
+        .right_content .all_tabs .tab_content .ui.statistic .label {
+          color: #7a418f;
+          text-align: left;
+          font-size: 1rem; }
+        .right_content .all_tabs .tab_content .ui.statistic .value {
+          color: #7a418f;
+          text-align: left;
+          font-weight: 600; }
       .right_content .all_tabs .tab_content .ui.divider {
         margin: 0.5rem 0; }
   .right_content .column2 {
