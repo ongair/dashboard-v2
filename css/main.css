@@ -101,7 +101,7 @@ body {
     width: 4.5rem;
     padding: 0 0.56rem; }
     #sidebar #account_chooser .item {
-      border-radius: 14px;
+      border-radius: 5px;
       min-width: 3em;
       margin-top: 1.25rem;
       min-height: 3rem;
@@ -118,13 +118,10 @@ body {
       color: #b33679;
       box-shadow: 0 0 0;
       padding: 12px; }
-    #sidebar #account_chooser .item.green_alert {
+    #sidebar #account_chooser .item.safe_alert {
       border: 2px solid #6b8e5c;
       box-shadow: -17px 0px 0px -14px #6b8e5c; }
-    #sidebar #account_chooser .item.grey_alert {
-      border: 2px solid #414652;
-      box-shadow: -17px 0px 0px -14px #414652; }
-    #sidebar #account_chooser .item.red_alert {
+    #sidebar #account_chooser .item.warning_alert {
       border: 2px solid #a91217;
       box-shadow: -17px 0px 0px -14px #a91217; }
   #sidebar #icon_tabs {
@@ -321,7 +318,7 @@ body {
       height: calc(100% - 55px); }
       .right_content .column2 .new_contacts_content .new_contact_form {
         display: inline-block;
-        width: 50%;
+        width: 40%;
         padding: 1rem;
         vertical-align: top;
         margin: 0; }

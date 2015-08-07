@@ -14,7 +14,7 @@ body{
     width: 4.5rem;
     padding: 0 0.56rem;
     .item{
-      border-radius: 14px;
+      border-radius: 5px;
       min-width: 3em;
       margin-top: 1.25rem;
       min-height: 3rem;
@@ -25,6 +25,7 @@ body{
       .account_image{
         max-width: 100%;
         display: inline-block;
+        // border-radius: 5px;
       }
       .label{
         background: #ffffff;
@@ -37,15 +38,15 @@ body{
       box-shadow: 0 0 0;
       padding: 12px;
     }
-    .item.green_alert{
+    .item.safe_alert{
       border: 2px solid #6b8e5c;
       box-shadow:  -17px 0px 0px -14px #6b8e5c;
     }
-    .item.grey_alert{
-      border: 2px solid #414652;
-      box-shadow:  -17px 0px 0px -14px #414652;
-    }
-    .item.red_alert{
+    // .item.grey_alert{
+    //   border: 2px solid #414652;
+    //   box-shadow:  -17px 0px 0px -14px #414652;
+    // }
+    .item.warning_alert{
       border: 2px solid #a91217;
       box-shadow:  -17px 0px 0px -14px #a91217;
     }
@@ -315,7 +316,7 @@ body{
 
       .new_contact_form{//div that changes width when column3 is toggled
         display: inline-block;
-        width: 50%;
+        width: 40%;
         padding: 1rem;
         vertical-align: top;
         margin: 0;
