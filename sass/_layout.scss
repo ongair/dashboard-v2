@@ -211,7 +211,10 @@ body{
       font-size: 1rem;
       display: block;
       height: calc(100% - 55px);//full height minus topbar menu height
-
+      h2{
+        color: #7a418f;
+        margin-top: 1rem;
+      }
       .all_profile{//div that changes width when column3 is toggled
         display: inline-block;
         width: 100%;
@@ -312,7 +315,9 @@ body{
       vertical-align: top;
       display: block;
       height: calc(100% - 55px);//full height minus topbar menu height
-     
+     h2{
+        color: #7a418f;
+      }
 
       .new_contact_form{//div that changes width when column3 is toggled
         display: inline-block;
@@ -320,7 +325,12 @@ body{
         padding: 1rem;
         vertical-align: top;
         margin: 0;
-
+        .ui.button{
+          float: right;
+          margin: 0;
+          background-color: #7a418f;
+          color: #ffffff;
+        }
       }
       .new_contact_message{
         display: inline-block;
