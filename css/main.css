@@ -443,6 +443,49 @@ body {
         .right_content .column2 .autoresponder_content .autoresponder_list .a_edit {
           width: 20%;
           text-align: right; }
+    .right_content .column2 .groups_content {
+      margin: 0;
+      overflow-x: auto;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px); }
+      .right_content .column2 .groups_content .item {
+        padding-right: 1rem;
+        padding-left: 1rem; }
+      .right_content .column2 .groups_content .item.groups_top {
+        font-weight: bold; }
+      .right_content .column2 .groups_content .all_groups {
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease; }
+      .right_content .column2 .groups_content .groups_list {
+        width: 100%;
+        padding: 10px 0; }
+        .right_content .column2 .groups_content .groups_list .item {
+          margin: 0;
+          vertical-align: middle; }
+        .right_content .column2 .groups_content .groups_list .g_name {
+          min-width: 20%; }
+        .right_content .column2 .groups_content .groups_list .g_member {
+          width: 20%; }
+        .right_content .column2 .groups_content .groups_list .g_messages {
+          width: 20%; }
+        .right_content .column2 .groups_content .groups_list .g_type {
+          width: 15%; }
+        .right_content .column2 .groups_content .groups_list .g_tick {
+          width: 15%; }
+        .right_content .column2 .groups_content .groups_list .g_delete {
+          width: 10%;
+          text-align: center; }
+          .right_content .column2 .groups_content .groups_list .g_delete button {
+            color: #ffffff;
+            background-color: #b33679; }
     .right_content .column2 .locations_content {
       margin: 0;
       position: relative;

@@ -72,7 +72,7 @@ $('.setting_popup i')// used in dashboard_menu
   })
 ;
 
-$('.a_edit i')// used in dashboard_menu
+$('.list_popup i')// used in autoresponder and group pages
  .popup({
     popup : $('.setting_popup_content'),
     on    : 'click',
