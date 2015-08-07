@@ -25,7 +25,7 @@ body{
       .account_image{
         max-width: 100%;
         display: inline-block;
-        // border-radius: 5px;
+        border-radius: 5px;
       }
       .label{
         background: #ffffff;
@@ -206,6 +206,7 @@ body{
 
 
     .profile_content{// used in profile page
+      padding-top: 1rem;
       margin: 0;
       position: relative;
       font-size: 1rem;
@@ -213,7 +214,6 @@ body{
       height: calc(100% - 55px);//full height minus topbar menu height
       h2{
         color: #7a418f;
-        margin-top: 1rem;
       }
       .all_profile{//div that changes width when column3 is toggled
         display: inline-block;
@@ -829,6 +829,7 @@ body{
       margin-top: 0;
     }
     .compose_content{//for compose page
+      padding-top: 1rem;
       margin: 0;
       position: relative;
       font-size: 1rem;

@@ -51,7 +51,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent; }
 
 img, a img {
@@ -109,7 +109,8 @@ body {
       background: #333844; }
       #sidebar #account_chooser .item .account_image {
         max-width: 100%;
-        display: inline-block; }
+        display: inline-block;
+        border-radius: 5px; }
       #sidebar #account_chooser .item .label {
         background: #ffffff;
         color: #b33679; }
@@ -241,14 +242,14 @@ body {
         background: rgba(0, 0, 0, 0.03);
         opacity: 0.8; }
     .right_content .column2 .profile_content {
+      padding-top: 1rem;
       margin: 0;
       position: relative;
       font-size: 1rem;
       display: block;
       height: calc(100% - 55px); }
       .right_content .column2 .profile_content h2 {
-        color: #7a418f;
-        margin-top: 1rem; }
+        color: #7a418f; }
       .right_content .column2 .profile_content .all_profile {
         display: inline-block;
         width: 100%;
@@ -703,6 +704,7 @@ body {
     .right_content .column2.full_width .ui.message {
       margin-top: 0; }
     .right_content .column2.full_width .compose_content {
+      padding-top: 1rem;
       margin: 0;
       position: relative;
       font-size: 1rem;
@@ -798,6 +800,7 @@ body {
 
   @page {
     margin: 0.5cm; }
+
   p,
   h2,
   h3 {
@@ -809,5 +812,3 @@ body {
     page-break-after: avoid; } }
 /* Import Cross-browser Compaitibility Files */
 /* ==================================================== */
-
-/*# sourceMappingURL=main.css.map */
