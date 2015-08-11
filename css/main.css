@@ -290,8 +290,9 @@ body {
       .right_content .column2 .contacts_content .item.contacts_top {
         background-color: #cccccc;
         position: fixed;
-        width: 100%;
-        z-index: 100; }
+        width: 74%;
+        z-index: 100;
+        right: 0; }
       .right_content .column2 .contacts_content .all_contacts {
         display: inline-block;
         width: 100%;

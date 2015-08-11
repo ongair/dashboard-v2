@@ -270,8 +270,9 @@ body{
       .item.contacts_top{
         background-color: #cccccc;
         position: fixed;
-        width: 100%;
+        width: 74%;
         z-index:100;
+        right: 0;
       }
 
       .all_contacts{//div that changes width when column3 is toggled

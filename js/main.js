@@ -8,6 +8,16 @@ $(document).ready(function() {
 	  on: 'hover'
 	});
 
+   $('#selectall').click(function() {   
+    if ($(this).hasClass('checked')) {
+        // Iterate each checkbox
+        $('.checkbox').each(function() {
+            this.checked = true; }); }
+    	 else { // Iterate each checkbox 
+    	 	$(".checkbox").each(function() { 
+    	 		this.checked = false; }); }
+	});
+
   $('.conversation .item.message')//used in dashboard 
 	  .on('click', function() {
 	    $(this)
