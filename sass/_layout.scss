@@ -3,7 +3,7 @@ body{
   overflow: hidden;
 }
 #sidebar{
-  width:10.7rem;
+  width:11rem;
   display: inline-flex;
   #account_chooser{
     margin: 0;
@@ -11,8 +11,8 @@ body{
     height: 100%;
     display: inline-block;
     vertical-align: top;
-    width: 4.5rem;
-    padding: 0 0.56rem;
+    width: 4em;
+    padding: 0 5px;
     .item{
       border-radius: 5px;
       min-width: 3em;
@@ -55,14 +55,15 @@ body{
     margin: 0;
     background: #eaeaea;
     height: 100%;
-    width: 7rem;
+    width: 6.6em;
+    border:none;
     display: inline-block;
     .item{
-      padding: 1rem;
+      padding: 1em;
       color: #7a418f;
 
       .label{
-        top: 0.3rem;
+        top: 0.3em;
         left: 68%;
         background-color: #7a418f;
       }
