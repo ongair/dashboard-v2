@@ -282,17 +282,22 @@ body {
       position: relative;
       font-size: 1rem;
       display: block;
+      overflow-y: auto;
       height: calc(100% - 55px); }
       .right_content .column2 .contacts_content .item {
         padding-right: 1rem;
         padding-left: 1rem; }
       .right_content .column2 .contacts_content .item.contacts_top {
-        background-color: #cccccc; }
+        background-color: #cccccc;
+        position: fixed;
+        width: 100%;
+        z-index: 100; }
       .right_content .column2 .contacts_content .all_contacts {
         display: inline-block;
         width: 100%;
         padding: 0;
         overflow-x: auto;
+        margin-top: 43px;
         -webkit-transition: all 500ms ease;
         -moz-transition: all 500ms ease;
         -o-transition: all 500ms ease;

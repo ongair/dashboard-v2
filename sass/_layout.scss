@@ -260,6 +260,7 @@ body{
       position: relative;
       font-size: 1rem;
       display: block;
+      overflow-y: auto;
       height: calc(100% - 55px);//full height minus topbar menu height
       .item{// makes a single contact
         padding-right: 1rem;
@@ -268,6 +269,9 @@ body{
 
       .item.contacts_top{
         background-color: #cccccc;
+        position: fixed;
+        width: 100%;
+        z-index:100;
       }
 
       .all_contacts{//div that changes width when column3 is toggled
@@ -275,6 +279,7 @@ body{
         width: 100%;
         padding: 0;
         overflow-x: auto;
+        margin-top: 43px;
         -webkit-transition: all 500ms ease;
         -moz-transition: all 500ms ease;
         -o-transition: all 500ms ease;
