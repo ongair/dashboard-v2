@@ -313,18 +313,17 @@ body{
           text-align: right;
         }
       }
-      
     }
 
 
-     .new_contacts_content{//for new_contact page
+    .new_contacts_content{//for new_contact page
       margin: 0;
       position: relative;
       font-size: 1rem;
       vertical-align: top;
       display: block;
       height: calc(100% - 55px);//full height minus topbar menu height
-     h2{
+      h2{
         color: #7a418f;
       }
 
@@ -347,6 +346,33 @@ body{
         padding: 6.6rem 1rem 1rem 1rem;
         margin: 0;
         vertical-align: top;
+      }
+      
+    }
+
+     .new_lists_content{//for new_list page
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      vertical-align: top;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      h2{
+        color: #7a418f;
+      }
+
+      .new_list_form{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 80%;
+        padding: 1rem;
+        vertical-align: top;
+        margin: 0;
+        .ui.button{
+          float: right;
+          margin: 0;
+          background-color: #7a418f;
+          color: #ffffff;
+        }
       }
       
     }
