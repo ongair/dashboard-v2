@@ -159,12 +159,12 @@ body {
         font-size: 0.75em; }
 
 .right_content {
-  left: 10.4rem !important;
+  left: 10.4rem;
   position: relative;
   height: 100%;
   margin: 0 !important; }
   .right_content .all_tabs {
-    width: calc(16% ) !important;
+    width: 16%;
     min-width: 15rem;
     height: 100%;
     background: #f0f0f0; }
@@ -173,7 +173,7 @@ body {
       padding-left: 0.938rem; }
     .right_content .all_tabs .tab_content {
       padding-top: 0.625rem;
-      color: #7a418f !important; }
+      color: #7a418f; }
       .right_content .all_tabs .tab_content .tab_content_header {
         padding-left: 1rem;
         padding-bottom: 10px;
@@ -233,7 +233,7 @@ body {
         background: rgba(0, 0, 0, 0.03); }
         .right_content .column2 .conversation .ui.list .item.message i, .right_content .column2 .conversation .ui.list .item.message p {
           text-align: center;
-          color: #b33679 !important; }
+          color: #b33679; }
       .right_content .column2 .conversation .ui.list .item {
         padding: 1rem;
         -webkit-transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
@@ -745,7 +745,7 @@ body {
         .right_content .column2 .dashboard_menu .search.item input {
           width: 100%; }
       .right_content .column2 .dashboard_menu .item:hover {
-        background: inherit !important; }
+        background: inherit; }
         .right_content .column2 .dashboard_menu .item:hover i {
           color: #b33679; }
       .right_content .column2 .dashboard_menu .setting_popup_content {
@@ -763,7 +763,7 @@ body {
           height: 2rem;
           border-radius: 10rem; }
     .right_content .column2 .inbox_content {
-      margin: 0 !important;
+      margin: 0;
       height: calc(100% - 55px); }
     .right_content .column2 .column3 {
       width: 29%;

@@ -20,8 +20,6 @@ body{
       margin-top: 1.25rem;
       min-height: 3rem;
       padding: 4px;
-      // height: 4.5rem !important;
-      // width: 4.5rem !important;
       background: #333844;
       .account_image{
         max-width: 100%;
@@ -96,14 +94,13 @@ body{
 }
 
 .right_content{
-  //left: 7rem !important;
-  left: 10.4rem !important;//used when account sidebar is visible
+  left: 10.4rem;//used when account sidebar is visible
   position: relative;
   height: 100%;
   margin: 0 !important;
 
   .all_tabs{
-    width: calc(16% ) !important;
+    width: 16%;
     min-width: 15rem;
     //border-right : 1px solid #ddd;
     height: 100%;
@@ -117,7 +114,7 @@ body{
 
     .tab_content{
       padding-top: 0.625rem;
-      color: #7a418f !important;
+      color: #7a418f ;
       .tab_content_header{
         padding-left: 1rem;
         padding-bottom: 10px;
@@ -188,7 +185,7 @@ body{
          background: rgba(0, 0, 0, 0.03);
         i,p{
           text-align: center;
-          color: #b33679 !important;
+          color: #b33679 ;
         }
       }
       .ui.list .item{
@@ -885,7 +882,7 @@ body{
         }
       }
       .item:hover{
-        background: inherit !important;
+        background: inherit;
         i{
           color: #b33679;
         }
@@ -912,7 +909,7 @@ body{
       }
     }
     .inbox_content{
-      margin: 0 !important;
+      margin: 0;
       height: calc(100% - 55px);//full height minus topbar menu height
     }
     
