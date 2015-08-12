@@ -580,6 +580,9 @@ body{
        // background-color: #cccccc;
        font-weight: bold;
       }
+      .item.lists_bottom{
+        border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+      }
 
       .all_lists{//div that changes width when column3 is toggled
         display: inline-block;
@@ -609,6 +612,12 @@ body{
         }
         .l_remove{
           width: 10%;
+        }
+        .l_button{//used for button at the bottom of the list
+          .ui.button{
+            color: #ffffff;
+            background-color: #b33679;
+          }
         }
       }
       

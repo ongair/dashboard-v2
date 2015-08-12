@@ -507,6 +507,8 @@ body {
         padding-left: 1rem; }
       .right_content .column2 .lists_content .item.lists_top {
         font-weight: bold; }
+      .right_content .column2 .lists_content .item.lists_bottom {
+        border-bottom: 1px solid rgba(34, 36, 38, 0.15); }
       .right_content .column2 .lists_content .all_lists {
         display: inline-block;
         width: 100%;
@@ -530,6 +532,9 @@ body {
           width: 30%; }
         .right_content .column2 .lists_content .lists_list .l_remove {
           width: 10%; }
+        .right_content .column2 .lists_content .lists_list .l_button .ui.button {
+          color: #ffffff;
+          background-color: #b33679; }
     .right_content .column2 .locations_content {
       margin: 0;
       position: relative;
