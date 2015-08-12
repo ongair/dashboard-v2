@@ -564,6 +564,56 @@ body{
       
     }
 
+    .lists_content{//for lists page
+      margin: 0;
+      overflow-x: auto;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      .item{// makes a single contact
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+
+      .item.lists_top{
+       // background-color: #cccccc;
+       font-weight: bold;
+      }
+
+      .all_lists{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      .lists_list{
+        width: 100%;
+        padding: 10px 0;
+        .item{
+          margin: 0;
+          vertical-align: middle;
+        }
+        .l_name{
+         min-width: 30%;
+        }
+        .l_description{
+          width: 30%;
+        }
+        .l_member{
+          width: 30%;
+        }
+        .l_remove{
+          width: 10%;
+        }
+      }
+      
+    }
+
 
     .locations_content{//for autoresponders page
       margin: 0;
