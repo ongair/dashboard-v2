@@ -8,7 +8,7 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0'
       name='viewport'>
     <!-- Site Properities -->
-    <title>new contact</title>
+    <title>new user</title>
     <link href=
       'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700'
       rel='stylesheet' type='text/css'>
@@ -84,12 +84,12 @@
         <a class="item" data-tab="inbox"><i class="inbox icon"></i>
         Inbox <span class="floating ui tiny circular label">9</span></a> 
         <!-- contacts button-->
-        <a class="active item" data-tab="contacts"><i class="users icon"></i>
+        <a class="item" data-tab="contacts"><i class="users icon"></i>
         Contacts <span class="floating ui tiny circular label">3</span></a> 
         <!-- reports button-->
         <a class="item" data-tab="reports"><i class="bar graph icon"></i>
         Reports</a> <!-- settings button-->
-        <a class="item" data-tab="settings"><i class="settings icon"></i>
+        <a class="active item" data-tab="settings"><i class="settings icon"></i>
         Settings</a> <!-- logout button-->
         <a class="item logout"><i class="power icon"></i> Logout</a>
       </div>
@@ -124,7 +124,7 @@
           </div>
         </div>
         <!-- Contacts begins here-->
-        <div class="ui active tab tab_content" data-tab="contacts">
+        <div class="ui tab tab_content" data-tab="contacts">
           <h2 class="ui header tab_content_header">Contacts</h2>
           <div class="ui link list">
             <a class="ui floating right labeled icon dropdown button item tab_button">
@@ -175,7 +175,7 @@
           </div>
         </div>
         <!-- settings begins here-->
-        <div class="ui tab tab_content" data-tab="settings">
+        <div class="ui active tab tab_content" data-tab="settings">
           <h2 class="ui header tab_content_header">Settings</h2>
           <div class="ui link list">
             <a class="ui item button tab_button">SET AUTORESPONDERS</a>
@@ -197,7 +197,7 @@
           <div class="ui divider"></div>
           <div class="ui link list">
             <a class="item" style="font-weight: bold">Manage Users</a>
-            <a class="item">New User</a>
+            <a class="active item">New User</a>
           </div>
           <div class="ui divider"></div>
           <div class="ui link list">
@@ -216,54 +216,80 @@
             </div>
           </div>
         </div>
-        <div class=" ui grid new_contacts_content">
+        <div class=" ui grid new_user_content">
         <!--  -->
-            <div class="new_contact_form">
+            <div class="new_user_form">
+              <div class="twelve wide column">
+
                 <h4 class="ui teal header">
 
                   <div class="content">
-                    <h2>New Contact</h2>
+                    <h2>New User</h2>
                     <div class="sub header">
-                      Add a new contact
+                      Add a new user
                     </div>
                   </div>
-                  </h4>
+                </h4>
                 <form class="ui form">
-                 
+                  <div class="two fields">
                     <div class="field">
-                      <label for="contact_name">Name</label>
-                      <input id="contact_name" type="text">
+                      <label for="user_name">Name</label>
+                      <input id="user_name" type="text">
                     </div>
+                    <div class="field">
+                      <label for="user_email">Email</label>
+                      <input id="user_email" type="email">
+                    </div>
+                  </div>
+                  <div class="two fields">
                     <div class="field">
                       <label for="contact_phone_number">Phone number</label>
                       <input class="numeric" placeholder="254722200200" type="text">
                     </div>
+                    <div class="field"></div>
+                  </div>
+                  <div class="inline fields">
+                    <label for="fruit">User Role</label>
+                    <div class="field">
+                      <div class="ui radio checkbox">
+                        <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+                        <label>Admin</label>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="ui radio checkbox">
+                        <input type="radio" name="fruit" tabindex="0" class="hidden">
+                        <label>Agent</label>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="ui radio checkbox">
+                        <input type="radio" name="fruit" tabindex="0" class="hidden">
+                        <label>Normal</label>
+                      </div>
+                    </div>
+                  </div>
                     <div class="ui labeled submit small button">
                     SAVE
                     </div>
                     
       
                 </form>
+              </div>
             </div>
-            <div class="new_contact_message">
-                <div class="ui icon warning message">
-                  <i class="warning icon"></i>
-                  <div class="content">
-                     <div class="header">
-                    Before you add this contact?
-                  </div>
-                  <p>
-                    This Contact needs to have saved your number in order for you not to be marked as SPAM.<br>
-                    <a href=""> Read our anti-SPAM policy</a>
-                  </p>
-                  </div>
+            <div class="new_user_message">
+              <div class="ui icon warning message">
+                <i class="warning icon"></i>
+                <div class="content">
+                   <div class="header">
+                  Before you add this contact?
                 </div>
-                    <div class="ui icon warning red message">
-                  <i class="info icon"></i>
-                  <div class="content">
-                    <a class="header centered" href=""> Read our anti-SPAM policy</a>
-                  </div>
+                <p>
+                  This Contact needs to have saved your number in order for you not to be marked as SPAM.<br>
+                  <a href=""> Read our anti-SPAM policy</a>
+                </p>
                 </div>
+              </div>
               </div>
           <!--  -->
         </div>
