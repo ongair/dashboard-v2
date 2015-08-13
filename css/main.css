@@ -393,6 +393,26 @@ body {
           margin: 0;
           background-color: #7a418f;
           color: #ffffff; }
+    .right_content .column2 .change_password_content {
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      vertical-align: top;
+      display: block;
+      height: calc(100% - 55px); }
+      .right_content .column2 .change_password_content h2 {
+        color: #7a418f; }
+      .right_content .column2 .change_password_content .change_password_form {
+        display: inline-block;
+        width: 80%;
+        padding: 1rem;
+        vertical-align: top;
+        margin: 0; }
+        .right_content .column2 .change_password_content .change_password_form .ui.button {
+          float: right;
+          margin: 0;
+          background-color: #7a418f;
+          color: #ffffff; }
     .right_content .column2 .media_content {
       margin: 0;
       position: relative;
@@ -902,7 +922,6 @@ body {
         .right_content .column2.full_width .compose_content .reply_form .ui.form {
           width: 100%; }
 
-/** Mobile view starts here **/
 /* Import Media Queries */
 /* ==================================================== */
 @media only screen and (max-width: 1500px) {
