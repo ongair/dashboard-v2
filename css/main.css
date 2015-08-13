@@ -419,6 +419,26 @@ body {
           margin: 0;
           background-color: #7a418f;
           color: #ffffff; }
+    .right_content .column2 .notifications_content {
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      vertical-align: top;
+      display: block;
+      height: calc(100% - 55px); }
+      .right_content .column2 .notifications_content h2 {
+        color: #7a418f; }
+      .right_content .column2 .notifications_content .notifications_form {
+        display: inline-block;
+        width: 60%;
+        padding: 1rem;
+        vertical-align: top;
+        margin: 0; }
+        .right_content .column2 .notifications_content .notifications_form .ui.button {
+          float: right;
+          margin: 0;
+          background-color: #7a418f;
+          color: #ffffff; }
     .right_content .column2 .change_password_content {
       margin: 0;
       position: relative;

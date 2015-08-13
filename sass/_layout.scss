@@ -447,6 +447,33 @@ body{
     }
 
 
+    .notifications_content{//for new_list page
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      vertical-align: top;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      h2{
+        color: #7a418f;
+      }
+
+      .notifications_form{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 60%;
+        padding: 1rem;
+        vertical-align: top;
+        margin: 0;
+        .ui.button{
+          float: right;
+          margin: 0;
+          background-color: #7a418f;
+          color: #ffffff;
+        }
+      }  
+    }
+
+
     .change_password_content{//for new_password page
       margin: 0;
       position: relative;
