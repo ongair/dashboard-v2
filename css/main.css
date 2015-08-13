@@ -580,6 +580,48 @@ body {
         .right_content .column2 .lists_content .lists_list .l_button .ui.button {
           color: #ffffff;
           background-color: #b33679; }
+    .right_content .column2 .users_content {
+      margin: 0;
+      overflow-x: auto;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px); }
+      .right_content .column2 .users_content .item {
+        padding-right: 1rem;
+        padding-left: 1rem; }
+      .right_content .column2 .users_content .item.users_top {
+        font-weight: bold; }
+      .right_content .column2 .users_content .item.users_bottom {
+        border-bottom: 1px solid rgba(34, 36, 38, 0.15); }
+      .right_content .column2 .users_content .all_users {
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease; }
+      .right_content .column2 .users_content .users_list {
+        width: 100%;
+        padding: 10px 0; }
+        .right_content .column2 .users_content .users_list .item {
+          margin: 0;
+          vertical-align: middle; }
+        .right_content .column2 .users_content .users_list .u_name {
+          min-width: 22%; }
+        .right_content .column2 .users_content .users_list .u_email {
+          width: 30%; }
+        .right_content .column2 .users_content .users_list .u_number {
+          width: 15%; }
+        .right_content .column2 .users_content .users_list .u_admin {
+          width: 15%; }
+        .right_content .column2 .users_content .users_list .u_notify {
+          width: 11%; }
+        .right_content .column2 .users_content .users_list .u_button .ui.button {
+          color: #ffffff;
+          background-color: #b33679; }
     .right_content .column2 .locations_content {
       margin: 0;
       position: relative;

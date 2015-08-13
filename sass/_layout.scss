@@ -683,6 +683,72 @@ body{
     }
 
 
+     .users_content{//for users page
+      margin: 0;
+      overflow-x: auto;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      .item{// makes a single contact
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+
+      .item.users_top{
+       // background-color: #cccccc;
+       font-weight: bold;
+      }
+      .item.users_bottom{
+        border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+      }
+
+      .all_users{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      .users_list{
+        width: 100%;
+        padding: 10px 0;
+        .item{
+          margin: 0;
+          vertical-align: middle;
+        }
+        .u_name{
+         min-width: 22%;
+        }
+        .u_email{
+          width: 30%;
+        }
+        .u_number{
+          width: 15%;
+        }
+        .u_admin{
+          width: 15%;
+        }
+        .u_notify{
+          width: 11%;
+        }
+        .u_remove{
+          //width: 15%;
+        }
+        .u_button{//used for button at the bottom of the list
+          .ui.button{
+            color: #ffffff;
+            background-color: #b33679;
+          }
+        }
+      }
+      
+    }
+
+
     .locations_content{//for autoresponders page
       margin: 0;
       position: relative;
