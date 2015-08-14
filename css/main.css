@@ -273,11 +273,6 @@ body {
           margin: 0;
           background-color: #7a418f;
           color: #ffffff; }
-        .right_content .column2 .profile_content .status_update textarea {
-          min-height: 3.5rem;
-          max-height: 4.5rem;
-          resize: none;
-          border: 1px solid rgba(39, 41, 43, 0.5); }
     .right_content .column2 .contacts_content {
       margin: 0;
       position: relative;
