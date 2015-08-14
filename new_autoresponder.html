@@ -8,7 +8,7 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0'
       name='viewport'>
     <!-- Site Properities -->
-    <title>new list</title>
+    <title>New Autoresponder</title>
     <link href=
       'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700'
       rel='stylesheet' type='text/css'>
@@ -84,12 +84,12 @@
         <a class="item" data-tab="inbox"><i class="inbox icon"></i>
         Inbox <span class="floating ui tiny circular label">9</span></a> 
         <!-- contacts button-->
-        <a class="active item" data-tab="contacts"><i class="users icon"></i>
+        <a class="item" data-tab="contacts"><i class="users icon"></i>
         Contacts <span class="floating ui tiny circular label">3</span></a> 
         <!-- reports button-->
         <a class="item" data-tab="reports"><i class="bar graph icon"></i>
         Reports</a> <!-- settings button-->
-        <a class="item" data-tab="settings"><i class="settings icon"></i>
+        <a class="active item" data-tab="settings"><i class="settings icon"></i>
         Settings</a> <!-- logout button-->
         <a class="item logout"><i class="power icon"></i> Logout</a>
       </div>
@@ -124,7 +124,7 @@
           </div>
         </div>
         <!-- Contacts begins here-->
-        <div class="ui active tab tab_content" data-tab="contacts">
+        <div class="ui tab tab_content" data-tab="contacts">
           <h2 class="ui header tab_content_header">Contacts</h2>
           <div class="ui link list">
             <a class="ui floating right labeled icon dropdown button item tab_button">
@@ -145,14 +145,14 @@
                 </div>
               </div>
             </a>
-            <a class="item" style="font-weight: bold">All Contacts</a>
+            <a class="active item" style="font-weight: bold">All Contacts</a>
             <a class="item">Groups</a>
             <a class="item">Lists</a>
           </div>
           <div class="ui divider"></div>
           <div class="ui link list">
-            <a class="item">Create Group</a> 
-            <a class="active item">Create List</a>
+            <a class="item">Create Group</a> <a class="item">Create
+            List</a>
           </div>
         </div>
         <!-- Reports begins here-->
@@ -175,7 +175,7 @@
           </div>
         </div>
         <!-- settings begins here-->
-        <div class="ui tab tab_content" data-tab="settings">
+        <div class="ui active tab tab_content" data-tab="settings">
           <h2 class="ui header tab_content_header">Settings</h2>
           <div class="ui link list">
             <a class="ui item button tab_button">SET AUTORESPONDERS</a>
@@ -216,65 +216,70 @@
             </div>
           </div>
         </div>
-        <div class=" ui grid new_lists_content">
+        <div class=" ui grid new_auto_content">
         <!--  -->
-            <div class="new_list_form">
-
+            <div class="new_auto_form">
                 <h4 class="ui teal header">
 
                   <div class="content">
-                    <h2>New List</h2>
-                    <div class="sub header">
-                      Add a new List
-                    </div>
+                    <h2>New Auto-responder</h2>
                   </div>
                   </h4>
                 <form class="ui form">
+                
+                   <div class="field">
+                    <label>Response to</label>
+                    <select class="ui dropdown" readonly="" type="text">
+                      <option value="">Choose what to respond to</option>
+                      <option value="text">Text</option>
+                      <option value="image">Image</option>
+                    </select>
+                  </div>
+                  <div class="disabled field">
+                    <label>Matching Keyword (Optional)</label>
+                    <input type="text">
+                  </div>
                   
-                    <div class="two fields">
-                      <div class="field">
-                        <label for="list_name">Name</label>
-                        <input id="list_name" type="text">
-                      </div>
-                      <div class="field">
-                        <label for="list_description">Description</label>
-                        <input id="list_description" type="text">
-                      </div>
-                    </div>
+                  <div class="field">
+                    <label>Message (Max. 300 characters)</label>
+                    <textarea></textarea>
+                  </div>
+                  <div class="inline fields">
                     <div class="field">
                       <div class="ui checkbox">
                         <input type="checkbox" tabindex="0" class="hidden">
-                        <label>Automatically subscribe users</label>
+                        <label>Active</label>
                       </div>
                     </div>
-                    <div class="two fields">
-                      <div class="field">
-                        <label for="list_name">Keyword</label>
-                        <input id="list_name" type="text">
-                      </div>
-                      <div class="field">
-                        <label for="list_description">Stop Word</label>
-                        <input id="list_description" type="text">
+                    <div class="field">
+                      <div class="ui checkbox checked">
+                        <input type="checkbox" checked="" tabindex="0" class="hidden">
+                        <label>Only send this once</label>
                       </div>
                     </div>
-                    <div class="two fields">
-                      <div class="field">
-                        <label>Subscribe auto responder</label>
-                        <textarea></textarea>
-                      </div>
-                      <div class="field">
-                        <label>Unsubscribe auto responder</label>
-                        <textarea></textarea>
-                      </div>
-                    </div>
-
-                    <div class="ui labeled icon submit small button">
-                    <i class="file icon"></i>
-                    SAVE
-                    </div>
+                  </div>
+                  <div class="ui labeled icon submit small button">
+                  <i class="file icon"></i>
+                  SAVE
+                  </div>
                     
+      
                 </form>
             </div>
+            <div class="new_auto_message">
+                <div class="ui icon message">
+                  <i class="help icon"></i>
+                  <div class="content">
+                    <div class="header">
+                      Help
+                    </div>
+                    <p>
+                     You can personalize your Auto-response to include the contact's name by using the tag {{contact_name}}.
+                    </p>
+                    <p>Optionally, you can choose to have this Auto-response only get sent if it matches a keyword.</p>
+                  </div>
+                </div>
+              </div>
           <!--  -->
         </div>
       </div>

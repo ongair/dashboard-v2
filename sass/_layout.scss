@@ -14,6 +14,7 @@ body{
     width: 4em;
     float: left;
     padding: 0 5px;
+    border-radius: 0;
     .item{
       border-radius: 5px;
       min-width: 3em;
@@ -382,6 +383,40 @@ body{
       
     }
 
+    .new_auto_content{//for new autoresponder page
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      vertical-align: top;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      h2{
+        color: #7a418f;
+      }
+
+      .new_auto_form{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 50%;
+        padding: 1rem;
+        vertical-align: top;
+        margin: 0;
+        .ui.button{
+          float: right;
+          margin: 0;
+          background-color: #7a418f;
+          color: #ffffff;
+        }
+      }
+      .new_auto_message{
+        display: inline-block;
+        width: 40%;
+        padding: 6.6rem 1rem 1rem 1rem;
+        margin: 0;
+        vertical-align: top;
+      }
+      
+    }
+
 
 
     .new_user_content{//for new_user page
@@ -733,6 +768,7 @@ body{
       }
       .item.lists_bottom{
         border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+        background-color: rgba(0, 0, 0, 0.05);
       }
 
       .all_lists{//div that changes width when column3 is toggled
@@ -793,6 +829,7 @@ body{
       }
       .item.users_bottom{
         border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+        background-color: rgba(0, 0, 0, 0.05);
       }
 
       .all_users{//div that changes width when column3 is toggled
