@@ -2,6 +2,7 @@
 body{
   overflow: hidden;
 }
+////////////////////////////////////////sidebar///////////////////////////////////////////////
 #sidebar{
   width:11rem;
   display: inline-flex;
@@ -94,11 +95,15 @@ body{
 
 }
 
+/////////////////////////////////////everything else//////////////////////////////////////////////////////////
+
 .right_content{
   left: 10.4rem;//used when account sidebar is visible
   position: relative;
   height: 100%;
   margin: 0 !important;
+
+  //////////////////////////////////////tabs//////////////////////////////////////
 
   .all_tabs{
     width: 16%;
@@ -164,6 +169,8 @@ body{
       }
     }
   }
+
+  //////////////////////////////////content starts here////////////////////////////////////
   .column2{
     width: calc(84% - 10.4rem);//used when account sidebar is visible
     height: 100%;
@@ -173,40 +180,261 @@ body{
     background: #ffffff;
     display: inline-block;
     position: relative;
-    .conversation{
-      width: 25%;
-      min-width: 16rem;
-      font-size: 1rem;
-      display: inline-block;
-      border-right : 1px solid #ddd;
-      height: 100%;
-      padding: 0;
-      overflow-y: auto;
-      .ui.list .item.message{
-         background: rgba(0, 0, 0, 0.03);
-        i,p{
-          text-align: center;
-          color: #b33679 ;
+
+////////////////////reply form in dashboard/////////////////////
+    .reply_form{
+        width: calc(100% - 1rem);
+        position: absolute;
+        display: block;
+        bottom: 0rem;
+        left: 0;
+        height: 3.75rem;
+        z-index: 3;
+        background: #ffffff;
+        .ui.form{
+          width: 97%;//full width minus 
+          height: 3rem;
+          left: 1.6%;
+          border: 2px solid rgba(39, 41, 43, 0.15);
+          border-radius: 5px;
+
+          .reply_icon{
+            float: left;
+            display: inline-block;
+            width: 3rem;
+            height: 2.8rem;
+            padding: 9px 0px 0 8px;
+            border-right : 1px solid #ddd;
+            cursor: pointer;
+            input[type="file"] {
+              display: none;
+            }
+          }
+          .reply_field{
+            display: inline-block;
+            height: 2.9rem;
+            width:calc(100% - 124px); //full width minus icon and button width. give this class borders while adjusting
+            textarea{
+              min-height: 37px;
+              height: 37px;
+              overflow-y: hidden;
+              resize: none;
+              border: none;
+            }
+            #emojibtn{
+              position: absolute;
+              right: 12%;
+              bottom: 0.625rem;
+              border: none;
+              background: none;
+              i:hover{
+                color: #f00;
+                
+              }
+            }
+          }
+          .reply_button{
+            margin: 0;
+            float: right;
+            display: inline-block;
+            width: 5.8rem;
+            font-size:0.9375em; 
+            height: 2.8rem;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+          }
         }
       }
-      .ui.list .item{
-        padding: 1rem;
-        -webkit-transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
-        transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
-  
+
+
+/////////////////////////top menu found in all pages////////////////////////////////
+    .dashboard_menu{
+      background: #eaeaea;
+      height: 55px;
+      .search.item{
+        width: 25%;
+        input{
+          width: 100%;
+        }
       }
-      .ui.list .active.item{
-      background: rgba(0, 0, 0, 0.03);
-      box-shadow: -2px 0em 0em inset;
+      .item:hover{
+        background: inherit;
+        i{
+          color: #b33679;
+        }
       }
-      .ui.list .item:hover{
-        background: rgba(0, 0, 0, 0.03);
-        opacity: 0.8;
+      .setting_popup_content{
+        border-radius: 10px;
+        .ui.list{
+          padding: 0.65rem;
+          width: 10rem;
+          .item{
+            font-size: 0.875em;
+            color: #000000;
+          }
+        }
+      }
+      .ui.input{
+        padding-top: 7px;
+        padding-bottom: 7px;
+        input{
+          //width: 100%;
+          height: 2rem;
+          border-radius: 10rem;
+        }
       }
     }
 
 
-    .profile_content{// used in profile page
+/////////////////////////////////////dashboard page////////////////////////////////
+    .dashboard_content{
+      margin: 0;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      .conversation_section{
+        width: 75% ;
+        height: 100%;////full height minus topbar menu height minus ui.comments margin-top
+        padding-right: 0;
+        font-size: 1rem;
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+        .ui.comments{
+          overflow-y: auto;
+          height: 100%;
+          max-width: 100%;
+          padding-right: 1rem;
+          padding-top: 1rem;
+          margin-top: 0;
+          padding-bottom: 12rem;//added to compensate for reply textarea
+          .ui.divider{
+            clear: both;
+          }
+          .comment.from_me {
+            float: right;
+              clear: both;
+            .avatar{
+              float: right;
+            }
+            .metadata{
+              .read{
+                background: url("../images/read.png");
+                width: 15px; height:12px; display: inline-block;
+              }
+              .received{
+                background: url("../images/received.png");
+                width: 15px; height:12px; display: inline-block;
+              }
+              .sent{
+                background: url("../images/sent.png");
+                width: 11px; height:10px; display: inline-block;
+              }
+            }
+            .content{
+               box-shadow: 1px 1px 3px 2px rgba(39, 41, 43, 0.1);
+              background-color: #eaeaea;
+              padding: 5px 10px;
+              border-radius:10px;
+              margin-right: 1em;
+              float: right;
+              margin-left: 0;
+              max-width: 80%;
+              width: inherit;
+            }
+            .content:after {
+
+              top: 1.25em;
+              bottom: auto;
+              right: 3rem;
+              margin-left: 0em;
+              position: absolute;
+              content: '';
+              width: 0.75em;
+              height: 0.75em;
+              background: inherit;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+
+            
+          }
+          .comment.from_them {
+           clear: both;
+            float: left;
+           .avatar{
+              float: left;
+            }
+           .content{  
+               box-shadow: 2px 1px 4px rgba(39, 41, 43, 0.15);
+              background-color: #edf9ff;
+              padding: 5px 10px;
+              border-radius:10px;
+              margin-left: 3.5em;
+              
+              margin-right: 0; 
+              max-width: 80%;
+              width: inherit;
+            }
+            .content:before {
+              top: 1.25em;
+              bottom: auto;
+              left: 3rem;
+              margin-left: 0em;
+              position: absolute;
+              content: '';
+              width: 0.75em;
+              height: 0.75em;
+              background: inherit;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+          }
+          .metadata{
+            float: right;
+          }
+        }
+      }
+      .conversation{
+        width: 25%;
+        min-width: 16rem;
+        font-size: 1rem;
+        display: inline-block;
+        border-right : 1px solid #ddd;
+        height: 100%;
+        padding: 0;
+        overflow-y: auto;
+        .ui.list .item.message{
+           background: rgba(0, 0, 0, 0.03);
+          i,p{
+            text-align: center;
+            color: #b33679 ;
+          }
+        }
+        .ui.list .item{
+          padding: 1rem;
+          -webkit-transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
+          transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
+    
+        }
+        .ui.list .active.item{
+        background: rgba(0, 0, 0, 0.03);
+        box-shadow: -2px 0em 0em inset;
+        }
+        .ui.list .item:hover{
+          background: rgba(0, 0, 0, 0.03);
+          opacity: 0.8;
+        }
+      }
+    }
+    
+////////////////////////////////profile page////////////////////////////////////////
+    .profile_content{
       padding-top: 1rem;
       margin: 0;
       position: relative;
@@ -246,8 +474,8 @@ body{
     }
 
 
-
-    .contacts_content{//for contacts page
+/////////////////////////////////contacts page////////////////////////////////////////////////
+    .contacts_content{
       margin: 0;
       position: relative;
       font-size: 1rem;
@@ -307,8 +535,8 @@ body{
       }
     }
 
-
-    .new_contacts_content{//for new_contact page
+////////////////////////////////////////new_contact page/////////////////////////////////////////
+    .new_contacts_content{
       margin: 0;
       position: relative;
       font-size: 1rem;
@@ -342,8 +570,8 @@ body{
       
     }
 
-
-    .account_content{//for account page
+////////////////////////////////////////////////account page///////////////////////////////////////
+    .account_content{
       margin: 0;
       position: relative;
       font-size: 1rem;
@@ -377,7 +605,9 @@ body{
       
     }
 
-    .new_auto_content{//for new autoresponder page
+
+/////////////////////////////////////////////////autoresponder page////////////////////////////////////
+    .new_auto_content{
       margin: 0;
       position: relative;
       font-size: 1rem;
@@ -412,8 +642,8 @@ body{
     }
 
 
-
-    .new_user_content{//for new_user page
+////////////////////////////////////////////new_user page////////////////////////////////////////
+    .new_user_content{
       margin: 0;
       position: relative;
       font-size: 1rem;
@@ -448,8 +678,8 @@ body{
     }
 
 
-
-    .new_lists_content{//for new_list page
+///////////////////////////////new_list page///////////////////////////
+    .new_lists_content{
       margin: 0;
       position: relative;
       font-size: 1rem;
@@ -475,8 +705,8 @@ body{
       }  
     }
 
-
-    .notifications_content{//for new_list page
+/////////////////////////////notifications page////////////////////////////////////////
+    .notifications_content{
       margin: 0;
       position: relative;
       font-size: 1rem;
@@ -502,8 +732,8 @@ body{
       }  
     }
 
-
-    .change_password_content{//for new_password page
+////////////////////////////////new_password page/////////////////////////////
+    .change_password_content{
       margin: 0;
       position: relative;
       font-size: 1rem;
@@ -530,8 +760,8 @@ body{
       
     }
 
-
-    .media_content{//for media page
+////////////////////////////////media page///////////////////////////////
+    .media_content{
       margin: 0;
       position: relative;
       font-size: 1rem;
@@ -568,8 +798,8 @@ body{
       
     }
 
-
-    .activity_content{//for media page
+//////////////////////////recent_activity page////////////////////////
+    .activity_content{
       margin: 0;
       overflow-x: auto;
       position: relative;
@@ -627,8 +857,8 @@ body{
       
     }
 
-
-    .autoresponder_content{//for autoresponders page
+///////////////////////////// autoresponders page///////////////////////////////////
+    .autoresponder_content{
       margin: 0;
       position: relative;
       font-size: 1rem;
@@ -682,7 +912,8 @@ body{
       
     }
 
-    .groups_content{//for groups page
+/////////////////////////////groups page//////////////////////////////////////
+    .groups_content{
       margin: 0;
       overflow-x: auto;
       position: relative;
@@ -744,7 +975,9 @@ body{
       
     }
 
-    .lists_content{//for lists page
+
+////////////////////////////////lists page////////////////////////////
+    .lists_content{
       margin: 0;
       overflow-x: auto;
       position: relative;
@@ -804,8 +1037,8 @@ body{
       
     }
 
-
-     .users_content{//for users page
+///////////////////////////////////users page//////////////////////////
+    .users_content{
       margin: 0;
       overflow-x: auto;
       position: relative;
@@ -872,7 +1105,8 @@ body{
     }
 
 
-    .locations_content{//for autoresponders page
+///////////////////////locations page//////////////////////////////////
+    .locations_content{
       margin: 0;
       position: relative;
       font-size: 1rem;
@@ -920,224 +1154,9 @@ body{
       
     }
 
-    .conversation_section{
-      width: 75% ;
-      height: 100%;////full height minus topbar menu height minus ui.comments margin-top
-      padding-right: 0;
-      font-size: 1rem;
-      display: inline-block;
-      position: relative;
-      vertical-align: top;
-      -webkit-transition: all 500ms ease;
-      -moz-transition: all 500ms ease;
-      -o-transition: all 500ms ease;
-      -ms-transition: all 500ms ease;
-      transition: all 500ms ease;
-      .ui.comments{
-        overflow-y: auto;
-        height: 100%;
-        max-width: 100%;
-        padding-right: 1rem;
-        padding-top: 1rem;
-        margin-top: 0;
-        padding-bottom: 12rem;//added to compensate for reply textarea
-        .ui.divider{
-          clear: both;
-        }
-        .comment.from_me {
-          float: right;
-            clear: both;
-          .avatar{
-            float: right;
-          }
-          .metadata{
-            .read{
-              background: url("../images/read.png");
-              width: 15px; height:12px; display: inline-block;
-            }
-            .received{
-              background: url("../images/received.png");
-              width: 15px; height:12px; display: inline-block;
-            }
-            .sent{
-              background: url("../images/sent.png");
-              width: 11px; height:10px; display: inline-block;
-            }
-          }
-          .content{
-             box-shadow: 1px 1px 3px 2px rgba(39, 41, 43, 0.1);
-            background-color: #eaeaea;
-            padding: 5px 10px;
-            border-radius:10px;
-            margin-right: 1em;
-            float: right;
-            margin-left: 0;
-            max-width: 80%;
-            width: inherit;
-          }
-          .content:after {
+   
 
-            top: 1.25em;
-            bottom: auto;
-            right: 3rem;
-            margin-left: 0em;
-            position: absolute;
-            content: '';
-            width: 0.75em;
-            height: 0.75em;
-            background: inherit;
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-          }
-
-          
-        }
-        .comment.from_them {
-         clear: both;
-          float: left;
-         .avatar{
-            float: left;
-          }
-         .content{  
-             box-shadow: 2px 1px 4px rgba(39, 41, 43, 0.15);
-            background-color: #edf9ff;
-            padding: 5px 10px;
-            border-radius:10px;
-            margin-left: 3.5em;
-            
-            margin-right: 0; 
-            max-width: 80%;
-            width: inherit;
-          }
-          .content:before {
-            top: 1.25em;
-            bottom: auto;
-            left: 3rem;
-            margin-left: 0em;
-            position: absolute;
-            content: '';
-            width: 0.75em;
-            height: 0.75em;
-            background: inherit;
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-          }
-        }
-        .metadata{
-          float: right;
-        }
-      }
-    }
-
-
-
-
-    .reply_form{
-        width: calc(100% - 1rem);
-        position: absolute;
-        display: block;
-        bottom: 0rem;
-        left: 0;
-        height: 3.75rem;
-        z-index: 3;
-        background: #ffffff;
-        .ui.form{
-          width: 97%;//full width minus 
-          height: 3rem;
-          left: 1.6%;
-          border: 2px solid rgba(39, 41, 43, 0.15);
-          border-radius: 5px;
-
-          .reply_icon{
-            float: left;
-            display: inline-block;
-            width: 3rem;
-            height: 2.8rem;
-            padding: 9px 0px 0 8px;
-            border-right : 1px solid #ddd;
-            cursor: pointer;
-            input[type="file"] {
-              display: none;
-            }
-          }
-          .reply_field{
-            display: inline-block;
-            height: 2.9rem;
-            width:calc(100% - 124px); //full width minus icon and button width. give this class borders while adjusting
-            textarea{
-              min-height: 37px;
-              height: 37px;
-              overflow-y: hidden;
-              resize: none;
-              border: none;
-            }
-            #emojibtn{
-              position: absolute;
-              right: 12%;
-              bottom: 0.625rem;
-              border: none;
-              background: none;
-              i:hover{
-                color: #f00;
-                
-              }
-            }
-          }
-          .reply_button{
-            margin: 0;
-            float: right;
-            display: inline-block;
-            width: 5.8rem;
-            font-size:0.9375em; 
-            height: 2.8rem;
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-          }
-        }
-      }
-    .dashboard_menu{
-      background: #eaeaea;
-      height: 55px;
-      .search.item{
-        width: 25%;
-        input{
-          width: 100%;
-        }
-      }
-      .item:hover{
-        background: inherit;
-        i{
-          color: #b33679;
-        }
-      }
-      .setting_popup_content{
-        border-radius: 10px;
-        .ui.list{
-          padding: 0.65rem;
-          width: 10rem;
-          .item{
-            font-size: 0.875em;
-            color: #000000;
-          }
-        }
-      }
-      .ui.input{
-        padding-top: 7px;
-        padding-bottom: 7px;
-        input{
-          //width: 100%;
-          height: 2rem;
-          border-radius: 10rem;
-        }
-      }
-    }
-    .inbox_content{
-      margin: 0;
-      height: calc(100% - 55px);//full height minus topbar menu height
-    }
-    
+///////////////////////////////side panel//////////////////////////
     .column3{
       width: 29%;
       height: 100%;
@@ -1193,14 +1212,19 @@ body{
         }   
       }
     }
+
   }
+///////////////////////special pages without tabs//////////////////////////////////////////////////////////////
   .column2.full_width{
     font-size: 1rem;
     width: calc(100% - 10rem);
     .ui.message{
       margin-top: 0;
     }
-    .compose_content{//for compose page
+
+
+////////////////////////compose page//////////////////////////////
+    .compose_content{
       padding-top: 1rem;
       margin: 0;
       position: relative;
