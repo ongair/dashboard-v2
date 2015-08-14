@@ -945,11 +945,6 @@ body {
         .right_content .column2 .column3 .user_info .ui.button {
           float: right;
           margin: 0; }
-        .right_content .column2 .column3 .user_info textarea {
-          min-height: 3.5rem;
-          max-height: 4.5rem;
-          resize: none;
-          border: 1px solid rgba(39, 41, 43, 0.5); }
         .right_content .column2 .column3 .user_info h2 {
           margin: 0;
           margin-bottom: 1rem;
