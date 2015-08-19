@@ -1008,9 +1008,14 @@ body {
     display: none !important; }
 
   #sidebar {
-    width: 7rem; }
+    width: 20rem; }
     #sidebar #icon_tabs {
       width: 100%; }
+      #sidebar #icon_tabs .item:not(.btn_item) .ui.label {
+        display: none; }
+      #sidebar #icon_tabs .item.logout {
+        position: relative;
+        bottom: initial; }
 
   .right_content {
     left: 0 !important;

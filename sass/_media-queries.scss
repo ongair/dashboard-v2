@@ -37,9 +37,22 @@
 		display: none !important;
 	}
 	#sidebar{
-		width: 7rem;
+		width: 20rem;
 		#icon_tabs{
 			width: 100%;
+			.item:not(.btn_item){
+				//height: 19% !important;
+				//padding: 2rem;
+				.ui.label{
+					display: none;
+				}
+			}
+			//only applies to logout page
+			.item.logout{
+				position: relative;
+				bottom: initial;
+
+			}
 		}
 	}
 	.right_content{

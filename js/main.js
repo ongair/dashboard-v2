@@ -106,12 +106,17 @@ $('.ui.comments .from_them .content .author')// used in contacts page
 	   if(width <= 768){
 	       $('#sidebar #icon_tabs')
 	       
-	       	//.removeClass('labeled borderless icon')
+	       	.removeClass('labeled borderless icon')
+	       	; 
+
+	       	$('#icon_tabs .item')
+	       
+	       	//.addClass('ui styled accordion')
 	       	; 
 
 	       $('#sidebar')
 			  .sidebar('attach events', '.sidebar_toggle' )
-			  .sidebar('attach events', '#icon_tabs .item', 'hide' )
+			  //.sidebar('attach events', '#icon_tabs .item', 'hide' )
 			  .removeClass('visible')
 			;
 			
