@@ -1007,6 +1007,11 @@ body {
   .conversation_section {
     display: none !important; }
 
+  #sidebar {
+    width: 7rem; }
+    #sidebar #icon_tabs {
+      width: 100%; }
+
   .right_content {
     left: 0 !important;
     margin-top: 0 !important; }
@@ -1019,7 +1024,7 @@ body {
         margin-top: 0; }
     .right_content .column2 {
       width: 100%; }
-      .right_content .column2 .conversation {
+      .right_content .column2 .dashboard_content .conversation {
         width: 100%; }
     .right_content .column3 {
       display: none !important; } }

@@ -104,13 +104,15 @@ $('.ui.comments .from_them .content .author')// used in contacts page
 	$(window).resize(function(){//handles some stuff on mobile 
 	   console.log('resize called');
 	   if(width <= 768){
-	       $('#sidebar')
-	       	.removeClass('visible')
-	       	.removeClass('labeled icon'); 
+	       $('#sidebar #icon_tabs')
+	       
+	       	//.removeClass('labeled borderless icon')
+	       	; 
 
 	       $('#sidebar')
 			  .sidebar('attach events', '.sidebar_toggle' )
 			  .sidebar('attach events', '#icon_tabs .item', 'hide' )
+			  .removeClass('visible')
 			;
 			
 			

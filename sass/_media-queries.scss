@@ -36,6 +36,12 @@
 	.conversation_section{//hiding this div temporarily
 		display: none !important;
 	}
+	#sidebar{
+		width: 7rem;
+		#icon_tabs{
+			width: 100%;
+		}
+	}
 	.right_content{
 		left: 0 !important;
 		margin-top: 0 !important;
@@ -54,8 +60,10 @@
 
 		.column2{
 			width: 100%;
-			.conversation{
-				width: 100%;
+			.dashboard_content{
+				.conversation{
+					width: 100%;
+				}
 			}
 		}
 
