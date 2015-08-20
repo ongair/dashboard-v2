@@ -27,6 +27,12 @@ $(document).ready(function() {
 	  })
 	;
 
+	$('.ui.sticky')
+	  .sticky({
+	    context: '.column2'
+	  })
+	;
+
 	$('.compose_message .close')//used in compose page for important messages
 	  .on('click', function() {
 	    $(this)
@@ -45,7 +51,7 @@ $(document).ready(function() {
 	  })
 	;
 
-$('.toggle_column3').click(function() {// used in the dashboard
+$('.toggle_column3').click(function() {//
 
   var clicks = $(this).data('clicks');
   if (clicks) {

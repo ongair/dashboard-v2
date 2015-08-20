@@ -456,11 +456,17 @@ body{
       .ui.card{
        // margin: 0 auto;
         box-shadow: none;
+        .image{
+          border-radius: 1rem !important;
+          width: 200px;
+          margin-left: 1rem;
+        }
+        .content{
+          border-top: none;
+        }
       }
 
-      .image{
-        border-radius: 1rem;
-      }
+      
       
       .status_update{// form for status update
         padding-top: 0;
@@ -475,6 +481,11 @@ body{
 
 
     /////////////////////////////////contacts page////////////////////////////////////////////////
+    .contacts_top{
+        margin: 0;
+        padding: 1rem;
+        background-color: #cccccc;
+      }
     .contacts_content{
       margin: 0;
       position: relative;
@@ -487,20 +498,14 @@ body{
         padding-left: 1rem;
       }
 
-      .item.contacts_top{
-        background-color: #cccccc;
-        position: fixed;
-        width: 74%;
-        z-index:100;
-        right: 0;
-      }
+      
 
       .all_contacts{//div that changes width when column3 is toggled
         display: inline-block;
         width: 100%;
         padding: 0;
         overflow-x: auto;
-        margin-top: 43px;
+        //margin-top: 43px;
         -webkit-transition: all 500ms ease;
         -moz-transition: all 500ms ease;
         -o-transition: all 500ms ease;
