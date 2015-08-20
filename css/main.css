@@ -463,7 +463,10 @@ body {
     .right_content .column2 .contacts_top {
       margin: 0;
       padding: 1rem;
-      background-color: #cccccc; }
+      background-color: #cccccc;
+      vertical-align: middle; }
+      .right_content .column2 .contacts_top .contact_list {
+        text-align: center; }
     .right_content .column2 .contacts_content {
       margin: 0;
       position: relative;
