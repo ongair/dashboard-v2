@@ -314,6 +314,13 @@ body{
           .ui.divider{
             clear: both;
           }
+          .ui.button.image_btn{
+            margin: 0;
+            color: #ffffff;
+            background-color: #b33679;
+            padding: 0.56rem;
+            font-size: 0.75em;
+          }
           .comment.from_me {
             float: right;
               clear: both;
@@ -366,6 +373,9 @@ body{
           .comment.from_them {
            clear: both;
             float: left;
+            .d_flag{
+              margin-left: 0.5rem;
+            }
            .avatar{
               float: left;
             }
@@ -377,7 +387,7 @@ body{
               margin-left: 3.5em;
               
               margin-right: 0; 
-              max-width: 80%;
+              max-width: 90%;
               width: inherit;
             }
             .content:before {
