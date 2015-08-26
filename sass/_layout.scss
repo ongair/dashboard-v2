@@ -106,7 +106,7 @@ body{
   //////////////////////////////////////tabs//////////////////////////////////////
 
   .all_tabs{
-    width: 16%;
+    width: 16% !important;//important because semantic would override this setting 
     min-width: 15rem;
     //border-right : 1px solid #ddd;
     height: 100%;
@@ -534,13 +534,13 @@ body{
           margin: 0;
         }
         .c_checkbox{
-          width: 3%;
+          width: 5%;
         }
         .c_image{
-         min-width: 8%;
+         min-width: 10%;
         }
         .c_name{
-          width: 27%;
+          width: 30%;
         }
         .c_number{
           width: 30%;
@@ -1164,7 +1164,7 @@ body{
           width: 35%;
         }
         .a_active{
-          width: 10%;
+          width: 15%;
         }
         .a_edit{
           width: 20%;

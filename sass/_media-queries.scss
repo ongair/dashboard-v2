@@ -33,8 +33,22 @@
 	.tablet_hide{
 	 	display: none !important;
 	 }
-	.conversation_section{//hiding this div temporarily
-		display: none !important;
+	 .dashboard_content .pusher{
+	 	width: 100% !important;
+	 	padding: 0;
+	 }
+	.conversation_section{
+		// background-color: #ffffff;
+		// padding: 1rem;
+		width: 100% !important;
+		padding: 0 !important;
+		.ui.button{
+			display: inline-block !important;
+		}
+		.ui.comments{
+			display: inline-block;
+			width: 100%;
+		}	
 	}
 	#sidebar{
 		width: 20rem;

@@ -165,7 +165,7 @@ body {
   height: 100%;
   margin: 0 !important; }
   .right_content .all_tabs {
-    width: 16%;
+    width: 16% !important;
     min-width: 15rem;
     height: 100%;
     background: #f0f0f0; }
@@ -494,11 +494,11 @@ body {
         .right_content .column2 .contacts_content .contact_list .item {
           margin: 0; }
         .right_content .column2 .contacts_content .contact_list .c_checkbox {
-          width: 3%; }
+          width: 5%; }
         .right_content .column2 .contacts_content .contact_list .c_image {
-          min-width: 8%; }
+          min-width: 10%; }
         .right_content .column2 .contacts_content .contact_list .c_name {
-          width: 27%; }
+          width: 30%; }
         .right_content .column2 .contacts_content .contact_list .c_number {
           width: 30%; }
         .right_content .column2 .contacts_content .contact_list .c_edit {
@@ -935,7 +935,7 @@ body {
         .right_content .column2 .locations_content .autoresponder_list .a_message {
           width: 35%; }
         .right_content .column2 .locations_content .autoresponder_list .a_active {
-          width: 10%; }
+          width: 15%; }
         .right_content .column2 .locations_content .autoresponder_list .a_edit {
           width: 20%;
           text-align: right; }
@@ -1019,8 +1019,18 @@ body {
   .tablet_hide {
     display: none !important; }
 
+  .dashboard_content .pusher {
+    width: 100% !important;
+    padding: 0; }
+
   .conversation_section {
-    display: none !important; }
+    width: 100% !important;
+    padding: 0 !important; }
+    .conversation_section .ui.button {
+      display: inline-block !important; }
+    .conversation_section .ui.comments {
+      display: inline-block;
+      width: 100%; }
 
   #sidebar {
     width: 20rem; }
