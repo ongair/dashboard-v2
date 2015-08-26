@@ -27,6 +27,12 @@ $(document).ready(function() {
 	  })
 	;
 
+	$('.ui.sticky')
+	  .sticky({
+	    context: '.column2'
+	  })
+	;
+
 	$('.compose_message .close')//used in compose page for important messages
 	  .on('click', function() {
 	    $(this)
@@ -45,7 +51,7 @@ $(document).ready(function() {
 	  })
 	;
 
-$('.toggle_column3').click(function() {// used in the dashboard
+$('.toggle_column3').click(function() {//
 
   var clicks = $(this).data('clicks');
   if (clicks) {
@@ -104,13 +110,20 @@ $('.ui.comments .from_them .content .author')// used in contacts page
 	$(window).resize(function(){//handles some stuff on mobile 
 	   console.log('resize called');
 	   if(width <= 768){
-	       $('#sidebar')
-	       	.removeClass('visible')
-	       	.removeClass('labeled icon'); 
+	       $('#sidebar #icon_tabs')
+	       
+	       	.removeClass('labeled borderless icon')
+	       	; 
+
+	       	$('#icon_tabs .item')
+	       
+	       	//.addClass('ui styled accordion')
+	       	; 
 
 	       $('#sidebar')
 			  .sidebar('attach events', '.sidebar_toggle' )
-			  .sidebar('attach events', '#icon_tabs .item', 'hide' )
+			  //.sidebar('attach events', '#icon_tabs .item', 'hide' )
+			  .removeClass('visible')
 			;
 			
 			

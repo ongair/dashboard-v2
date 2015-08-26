@@ -8,7 +8,7 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0'
       name='viewport'>
     <!-- Site Properities -->
-    <title>Media</title>
+    <title>Notifications</title>
     <link href=
       'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700'
       rel='stylesheet' type='text/css'>
@@ -48,7 +48,7 @@
         </a>
         <a class="item">
         <span class="image">
-        <img class="account_image" src="images/account1.png" />
+        <img class="account_image" src="images/user1.jpg" />
         </span>
         </a>
         <a class="item">
@@ -81,7 +81,7 @@
           </form>
         </a>
         <!-- inbox button-->
-        <a class="active item" data-tab="inbox"><i class="inbox icon"></i>
+        <a class="item" data-tab="inbox"><i class="inbox icon"></i>
         Inbox <span class="floating ui tiny circular label">9</span></a> 
         <!-- contacts button-->
         <a class="item" data-tab="contacts"><i class="users icon"></i>
@@ -89,7 +89,7 @@
         <!-- reports button-->
         <a class="item" data-tab="reports"><i class="bar graph icon"></i>
         Reports</a> <!-- settings button-->
-        <a class="item" data-tab="settings"><i class="settings icon"></i>
+        <a class="active item" data-tab="settings"><i class="settings icon"></i>
         Settings</a> <!-- logout button-->
         <a class="item logout"><i class="power icon"></i> Logout</a>
       </div>
@@ -105,13 +105,13 @@
       <div class="column all_tabs">
         <!-- all tabs require the class name as below -->
         <!-- Inbox begins here-->
-        <div class="ui active tab tab_content" data-tab="inbox">
+        <div class="ui tab tab_content" data-tab="inbox">
           <h2 class="ui header tab_content_header">Inbox</h2>
           <div class="ui link list">
-            <a class="item" style="font-weight: bold">Open
+            <a class="active item" style="font-weight: bold">Open
             Conversations</a> <a class="item">Group Messages</a>
             <a class="item">Favorite Messages</a> <a class=
-              "active item">Media(audio/images)</a> <a class=
+              "item">Media(audio/images)</a> <a class=
               "item">Locations</a>
           </div>
           <div class="ui divider"></div>
@@ -133,7 +133,7 @@
               <div class="menu">
                 <div class="item">
                   <i class="user icon"></i>
-                  Add Contact
+                  Add a Contact
                 </div>
                 <div class="item">
                   <i class="cloud icon"></i>
@@ -145,14 +145,14 @@
                 </div>
               </div>
             </a>
-            <a class="active item" style="font-weight: bold">All Contacts</a>
+            <a class="item" style="font-weight: bold">All Contacts</a>
             <a class="item">Groups</a>
             <a class="item">Lists</a>
           </div>
           <div class="ui divider"></div>
           <div class="ui link list">
-            <a class="item">Create Group</a> <a class="item">Create
-            List</a>
+            <a class="item">Create Group</a> 
+            <a class="active item">Create List</a>
           </div>
         </div>
         <!-- Reports begins here-->
@@ -175,7 +175,7 @@
           </div>
         </div>
         <!-- settings begins here-->
-        <div class="ui tab tab_content" data-tab="settings">
+        <div class="ui active tab tab_content" data-tab="settings">
           <h2 class="ui header tab_content_header">Settings</h2>
           <div class="ui link list">
             <a class="ui item button tab_button">SET AUTORESPONDERS</a>
@@ -185,7 +185,7 @@
             <a class="item" style=
               "font-weight: bold">Profile & Status</a>
             <div class="ui divider"></div>
-            <a class="item" style=
+            <a class="active item" style=
               "font-weight: bold">Manage Notifications</a>
           </div>
           <div class="ui divider"></div>
@@ -215,129 +215,59 @@
               <i class="search icon"></i>
             </div>
           </div>
-          <!-- <a class="item"><i class="large add user icon"></i></a>
-          <a class="item"><i class="large unlock icon"></i></a>
-          <a class="item"><i class="large list icon"></i></a>
-          <a class="item setting_popup"><i class="large setting icon"></i></a>
-          <div class="ui flowing popup setting_popup_content">
-            <div class="ui link list">
-              <a class="item">View media in thread</a>
-              <a class="item">Archive</a>
-              <a class="item">Report spam/abuse</a>
-              <a class="item">Delete conversation</a>         
-            </div>
-          </div> -->
-          <div class="right menu">
-            <a class="item toggle_column3"><i class="circular info icon"></i></a>
-          </div>
         </div>
-        <div class=" ui grid media_content">
-          <div class="all_media">
-            <div class="ui borderless menu media_menu">
-              <a class="item">Library</a> 
-              <a class="item">Incoming</a>
-              <div class="item">Filter:
-              </div> 
-              <a class="item media_filter"><i class="photo icon"></i>Images
-              </a>  
-              <a class="item media_filter"><i class="unmute icon"></i>Audio
-              </a>
-              <a class="item media_filter"><i class="play icon"></i>Video
-              </a>  
+        <div class=" ui grid notifications_content">
+        <!--  -->
+            <div class="notifications_form">
+
+                <h4 class="ui teal header">
+
+                  <div class="content">
+                    <h2>Notifications</h2>
+                    <div class="sub header">
+                      Customize how you get notified about activity on your Account
+                    </div>
+                  </div>
+                  </h4>
+                <form class="ui form">
+                  
+                    
+                  <div class="field">
+                    <label for="n_number">Phone Number</label>
+                    <input id="n_number" placeholder="254722220220" type="text">
+                  </div>
+                  
+                  <div class="grouped fields">
+                    <div class="field">
+                      <div class="ui checkbox">
+                        <input type="checkbox" tabindex="0" class="hidden">
+                        <label>Alert me via Whatsapp</label>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="ui checkbox">
+                        <input type="checkbox" tabindex="0" class="hidden">
+                        <label>Send me an hourly summary via email</label>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="ui checkbox">
+                        <input type="checkbox" tabindex="0" class="hidden">
+                        <label>Notify me on the desktop</label>
+                      </div>
+                    </div>
+                  </div>
+                   
+                   
+
+                  <button class="ui labeled icon submit small button">
+                  <i class="file icon"></i>
+                  SAVE
+                  </button>
+                    
+                </form>
             </div>
-
-            <div class="media_items ui four column grid">
-              <div class="column">
-                <div class="ui fluid card">
-                  <div class="image">
-                    <img src="images/user4.png">
-                  </div>
-                  <div class="content">
-                    <a class="header">Daniel Louise</a>
-                    <span class="meta">
-                      2 weeks ago
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="column">
-                <div class="ui fluid card">
-                  <div class="image">
-                    <img src="images/user4.png">
-                  </div>
-                  <div class="content">
-                    <a class="header">Daniel Louise</a>
-                    <span class="meta">
-                      2 weeks ago
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="column">
-                <div class="ui fluid card">
-                  <div class="image">
-                    <img src="images/account1.png">
-                  </div>
-                  <div class="content">
-                    <a class="header">Daniel Louise</a>
-                    <span class="meta">
-                      2 weeks ago
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="column">
-                <div class="ui fluid card">
-                  <div class="image">
-                    <img src="images/user1.jpg">
-                  </div>
-                  <div class="content">
-                    <a class="header">Daniel Louise</a>
-                    <span class="meta">
-                      2 weeks ago
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="column">
-                <div class="ui fluid card">
-                  <div class="image">
-                    <img src="images/user2.jpg">
-                  </div>
-                  <div class="content">
-                    <a class="header">Daniel Louise</a>
-                    <span class="meta">
-                      2 weeks ago
-                    </span>
-                  </div>
-                </div>
-              </div>
-              
-              
-            </div>
-          </div>
-          <div class="column3">
-            <div class="user_info">
-              <div class="info_and_notes">
-                <h2>Media Preview</h2>
-                <p style="font-weight: bold">John Smalls</p>
-                <p><a href="">0720123456</a></p>
-              </div>
-              <div class="files_and_media">
-                <div class="ui image">
-                  <img src="images/user4.png">
-                </div>
-                <a href="#">
-                  <i class="share icon"></i>Foward
-                </a>
-              </div>
-              
-            </div>
-          </div>
+          <!--  -->
         </div>
       </div>
     </div>

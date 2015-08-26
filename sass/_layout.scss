@@ -2,6 +2,7 @@
 body{
   overflow: hidden;
 }
+////////////////////////////////////////sidebar///////////////////////////////////////////////
 #sidebar{
   width:11rem;
   display: inline-flex;
@@ -14,14 +15,13 @@ body{
     width: 4em;
     float: left;
     padding: 0 5px;
+    border-radius: 0;
     .item{
       border-radius: 5px;
       min-width: 3em;
       margin-top: 1.25rem;
       min-height: 3rem;
       padding: 4px;
-      // height: 4.5rem !important;
-      // width: 4.5rem !important;
       background: #333844;
       .account_image{
         max-width: 100%;
@@ -95,15 +95,18 @@ body{
 
 }
 
+/////////////////////////////////////everything else//////////////////////////////////////////////////////////
+
 .right_content{
-  //left: 7rem !important;
-  left: 10.4rem !important;//used when account sidebar is visible
+  left: 10.4rem;//used when account sidebar is visible
   position: relative;
   height: 100%;
   margin: 0 !important;
 
+  //////////////////////////////////////tabs//////////////////////////////////////
+
   .all_tabs{
-    width: calc(16% ) !important;
+    width: 16%;
     min-width: 15rem;
     //border-right : 1px solid #ddd;
     height: 100%;
@@ -117,7 +120,7 @@ body{
 
     .tab_content{
       padding-top: 0.625rem;
-      color: #7a418f !important;
+      color: #7a418f ;
       .tab_content_header{
         padding-left: 1rem;
         padding-bottom: 10px;
@@ -166,6 +169,8 @@ body{
       }
     }
   }
+
+  //////////////////////////////////content starts here////////////////////////////////////
   .column2{
     width: calc(84% - 10.4rem);//used when account sidebar is visible
     height: 100%;
@@ -175,558 +180,8 @@ body{
     background: #ffffff;
     display: inline-block;
     position: relative;
-    .conversation{
-      width: 25%;
-      min-width: 16rem;
-      font-size: 1rem;
-      display: inline-block;
-      border-right : 1px solid #ddd;
-      height: 100%;
-      padding: 0;
-      overflow-y: auto;
-      .ui.list .item.message{
-         background: rgba(0, 0, 0, 0.03);
-        i,p{
-          text-align: center;
-          color: #b33679 !important;
-        }
-      }
-      .ui.list .item{
-        padding: 1rem;
-        -webkit-transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
-        transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
-  
-      }
-      .ui.list .active.item{
-      background: rgba(0, 0, 0, 0.03);
-      box-shadow: -2px 0em 0em inset;
-      }
-      .ui.list .item:hover{
-        background: rgba(0, 0, 0, 0.03);
-        opacity: 0.8;
-      }
-    }
 
-
-    .profile_content{// used in profile page
-      padding-top: 1rem;
-      margin: 0;
-      position: relative;
-      font-size: 1rem;
-      display: block;
-      height: calc(100% - 55px);//full height minus topbar menu height
-      h2{
-        color: #7a418f;
-      }
-      .all_profile{//div that changes width when column3 is toggled
-        display: inline-block;
-        width: 100%;
-        -webkit-transition: all 500ms ease;
-        -moz-transition: all 500ms ease;
-        -o-transition: all 500ms ease;
-        -ms-transition: all 500ms ease;
-        transition: all 500ms ease;
-      }
-      .ui.card{
-       // margin: 0 auto;
-        box-shadow: none;
-      }
-
-      .image{
-        border-radius: 1rem;
-      }
-      
-      .status_update{// form for status update
-        padding-top: 0;
-        .ui.button{
-          float: right;
-          margin: 0;
-          background-color: #7a418f;
-          color: #ffffff;
-        }
-        textarea{
-          min-height: 3.5rem;
-          max-height: 4.5rem;
-          resize: none;
-          border: 1px solid rgba(39, 41, 43, 0.5);
-        }
-      }
-    }
-
-
-
-    .contacts_content{//for contacts page
-      margin: 0;
-      position: relative;
-      font-size: 1rem;
-      display: block;
-      overflow-y: auto;
-      height: calc(100% - 55px);//full height minus topbar menu height
-      .item{// makes a single contact
-        padding-right: 1rem;
-        padding-left: 1rem;
-      }
-
-      .item.contacts_top{
-        background-color: #cccccc;
-        position: fixed;
-        width: 74%;
-        z-index:100;
-        right: 0;
-      }
-
-      .all_contacts{//div that changes width when column3 is toggled
-        display: inline-block;
-        width: 100%;
-        padding: 0;
-        overflow-x: auto;
-        margin-top: 43px;
-        -webkit-transition: all 500ms ease;
-        -moz-transition: all 500ms ease;
-        -o-transition: all 500ms ease;
-        -ms-transition: all 500ms ease;
-        transition: all 500ms ease;
-      }
-      .contact_list{
-        width: 100%;
-        padding: 10px 0;
-        .item{
-          margin: 0;
-        }
-        .c_checkbox{
-          width: 3%;
-        }
-        .c_image{
-         min-width: 8%;
-        }
-        .c_name{
-          width: 27%;
-        }
-        .c_number{
-          width: 30%;
-        }
-        .c_edit{
-          width: 10%;
-        }
-        .c_verify{
-          width: 15%;
-          text-align: right;
-        }
-      }
-      
-    }
-
-
-     .new_contacts_content{//for new_contact page
-      margin: 0;
-      position: relative;
-      font-size: 1rem;
-      vertical-align: top;
-      display: block;
-      height: calc(100% - 55px);//full height minus topbar menu height
-     h2{
-        color: #7a418f;
-      }
-
-      .new_contact_form{//div that changes width when column3 is toggled
-        display: inline-block;
-        width: 40%;
-        padding: 1rem;
-        vertical-align: top;
-        margin: 0;
-        .ui.button{
-          float: right;
-          margin: 0;
-          background-color: #7a418f;
-          color: #ffffff;
-        }
-      }
-      .new_contact_message{
-        display: inline-block;
-        width: 40%;
-        padding: 6.6rem 1rem 1rem 1rem;
-        margin: 0;
-        vertical-align: top;
-      }
-      
-    }
-
-
-    .media_content{//for media page
-      margin: 0;
-      position: relative;
-      font-size: 1rem;
-      display: block;
-      height: calc(100% - 55px);//full height minus topbar menu height
-      .media_menu{
-        border-radius: 0;
-        .item.media_filter{
-          color: #b33679;
-        }
-      }
-      .all_media{//div that changes width when column3 is toggled
-        display: inline-block;
-        width: 100%;
-        padding: 0;
-        -webkit-transition: all 500ms ease;
-        -moz-transition: all 500ms ease;
-        -o-transition: all 500ms ease;
-        -ms-transition: all 500ms ease;
-        transition: all 500ms ease;
-      }
-
-      .media_items{
-        margin: 0;
-        .header{
-          font-size: 1rem;
-          float: left;
-        }
-        .meta{
-          font-size: 0.8rem;
-          float: right;
-        }
-      }
-      
-    }
-
-
-    .activity_content{//for media page
-      margin: 0;
-      overflow-x: auto;
-      position: relative;
-      font-size: 1rem;
-      display: block;
-      height: calc(100% - 55px);//full height minus topbar menu height
-      
-      .all_activity{//div that changes width when column3 is toggled
-        display: inline-block;
-        width: 100%;
-        padding: 0;
-        -webkit-transition: all 500ms ease;
-        -moz-transition: all 500ms ease;
-        -o-transition: all 500ms ease;
-        -ms-transition: all 500ms ease;
-        transition: all 500ms ease;
-      }
-      .activity_message{
-        border-radius: 0;
-        i.icon:not(.close){
-          font-size: 2rem;
-        }
-      }
-      .activity_items{
-        padding: 0 1rem 1rem 1rem;
-        margin: 0;
-        .ui.card{
-          background-color: #eaeaea;
-          .ui.statistic{
-            padding: 3.5rem 0;
-            margin: 0;
-            .label{
-              font-size: 0.8rem;
-            }
-          }
-          .content{
-            text-align: center;
-            .meta{
-              color: #7a418f;
-            }
-          }
-        }
-      }
-
-      .r_inbox{// special kind of statistic
-        .ui.statistics{
-          margin: 0;
-          .statistic{
-            width: 100%;
-            margin: 0;
-            padding: 0.7rem 0;
-          }
-        }
-      }
-      
-    }
-
-
-    .autoresponder_content{//for autoresponders page
-      margin: 0;
-      position: relative;
-      font-size: 1rem;
-      display: block;
-      height: calc(100% - 55px);//full height minus topbar menu height
-      .item{// makes a single contact
-        padding-right: 1rem;
-        padding-left: 1rem;
-      }
-
-      .item.autoresponder_top{
-       // background-color: #cccccc;
-       font-weight: bold;
-      }
-
-      .all_autoresponders{//div that changes width when column3 is toggled
-        display: inline-block;
-        width: 100%;
-        padding: 0;
-        -webkit-transition: all 500ms ease;
-        -moz-transition: all 500ms ease;
-        -o-transition: all 500ms ease;
-        -ms-transition: all 500ms ease;
-        transition: all 500ms ease;
-      }
-      .autoresponder_list{
-        width: 100%;
-        padding: 10px 0;
-        .item{
-          margin: 0;
-          vertical-align: middle;
-        }
-        .a_type{
-         min-width: 15%;
-        }
-        .a_keyword{
-          width: 15%;
-        }
-        .a_message{
-          width: 35%;
-        }
-        .a_active{
-          width: 10%;
-        }
-        .a_edit{
-          width: 20%;
-          text-align: right;
-        }
-      }
-      
-    }
-
-    .groups_content{//for groups page
-      margin: 0;
-      overflow-x: auto;
-      position: relative;
-      font-size: 1rem;
-      display: block;
-      height: calc(100% - 55px);//full height minus topbar menu height
-      .item{// makes a single contact
-        padding-right: 1rem;
-        padding-left: 1rem;
-      }
-
-      .item.groups_top{
-       // background-color: #cccccc;
-       font-weight: bold;
-      }
-
-      .all_groups{//div that changes width when column3 is toggled
-        display: inline-block;
-        width: 100%;
-        padding: 0;
-        -webkit-transition: all 500ms ease;
-        -moz-transition: all 500ms ease;
-        -o-transition: all 500ms ease;
-        -ms-transition: all 500ms ease;
-        transition: all 500ms ease;
-      }
-      .groups_list{
-        width: 100%;
-        padding: 10px 0;
-        .item{
-          margin: 0;
-          vertical-align: middle;
-        }
-        .g_name{
-         min-width: 20%;
-        }
-        .g_member{
-          width: 20%;
-        }
-        .g_messages{
-          width: 20%;
-        }
-        .g_type{
-          width: 15%;
-        }
-        .g_tick{
-          width: 15%;
-          //text-align: center;
-        }
-        .g_delete{
-          width: 10%;
-          text-align: center;
-          button{
-            color: #ffffff;
-            background-color: #b33679;
-          }
-        }
-      }
-      
-    }
-
-
-    .locations_content{//for autoresponders page
-      margin: 0;
-      position: relative;
-      font-size: 1rem;
-      display: block;
-      height: calc(100% - 55px);//full height minus topbar menu height
-      padding: 1rem;
-      
-
-      .all_locations{//div that changes width when column3 is toggled + div used by google maps API
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        border-radius: 0.5rem;
-        -webkit-transition: all 500ms ease;
-        -moz-transition: all 500ms ease;
-        -o-transition: all 500ms ease;
-        -ms-transition: all 500ms ease;
-        transition: all 500ms ease;
-      }
-      .autoresponder_list{
-        width: 100%;
-        padding: 10px 0;
-        .item{
-          margin: 0;
-          vertical-align: middle;
-        }
-        .a_type{
-         min-width: 15%;
-        }
-        .a_keyword{
-          width: 15%;
-        }
-        .a_message{
-          width: 35%;
-        }
-        .a_active{
-          width: 10%;
-        }
-        .a_edit{
-          width: 20%;
-          text-align: right;
-        }
-      }
-      
-    }
-
-    .conversation_section{
-      width: 75% ;
-      height: 100%;////full height minus topbar menu height minus ui.comments margin-top
-      padding-right: 0;
-      font-size: 1rem;
-      display: inline-block;
-      position: relative;
-      vertical-align: top;
-      -webkit-transition: all 500ms ease;
-      -moz-transition: all 500ms ease;
-      -o-transition: all 500ms ease;
-      -ms-transition: all 500ms ease;
-      transition: all 500ms ease;
-      .ui.comments{
-        overflow-y: auto;
-        height: 100%;
-        max-width: 100%;
-        padding-right: 1rem;
-        padding-top: 1rem;
-        margin-top: 0;
-        padding-bottom: 12rem;//added to compensate for reply textarea
-        .ui.divider{
-          clear: both;
-        }
-        .comment.from_me {
-          float: right;
-            clear: both;
-          .avatar{
-            float: right;
-          }
-          .metadata{
-            .read{
-              background: url("../images/read.png");
-              width: 15px; height:12px; display: inline-block;
-            }
-            .received{
-              background: url("../images/received.png");
-              width: 15px; height:12px; display: inline-block;
-            }
-            .sent{
-              background: url("../images/sent.png");
-              width: 11px; height:10px; display: inline-block;
-            }
-          }
-          .content{
-             box-shadow: 1px 1px 3px 2px rgba(39, 41, 43, 0.1);
-            background-color: #eaeaea;
-            padding: 5px 10px;
-            border-radius:10px;
-            margin-right: 1em;
-            float: right;
-            margin-left: 0;
-            max-width: 80%;
-            width: inherit;
-          }
-          .content:after {
-
-            top: 1.25em;
-            bottom: auto;
-            right: 3rem;
-            margin-left: 0em;
-            position: absolute;
-            content: '';
-            width: 0.75em;
-            height: 0.75em;
-            background: inherit;
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-          }
-
-          
-        }
-        .comment.from_them {
-         clear: both;
-          float: left;
-         .avatar{
-            float: left;
-          }
-         .content{  
-             box-shadow: 2px 1px 4px rgba(39, 41, 43, 0.15);
-            background-color: #edf9ff;
-            padding: 5px 10px;
-            border-radius:10px;
-            margin-left: 3.5em;
-            
-            margin-right: 0; 
-            max-width: 80%;
-            width: inherit;
-          }
-          .content:before {
-            top: 1.25em;
-            bottom: auto;
-            left: 3rem;
-            margin-left: 0em;
-            position: absolute;
-            content: '';
-            width: 0.75em;
-            height: 0.75em;
-            background: inherit;
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-          }
-        }
-        .metadata{
-          float: right;
-        }
-      }
-    }
-
-
-
-
+    ////////////////////reply form in dashboard/////////////////////
     .reply_form{
         width: calc(100% - 1rem);
         position: absolute;
@@ -790,6 +245,9 @@ body{
           }
         }
       }
+
+
+    /////////////////////////top menu found in all pages////////////////////////////////
     .dashboard_menu{
       background: #eaeaea;
       height: 55px;
@@ -800,7 +258,7 @@ body{
         }
       }
       .item:hover{
-        background: inherit !important;
+        background: inherit;
         i{
           color: #b33679;
         }
@@ -826,11 +284,898 @@ body{
         }
       }
     }
-    .inbox_content{
-      margin: 0 !important;
+
+
+    /////////////////////////////////////dashboard page////////////////////////////////
+    .dashboard_content{
+      margin: 0;
       height: calc(100% - 55px);//full height minus topbar menu height
+      .conversation_section{
+        width: 75% ;
+        height: 100%;////full height minus topbar menu height minus ui.comments margin-top
+        padding-right: 0;
+        font-size: 1rem;
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+        .ui.comments{
+          overflow-y: auto;
+          height: 100%;
+          max-width: 100%;
+          padding-right: 1rem;
+          padding-top: 1rem;
+          margin-top: 0;
+          padding-bottom: 12rem;//added to compensate for reply textarea
+          .ui.divider{
+            clear: both;
+          }
+          .ui.button.image_btn{
+            margin: 0;
+            color: #ffffff;
+            background-color: #b33679;
+            padding: 0.56rem;
+            font-size: 0.75em;
+          }
+          .comment.from_me {
+            float: right;
+              clear: both;
+            .avatar{
+              float: right;
+            }
+            .metadata{
+              .read{
+                background: url("../images/read.png");
+                width: 15px; height:12px; display: inline-block;
+              }
+              .received{
+                background: url("../images/received.png");
+                width: 15px; height:12px; display: inline-block;
+              }
+              .sent{
+                background: url("../images/sent.png");
+                width: 11px; height:10px; display: inline-block;
+              }
+            }
+            .content{
+               box-shadow: 1px 1px 3px 2px rgba(39, 41, 43, 0.1);
+              background-color: #eaeaea;
+              padding: 5px 10px;
+              border-radius:10px;
+              margin-right: 1em;
+              float: right;
+              margin-left: 0;
+              max-width: 80%;
+              width: inherit;
+            }
+            .content:after {
+
+              top: 1.25em;
+              bottom: auto;
+              right: 3rem;
+              margin-left: 0em;
+              position: absolute;
+              content: '';
+              width: 0.75em;
+              height: 0.75em;
+              background: inherit;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+
+            
+          }
+          .comment.from_them {
+           clear: both;
+            float: left;
+            .d_flag{
+              margin-left: 0.5rem;
+            }
+           .avatar{
+              float: left;
+            }
+           .content{  
+               box-shadow: 2px 1px 4px rgba(39, 41, 43, 0.15);
+              background-color: #edf9ff;
+              padding: 5px 10px;
+              border-radius:10px;
+              margin-left: 3.5em;
+              
+              margin-right: 0; 
+              max-width: 90%;
+              width: inherit;
+            }
+            .content:before {
+              top: 1.25em;
+              bottom: auto;
+              left: 3rem;
+              margin-left: 0em;
+              position: absolute;
+              content: '';
+              width: 0.75em;
+              height: 0.75em;
+              background: inherit;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+          }
+          .metadata{
+            float: right;
+          }
+        }
+      }
+      .conversation{
+        width: 25%;
+        min-width: 16rem;
+        font-size: 1rem;
+        display: inline-block;
+        border-right : 1px solid #ddd;
+        height: 100%;
+        padding: 0;
+        overflow-y: auto;
+        .ui.list .item.message{
+           background: rgba(0, 0, 0, 0.03);
+          i,p{
+            text-align: center;
+            color: #b33679 ;
+          }
+        }
+        .ui.list .item{
+          padding: 1rem;
+          -webkit-transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
+          transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
+    
+        }
+        .ui.list .active.item{
+        background: rgba(0, 0, 0, 0.03);
+        box-shadow: -2px 0em 0em inset;
+        }
+        .ui.list .item:hover{
+          background: rgba(0, 0, 0, 0.03);
+          opacity: 0.8;
+        }
+      }
     }
     
+    ////////////////////////////////profile page////////////////////////////////////////
+    .profile_content{
+      padding-top: 1rem;
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      h2{
+        color: #7a418f;
+      }
+      .all_profile{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 100%;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      .ui.card{
+       // margin: 0 auto;
+        box-shadow: none;
+        .image{
+          border-radius: 1rem !important;
+          width: 200px;
+          margin-left: 1rem;
+        }
+        .content{
+          border-top: none;
+        }
+      }
+
+      
+      
+      .status_update{// form for status update
+        padding-top: 0;
+        .ui.button{
+          float: right;
+          margin: 0;
+          background-color: #7a418f;
+          color: #ffffff;
+        }
+      }
+    }
+
+
+    /////////////////////////////////contacts page////////////////////////////////////////////////
+    .contacts_top{
+        margin: 0;
+        padding: 1rem;
+        background-color: #cccccc;
+        vertical-align: middle;
+        .contact_list{
+          text-align: center;
+        }
+      }
+    .contacts_content{
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      overflow-y: auto;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      .item{// makes a single contact
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+
+      
+
+      .all_contacts{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        overflow-x: auto;
+        //margin-top: 43px;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      .contact_list{
+        width: 100%;
+        padding: 10px 0;
+        .item{
+          margin: 0;
+        }
+        .c_checkbox{
+          width: 3%;
+        }
+        .c_image{
+         min-width: 8%;
+        }
+        .c_name{
+          width: 27%;
+        }
+        .c_number{
+          width: 30%;
+        }
+        .c_edit{
+          width: 10%;
+        }
+        .c_verify{
+          width: 15%;
+          text-align: right;
+        }
+      }
+    }
+
+    ////////////////////////////////////////new_contact page/////////////////////////////////////////
+    .new_contacts_content{
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      vertical-align: top;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      h2{
+        color: #7a418f;
+      }
+
+      .new_contact_form{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 40%;
+        padding: 1rem;
+        vertical-align: top;
+        margin: 0;
+        .ui.button{
+          float: right;
+          margin: 0;
+          background-color: #7a418f;
+          color: #ffffff;
+        }
+      }
+      .new_contact_message{
+        display: inline-block;
+        width: 40%;
+        padding: 6.6rem 1rem 1rem 1rem;
+        margin: 0;
+        vertical-align: top;
+      }
+      
+    }
+
+    ////////////////////////////////////////////////account page///////////////////////////////////////
+    .account_content{
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      vertical-align: top;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      h2{
+        color: #7a418f;
+      }
+
+      .account_form{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 50%;
+        padding: 1rem;
+        vertical-align: top;
+        margin: 0;
+        .ui.button{
+          float: right;
+          margin: 0;
+          background-color: #7a418f;
+          color: #ffffff;
+        }
+      }
+      .account_message{
+        display: inline-block;
+        width: 40%;
+        padding: 6.6rem 1rem 1rem 1rem;
+        margin: 0;
+        vertical-align: top;
+      }
+      
+    }
+
+
+    /////////////////////////////////////////////////autoresponder page////////////////////////////////////
+    .new_auto_content{
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      vertical-align: top;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      h2{
+        color: #7a418f;
+      }
+
+      .new_auto_form{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 50%;
+        padding: 1rem;
+        vertical-align: top;
+        margin: 0;
+        .ui.button{
+          float: right;
+          margin: 0;
+          background-color: #7a418f;
+          color: #ffffff;
+        }
+      }
+      .new_auto_message{
+        display: inline-block;
+        width: 40%;
+        padding: 6.6rem 1rem 1rem 1rem;
+        margin: 0;
+        vertical-align: top;
+      }
+      
+    }
+
+
+    ////////////////////////////////////////////new_user page////////////////////////////////////////
+    .new_user_content{
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      vertical-align: top;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      h2{
+        color: #7a418f;
+      }
+
+      .new_user_form{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 50%;
+        padding: 1rem;
+        vertical-align: top;
+        margin: 0;
+        .ui.button{
+          float: right;
+          margin: 0;
+          background-color: #7a418f;
+          color: #ffffff;
+        }
+      }
+      .new_user_message{
+        display: inline-block;
+        width: 40%;
+        padding: 6.6rem 1rem 1rem 1rem;
+        margin: 0;
+        vertical-align: top;
+      }
+      
+    }
+
+
+    ///////////////////////////////new_list page///////////////////////////
+    .new_lists_content{
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      vertical-align: top;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      h2{
+        color: #7a418f;
+      }
+
+      .new_list_form{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 80%;
+        padding: 1rem;
+        vertical-align: top;
+        margin: 0;
+        .ui.button{
+          float: right;
+          margin: 0;
+          background-color: #7a418f;
+          color: #ffffff;
+        }
+      }  
+    }
+
+    /////////////////////////////notifications page////////////////////////////////////////
+    .notifications_content{
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      vertical-align: top;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      h2{
+        color: #7a418f;
+      }
+
+      .notifications_form{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 60%;
+        padding: 1rem;
+        vertical-align: top;
+        margin: 0;
+        .ui.button{
+          float: right;
+          margin: 0;
+          background-color: #7a418f;
+          color: #ffffff;
+        }
+      }  
+    }
+
+    ////////////////////////////////new_password page/////////////////////////////
+    .change_password_content{
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      vertical-align: top;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      h2{
+        color: #7a418f;
+      }
+
+      .change_password_form{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 80%;
+        padding: 1rem;
+        vertical-align: top;
+        margin: 0;
+        .ui.button{
+          float: right;
+          margin: 0;
+          background-color: #7a418f;
+          color: #ffffff;
+        }
+      }
+      
+    }
+
+    ////////////////////////////////media page///////////////////////////////
+    .media_content{
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      .media_menu{
+        border-radius: 0;
+        .item.media_filter{
+          color: #b33679;
+        }
+      }
+      .all_media{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+
+      .media_items{
+        margin: 0;
+        .header{
+          font-size: 1rem;
+          float: left;
+        }
+        .meta{
+          font-size: 0.8rem;
+          float: right;
+        }
+      }
+      
+    }
+
+    //////////////////////////recent_activity page////////////////////////
+    .activity_content{
+      margin: 0;
+      overflow-x: auto;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      
+      .all_activity{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      .activity_message{
+        border-radius: 0;
+        i.icon:not(.close){
+          font-size: 2rem;
+        }
+      }
+      .activity_items{
+        padding: 0 1rem 1rem 1rem;
+        margin: 0;
+        .ui.card{
+          background-color: #eaeaea;
+          .ui.statistic{
+            padding: 3.5rem 0;
+            margin: 0;
+            .label{
+              font-size: 0.8rem;
+            }
+          }
+          .content{
+            text-align: center;
+            .meta{
+              color: #7a418f;
+            }
+          }
+        }
+      }
+
+      .r_inbox{// special kind of statistic
+        .ui.statistics{
+          margin: 0;
+          .statistic{
+            width: 100%;
+            margin: 0;
+            padding: 0.7rem 0;
+          }
+        }
+      }
+      
+    }
+
+    ///////////////////////////// autoresponders page///////////////////////////////////
+    .autoresponder_content{
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      .item{// makes a single contact
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+
+      .item.autoresponder_top{
+       // background-color: #cccccc;
+       font-weight: bold;
+      }
+
+      .all_autoresponders{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      .autoresponder_list{
+        width: 100%;
+        padding: 10px 0;
+        .item{
+          margin: 0;
+          vertical-align: middle;
+        }
+        .a_type{
+         min-width: 15%;
+        }
+        .a_keyword{
+          width: 15%;
+        }
+        .a_message{
+          width: 35%;
+        }
+        .a_active{
+          width: 10%;
+        }
+        .a_edit{
+          width: 20%;
+          text-align: right;
+        }
+      }
+      
+    }
+
+    /////////////////////////////groups page//////////////////////////////////////
+    .groups_content{
+      margin: 0;
+      overflow-x: auto;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      .item{// makes a single contact
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+
+      .item.groups_top{
+       // background-color: #cccccc;
+       font-weight: bold;
+      }
+
+      .all_groups{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      .groups_list{
+        width: 100%;
+        padding: 10px 0;
+        .item{
+          margin: 0;
+          vertical-align: middle;
+        }
+        .g_name{
+         min-width: 20%;
+        }
+        .g_member{
+          width: 20%;
+        }
+        .g_messages{
+          width: 20%;
+        }
+        .g_type{
+          width: 15%;
+        }
+        .g_tick{
+          width: 15%;
+          //text-align: center;
+        }
+        .g_delete{
+          width: 10%;
+          text-align: center;
+          button{
+            color: #ffffff;
+            background-color: #b33679;
+          }
+        }
+      }
+      
+    }
+
+
+    ////////////////////////////////lists page////////////////////////////
+    .lists_content{
+      margin: 0;
+      overflow-x: auto;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      .item{// makes a single contact
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+
+      .item.lists_top{
+       // background-color: #cccccc;
+       font-weight: bold;
+      }
+      .item.lists_bottom{
+        border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+
+      .all_lists{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      .lists_list{
+        width: 100%;
+        padding: 10px 0;
+        .item{
+          margin: 0;
+          vertical-align: middle;
+        }
+        .l_name{
+         min-width: 30%;
+        }
+        .l_description{
+          width: 30%;
+        }
+        .l_member{
+          width: 30%;
+        }
+        .l_remove{
+          width: 10%;
+        }
+        .l_button{//used for button at the bottom of the list
+          .ui.button{
+            color: #ffffff;
+            background-color: #b33679;
+          }
+        }
+      }
+      
+    }
+
+    ///////////////////////////////////users page//////////////////////////
+    .users_content{
+      margin: 0;
+      overflow-x: auto;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      .item{// makes a single contact
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+
+      .item.users_top{
+       // background-color: #cccccc;
+       font-weight: bold;
+      }
+      .item.users_bottom{
+        border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+
+      .all_users{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      .users_list{
+        width: 100%;
+        padding: 10px 0;
+        .item{
+          margin: 0;
+          vertical-align: middle;
+        }
+        .u_name{
+         min-width: 22%;
+        }
+        .u_email{
+          width: 30%;
+        }
+        .u_number{
+          width: 15%;
+        }
+        .u_admin{
+          width: 15%;
+        }
+        .u_notify{
+          width: 11%;
+        }
+        .u_remove{
+          //width: 15%;
+        }
+        .u_button{//used for button at the bottom of the list
+          .ui.button{
+            color: #ffffff;
+            background-color: #b33679;
+          }
+        }
+      }
+      
+    }
+
+
+    ///////////////////////locations page//////////////////////////////////
+    .locations_content{
+      margin: 0;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      padding: 1rem;
+      
+
+      .all_locations{//div that changes width when column3 is toggled + div used by google maps API
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        border-radius: 0.5rem;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      .autoresponder_list{
+        width: 100%;
+        padding: 10px 0;
+        .item{
+          margin: 0;
+          vertical-align: middle;
+        }
+        .a_type{
+         min-width: 15%;
+        }
+        .a_keyword{
+          width: 15%;
+        }
+        .a_message{
+          width: 35%;
+        }
+        .a_active{
+          width: 10%;
+        }
+        .a_edit{
+          width: 20%;
+          text-align: right;
+        }
+      }
+      
+    }
+
+   
+
+    ///////////////////////////////side panel//////////////////////////
     .column3{
       width: 29%;
       height: 100%;
@@ -860,12 +1205,6 @@ body{
           float: right;
           margin: 0;
         }
-        textarea{
-          min-height: 3.5rem;
-          max-height: 4.5rem;
-          resize: none;
-          border: 1px solid rgba(39, 41, 43, 0.5);
-        }
         h2{
           margin: 0;
           margin-bottom: 1rem;
@@ -892,14 +1231,19 @@ body{
         }   
       }
     }
+
   }
+  ///////////////////////special pages without tabs//////////////////////////////////////////////////////////////
   .column2.full_width{
     font-size: 1rem;
     width: calc(100% - 10rem);
     .ui.message{
       margin-top: 0;
     }
-    .compose_content{//for compose page
+
+
+    ////////////////////////compose page//////////////////////////////
+    .compose_content{
       padding-top: 1rem;
       margin: 0;
       position: relative;
@@ -926,4 +1270,3 @@ body{
     }
   }
 }
-/** Mobile view starts here **/

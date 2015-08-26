@@ -36,6 +36,25 @@
 	.conversation_section{//hiding this div temporarily
 		display: none !important;
 	}
+	#sidebar{
+		width: 20rem;
+		#icon_tabs{
+			width: 100%;
+			.item:not(.btn_item){
+				//height: 19% !important;
+				//padding: 2rem;
+				.ui.label{
+					display: none;
+				}
+			}
+			//only applies to logout page
+			.item.logout{
+				position: relative;
+				bottom: initial;
+
+			}
+		}
+	}
 	.right_content{
 		left: 0 !important;
 		margin-top: 0 !important;
@@ -54,8 +73,10 @@
 
 		.column2{
 			width: 100%;
-			.conversation{
-				width: 100%;
+			.dashboard_content{
+				.conversation{
+					width: 100%;
+				}
 			}
 		}
 
