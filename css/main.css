@@ -160,7 +160,7 @@ body {
         font-size: 0.75em; }
 
 .right_content {
-  left: 10.4rem;
+  left: 11rem;
   position: relative;
   height: 100%;
   margin: 0 !important; }
@@ -213,7 +213,7 @@ body {
       .right_content .all_tabs .tab_content .ui.divider {
         margin: 0.5rem 0; }
   .right_content .column2 {
-    width: calc(84% - 10.4rem);
+    width: calc(84% - 11rem);
     height: 100%;
     padding: 0;
     border-right: 1px solid #ddd;
@@ -281,7 +281,8 @@ body {
         .right_content .column2 .dashboard_menu .search.item input {
           width: 100%; }
       .right_content .column2 .dashboard_menu .item:hover {
-        background: inherit; }
+        background: inherit;
+        color: #b33679; }
         .right_content .column2 .dashboard_menu .item:hover i {
           color: #b33679; }
       .right_content .column2 .dashboard_menu .setting_popup_content {
@@ -772,8 +773,8 @@ body {
         .right_content .column2 .autoresponder_content .autoresponder_list .a_active {
           width: 10%; }
         .right_content .column2 .autoresponder_content .autoresponder_list .a_edit {
-          width: 20%;
-          text-align: right; }
+          width: 25%;
+          text-align: center; }
     .right_content .column2 .groups_content {
       margin: 0;
       overflow-x: auto;
@@ -804,15 +805,15 @@ body {
         .right_content .column2 .groups_content .groups_list .g_name {
           min-width: 20%; }
         .right_content .column2 .groups_content .groups_list .g_member {
-          width: 20%; }
+          width: 15%; }
         .right_content .column2 .groups_content .groups_list .g_messages {
           width: 20%; }
         .right_content .column2 .groups_content .groups_list .g_type {
           width: 15%; }
         .right_content .column2 .groups_content .groups_list .g_tick {
-          width: 15%; }
+          width: 10%; }
         .right_content .column2 .groups_content .groups_list .g_delete {
-          width: 10%;
+          width: 20%;
           text-align: center; }
           .right_content .column2 .groups_content .groups_list .g_delete button {
             color: #ffffff;
@@ -851,10 +852,10 @@ body {
           min-width: 30%; }
         .right_content .column2 .lists_content .lists_list .l_description {
           width: 30%; }
-        .right_content .column2 .lists_content .lists_list .l_member {
-          width: 30%; }
+        .right_content .column2 .lists_content .lists_list .l_messages {
+          width: 20%; }
         .right_content .column2 .lists_content .lists_list .l_remove {
-          width: 10%; }
+          width: 20%; }
         .right_content .column2 .lists_content .lists_list .l_button .ui.button {
           color: #ffffff;
           background-color: #b33679; }
@@ -889,15 +890,17 @@ body {
           margin: 0;
           vertical-align: middle; }
         .right_content .column2 .users_content .users_list .u_name {
-          min-width: 22%; }
+          min-width: 20%; }
         .right_content .column2 .users_content .users_list .u_email {
-          width: 30%; }
+          width: 20%; }
         .right_content .column2 .users_content .users_list .u_number {
           width: 15%; }
         .right_content .column2 .users_content .users_list .u_admin {
           width: 15%; }
         .right_content .column2 .users_content .users_list .u_notify {
-          width: 11%; }
+          width: 10%; }
+        .right_content .column2 .users_content .users_list .u_remove {
+          width: 20%; }
         .right_content .column2 .users_content .users_list .u_button .ui.button {
           color: #ffffff;
           background-color: #b33679; }
