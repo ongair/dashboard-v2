@@ -1010,18 +1010,18 @@ body {
   .computer_hide {
     display: none !important; } }
 @media only screen and (max-width: 768px) {
-  body {
-    overflow-y: scroll; }
-
   .computer_hide {
     display: inherit !important; }
 
   .tablet_hide {
     display: none !important; }
 
+  .pusher {
+    height: 100%; }
+
   .dashboard_content {
     width: 100% !important;
-    height: 100%;
+    height: 100% !important;
     padding: 0;
     position: relative; }
     .dashboard_content .conversation_section {
@@ -1033,7 +1033,7 @@ body {
       .dashboard_content .conversation_section .ui.button {
         display: inline-block !important; }
       .dashboard_content .conversation_section .ui.comments {
-        display: inline-block; }
+        height: inherit; }
     .dashboard_content .pusher {
       position: absolute;
       padding: 0 !important;
