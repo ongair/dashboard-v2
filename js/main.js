@@ -124,10 +124,14 @@ $('.ui.comments .from_them .content .author')// used in contacts page
 			;
 			
 			$('.conversation_section')
-				.addClass('ui wide right sidebar')
+				.addClass('ui right sidebar')
+			;
+
+			$('.conversation_section.ui.sidebar')
 				.sidebar({context:$('.dashboard_content')})
-			  	.sidebar('setting', 'transition', 'uncover')
+			  	.sidebar('setting', 'transition', 'oveerlay')
 				.sidebar('attach events', '.conversation .item')
+				.sidebar('attach events', '.hide_conversation_sidebar', 'hide')
 			;
 			
 
