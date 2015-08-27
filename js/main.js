@@ -110,34 +110,42 @@ $('.ui.comments .from_them .content .author')// used in contacts page
 	$(window).resize(function(){//handles some stuff on mobile 
 	   console.log('resize called');
 	   if(width <= 768){
-	       $('#sidebar #icon_tabs')
-	       
-	       	.removeClass('labeled borderless icon')
+	       	$('#sidebar #icon_tabs')
+	       		.removeClass('labeled borderless icon')
 	       	; 
-
 	       	$('#icon_tabs .item')
-	       
 	       	//.addClass('ui styled accordion')
 	       	; 
 
-	       $('#sidebar')
+	       	$('#sidebar')
 			  .sidebar('attach events', '.sidebar_toggle' )
 			  //.sidebar('attach events', '#icon_tabs .item', 'hide' )
 			  .removeClass('visible')
 			;
 			
+			$('.conversation_section')
+				.addClass('ui right sidebar')
+			;
+
+			$('.conversation_section.ui.sidebar')
+				.sidebar({context:$('.dashboard_content')},{scrollLock: true})
+			  	.sidebar('setting', 'transition', 'pusher')
+				.sidebar('attach events', '.conversation .item')
+				.sidebar('attach events', '.hide_conversation_sidebar', 'hide')
+			;
 			
 
 			$('.all_tabs')//opens sidebar conversation on all items in .tab_content
-			  .sidebar('attach events', '.inbox_content .item' )
+			  .sidebar('attach events', '.inbox_content .item')
 			  .addClass('ui left wide sidebar segment')
 			;
 			
 
 	   }
 	   else{
-	       $('#sidebar').addClass('visible')
-	       $('.all_tabs')//opens sidebar conversation on all items in .tab_content
+	       	$('#sidebar')
+	       		.addClass('visible')
+	       	$('.all_tabs')//opens sidebar conversation on all items in .tab_content
 			  .removeClass('ui right wide sidebar segment')
 			;
 	   }
