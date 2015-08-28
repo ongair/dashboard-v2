@@ -25,7 +25,7 @@
 
 @media only screen and (max-width: 768px){
 	body{
-		//overflow-y: scroll;
+		overflow-y: auto;
 	}
 	.computer_hide{
 		display: inherit !important;
@@ -36,29 +36,39 @@
 	.pusher{
 		height: 100%;
 	}
-	 .dashboard_content{
+	.dashboard_content{
 	 	width: 100% !important;
 	 	height: 100% !important;
-	 	padding: 0;
 	 	position: relative;
 	 	//display: block;
 	 	.conversation_section{
-			// background-color: #ffffff;
-			padding: 1rem;
 			width: 100% !important;
+			height: calc(100% - 60px) !important;//height that compensates for mobile_menu
 			position: absolute;
+			padding-top: 1rem;
+			padding-bottom: 0;
+			padding-left: 0;
+			//padding-right: 1rem !important;//overwrites css style
 			left: 100%;
 			margin: 0 !important;
-			//overflow-y: hidden !important;
-			//display: inline-block !important;
+			overflow-y: auto !important;
 			.ui.button{
 				display: inline-block !important;
 			}
 			.ui.comments{
-				//display: inline-block;
-				//width: 100%;
-				//overflow-y: hidden !important;
-				height: inherit;
+				
+				overflow-y: visible !important;
+				display: table;
+				padding: 1rem;
+				padding-bottom: 6rem !important;
+				.reply_form{
+					height: initial;
+					.ui.form{
+						width: 100%;
+						left: 0;
+						border-radius: 0;
+					}
+				}
 			}	
 		}
 	 	.pusher{
@@ -71,8 +81,10 @@
 	 		right: 0;
 	 		background-color: #ffffff;
 	 	}
-	 }
-	
+	}
+	.reply_form{
+		width: 100% !important;
+	}
 	#sidebar{
 		width: 20rem;
 		#icon_tabs{
@@ -92,10 +104,14 @@
 			}
 		}
 	}
+	.options_sidebar{
+		z-index: 10000;
+	}
 	.right_content{
 		left: 0 !important;
 		margin-top: 0 !important;
 		.mobile_menu{
+			height: 60px;
 			.item{
 				background: none !important;
 			}

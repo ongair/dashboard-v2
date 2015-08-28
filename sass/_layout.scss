@@ -58,7 +58,8 @@ body{
     height: 100%;
     width: 7em;
     float: left;
-    border:none;
+    border-radius:0;
+    border: none;
     display: inline-block;
     .item{
       padding: 1em;
@@ -75,6 +76,9 @@ body{
       img{
         margin: 0 auto;
       }
+    }
+    .item.sidebar_hide{
+      text-align: right;
     }
     .item.logout{
       position: fixed;
