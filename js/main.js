@@ -112,6 +112,7 @@ $('.ui.comments .from_them .content .author')// used in contacts page
 	   if(width <= 768){
 	       	$('#sidebar #icon_tabs')
 	       		.removeClass('labeled borderless icon')
+	       		.addClass('large')
 	       	; 
 	       	$('#icon_tabs .item')
 	       	//.addClass('ui styled accordion')
@@ -119,8 +120,12 @@ $('.ui.comments .from_them .content .author')// used in contacts page
 
 	       	$('#sidebar')
 			  .sidebar('attach events', '.sidebar_toggle' )
-			  //.sidebar('attach events', '#icon_tabs .item', 'hide' )
+			  .sidebar('attach events', '.sidebar_hide', 'hide' )
 			  .removeClass('visible')
+			;
+			$('.options_sidebar')
+				.sidebar('attach events', '.options_sidebar_toggle')
+				.sidebar('attach events', '.hide_sidebar_toggle', 'hide')
 			;
 			
 			$('.conversation_section')
@@ -129,7 +134,7 @@ $('.ui.comments .from_them .content .author')// used in contacts page
 
 			$('.conversation_section.ui.sidebar')
 				.sidebar({context:$('.dashboard_content')},{scrollLock: true})
-			  	.sidebar('setting', 'transition', 'pusher')
+			  	.sidebar('setting', 'transition', 'overlay')
 				.sidebar('attach events', '.conversation .item')
 				.sidebar('attach events', '.hide_conversation_sidebar', 'hide')
 			;
@@ -137,6 +142,7 @@ $('.ui.comments .from_them .content .author')// used in contacts page
 
 			$('.all_tabs')//opens sidebar conversation on all items in .tab_content
 			  .sidebar('attach events', '.inbox_content .item')
+			  .sidebar({exclusive: true})
 			  .addClass('ui left wide sidebar segment')
 			;
 			

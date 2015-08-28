@@ -146,6 +146,8 @@ body {
         color: #b33679; }
       #sidebar #icon_tabs .item img {
         margin: 0 auto; }
+    #sidebar #icon_tabs .item.sidebar_hide {
+      text-align: right; }
     #sidebar #icon_tabs .item.logout {
       position: fixed;
       width: 100%;
@@ -1062,6 +1064,9 @@ body {
       #sidebar #icon_tabs .item.logout {
         position: relative;
         bottom: initial; }
+
+  .options_sidebar {
+    z-index: 10000; }
 
   .right_content {
     left: 0 !important;
