@@ -58,7 +58,8 @@ body{
     height: 100%;
     width: 7em;
     float: left;
-    border:none;
+    border-radius:0;
+    border: none;
     display: inline-block;
     .item{
       padding: 1em;

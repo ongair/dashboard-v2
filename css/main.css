@@ -133,6 +133,7 @@ body {
     height: 100%;
     width: 7em;
     float: left;
+    border-radius: 0;
     border: none;
     display: inline-block; }
     #sidebar #icon_tabs .item {
