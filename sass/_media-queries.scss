@@ -45,8 +45,10 @@
 			width: 100% !important;
 			height: calc(100% - 60px) !important;//height that compensates for mobile_menu
 			position: absolute;
-			padding: 1rem;
-			padding-right: 1rem !important;//overwrites css style
+			padding-top: 1rem;
+			padding-bottom: 0;
+			padding-left: 0;
+			//padding-right: 1rem !important;//overwrites css style
 			left: 100%;
 			margin: 0 !important;
 			overflow-y: auto !important;
@@ -59,6 +61,14 @@
 				display: table;
 				padding: 1rem;
 				padding-bottom: 6rem !important;
+				.reply_form{
+					height: initial;
+					.ui.form{
+						width: 100%;
+						left: 0;
+						border-radius: 0;
+					}
+				}
 			}	
 		}
 	 	.pusher{

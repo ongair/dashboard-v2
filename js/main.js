@@ -134,7 +134,7 @@ $('.ui.comments .from_them .content .author')// used in contacts page
 
 			$('.conversation_section.ui.sidebar')
 				.sidebar({context:$('.dashboard_content')},{scrollLock: true})
-			  	.sidebar('setting', 'transition', 'overlay')
+			  	//.sidebar('setting', 'transition', 'overlay')
 				.sidebar('attach events', '.conversation .item')
 				.sidebar('attach events', '.hide_conversation_sidebar', 'hide')
 			;
