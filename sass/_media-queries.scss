@@ -39,12 +39,14 @@
 	.dashboard_content{
 	 	width: 100% !important;
 	 	height: 100% !important;
-	 	padding: 1rem;
 	 	position: relative;
 	 	//display: block;
 	 	.conversation_section{
 			width: 100% !important;
+			height: calc(100% - 60px) !important;//height that compensates for mobile_menu
 			position: absolute;
+			padding: 1rem;
+			padding-right: 1rem !important;//overwrites css style
 			left: 100%;
 			margin: 0 !important;
 			overflow-y: auto !important;
@@ -52,11 +54,11 @@
 				display: inline-block !important;
 			}
 			.ui.comments{
-				//display: inline-block;
-				//width: 100%;
-				overflow-y: initial !important;
-				height: 100% !important;
+				
+				overflow-y: visible !important;
+				display: table;
 				padding: 1rem;
+				padding-bottom: 6rem !important;
 			}	
 		}
 	 	.pusher{
@@ -70,7 +72,9 @@
 	 		background-color: #ffffff;
 	 	}
 	}
-	
+	.reply_form{
+		width: 100% !important;
+	}
 	#sidebar{
 		width: 20rem;
 		#icon_tabs{
@@ -94,6 +98,7 @@
 		left: 0 !important;
 		margin-top: 0 !important;
 		.mobile_menu{
+			height: 60px;
 			.item{
 				background: none !important;
 			}
