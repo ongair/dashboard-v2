@@ -665,6 +665,58 @@ body{
       
     }
 
+    ////////////////////////////////////////////sign_up page////////////////////////////////////////
+      .welcome{
+        padding: 1% 1.5%;
+        a{ color: #009FDA;}
+        h2{
+              color: #7a418f;
+              margin: 0.5em 0;
+        }
+        h3{ margin:0.2em 0;}
+        ul{
+          margin:0 0 1em 1em;
+          img{ width: 150px;}
+          li{
+
+            list-style: decimal-leading-zero;
+            margin-left: 1em;
+            ul{
+                li{
+                  list-style: disc;
+                margin-left: 0.5em;
+              }
+            }
+          }
+        }
+        .warning{
+          li{ list-style: none;}
+        }
+        .segment{ box-shadow: none;
+          border: none;}
+        form{
+          label{
+            font-size: 1.2em;
+          }
+          input[type=text]{
+            padding: 1em;
+          }
+          p{
+            font-size: 1.2em;
+          }
+        }
+        .button{
+          transition-duration: 0.55s;
+          background-color: #f94263;
+          color: #ffffff;
+          border-radius: 0.2857rem;
+          margin: 2em 0;
+          &:hover{
+                background-color: #6f3159;
+          };
+        }
+        .grey.button{ background: grey}
+      }
 
     ////////////////////////////////////////////new_user page////////////////////////////////////////
     .new_user_content{
@@ -1174,8 +1226,9 @@ body{
           width: 20%;
           text-align: right;
         }
+
       }
-      
+
     }
 
    

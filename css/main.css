@@ -51,7 +51,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent; }
 
 img, a img {
@@ -587,6 +587,46 @@ body {
         padding: 6.6rem 1rem 1rem 1rem;
         margin: 0;
         vertical-align: top; }
+    .right_content .column2 .welcome {
+      padding: 1% 1.5%; }
+      .right_content .column2 .welcome a {
+        color: #009FDA; }
+      .right_content .column2 .welcome h2 {
+        color: #7a418f;
+        margin: 0.5em 0; }
+      .right_content .column2 .welcome h3 {
+        margin: 0.2em 0; }
+      .right_content .column2 .welcome ul {
+        margin: 0 0 1em 1em; }
+        .right_content .column2 .welcome ul img {
+          width: 150px; }
+        .right_content .column2 .welcome ul li {
+          list-style: decimal-leading-zero;
+          margin-left: 1em; }
+          .right_content .column2 .welcome ul li ul li {
+            list-style: disc;
+            margin-left: 0.5em; }
+      .right_content .column2 .welcome .warning li {
+        list-style: none; }
+      .right_content .column2 .welcome .segment {
+        box-shadow: none;
+        border: none; }
+      .right_content .column2 .welcome form label {
+        font-size: 1.2em; }
+      .right_content .column2 .welcome form input[type=text] {
+        padding: 1em; }
+      .right_content .column2 .welcome form p {
+        font-size: 1.2em; }
+      .right_content .column2 .welcome .button {
+        transition-duration: 0.55s;
+        background-color: #f94263;
+        color: #ffffff;
+        border-radius: 0.2857rem;
+        margin: 2em 0; }
+        .right_content .column2 .welcome .button:hover {
+          background-color: #6f3159; }
+      .right_content .column2 .welcome .grey.button {
+        background: grey; }
     .right_content .column2 .new_user_content {
       margin: 0;
       position: relative;
@@ -1136,7 +1176,6 @@ body {
 
   @page {
     margin: 0.5cm; }
-
   p,
   h2,
   h3 {
@@ -1148,3 +1187,5 @@ body {
     page-break-after: avoid; } }
 /* Import Cross-browser Compaitibility Files */
 /* ==================================================== */
+
+/*# sourceMappingURL=main.css.map */
