@@ -596,6 +596,8 @@ body {
         margin: 0.5em 0; }
       .right_content .column2 .welcome h3 {
         margin: 0.2em 0; }
+      .right_content .column2 .welcome .extra a {
+        color: #009FDA !important; }
       .right_content .column2 .welcome ul {
         margin: 0 0 1em 1em; }
         .right_content .column2 .welcome ul img {
