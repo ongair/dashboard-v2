@@ -499,6 +499,8 @@ body{
     .contacts_top{
         margin: 0;
         padding: 1rem;
+        //height: 100px;
+        max-height: 80px;
         background-color: #cccccc;
         vertical-align: middle;
         .contact_list{
@@ -511,7 +513,7 @@ body{
       font-size: 1rem;
       display: block;
       overflow-y: auto;
-      height: calc(100% - 55px);//full height minus topbar menu height
+      height: calc(100% - 135px);//full height minus topbar menu height
       .item{// makes a single contact
         padding-right: 1rem;
         padding-left: 1rem;
