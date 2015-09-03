@@ -456,6 +456,7 @@ body{
       font-size: 1rem;
       display: block;
       height: calc(100% - 55px);//full height minus topbar menu height
+      overflow-y: auto;
       h2{
         color: #7a418f;
       }
@@ -513,7 +514,7 @@ body{
       font-size: 1rem;
       display: block;
       overflow-y: auto;
-      height: calc(100% - 135px);//full height minus topbar menu height
+      height: calc(100% - 135px);//full height minus topbar menu height and contact_top space
       .item{// makes a single contact
         padding-right: 1rem;
         padding-left: 1rem;

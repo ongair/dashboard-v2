@@ -20,6 +20,10 @@
     <script src='js/main.js'></script>
     <script src="js/angular.min.js"></script>
     <script src="js/emoji.min.js"></script>
+    <!--          crop image             -->
+    <link rel="stylesheet" href="css/cropper.min.css">
+    <script src="js/cropper.min.js"></script>
+     <!--          crop image             -->
     <script>
       angular.module("app", ["emoji"]).controller("AppCtrl", function ($scope) {
         $scope.messages = [
@@ -234,14 +238,7 @@
             <h2>Personalize your Ongair - Whatsapp Account</h2>
             <p>Add a Profile Picture (must be 480px wide)</p>
             <div class="ui card edit_profile_image">
-              <a class="blurring dimmable image">
-                <div class="ui dimmer">
-                  <div class="content">
-                    <div class="center">
-                      <div class="ui inverted button">Edit Profile image</div>
-                    </div>
-                  </div>
-                </div>
+              <a class="image">
                 <img src="images/user1.jpg">
               </a>
               <div class="content">

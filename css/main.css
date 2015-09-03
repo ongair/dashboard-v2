@@ -438,7 +438,8 @@ body {
       position: relative;
       font-size: 1rem;
       display: block;
-      height: calc(100% - 55px); }
+      height: calc(100% - 55px);
+      overflow-y: auto; }
       .right_content .column2 .profile_content h2 {
         color: #7a418f; }
       .right_content .column2 .profile_content .all_profile {
