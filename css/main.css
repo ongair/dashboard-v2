@@ -51,7 +51,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent; }
 
 img, a img {
@@ -328,6 +328,15 @@ body {
           padding-bottom: 12rem; }
           .right_content .column2 .dashboard_content .conversation_section .ui.comments .ui.divider {
             clear: both; }
+          .right_content .column2 .dashboard_content .conversation_section .ui.comments .comment .content .image {
+            width: 100%;
+            max-width: 330px;
+            max-height: 330px;
+            overflow: hidden;
+            border-radius: 5px;
+            margin: 0.3em 0; }
+            .right_content .column2 .dashboard_content .conversation_section .ui.comments .comment .content .image img {
+              width: 100%; }
           .right_content .column2 .dashboard_content .conversation_section .ui.comments .ui.button.image_btn {
             margin: 0;
             color: #ffffff;
@@ -1186,7 +1195,6 @@ body {
 
   @page {
     margin: 0.5cm; }
-
   p,
   h2,
   h3 {
@@ -1198,3 +1206,5 @@ body {
     page-break-after: avoid; } }
 /* Import Cross-browser Compaitibility Files */
 /* ==================================================== */
+
+/*# sourceMappingURL=main.css.map */
