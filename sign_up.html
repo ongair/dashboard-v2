@@ -79,7 +79,7 @@
           <a class="ui button">COMPOSE</a>
         </div>
         <!-- inbox button-->
-        <a class="active item" data-tab="inbox">
+        <a class="item" data-tab="inbox">
           <i class="inbox icon"></i>
           Inbox
           <span class="floating ui tiny circular label">9</span>
@@ -95,7 +95,7 @@
           <i class="bar graph icon"></i>
           Reports
         </a> <!-- settings button-->
-        <a class="item" data-tab="settings">
+        <a class="active item" data-tab="settings">
           <i class="settings icon"></i>
           Settings
         </a> <!-- logout button-->
@@ -143,7 +143,7 @@
       <div class="column all_tabs">
         <!-- all tabs require the class name as below -->
         <!-- Inbox begins here-->
-        <div class="ui active tab tab_content" data-tab="inbox">
+        <div class="ui tab tab_content" data-tab="inbox">
           <h2 class="ui header tab_content_header">Inbox</h2>
           <div class="ui link list">
             <a class="active item" style="font-weight: bold">Open
@@ -213,7 +213,7 @@
           </div>
         </div>
         <!-- settings begins here-->
-        <div class="ui tab tab_content" data-tab="settings">
+        <div class="ui active tab tab_content" data-tab="settings">
           <h2 class="ui header tab_content_header">Settings</h2>
           <div class="ui link list">
             <a class="ui item button tab_button">SET AUTORESPONDERS</a>
@@ -248,9 +248,8 @@
       <div class="column2">
  
         <div class="ui grid welcome">
-
-      <div class="fourteen wide column">
-        <div class="instructions">
+        <div class="fourteen wide column">
+  <div class="instructions">
           <div class=" ui ordered four steps">
             <div id="add-name" class="ui step active">
               Business Name
@@ -266,13 +265,15 @@
             </div>  
         </div>      
       </div>
-      <!-- begin add name step-->
-      
+      </div>
+      <div class="row">
+      <!-- begin add name step
+      <div class="seven wide column">
       <div id="add-name" class="hidden">
         <h2>Business Name</h2>
-        <h3>
+        <h5>
           This is the brand 
-        </h3>  
+        </h5>  
           <form class="ui small form segment">
             <div class="field">
               <label>Business Name:</label>
@@ -287,20 +288,39 @@
               </p>
             </div>
           </form>
-        <a href="" class="ui button"> Next
+        <a href="" class="ui button right floated"> Next
         <i class="arrow right icon">  
         </i>
         </a>
         </div>
-        
-        <!-- end add name step-->
-        <!-- begin add number step-->
-        <!--
+        </div>
+        <div class="six wide column">
+                <div class="ui icon warning message">
+                  <i class="help icon"></i>
+                  <div class="content">
+                     <div class="header">
+                    Need help?
+                  </div>
+                  <p>
+                    The <a class="author" href="">Ongair documentation</a> details it all 
+                    or
+                    <a href=""> email us</a>
+                     to get assitance.  
+                  </p>
+                  </div>
+                </div> 
+              </div>
+        end--> 
+        <!-- begin add number step     
+        <div class="seven wide column">   
       <div id="add-number" class="hidden">
-        <h2>Number</h2>
-        <h3>
+        <h2>Add a Number</h2>
+        <h5>
           Make sure that the number is on a device that can receive an SMS or call during the activation process 
-        </h3>
+        </h5>
+          
+          
+          <form class="ui small form segment">
           <div class="ui warning message">
             <div class="header">
               Could you check something!
@@ -309,10 +329,8 @@
                 <li class="first">That phone number has already been taken.</li>
             </ul>    
           </div>
-          
-          <form class="ui small form segment">
             <div class="field">
-              <label>WhatsApp Phone Number (including Country Code)::</label>
+              <label>WhatsApp Phone Number (including Country Code) :</label>
               <input type="text" placeholder="Country code and full number without the leading '0' eg. 254712345678">
             </div>
 
@@ -322,17 +340,18 @@
                 choose Ongair :)
               </p>
             </div>
-
-            <div class="two fields">
+             <div class="ui message">
+                <div class="two fields">
                               <div class="ui checkbox warning">
                                 <input name="confirm" required="" type="checkbox">
                                 <label>I confirm that <strong> I OWN</strong> this mobile number and it is <strong>NOT</strong> currently on WhatsApp</label>
                               </div>
                             </div>
+              </div>              
                             <br>
-            <div class="field">
+                <div class="field">
                               <label>Activation Method:</label>
-                            </div>
+                </div>
 
              <div class="two fields">
                               <div class="field">
@@ -348,30 +367,46 @@
                                 </div>
                               </div>
                             </div>               
-
+            
           </form>
-        <a href="" class="ui button"> Next
+        <a href="" class="ui button right floated"> Next
         <i class="arrow right icon">  
         </i>
         </a>
         </div>
-        -->
-        <!-- end add number step-->
+        </div>
+        <div class="six wide column">
+                <div class="ui icon warning message">
+                  <i class="help icon"></i>
+                  <div class="content">
+                     <div class="header">
+                    Need help?
+                  </div>
+                  <p>
+                    The <a class="author" href="">Ongair documentation</a> details it all 
+                    or
+                    <a href=""> email us</a>
+                     to get assitance.  
+                  </p>
+                  </div>
+                </div> 
+              </div>
+          end -->
         <!-- begin activate step-->
-        <!--
-      <div id="add-name" class="hidden">
-        <h2>Activate</h2>
-        <h3>
+    <div class="seven wide column">   
+      <div id="add-name" class="ten wide column hidden">
+       <h2>Activate your account</h2>
+        <h5>
           Your account is almost ready, we have sent the code to <a href="">
             254 123 456
           </a>
-        </h3> 
-        <div class="ui success message">
+        </h5> 
+          <form class="ui small form segment">
+          <div class="ui success message">
             <div class="header">
               Code resent to 254 123 456!
             </div>   
           </div> 
-          <form class="ui small form segment">
             <div class="field">
               <label>Activation code:</label>
               <input type="text" required="" placeholder="four digit code texted to 254 123 456">
@@ -385,48 +420,37 @@
             </div>
           </form>
 
-        <a href="" class="ui button"> 
+        <a href="" class="ui button right floated"> 
          All Done
           <i class="checkmark right icon"></i>
         </a>
 
-        <a href="" class="ui grey button right floated"> Resend code
+        <a href="" class="ui grey button "> Resend code
         <i class="send right icon">  
         </i>
         </a>
         </div>
-       -->
-        <!-- end activate step-->
-
-
-        <div class="ui attached bottom message">
-          <i class="icon circle help"></i>
-          <span id="upload_msg" class="text">
-            <b>Need help?</b> 
-          </span>  
-          the
-            <a class="author" href="">
-              ongair documentation
-            </a>
-            details it all
-          <span id="upload_msg" class="text">
-           or
-          </span>  
-            <a class="author" href="mailto:sales@sprout.co.ke">
-              email us
-            </a>
-            to get assitance
-          </div>
-
-
         </div>
-       
-     
-        
-          
-  
-       
-        
+        <div class="six wide column">
+                <div class="ui icon warning message">
+                  <i class="help icon"></i>
+                  <div class="content">
+                     <div class="header">
+                    Need help?
+                  </div>
+                  <p>
+                    The <a class="author" href="">Ongair documentation</a> details it all 
+                    or
+                    <a href=""> email us</a>
+                     to get assitance.  
+                  </p>
+                  </div>
+                </div> 
+              </div>
+
+        <!--end row-->
+        </div>
+        <!--end row-->
             <!-- sidebar -->
           </div>
 
