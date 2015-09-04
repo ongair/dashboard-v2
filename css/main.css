@@ -1189,6 +1189,24 @@ body {
         padding-left: 1rem !important; }
       .right_content .column2 .lists_content .all_lists .lists_bottom {
         width: 99% !important; }
+      .right_content .column2 .groups_content .all_groups ul.item {
+        width: 49%;
+        margin: 0;
+        display: inline-block;
+        border-right: 1px solid rgba(34, 36, 38, 0.15);
+        border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+        border-top: none; }
+      .right_content .column2 .groups_content .all_groups .groups_list .item {
+        display: block;
+        width: 100%;
+        text-align: center; }
+      .right_content .column2 .groups_content .all_groups .groups_list .g_name {
+        font-weight: bold;
+        padding-left: 1rem !important; }
+      .right_content .column2 .groups_content .all_groups .groups_list .g_messages {
+        display: none; }
+      .right_content .column2 .groups_content .all_groups .groups_list .g_member {
+        display: none; }
     .right_content .column3 {
       display: none !important; } }
 /* Print Styles */

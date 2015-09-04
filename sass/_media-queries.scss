@@ -208,6 +208,39 @@
 					}
 				}
 			}
+			////////////groups page////////////
+			.groups_content{
+				.all_groups{
+					ul.item{
+						width: 49%;
+						//padding: 0;
+						margin: 0;
+						display: inline-block;
+						border-right: 1px solid rgba(34, 36, 38, 0.15);
+						border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+						border-top: none;
+					}
+					.groups_list{
+						.item{
+							display: block;
+							width: 100%;
+							//margin: 0 auto;
+							text-align: center;
+
+						}
+						.g_name{
+							font-weight: bold;
+							padding-left: 1rem !important;
+						}
+						.g_messages{
+							display: none;
+						}
+						.g_member{
+							display: none;
+						}
+					}
+				}
+			}
 		}
 
 		.column3{
