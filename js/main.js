@@ -27,11 +27,11 @@ $(document).ready(function() {
 	  })
 	;
 
-	$('.ui.sticky')
-	  .sticky({
-	    context: '.column2'
-	  })
-	;
+	// $('.ui.sticky')
+	//   .sticky({
+	//     context: '.column2'
+	//   })
+	// ;
 
 	$('.compose_message .close')//used in compose page for important messages
 	  .on('click', function() {
