@@ -959,6 +959,7 @@ body{
     .autoresponder_content{
       margin: 0;
       position: relative;
+      overflow-x: auto;
       font-size: 1rem;
       display: block;
       height: calc(100% - 55px);//full height minus topbar menu height
@@ -1218,6 +1219,7 @@ body{
 
       .all_locations{//div that changes width when column3 is toggled + div used by google maps API
         display: inline-block;
+        overflow-x: auto;
         width: 100%;
         height: 100%;
         padding: 0;
@@ -1249,7 +1251,7 @@ body{
         }
         .a_edit{
           width: 20%;
-          text-align: right;
+          //text-align: right;
         }
 
       }

@@ -241,6 +241,43 @@
 					}
 				}
 			}
+			////////////autoresponder page////////////
+			.autoresponder_content{
+				.all_autoresponders{
+					ul.item{
+						width: 100%;
+						//padding: 0;
+						margin: 0;
+						display: inline-block;
+						border-right: 1px solid rgba(34, 36, 38, 0.15);
+						border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+						border-top: none;
+					}
+					.autoresponder_list{
+						.item{
+							display: block;
+							width: 100%;
+							//margin: 0 auto;
+							text-align: center;
+
+						}
+						.a_type{
+							font-weight: bold;
+							//padding-left: 1rem !important;
+							width: 50%;
+							display: inline-block;
+						}
+						.a_keyword{
+							font-weight: bold;
+							display: inline-block;
+							width: 50%;
+						}
+						.l_member{
+							display: none;
+						}
+					}
+				}
+			}
 		}
 
 		.column3{
