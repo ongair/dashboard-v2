@@ -131,6 +131,45 @@
 					width: 100%;
 				}
 			}
+			/////////////////contacts page//////////
+			.contacts_content{
+				.all_contacts{
+					ul.item{
+						width: 49%;
+						//padding: 0;
+						margin: 0;
+						display: inline-block;
+						border-right: 1px solid rgba(34, 36, 38, 0.15);
+						border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+						border-top: none;
+					}
+					.contact_list{
+						.item{
+							display: block;
+							width: 100%;
+							//margin: 0 auto;
+							text-align: center;
+
+						}
+						.c_name{
+							font-weight: bold;  
+						}
+						.c_image{	
+							img{
+								//border-radius: 0.5rem;
+								width: 40%;
+								height: 40%;
+							}
+						}
+						.c_edit{
+							display: none;
+						}
+						.c_verify{
+							display: none;
+						}
+					}
+				}
+			}
 		}
 
 		.column3{
