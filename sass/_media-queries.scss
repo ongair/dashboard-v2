@@ -278,6 +278,24 @@
 					}
 				}
 			}
+			/////////////notification page/////////////
+			.notifications_content{
+				.notifications_form{
+					width: 100%;
+				}
+			}
+			//////////new_user page////////////
+			.new_user_content{
+				overflow-x: auto;
+				.new_user_form{
+					display: block;
+					width: 100%;
+				}
+				.new_user_message{
+					display: block;
+					width: 100%;
+				}
+			}
 		}
 
 		.column3{

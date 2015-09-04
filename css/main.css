@@ -1229,6 +1229,16 @@ body {
         width: 50%; }
       .right_content .column2 .autoresponder_content .all_autoresponders .autoresponder_list .l_member {
         display: none; }
+      .right_content .column2 .notifications_content .notifications_form {
+        width: 100%; }
+      .right_content .column2 .new_user_content {
+        overflow-x: auto; }
+        .right_content .column2 .new_user_content .new_user_form {
+          display: block;
+          width: 100%; }
+        .right_content .column2 .new_user_content .new_user_message {
+          display: block;
+          width: 100%; }
     .right_content .column3 {
       display: none !important; } }
 /* Print Styles */
