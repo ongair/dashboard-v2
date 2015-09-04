@@ -764,6 +764,7 @@ body {
         display: inline-block;
         width: 100%;
         padding: 0;
+        overflow-x: hidden;
         -webkit-transition: all 500ms ease;
         -moz-transition: all 500ms ease;
         -o-transition: all 500ms ease;
@@ -1237,6 +1238,14 @@ body {
           display: block;
           width: 100%; }
         .right_content .column2 .new_user_content .new_user_message {
+          display: block;
+          width: 100%; }
+      .right_content .column2 .new_contacts_content {
+        overflow-x: auto; }
+        .right_content .column2 .new_contacts_content .new_contact_form {
+          display: block;
+          width: 100%; }
+        .right_content .column2 .new_contacts_content .new_contact_message {
           display: block;
           width: 100%; }
     .right_content .column3 {

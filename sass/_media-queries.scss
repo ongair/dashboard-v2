@@ -296,6 +296,18 @@
 					width: 100%;
 				}
 			}
+			//////////new_contact page////////////
+			.new_contacts_content{
+				overflow-x: auto;
+				.new_contact_form{
+					display: block;
+					width: 100%;
+				}
+				.new_contact_message{
+					display: block;
+					width: 100%;
+				}
+			}
 		}
 
 		.column3{

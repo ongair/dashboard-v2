@@ -909,6 +909,7 @@ body{
         display: inline-block;
         width: 100%;
         padding: 0;
+        overflow-x: hidden;
         -webkit-transition: all 500ms ease;
         -moz-transition: all 500ms ease;
         -o-transition: all 500ms ease;
