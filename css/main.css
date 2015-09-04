@@ -910,7 +910,7 @@ body {
           width: 30%; }
         .right_content .column2 .lists_content .lists_list .l_messages {
           width: 15%; }
-        .right_content .column2 .lists_content .lists_list .c_edit {
+        .right_content .column2 .lists_content .lists_list .l_edit {
           width: 10%; }
         .right_content .column2 .lists_content .lists_list .l_remove {
           width: 18%; }
@@ -1167,6 +1167,28 @@ body {
         display: none; }
       .right_content .column2 .contacts_content .all_contacts .contact_list .c_verify {
         display: none; }
+      .right_content .column2 .lists_content .all_lists ul.item {
+        width: 49%;
+        margin: 0;
+        display: inline-block;
+        border-right: 1px solid rgba(34, 36, 38, 0.15);
+        border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+        border-top: none; }
+      .right_content .column2 .lists_content .all_lists .lists_list .item {
+        display: block;
+        width: 100%;
+        text-align: center; }
+      .right_content .column2 .lists_content .all_lists .lists_list .l_name {
+        font-weight: bold;
+        padding-left: 1rem !important; }
+      .right_content .column2 .lists_content .all_lists .lists_list .l_edit {
+        display: none; }
+      .right_content .column2 .lists_content .all_lists .lists_list .l_messages {
+        display: none; }
+      .right_content .column2 .lists_content .all_lists .lists_list .l_button {
+        padding-left: 1rem !important; }
+      .right_content .column2 .lists_content .all_lists .lists_bottom {
+        width: 99% !important; }
     .right_content .column3 {
       display: none !important; } }
 /* Print Styles */
