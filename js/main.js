@@ -1,4 +1,9 @@
 var width = $(window).width();
+// scroll to most recent messages
+$(window).load(function() { 
+	$('.comments').prop({ scrollTop: $('.comments').prop("scrollHeight") });
+});
+
 $(document).ready(function() { 	
 
    $('#icon_tabs .item').tab();

@@ -323,7 +323,7 @@ body {
           padding-right: 1rem;
           padding-top: 1rem;
           margin-top: 0;
-          padding-bottom: 12rem; }
+          padding-bottom: 6rem; }
           .right_content .column2 .dashboard_content .conversation_section .ui.comments .ui.divider {
             clear: both;
             margin-top: 1em; }
@@ -1088,7 +1088,7 @@ body {
   z-index: 999999;
   overflow: hidden;
   background: #000;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.85);
   opacity: 0;
   display: none;
   direction: ltr;
