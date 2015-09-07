@@ -9,17 +9,13 @@
       name='viewport'>
     <!-- Site Properities -->
     <title>Dashboard</title>
-    <link href=
-      'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700'
-      rel='stylesheet' type='text/css'>
     <link href='dist/semantic.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
     <script src='js/jquery.js'></script>
     <script src='dist/semantic.js'></script>
     <link href='css/main.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/emoji.min.css">
     <script src='js/main.js'></script> 
-    <script src="js/blueimp-gallery.min.js"></script>   
+    <script src="js/jquery.blueimp-gallery.min.js"></script>  
   </head>
   <body ng-app ng-controller="AppCtrl">
     <div class="ui left vertical visible sidebar" id="sidebar">
@@ -384,17 +380,17 @@
             <div class="ui comments">
               <div class="comment from_me">
                 <a class="avatar">
-                <img class="img" src="images/user1.jpg">
+                <img src="images/user1.jpg">
                 </a>
                 <div class="content">
-                  <a class="author">Matt</a>
+                  <a class="author">You</a>
                   <div class="metadata">
                     <span class="date">5:42PM</span>
                     <span class="sent"></span>
                   </div>
                   <div class="image">
-                  <a class="item img" href="images/user1.jpg" data-gallery>
-                    <img src="images/user1.jpg" alt="">
+                  <a class="item img" href="images/user1.jpg" title="You" data-gallery>
+                    <img src="images/user1.jpg" title="You">
                   </a>  
                   </div>
                 </div>
@@ -430,7 +426,7 @@
                 <img src="images/user3.jpg">
                 </a>
                 <div class="content">
-                  <a class="author">Jenny Hess</a>
+                  <a class="author">You</a>
                   <div class="metadata">
                     <span class="date">Just now</span>
                     <span class="read"></span>
@@ -480,7 +476,7 @@
                 <img src="images/user3.jpg">
                 </a>
                 <div class="content">
-                  <a class="author">Elliot Fu</a>
+                  <a class="author">You</a>
                   <div class="metadata">
                     <span class="date">Just now</span>
                     <span class="read"></span>
@@ -505,14 +501,14 @@
                 <img src="images/user3.jpg">
                 </a>
                 <div class="content">
-                  <a class="author">Jenny Hess</a>
+                  <a class="author">You</a>
                   <div class="metadata">
                     <span class="date">Just now</span>
-                    <span class="read"></span>
+                    <span class="received"></span>
                   </div>
                   <div class="image">
-                    <a class="item img" href="images/event.jpg">
-                    <img src="images/event.jpg">
+                    <a class="item img" href="images/event.jpg" title="You" data-gallery>
+                    <img src="images/event.jpg" alt="You">
                     </a>
                   </div>
                 </div>
@@ -544,11 +540,11 @@
                   </div>
 
                   <div class="image">
-                  <a class="item img" href="images/user3.jpg">
-                    <img src="images/user1.jpg">
+                  <a class="item img" href="images/user3.jpg" title="Jenny Hess" data-gallery>
+                    <img src="images/user1.jpg" alt="Jenny Hess">
                   </a>  
                   </div>
-
+                  </div>
                   
                 </div>
                 <div class="comment from_them">
@@ -575,7 +571,9 @@
                     <a class="download">
                       <i class="icon download"></i>
                     </a>
-                    <a class="close">x</a>
+                    <a class="close">
+                    <i class="icon close"></i>
+                    </a>
                     <a class="play-pause"></a>
                     
                 </div>
@@ -632,16 +630,6 @@
       </div>
     </div>
     <!---->
-    <script src="js/blueimp-gallery.min.js"></script>
-    <script>
-    document.getElementById('links').onclick = function (event) {
-    event = event || window.event;
-    var target = event.target || event.srcElement,
-        link = target.src ? target.parentNode : target,
-        options = {index: link, event: event},
-        links = this.getElementsByClassName('img');
-    blueimp.Gallery(links, options);
-};
-</script>
+    
   </body>
 </html>

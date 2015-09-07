@@ -317,8 +317,10 @@ body{
           padding-bottom: 12rem;//added to compensate for reply textarea
           .ui.divider{
             clear: both;
+            margin-top: 1em;
           }
           .comment{
+            margin:0 0 0.5em 0;
             .content{
               .image{
                 width: 100%;
@@ -326,7 +328,7 @@ body{
                 max-height: 330px;
                 overflow: hidden;
                 border-radius:5px;
-                margin: 0.3em 0;
+                margin: 0.3em 0 .3em 0;
                 img{ width: 100%;}
               }
             }
@@ -340,7 +342,8 @@ body{
           }
           .comment.from_me {
             float: right;
-              clear: both;
+            clear: both;
+            width: 100%;
             .avatar{
               float: right;
             }
@@ -359,15 +362,15 @@ body{
               }
             }
             .content{
-               box-shadow: 1px 1px 3px 2px rgba(39, 41, 43, 0.1);
+              box-shadow: 1px 1px 3px 2px rgba(39, 41, 43, 0.1);
               background-color: #eaeaea;
               padding: 5px 10px;
               border-radius:10px;
               margin-right: 1em;
               float: right;
               margin-left: 0;
-              max-width: 80%;
-              width: inherit;
+              max-width: 70%;
+              
             }
             .content:after {
 
@@ -390,6 +393,7 @@ body{
           .comment.from_them {
            clear: both;
             float: left;
+            width: 100%;
             .d_flag{
               margin-left: 0.5rem;
             }
@@ -401,11 +405,9 @@ body{
               background-color: #edf9ff;
               padding: 5px 10px;
               border-radius:10px;
-              margin-left: 3.5em;
-              
-              margin-right: 0; 
-              max-width: 90%;
-              width: inherit;
+              margin-left: 1em;
+              float:left;
+              max-width: 70%;
             }
             .content:before {
               top: 1.25em;
