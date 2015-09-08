@@ -20,6 +20,12 @@
     <script src='js/main.js'></script>
     <script src="js/angular.min.js"></script>
     <script src="js/emoji.min.js"></script>
+    <!---->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
     <script>
       angular.module("app", ["emoji"]).controller("AppCtrl", function ($scope) {
         $scope.messages = [
@@ -372,153 +378,36 @@
                   </div>
                 </div>
               </div>
-
-              <div class="column r_report">
-                <div class="ui fluid card">
-                  <div class="ui small statistic">
-                  
-                    
-                    <div class="value">
-                      30%
-                    </div>
-                    <div class="label">
-                     Response rate
-                    </div>
-                  </div>
-                  <div class="content">
-                    <a class="meta">
-                      Go To Account Reports
-                    </a>
-                  </div>
-                </div>
               </div>
 
-              <div class="column r_media">
-                <div class="ui fluid card">
-                  <div class="ui small statistic">
-                 
-                    <div class="value">
-                      30
-                    </div>
-                    <div class="label">
-                     Media Files
-                    </div>
-                  </div>
-                  <div class="content">
-                    <a class="meta">
-                      Manage Media
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <div class="ui column centered grid">RECENT MESSAGE STATS</div>
+              <div id="area-chart"></div>
 
-              <div class="column r_groups">
-                <div class="ui fluid card">
-                  <div class="ui small statistic">
-                  
-                    <div class="value">
-                      3
-                    </div>
-                    <div class="label">
-                     Groups
-                    </div>
-                  </div>
-                  <div class="content">
-                    <a class="meta">
-                      Manage Groups
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="column r_integrations">
-                <div class="ui fluid card">
-                  <div class="ui small statistic">
-                 
-                    <div class="value">
-                      3
-                    </div>
-                    <div class="label">
-                      Integrations
-                    </div>
-                  </div>
-                  <div class="content">
-                    <a class="meta">
-                      Manage Integrations
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!--
-               <div class="column grid ">
-
-                <div class="ui fluid card">
-                  <div class="content">
-                    <div class="header">Analyzing your Customer Service on WhatsApp.</div>
-                    <div class="description">
-                      Winston Churchill famously said, "I only believe in statistics that I doctored myself". However, if you work in a real business you'll know that stats and metrics are very important (to your boss) especially when you're evaluating your ROI.
-                    </div>
-                  </div>
-                  <div class="ui bottom attached button">
-                    <i class="add icon"></i>
-                   More on Ongair Blog
-                  </div>
-                </div>
-                </div>
-
-                <div class="column grid ">
-                <div class="ui fluid card">
-                  <div class="content">
-                    <div class="header">Introducing Wechat on Ongair.</div>
-                    <div class="description">
-                      When compared to email and phone, live chat has the highest customer satisfaction rates 71%. It all has to do with speed and how quickly your enquires are answered. Here's a tale of a personal experience...
-                    </div>
-                  </div>
-                  <div class="ui bottom attached button">
-                    <i class="add icon"></i>
-                    Read Tip
-                  </div>
-                </div>
-                </div>
-
-                <div class="column grid ">
-                  <div class="ui fluid card">
-                    <div class="content">
-                      <div class="header">How to Use Whatsapp</div>
-                      <div class="description">
-                        When compared to email and phone, live chat has the highest customer satisfaction rates 71%. It all has to do with speed and how quickly your enquires are answered. Here's a tale of a personal experience...
-                      </div>
-                    </div>
-                    <div class="ui bottom attached button">
-                      <i class="add icon"></i>
-                      Add Friend
-                    </div>
-                  </div>
-                  </div>
-
-                  <div class="column grid ">
-                  <div class="ui fluid card">
-                    <div class="content">
-                      <div class="header">Why Ongair?</div>
-                      <div class="description">
-                        Whatsapp + Wechat + Zendesk, what else would you ask for?
-                        Plus a load of awesome features to get you going.
-                      </div>
-                    </div>
-                    <div class="ui bottom attached button">
-                      <i class="add icon"></i>
-                      Add Friend
-                    </div>
-                  </div>
-                  </div>
-                  
-                </div>
-                -->
-
+            
+            
             </div>
+
           </div>
         </div>
       </div>
     </div>
+    <script type="text/javascript">
+     Morris.Area({
+  element: 'area-chart',
+  data: [
+    { y: '10 am', a: 100, b: 90 },
+    { y: '11 am', a: 75,  b: 65 },
+    { y: '12 pm', a: 50,  b: 40 },
+    { y: '1 pm', a: 75,  b: 65 },
+    { y: '2 pm', a: 50,  b: 40 },
+    { y: '3 pm', a: 75,  b: 65 },
+    { y: '4 pm', a: 100, b: 90 }
+  ],
+  xkey: 'y',
+  ykeys: ['a', 'b'],
+  labels: ['In', 'Out'],
+  fill: '#f00'
+});
+    </script>
   </body>
 </html>
