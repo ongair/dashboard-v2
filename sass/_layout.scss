@@ -680,6 +680,19 @@ body{
     ////////////////////////////////////////////sign_up page////////////////////////////////////////
       .welcome{
         padding: 1% 1.5%;
+        .upload_icon{
+           
+            clear: both;
+            width: 10rem;
+            min-width: 150px;
+            height: 2.8rem;
+            padding: 9px 0px 0 8px;
+            border-right : 1px solid #ddd;
+            cursor: pointer;
+            input[type="file"] {
+              display: none;
+            }
+          }
         a{ color: #009FDA;}
         h2{
               color: #7a418f;

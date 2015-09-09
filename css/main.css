@@ -597,6 +597,16 @@ body {
         vertical-align: top; }
     .right_content .column2 .welcome {
       padding: 1% 1.5%; }
+      .right_content .column2 .welcome .upload_icon {
+        clear: both;
+        width: 10rem;
+        min-width: 150px;
+        height: 2.8rem;
+        padding: 9px 0px 0 8px;
+        border-right: 1px solid #ddd;
+        cursor: pointer; }
+        .right_content .column2 .welcome .upload_icon input[type="file"] {
+          display: none; }
       .right_content .column2 .welcome a {
         color: #009FDA; }
       .right_content .column2 .welcome h2 {
