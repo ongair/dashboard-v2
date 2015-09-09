@@ -234,14 +234,45 @@
 				<div class="row">
 					<!-- begin activate step-->
 
-					<div class="nine wide column">
+					<div class="seven wide column">
 						<div class="ten wide column">
 							<h2>Bulk Contact Upload</h2>
 
 							<h5>Upload Contacts your contacts from a csv, xlsx
 							or vcf card</h5>
 
-							<div class="ui icon info message">
+							<form class="ui small form">
+
+								<div class="two fields">
+									<label class="ui button upload_icon"
+									for="file-upload">Upload file <i class=
+									" upload right icon"><input id=
+									"file-upload" type="file"></i></label>
+
+								<label>	
+								<a class="ui button left floated" href=
+							"">Submit <i class="save right icon"></i></a>
+								</label>
+
+								</div>
+
+								<div class="two fields">
+									<div class="ui segment">
+										<input name="confirm" required="" type=
+										"checkbox"> <label>By ticking here, I
+										confirm that these contacts have
+										<b>Saved my number on
+										WhatsApp.</b></label>
+									</div>
+								</div>
+
+							</form>
+						</div>
+					</div>
+
+					<div class="eight wide column">
+
+						<div class="ui icon info message">
 								<ul>
 									<li>Please ensure that your contacts have
 									the full country code information without
@@ -251,31 +282,8 @@
 									is the first column and phone number is
 									second</li>
 								</ul>
-							</div>
-
-							<form class="ui small form">
-								<div class="field">
-									<label class="ui button upload_icon green"
-									for="file-upload">Upload file <i class=
-									"large upload right icon"><input id=
-									"file-upload" type="file"></i></label>
-								</div>
-
-								<div class="two fields">
-									<div class="ui checkbox warning">
-										<input name="confirm" required="" type=
-										"checkbox"> <label>By ticking here, I
-										confirm that these contacts have
-										<b>Saved my number on
-										WhatsApp.</b></label>
-									</div>
-								</div>
-							</form><a class="ui button right floated" href=
-							"">Submit <i class="save right icon"></i></a>
 						</div>
-					</div>
 
-					<div class="six wide column">
 						<div class="ui icon warning message">
 							<i class="help icon"></i>
 
@@ -290,6 +298,22 @@
 								"vcard">vcard</a></p>
 							</div>
 						</div>
+
+						<div class="ui icon warning message">
+							<i class="help icon"></i>
+
+							<div class="content">
+								<div class="header">
+									Need help?
+								</div>
+
+								<p>Check out our sample files: <a href=
+								"xls">xls</a>, <a href="xlsx">xlsx</a>,
+								<a href="csv">csv</a>, & <a href=
+								"vcard">vcard</a></p>
+							</div>
+						</div>
+
 					</div><!--end row-->
 				</div><!--end row-->
 				<!-- sidebar -->
