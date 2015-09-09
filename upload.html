@@ -1,326 +1,300 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <!-- Standard Meta -->
-    <meta charset='utf-8'>
-    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0'
-      name='viewport'>
-    <!-- Site Properities -->
-    <title>Dashboard</title>
-    <link href=
-      'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700'
-      rel='stylesheet' type='text/css'>
-    <link href='dist/semantic.css' rel='stylesheet' type='text/css'>
-    <script src='js/jquery.js'></script>
-    <script src='dist/semantic.js'></script>
-    <link href='css/main.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/emoji.min.css">
-    <script src='js/main.js'></script>
-    <script src="js/angular.min.js"></script>
-    <script src="js/emoji.min.js"></script>
-    <script>
-      angular.module("app", ["emoji"]).controller("AppCtrl", function ($scope) {
-        $scope.messages = [
-            "Animals: :dog: :cat: :snake:",
-            "People: :smile: :confused: :angry:",
-            "Places: :house: :school: :hotel:"
-        ];
-      });
-      
-      
-    </script>
-  </head>
-  <body ng-app ng-controller="AppCtrl">
-    <div class="ui left vertical visible sidebar" id="sidebar">
-      <div class="ui vertical labeled borderless icon menu tablet_hide" id="account_chooser">
-        <a class="active item">
-          <p>#1</p>
-        </a>
-        <a class="item green_alert">
-        <span class="image">
-        <img class="account_image" src="images/account1.png" />
-        <span class="floating ui tiny circular label">9</span>
-        </span>
-        </a>
-        <a class="item">
-        <span class="image">
-        <img class="account_image" src="images/account1.png" />
-        </span>
-        </a>
-        <a class="item grey_alert">
-        <span class="image">
-        <img class="account_image" src="images/o.png" />
-        <span class="floating ui tiny circular label">9</span>
-        </span>
-        </a>
-        <a class="item">
-        <span class="image">
-        <img class="image account_image" src="images/account1.png" />
-        </span>
-        </a>
-        <a class="item red_alert">
-        <span class="image">
-        <img class="account_image" src="images/account2.png" />
-        <span class="floating ui tiny circular label">9</span>
-        </span>
-        </a>
-      </div>
-      <div class="ui vertical labeled borderless icon menu" id="icon_tabs">
-        <a class="item tablet_hide"><img src="images/o.png" style=
-          "width: 50px;"></a> <!-- Compose button-->
-        <a class="item computer_hide sidebar_hide">
-          <div class="ui circular basic icon tiny button">
-            <i class="remove icon"></i>
-          </div>
-        </a>
-        <div class="item btn_item">
-          <a class="ui button">COMPOSE</a>
-        </div>
-        <!-- inbox button-->
-        <a class="item" data-tab="inbox">
-          <i class="inbox icon"></i>
-          Inbox
-          <span class="floating ui tiny circular label">9</span>
-        </a> 
-        <!-- contacts button-->
-        <a class="item tablet_hide" data-tab="contacts">
-          <i class="users icon"></i>
-          Contacts
-          <span class="floating ui tiny circular label">3</span>
-        </a> 
-        <!-- reports button-->
-        <a class="item tablet_hide" data-tab="reports">
-          <i class="bar graph icon"></i>
-          Reports
-        </a> <!-- settings button-->
-        <a class="active item" data-tab="settings">
-          <i class="settings icon"></i>
-          Settings
-        </a> <!-- logout button-->
-        <a class="item logout">
-          <i class="power icon"></i>
-          Logout
-        </a>
-      </div>
-    </div>
-    <div class="ui right sidebar large inverted vertical menu options_sidebar computer_hide">
-      <a class="item options_sidebar_toggle">
-        <div class="ui circular basic inverted icon tiny button">
-        <i class="remove icon"></i>
-        </div>
-      </a>
-      <a class="item">
-        <i class="star icon"></i>
-        Star Conversations
-      </a>
-      <a class="item">
-        <i class="unlock icon"></i>
-        Close Conversations
-      </a>
-      <a class="item">
-        <i class="list layout icon"></i>
-        Add to list
-      </a>
-      <a class="item">
-        <i class="delete icon"></i>
-        Delete Conversations
-      </a>
-    </div>
-    <div class="ui grid right_content">
-      <!-- additional class names are added from the javascript required for the sidebar -->
-      <div class="ui large borderless attached menu mobile_menu computer_hide">
-        <div class="item sidebar_toggle">
-          <i class="black big content icon"></i>
-        </div>
-        <div class="header item"> Inbox</div>
-        <div class="right menu">
-          <div class="item options_sidebar_toggle">
-          <i class="large wizard icon"></i></div>
-        </div>
-      </div>
-      <div class="column all_tabs">
-        <!-- all tabs require the class name as below -->
-        <!-- Inbox begins here-->
-        <div class="ui tab tab_content" data-tab="inbox">
-          <h2 class="ui header tab_content_header">Inbox</h2>
-          <div class="ui link list">
-            <a class="active item" style="font-weight: bold">Open
-            Conversations</a> <a class="item">Group Messages</a>
-            <a class="item">Favorite Messages</a> <a class=
-              "item">Media(audio/images)</a> <a class=
-              "item">Locations</a>
-          </div>
-          <div class="ui divider"></div>
-          <div class="ui link list">
-            <a class="item" style="font-weight: bold">Closed
-            Conversations</a> <a class="item">Group Messages</a>
-            <a class="item">Favorite Messages</a> <a class=
-              "item">Media(audio/images)</a> <a class=
-              "item">Locations</a>
-          </div>
-        </div>
-        <!-- Contacts begins here-->
-        <div class="ui tab tab_content" data-tab="contacts">
-          <h2 class="ui header tab_content_header">Contacts</h2>
-          <div class="ui link list">
-            <a class="ui floating right labeled icon dropdown button item tab_button">
-              <i class="dropdown icon"></i>
-              <span class="text">ADD CONTACTS</span>
-              <div class="menu">
-                <div class="item">
-                  <i class="user icon"></i>
-                  Add Contact
-                </div>
-                <div class="item">
-                  <i class="cloud icon"></i>
-                  Upload
-                </div>
-                <div class="item">
-                  <i class="google plus icon"></i>
-                  Import
-                </div>
-              </div>
-            </a>
-            <a class="active item" style="font-weight: bold">All Contacts</a>
-            <a class="item">Groups</a>
-            <a class="item">Lists</a>
-          </div>
-          <div class="ui divider"></div>
-          <div class="ui link list">
-            <a class="item">Create Group</a> <a class="item">Create
-            List</a>
-          </div>
-        </div>
-        <!-- Reports begins here-->
-        <div class="ui tab tab_content" data-tab="reports">
-          <h2 class="ui header tab_content_header">Reports</h2>
-          <div class="ui link list">
-            <a class="active item" style="font-weight: bold">Opened
-            Conversations</a> <a class="item">Group Messages</a>
-            <a class="item">Favorite Messages</a> <a class=
-              "item">Media(audio/images)</a> <a class=
-              "item">Locations</a>
-          </div>
-          <div class="ui divider"></div>
-          <div class="ui link list">
-            <a class="item" style="font-weight: bold">Closed
-            Conversations</a> <a class="item">Group Messages</a>
-            <a class="item">Favorite Messages</a> <a class=
-              "item">Media(audio/images)</a> <a class=
-              "item">Locations</a>
-          </div>
-        </div>
-        <!-- settings begins here-->
-        <div class="ui active tab tab_content" data-tab="settings">
-          <h2 class="ui header tab_content_header">Settings</h2>
-          <div class="ui link list">
-          <div class="ui divider"></div>
-            <a class="item" style="font-weight: bold">Manage
-            Autoresponders</a>
-            <a class="ui item">Set Autoresponders</a>
-            <div class="ui divider"></div>
-            <a class="item" style=
-              "font-weight: bold">Profile & Status</a>
-            <div class="ui divider"></div>
-            <a class="item" style=
-              "font-weight: bold">Manage Notifications</a>
-          </div>
-          <div class="ui divider"></div>
-          <div class="ui link list">
-            <a class="item" style="font-weight: bold">Manage
-            Accounts</a> <a class="item">New Account</a> <a class=
-              "item">Add Account</a> <a class="item">Change Password</a>
-          </div>
-          <div class="ui divider"></div>
-          <div class="ui link list">
-            <a class="item" style="font-weight: bold">Manage Users</a>
-            <a class="item">New User</a>
-          </div>
-          <div class="ui divider"></div>
-          <div class="ui link list">
-            <a class="item" style="font-weight: bold">Manage
-            Integrations</a> <a class="item">Zendesk</a> <a class=
-              "item">Freshdesk</a>
-          </div>
-        </div>
-      </div>
-      <div class="column2">
-      <!---->
-      <div class="ui grid welcome">
-        <div class="row">
-      
-        <!-- begin activate step-->
-    <div class="nine wide column">   
-      <div class="ten wide column">
-       <h2>Bulk Contact Upload</h2>
-        <h5>
-          Upload Contacts your contacts from a csv, xlsx or vcf card
-        </h5> 
-        <div class="ui icon info message">
-        <ul>
-        
-          <li>Please ensure that your contacts have the full country code information without the '+' (e.g. 254722123456)</li>
-          <li>For Excel and CSV files ensure the name is the first column and phone number is second</li>
-          
-        </ul>
-        </div>
-          <form class="ui small form segment">
+<head>
+	<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+	<!-- Standard Meta -->
+	<meta charset='utf-8'>
+	<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0'
+	name='viewport'><!-- Site Properities -->
 
-            <div class="field">
-              <label for="file-upload" class="ui button upload_icon green ">
-              Upload file
-                  <i class="large upload right icon">
-                  <input id="file-upload" type="file"/>
-                  </i>
-                  </label>
-              
-            </div>
-            <div class="two fields">
-                              <div class="ui checkbox warning">
-                                <input name="confirm" required="" type="checkbox">
-                                <label>By ticking here, I confirm that these contacts have Saved my number on WhatsApp.</label>
-                              </div>
-                            </div>
+	<title>Dashboard</title>
+	<link href=
+	'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700'
+	rel='stylesheet' type='text/css'>
+	<link href='dist/semantic.css' rel='stylesheet' type='text/css'>
+	<script src='js/jquery.js'></script>
+	<script src='dist/semantic.js'></script>
+	<link href='css/main.css' rel='stylesheet' type='text/css'>
+	<link href="css/emoji.min.css" rel="stylesheet">
+	<script src='js/main.js'></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/emoji.min.js"></script>
+	<script>
+			angular.module("app", ["emoji"]).controller("AppCtrl", function ($scope) {
+				$scope.messages = [
+						"Animals: :dog: :cat: :snake:",
+						"People: :smile: :confused: :angry:",
+						"Places: :house: :school: :hotel:"
+				];
+			});
+	</script>
+</head>
 
-            
-          </form>
+<body>
+	<div class="ui left vertical visible sidebar" id="sidebar">
+		<div class="ui vertical labeled borderless icon menu tablet_hide" id=
+		"account_chooser">
+			<a class="active item">
+			<p>#1</p></a> <a class="item green_alert"><span class=
+			"image"><img class="account_image" src="images/account1.png">
+			<span class="floating ui tiny circular label">9</span></span></a>
+			<a class="item"><span class="image"><img class="account_image" src=
+			"images/account1.png"></span></a> <a class=
+			"item grey_alert"><span class="image"><img class="account_image"
+			src="images/o.png"> <span class=
+			"floating ui tiny circular label">9</span></span></a> <a class=
+			"item"><span class="image"><img class="image account_image" src=
+			"images/account1.png"></span></a> <a class=
+			"item red_alert"><span class="image"><img class="account_image"
+			src="images/account2.png"> <span class=
+			"floating ui tiny circular label">9</span></span></a>
+		</div>
 
-        <a href="" class="ui button right floated"> 
-         Submit
-          <i class="save right icon"></i>
-        </a>
+		<div class="ui vertical labeled borderless icon menu" id="icon_tabs">
+			<a class="item tablet_hide"><img src="images/o.png" style=
+			"width: 50px;"></a> <!-- Compose button-->
+			 <a class="item computer_hide sidebar_hide">
+			<div class="ui circular basic icon tiny button remove icon" style=
+			"font-style: italic"></div></a>
 
-       
-        </div>
-        </div>
-        <div class="six wide column">
-                <div class="ui icon warning message">
-                  <i class="help icon"></i>
-                  <div class="content">
-                     <div class="header">
-                    Are you sure you know what you are doing?
-                  </div>
-                  <p>
-                     Check out our sample files: 
-                     <a href="xls">xls</a>, 
-                     <a href="xlsx">xlsx</a>,
-                     <a href="csv">csv</a>, & 
-                     <a href="vcard">vcard</a> 
-                  </p>
-                  </div>
-                </div> 
-              </div>
+			<div class="item btn_item">
+				<a class="ui button">COMPOSE</a>
+			</div><!-- inbox button-->
+			<a class="item" data-tab="inbox"><i class="inbox icon"></i> Inbox
+			<span class="floating ui tiny circular label">9</span></a> 
+			<!-- contacts button-->
+			 <a class="item tablet_hide" data-tab="contacts"><i class=
+			"users icon"></i> Contacts <span class=
+			"floating ui tiny circular label">3</span></a> 
+			<!-- reports button-->
+			 <a class="item tablet_hide" data-tab="reports"><i class=
+			"bar graph icon"></i> Reports</a> <!-- settings button-->
+			 <a class="active item" data-tab="settings"><i class=
+			"settings icon"></i> Settings</a> <!-- logout button-->
+			 <a class="item logout"><i class="power icon"></i> Logout</a>
+		</div>
+	</div>
 
-        <!--end row-->
-        </div>
-        <!--end row-->
-            <!-- sidebar -->
-          </div>
+	<div class=
+	"ui right sidebar large inverted vertical menu options_sidebar computer_hide">
+	<a class="item options_sidebar_toggle">
+		<div class="ui circular basic inverted icon tiny button remove icon"
+		style="font-style: italic"></div></a> <a class="item"><i class=
+		"star icon"></i> Star Conversations</a> <a class="item"><i class=
+		"unlock icon"></i> Close Conversations</a> <a class="item"><i class=
+		"list layout icon"></i> Add to list</a> <a class="item"><i class=
+		"delete icon"></i> Delete Conversations</a>
+	</div>
 
-        </div>
-      </div>
-    </div>
-  </body>
+	<div class="ui grid right_content">
+		<!-- additional class names are added from the javascript required for the sidebar -->
+
+		<div class=
+		"ui large borderless attached menu mobile_menu computer_hide">
+			<div class="item sidebar_toggle black big content icon" style=
+			"font-style: italic"></div>
+
+			<div class="header item">
+				Inbox
+			</div>
+
+			<div class="right menu">
+				<div class="item options_sidebar_toggle large wizard icon"
+				style="font-style: italic"></div>
+			</div>
+		</div>
+
+		<div class="column all_tabs">
+			<!-- all tabs require the class name as below -->
+			<!-- Inbox begins here-->
+
+			<div class="ui tab tab_content" data-tab="inbox">
+				<h2 class="ui header tab_content_header">Inbox</h2>
+
+				<div class="ui link list">
+					<a class="active item" style="font-weight: bold">Open
+					Conversations</a> <a class="item">Group Messages</a>
+					<a class="item">Favorite Messages</a> <a class=
+					"item">Media(audio/images)</a> <a class=
+					"item">Locations</a>
+				</div>
+
+				<div class="ui divider"></div>
+
+				<div class="ui link list">
+					<a class="item" style="font-weight: bold">Closed
+					Conversations</a> <a class="item">Group Messages</a>
+					<a class="item">Favorite Messages</a> <a class=
+					"item">Media(audio/images)</a> <a class=
+					"item">Locations</a>
+				</div>
+			</div><!-- Contacts begins here-->
+
+			<div class="ui tab tab_content" data-tab="contacts">
+				<h2 class="ui header tab_content_header">Contacts</h2>
+
+				<div class="ui link list">
+					<a class=
+					"ui floating right labeled icon dropdown button item tab_button">
+					<i class="dropdown icon"></i> <span class="text">ADD
+					CONTACTS</span>
+
+					<div class="menu">
+						<div class="item">
+							<i class="user icon"></i> Add Contact
+						</div>
+
+						<div class="item">
+							<i class="cloud icon"></i> Upload
+						</div>
+
+						<div class="item">
+							<i class="google plus icon"></i> Import
+						</div>
+					</div></a> <a class="active item" style=
+					"font-weight: bold">All Contacts</a> <a class=
+					"item">Groups</a> <a class="item">Lists</a>
+				</div>
+
+				<div class="ui divider"></div>
+
+				<div class="ui link list">
+					<a class="item">Create Group</a> <a class="item">Create
+					List</a>
+				</div>
+			</div><!-- Reports begins here-->
+
+			<div class="ui tab tab_content" data-tab="reports">
+				<h2 class="ui header tab_content_header">Reports</h2>
+
+				<div class="ui link list">
+					<a class="active item" style="font-weight: bold">Opened
+					Conversations</a> <a class="item">Group Messages</a>
+					<a class="item">Favorite Messages</a> <a class=
+					"item">Media(audio/images)</a> <a class=
+					"item">Locations</a>
+				</div>
+
+				<div class="ui divider"></div>
+
+				<div class="ui link list">
+					<a class="item" style="font-weight: bold">Closed
+					Conversations</a> <a class="item">Group Messages</a>
+					<a class="item">Favorite Messages</a> <a class=
+					"item">Media(audio/images)</a> <a class=
+					"item">Locations</a>
+				</div>
+			</div><!-- settings begins here-->
+
+			<div class="ui active tab tab_content" data-tab="settings">
+				<h2 class="ui header tab_content_header">Settings</h2>
+
+				<div class="ui link list">
+					<div class="ui divider"></div><a class="item" style=
+					"font-weight: bold">Manage Autoresponders</a> <a class=
+					"ui item">Set Autoresponders</a>
+
+					<div class="ui divider"></div><a class="item" style=
+					"font-weight: bold">Profile & Status</a>
+
+					<div class="ui divider"></div><a class="item" style=
+					"font-weight: bold">Manage Notifications</a>
+				</div>
+
+				<div class="ui divider"></div>
+
+				<div class="ui link list">
+					<a class="item" style="font-weight: bold">Manage
+					Accounts</a> <a class="item">New Account</a> <a class=
+					"item">Add Account</a> <a class="item">Change Password</a>
+				</div>
+
+				<div class="ui divider"></div>
+
+				<div class="ui link list">
+					<a class="item" style="font-weight: bold">Manage Users</a>
+					<a class="item">New User</a>
+				</div>
+
+				<div class="ui divider"></div>
+
+				<div class="ui link list">
+					<a class="item" style="font-weight: bold">Manage
+					Integrations</a> <a class="item">Zendesk</a> <a class=
+					"item">Freshdesk</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="column2">
+			<!---->
+
+			<div class="ui grid welcome">
+				<div class="row">
+					<!-- begin activate step-->
+
+					<div class="nine wide column">
+						<div class="ten wide column">
+							<h2>Bulk Contact Upload</h2>
+
+							<h5>Upload Contacts your contacts from a csv, xlsx
+							or vcf card</h5>
+
+							<div class="ui icon info message">
+								<ul>
+									<li>Please ensure that your contacts have
+									the full country code information without
+									the '+' (e.g. 254722123456)</li>
+
+									<li>For Excel and CSV files ensure the name
+									is the first column and phone number is
+									second</li>
+								</ul>
+							</div>
+
+							<form class="ui small form">
+								<div class="field">
+									<label class="ui button upload_icon green"
+									for="file-upload">Upload file <i class=
+									"large upload right icon"><input id=
+									"file-upload" type="file"></i></label>
+								</div>
+
+								<div class="two fields">
+									<div class="ui checkbox warning">
+										<input name="confirm" required="" type=
+										"checkbox"> <label>By ticking here, I
+										confirm that these contacts have
+										<b>Saved my number on
+										WhatsApp.</b></label>
+									</div>
+								</div>
+							</form><a class="ui button right floated" href=
+							"">Submit <i class="save right icon"></i></a>
+						</div>
+					</div>
+
+					<div class="six wide column">
+						<div class="ui icon warning message">
+							<i class="help icon"></i>
+
+							<div class="content">
+								<div class="header">
+									Are you sure you know what you are doing?
+								</div>
+
+								<p>Check out our sample files: <a href=
+								"xls">xls</a>, <a href="xlsx">xlsx</a>,
+								<a href="csv">csv</a>, & <a href=
+								"vcard">vcard</a></p>
+							</div>
+						</div>
+					</div><!--end row-->
+				</div><!--end row-->
+				<!-- sidebar -->
+			</div>
+		</div>
+	</div>
+</body>
 </html>
