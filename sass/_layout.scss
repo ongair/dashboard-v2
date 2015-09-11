@@ -295,6 +295,7 @@ body{
       margin: 0;
       height: calc(100% - 55px);//full height minus topbar menu height
       .conversation_section{
+        padding-left: 0;
         width: 75% ;
         height: 100%;////full height minus topbar menu height minus ui.comments margin-top
         padding-right: 0;
@@ -311,10 +312,16 @@ body{
           overflow-y: auto;
           height: 100%;
           max-width: 100%;
-          padding-right: 1rem;
-          padding-top: 1rem;
           margin-top: 0;
-          padding-bottom: 6rem;//added to compensate for reply textarea
+          padding: 1rem 1rem 6rem;
+          //padding-right: 1rem;
+          //padding-top: 1rem;
+          //padding-bottom: 6rem;//added to compensate for reply textarea
+          .conversation_info{
+            margin: -1rem -1rem 1rem -1rem;
+            box-shadow: none;
+            border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+          }
           .ui.divider{
             clear: both;
             margin-top: 1em;
