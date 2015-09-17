@@ -1166,6 +1166,107 @@ body{
       
     }
 
+
+    ////////////////////////////////list_details page////////////////////////////
+    .list_details_content{
+      margin: 0;
+      overflow-x: auto;
+      position: relative;
+      font-size: 1rem;
+      //display: block;
+      height: calc(100% - 55px);//full height minus topbar menu height
+      .item{// makes a single contact
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+
+      .item.list_details_top{
+        background-color: #cccccc;
+       font-weight: bold;
+      }
+
+      .item.list_broadcast_bottom{
+        border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+
+      .all_list_details{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      .list_details_list{
+        width: 100%;
+        padding: 10px 0;
+        .item{
+          margin: 0;
+          vertical-align: middle;
+        }
+        .ld_name{
+         min-width: 40%;
+        }
+        .ld_number{
+          width: 30%;
+        }
+        .ld_remove{
+          width: 30%;
+        }
+      }
+    
+
+    ///////////////////////////////////////////////////////////////////////////////////////
+
+
+      .all_list_broadcast{//div that changes width when column3 is toggled
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+      }
+      .list_broadcast_list{
+        width: 100%;
+        padding: 10px 0;
+
+        .button{
+          //float: right;
+          transition-duration: 0.55s;
+          background-color: #f94263;
+          color: #ffffff;
+          border-radius: 0.2857rem;
+          //margin: 2em 0.4em;
+          &:hover{
+            background-color: #6f3159;
+          }
+        }
+        .item{
+          margin: 0;
+          vertical-align: middle;
+        }
+        .lb_name{
+         width: 30%;
+        }
+        .lb_preview{
+          width: 50%;
+        }
+        .lb_sent{
+          width: 10%;
+        }
+        .lb_read{
+          width: 10%;
+        }
+      }
+      
+    }
+
     ///////////////////////////////////users page//////////////////////////
     .users_content{
       margin: 0;

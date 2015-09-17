@@ -7,6 +7,7 @@ $(window).load(function() {
 $(document).ready(function() { 	
 
    $('#icon_tabs .item').tab();
+   $('.list_details_tabs .item').tab();
    $('.ui.dropdown').dropdown();
    $('.ui.checkbox').checkbox();
  //   $('.ui.card.edit_profile_image .image').dimmer({
