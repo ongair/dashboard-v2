@@ -163,28 +163,7 @@ $('.ui.comments .from_them .content .author')// used in contacts page
 	.resize();//trigger the resize event on page load.
 
 	///////////////////////////image cropper////////////////////////////
-	$('.edit_profile_image img').cropper({
-	aspectRatio: 1 / 1,
-	autoCropArea: 0.65,
-	strict: false,
-	guides: false,
-	highlight: false,
-	dragCrop: false,
-	cropBoxMovable: true,
-	cropBoxResizable: true,
-	  // crop: function(e) {
-	  //   // Output the result data for cropping image.
-	  //   console.log(e.x);
-	  //   console.log(e.y);
-	  //   console.log(e.width);
-	  //   console.log(e.height);
-	  //   console.log(e.rotate);
-	  //   console.log(e.scaleX);
-	  //   console.log(e.scaleY);
-
-	    
-	  // }
-	});
+	
 
 
 });
