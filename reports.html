@@ -27,17 +27,82 @@
   "//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
   <script src=
   "//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-  <script>
-  angular.module("app", ["emoji"]).controller("AppCtrl", function ($scope) {
-    $scope.messages = [
-      "Animals: :dog: :cat: :snake:",
-      "People: :smile: :confused: :angry:",
-      "Places: :house: :school: :hotel:"
-    ];
+
+
+  <script type="text/javascript">
+      $(function () {
+        $('#areachart').highcharts({
+            chart: {
+                type: 'areaspline'
+            },
+            title: {
+                text: 'Incoming vs Outgoing Messages'
+            },
+            // subtitle: {
+            //     text: 'Source: <a href="http://thebulletin.metapress.com/content/c4120650912x74k7/fulltext.pdf">' +
+            //         'thebulletin.metapress.com</a>'
+            // },
+            xAxis: {
+                categories: [
+                    'Monday',
+                    'Tuesday',
+                    'Wednesday',
+                    'Thursday',
+                    'Friday',
+                    'Saturday',
+                    'Sunday'
+                ],
+                plotBands: [{ // visualize the weekend
+                    from: 4.5,
+                    to: 6.5,
+                    color: 'rgba(68, 170, 213, .2)'
+                }]
+            },
+            yAxis: {
+                allowDecimals: false,
+                title: {
+                    text: 'Number of Messages'
+                },
+                labels: {
+                    formatter: function () {
+                        return this.value ;
+                    }
+                }
+            },
+            tooltip: {
+                pointFormat: '<b>{point.y:,.0f}</b> {series.name} <br/>sent on {point.category}'
+            },
+            plotOptions: {
+                area: {
+                    pointStart: 1940,
+                    marker: {
+                        enabled: false,
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Incoming Messages',
+                color: '#b33679',
+                data: [3, 4, 3, 5, 4, 10, 12]
+            }, {
+                name: 'Outgoing Messages',
+                color: '#7a418f',
+                data: [1, 3, 4, 3, 3, 5, 4]
+            }]
+        });
     });
-    
-    
+
+
   </script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
 </head>
 
 <body ng-app="" ng-controller="AppCtrl">
@@ -72,14 +137,14 @@
       <div class="item btn_item">
         <a class="ui button">COMPOSE</a>
       </div><!-- inbox button-->
-      <a class="active item" data-tab="inbox"><i class="inbox icon"></i>
+      <a class="item" data-tab="inbox"><i class="inbox icon"></i>
       Inbox <span class="floating ui tiny circular label">9</span></a> 
       <!-- contacts button-->
        <a class="item tablet_hide" data-tab="contacts"><i class=
       "users icon"></i> Contacts <span class=
       "floating ui tiny circular label">3</span></a> 
       <!-- reports button-->
-       <a class="item tablet_hide" data-tab="reports"><i class=
+       <a class="active item tablet_hide" data-tab="reports"><i class=
       "bar graph icon"></i> Reports</a> <!-- settings button-->
        <a class="item" data-tab="settings"><i class="settings icon"></i>
       Settings</a> <!-- logout button-->
@@ -160,26 +225,16 @@
         </div>
       </div><!-- Reports begins here-->
 
-      <div class="ui tab tab_content" data-tab="reports">
+      <div class="ui active tab tab_content" data-tab="reports">
         <h2 class="ui header tab_content_header">Reports</h2>
 
-        <div class="ui link list">
-          <a class="active item" style="font-weight: bold">Opened
-          Conversations</a> <a class="item">Group Messages</a>
-          <a class="item">Favorite Messages</a> <a class=
-          "item">Media(audio/images)</a> <a class=
-          "item">Locations</a>
-        </div>
-
         <div class="ui divider"></div>
-
         <div class="ui link list">
-          <a class="item" style="font-weight: bold">Closed
-          Conversations</a> <a class="item">Group Messages</a>
-          <a class="item">Favorite Messages</a> <a class=
-          "item">Media(audio/images)</a> <a class=
-          "item">Locations</a>
-        </div>
+          <a class="item">General</a> <a class="item">Group Messages</a>
+          <a class="active item">Messages</a><a class="item">Overview</a> <a class=
+          "item">Users</a> <a class=
+          "item">Customers</a>
+        </div>        
       </div><!-- settings begins here-->
 
       <div class="ui tab tab_content" data-tab="settings">
@@ -221,7 +276,7 @@
         </div>
       </div><!-- recent activity begins here-->
 
-      <div class="ui active tab tab_content" data-tab="settings">
+      <div class="ui tab tab_content" data-tab="settings">
         <h2 class="ui header tab_content_header">Recent activity</h2>
 
         <div class="ui link list">
@@ -258,135 +313,58 @@
             "text"> <i class="search icon"></i>
           </div>
         </div>
+        <div class="right menu">
+          <a class="item toggle_column3" style="font-style: italic">
+            <i class="circular info icon"></i>
+          </a>
+        </div>
       </div>
 
       <div class=" ui grid activity_content">
-        <div class="all_activity">
-          <div class="ui icon message activity_message">
-            <i class="idea icon"></i>
-
-            <div class="content">
-              <p>Quick Tour</p>
+        <div class="ui borderless menu activity_top">
+          <div class="right menu">
+            <a class="item">
+              Today
+            </a>
+            <a class="active item">
+              Week
+            </a>
+            <a class="item">
+              Month
+            </a>
+          </div>
+        </div>
+        <div class="all_activity">      
+        <div id="areachart" style="padding: 10px 0" ></div>
+        <div class="ui three tiny statistics">
+          <div class="statistic">
+            <div class="value">
+              <i class="arrow down icon"></i>22
+            </div>
+            <div class="label">
+              Messages Received
             </div>
           </div>
-
-          <div class="activity_items ui five column stackable grid">
-            <div class="column r_integrations">
-              <div class="ui fluid card">
-                <div class="ui small statistic">
-                  <div class="value">
-                    3
-                  </div>
-
-                  <div class="label">
-                    Integrations
-                  </div>
-                </div>
-
-                <div class="content">
-                  <a class="meta">Manage Integrations</a>
-                </div>
-              </div>
+          <div class="statistic">
+            <div class="value">
+              <i class="arrow down icon"></i>31,200
             </div>
-
-            <div class="column r_report">
-              <div class="ui fluid card">
-                <div class="ui small statistic">
-                  <div class="value">
-                    30%
-                  </div>
-
-                  <div class="label">
-                    Response rate
-                  </div>
-                </div>
-
-                <div class="content">
-                  <a class="meta">Account Reports</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="column r_media">
-              <div class="ui fluid card">
-                <div class="ui small statistic">
-                  <div class="value">
-                    30
-                  </div>
-
-                  <div class="label">
-                    Media Files
-                  </div>
-                </div>
-
-                <div class="content">
-                  <a class="meta">Manage Media</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="column r_report">
-              <div class="ui fluid card">
-                <div class="ui small statistic">
-                  <div class="value">
-                    30%
-                  </div>
-
-                  <div class="label">
-                    Response rate
-                  </div>
-                </div>
-
-                <div class="content">
-                  <a class="meta">Account Reports</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="column r_groups">
-              <div class="ui fluid card">
-                <div class="ui small statistic">
-                  <div class="value">
-                    3
-                  </div>
-
-                  <div class="label">
-                    Groups
-                  </div>
-                </div>
-
-                <div class="content">
-                  <a class="meta">Manage Groups</a>
-                </div>
-              </div>
+            <div class="label">
+              Messages Sent
             </div>
           </div>
-
-          <div class="ui column centered grid">
-            RECENT MESSAGE STATS
+          <div class="statistic">
+            <div class="value">
+              <i class="arrow up icon"></i>22
+            </div>
+            <div class="label">
+              Reach
+            </div>
           </div>
-
-          <div id="area-chart"></div>
+        </div>
         </div>
       </div>
     </div>
-  </div><script type="text/javascript">
- Morris.Area({
-  element: 'area-chart',
-  data: [
-  { y: '10 am', a: 100, b: 90 },
-  { y: '11 am', a: 75,  b: 65 },
-  { y: '12 pm', a: 50,  b: 40 },
-  { y: '1 pm', a: 75,  b: 65 },
-  { y: '2 pm', a: 50,  b: 40 },
-  { y: '3 pm', a: 75,  b: 65 },
-  { y: '4 pm', a: 100, b: 90 }
-  ],
-  xkey: 'y',
-  ykeys: ['a', 'b'],
-  labels: ['In', 'Out'],
-  fill: '#f00'
-  });
-  </script>
+  </div>
 </body>
 </html>
