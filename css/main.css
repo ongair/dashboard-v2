@@ -944,6 +944,44 @@ body {
           width: 100%;
           margin: 0;
           padding: 0.7rem 0; }
+    .right_content .column2 .report_content {
+      margin: 0;
+      overflow-x: auto;
+      position: relative;
+      font-size: 1rem;
+      display: block;
+      height: calc(100% - 55px); }
+      .right_content .column2 .report_content .item {
+        padding-right: 1rem;
+        padding-left: 1rem; }
+      .right_content .column2 .report_content .all_reports {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        overflow-x: hidden;
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease; }
+      .right_content .column2 .report_content .item.report_top {
+        font-weight: bold;
+        padding: 10px 1rem; }
+      .right_content .column2 .report_content .agent_list {
+        width: 100%;
+        padding: 10px 0; }
+        .right_content .column2 .report_content .agent_list .item {
+          margin: 0;
+          vertical-align: middle; }
+        .right_content .column2 .report_content .agent_list .agent_name {
+          min-width: 20%; }
+        .right_content .column2 .report_content .agent_list .agent_email {
+          width: 40%; }
+        .right_content .column2 .report_content .agent_list .agent_messages {
+          width: 20%; }
+        .right_content .column2 .report_content .agent_list .agent_number {
+          width: 20%; }
     .right_content .column2 .autoresponder_content {
       margin: 0;
       position: relative;
