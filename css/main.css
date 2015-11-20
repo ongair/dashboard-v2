@@ -956,7 +956,7 @@ body {
       .right_content .column2 .report_content .all_reports {
         display: inline-block;
         width: 100%;
-        height: 100%;
+        height: calc(100% - 43px);
         margin: 0;
         padding: 0;
         overflow-x: hidden;
@@ -969,8 +969,7 @@ body {
         width: 100%;
         padding: 0;
         margin: 0;
-        border-bottom: 1px solid rgba(34, 36, 38, 0.15);
-        overflow-x: hidden; }
+        border-bottom: 1px solid rgba(34, 36, 38, 0.15); }
         .right_content .column2 .report_content .report_top .item {
           font-weight: bold; }
       .right_content .column2 .report_content .agent_list {
@@ -987,6 +986,26 @@ body {
           width: 20%; }
         .right_content .column2 .report_content .agent_list .agent_number {
           width: 20%; }
+      .right_content .column2 .report_content .cust_list {
+        width: 100%;
+        padding: 10px 0; }
+        .right_content .column2 .report_content .cust_list .item {
+          margin: 0;
+          vertical-align: middle; }
+        .right_content .column2 .report_content .cust_list .cust_number {
+          width: 14%; }
+        .right_content .column2 .report_content .cust_list .cust_name {
+          width: 10%; }
+        .right_content .column2 .report_content .cust_list .cust_country {
+          width: 10%; }
+        .right_content .column2 .report_content .cust_list .cust_users {
+          width: 5%; }
+        .right_content .column2 .report_content .cust_list .cust_contacts {
+          width: 8%; }
+        .right_content .column2 .report_content .cust_list .cust_email {
+          width: 15%; }
+        .right_content .column2 .report_content .cust_list .cust_create {
+          width: 10%; }
     .right_content .column2 .autoresponder_content {
       margin: 0;
       position: relative;
