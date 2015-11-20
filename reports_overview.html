@@ -33,7 +33,7 @@
       $(function () {
         $('#areachart').highcharts({
             chart: {
-                type: 'areaspline'
+                type: 'column'
             },
             title: {
                 text: 'Incoming vs Outgoing Messages'
@@ -44,19 +44,14 @@
             // },
             xAxis: {
                 categories: [
-                    'Monday',
-                    'Tuesday',
-                    'Wednesday',
-                    'Thursday',
-                    'Friday',
-                    'Saturday',
-                    'Sunday'
-                ],
-                plotBands: [{ // visualize the weekend
-                    from: 4.5,
-                    to: 6.5,
-                    color: 'rgba(68, 170, 213, .2)'
-                }]
+                    'May 2015',
+                    'June 2015',
+                    'July 2015',
+                    'August 2015',
+                    'September 2015',
+                    'October 2015',
+                    'November 2015'
+                ]
             },
             yAxis: {
                 allowDecimals: false,
@@ -101,15 +96,71 @@
 
 
   </script>
+
+  <script type="text/javascript">
+      $(function () {
+        $('#linechart').highcharts({
+            chart: {
+                type: 'spline'
+            },
+            title: {
+                text: 'Incoming vs Outgoing Messages'
+            },
+            // subtitle: {
+            //     text: 'Source: <a href="http://thebulletin.metapress.com/content/c4120650912x74k7/fulltext.pdf">' +
+            //         'thebulletin.metapress.com</a>'
+            // },
+            xAxis: {
+                categories: [
+                    'May 2015',
+                    'June 2015',
+                    'July 2015',
+                    'August 2015',
+                    'September 2015',
+                    'October 2015',
+                    'November 2015'
+                ]
+            },
+            yAxis: {
+                allowDecimals: false,
+                title: {
+                    text: 'Number of Messages'
+                },
+                labels: {
+                    formatter: function () {
+                        return this.value ;
+                    }
+                }
+            },
+            tooltip: {
+                pointFormat: 'Accounts Created <b>{point.y:,.0f}</b>'
+            },
+            plotOptions: {
+                area: {
+                    pointStart: 1940,
+                    marker: {
+                        enabled: false,
+                        symbol: 'circle',
+                        radius: 2,
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Account Creation',
+                data: [3, 4, 3, 5, 4, 10, 12]
+            }]
+        });
+    });
+
+
+  </script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script type="text/javascript">
-$(function () {
-  $('.report_top.messages_tabs .item')
-    .tab()
-  ;
-});
-</script>
 </head>
 
 <body ng-app="" ng-controller="AppCtrl">
@@ -320,15 +371,6 @@ $(function () {
             "text"> <i class="search icon"></i>
           </div>
         </div>
-        <a class="item">
-          Today
-        </a>
-        <a class="active item">
-          Week
-        </a>
-        <a class="item">
-          Month
-        </a>
         <div class="right menu">
           <a class="item toggle_column3" style="font-style: italic">
             <i class="circular info icon"></i>
@@ -337,67 +379,56 @@ $(function () {
       </div>
 
       <div class=" ui grid report_content">
-        <div class="ui borderless two item menu report_top  messages_tabs">
-          <a class="active item" data-tab="first">Messages Recieved</a>
-          <a class="item" data-tab="second">Messages Sent</a>
+        <div class="ui borderless menu report_top">
+          <div class="right menu">
+            <a class="item">
+              Today
+            </a>
+            <a class="active item">
+              Week
+            </a>
+            <a class="item">
+              Month
+            </a>
+          </div>
         </div>
-        <div class="all_reports ui active tab" data-tab="first">      
-          <div id="areachart" style="padding: 10px 0" ></div>
-          <div class="ui three tiny statistics">
-            <div class="statistic">
-              <div class="value">
-                <i class="arrow down icon"></i>22
-              </div>
-              <div class="label">
-                Messages Received
-              </div>
+        <div class="all_reports">      
+        <div id="areachart" style="padding: 10px 0; max-width: 100%" ></div>
+        <div id="linechart" style="padding: 10px 0; max-width: 100%" ></div>
+        <div class="ui four tiny statistics">
+          <div class="statistic">
+            <div class="label">
+              Accounts
             </div>
-            <div class="statistic">
-              <div class="value">
-                <i class="arrow down icon"></i>31,200
-              </div>
-              <div class="label">
-                Messages Sent
-              </div>
+            <div class="value">
+              214/697
             </div>
-            <div class="statistic">
-              <div class="value">
-                <i class="arrow up icon"></i>22
-              </div>
-              <div class="label">
-                Reach
-              </div>
+          </div>
+          <div class="statistic">
+            <div class="label">
+              Messages
+            </div>
+            <div class="value">
+              1060K
+            </div>
+          </div>
+          <div class="statistic">
+            <div class="label">
+              Contacts
+            </div>
+            <div class="value">
+              107K
+            </div>
+          </div>
+          <div class="statistic">
+            <div class="label">
+              Media
+            </div>
+            <div class="value">
+              52.2K
             </div>
           </div>
         </div>
-        <div class="all_reports ui tab" data-tab="second">      
-          <!-- <div id="areachart" style="padding: 10px 0" ></div> -->
-          <div class="ui three tiny statistics">
-            <div class="statistic">
-              <div class="value">
-                <i class="arrow down icon"></i>22
-              </div>
-              <div class="label">
-                Messages Received
-              </div>
-            </div>
-            <div class="statistic">
-              <div class="value">
-                <i class="arrow down icon"></i>31,200
-              </div>
-              <div class="label">
-                Messages Sent
-              </div>
-            </div>
-            <div class="statistic">
-              <div class="value">
-                <i class="arrow up icon"></i>22
-              </div>
-              <div class="label">
-                Reach
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
