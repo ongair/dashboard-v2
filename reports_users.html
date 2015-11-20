@@ -20,14 +20,15 @@
   <script src='js/main.js'></script>
   <script src="js/angular.min.js"></script>
   <script src="js/emoji.min.js"></script><!---->
-  <link href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css"
-  rel="stylesheet">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  <script src=
-  "//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-  <script src=
-  "//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
   
+  <script type="text/javascript">
+    $('.report_top')
+    .sticky({
+      context: '.bottom_sticky'
+    })
+  ;
+  </script>
 </head>
 
 <body ng-app="" ng-controller="AppCtrl">
@@ -246,14 +247,280 @@
       </div>
 
       <div class=" ui grid report_content">
-       
-        <div class="ui middle aligned divided list all_reports">
-          <ul class="item report_top">
+        <div class="ui middle aligned divided list report_top">
+          <ul class="item">
             <li class="ui horizontal list agent_list">
               <span class="item agent_name">Name</span>
               <span class="item agent_email">Email</span>
               <span class="item agent_messages">(#) Messages</span>
               <span class="item agent_number">Phone Number</span> 
+            </li>
+          </ul>
+        </div>
+        <div class="ui middle aligned divided list all_reports bottom_sticky">
+          
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">John Smallss</span>
+              <span class="item agent_email">pulet@africaangelsnetwork.com</span>
+              <span class="item agent_messages">0</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">Cliff</span>
+              <span class="item agent_email">cliff@sprout.co.ke</span>
+              <span class="item agent_messages">5</span>
+              <span class="item agent_number"></span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">James Bukusi</span>
+              <span class="item agent_email">james@sprout.co.ke</span>
+              <span class="item agent_messages">1</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">John Smallss</span>
+              <span class="item agent_email">pulet@africaangelsnetwork.com</span>
+              <span class="item agent_messages">0</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">Cliff</span>
+              <span class="item agent_email">cliff@sprout.co.ke</span>
+              <span class="item agent_messages">5</span>
+              <span class="item agent_number"></span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">James Bukusi</span>
+              <span class="item agent_email">james@sprout.co.ke</span>
+              <span class="item agent_messages">1</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">John Smallss</span>
+              <span class="item agent_email">pulet@africaangelsnetwork.com</span>
+              <span class="item agent_messages">0</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">Cliff</span>
+              <span class="item agent_email">cliff@sprout.co.ke</span>
+              <span class="item agent_messages">5</span>
+              <span class="item agent_number"></span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">James Bukusi</span>
+              <span class="item agent_email">james@sprout.co.ke</span>
+              <span class="item agent_messages">1</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">John Smallss</span>
+              <span class="item agent_email">pulet@africaangelsnetwork.com</span>
+              <span class="item agent_messages">0</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">Cliff</span>
+              <span class="item agent_email">cliff@sprout.co.ke</span>
+              <span class="item agent_messages">5</span>
+              <span class="item agent_number"></span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">James Bukusi</span>
+              <span class="item agent_email">james@sprout.co.ke</span>
+              <span class="item agent_messages">1</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">John Smallss</span>
+              <span class="item agent_email">pulet@africaangelsnetwork.com</span>
+              <span class="item agent_messages">0</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">Cliff</span>
+              <span class="item agent_email">cliff@sprout.co.ke</span>
+              <span class="item agent_messages">5</span>
+              <span class="item agent_number"></span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">James Bukusi</span>
+              <span class="item agent_email">james@sprout.co.ke</span>
+              <span class="item agent_messages">1</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">John Smallss</span>
+              <span class="item agent_email">pulet@africaangelsnetwork.com</span>
+              <span class="item agent_messages">0</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">Cliff</span>
+              <span class="item agent_email">cliff@sprout.co.ke</span>
+              <span class="item agent_messages">5</span>
+              <span class="item agent_number"></span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">James Bukusi</span>
+              <span class="item agent_email">james@sprout.co.ke</span>
+              <span class="item agent_messages">1</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">John Smallss</span>
+              <span class="item agent_email">pulet@africaangelsnetwork.com</span>
+              <span class="item agent_messages">0</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">Cliff</span>
+              <span class="item agent_email">cliff@sprout.co.ke</span>
+              <span class="item agent_messages">5</span>
+              <span class="item agent_number"></span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">James Bukusi</span>
+              <span class="item agent_email">james@sprout.co.ke</span>
+              <span class="item agent_messages">1</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">John Smallss</span>
+              <span class="item agent_email">pulet@africaangelsnetwork.com</span>
+              <span class="item agent_messages">0</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">Cliff</span>
+              <span class="item agent_email">cliff@sprout.co.ke</span>
+              <span class="item agent_messages">5</span>
+              <span class="item agent_number"></span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">James Bukusi</span>
+              <span class="item agent_email">james@sprout.co.ke</span>
+              <span class="item agent_messages">1</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">John Smallss</span>
+              <span class="item agent_email">pulet@africaangelsnetwork.com</span>
+              <span class="item agent_messages">0</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">Cliff</span>
+              <span class="item agent_email">cliff@sprout.co.ke</span>
+              <span class="item agent_messages">5</span>
+              <span class="item agent_number"></span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">James Bukusi</span>
+              <span class="item agent_email">james@sprout.co.ke</span>
+              <span class="item agent_messages">1</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">John Smallss</span>
+              <span class="item agent_email">pulet@africaangelsnetwork.com</span>
+              <span class="item agent_messages">0</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">Cliff</span>
+              <span class="item agent_email">cliff@sprout.co.ke</span>
+              <span class="item agent_messages">5</span>
+              <span class="item agent_number"></span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">James Bukusi</span>
+              <span class="item agent_email">james@sprout.co.ke</span>
+              <span class="item agent_messages">1</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">John Smallss</span>
+              <span class="item agent_email">pulet@africaangelsnetwork.com</span>
+              <span class="item agent_messages">0</span>
+              <span class="item agent_number">254724337339</span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">Cliff</span>
+              <span class="item agent_email">cliff@sprout.co.ke</span>
+              <span class="item agent_messages">5</span>
+              <span class="item agent_number"></span> 
+            </li>
+          </ul>      
+          <ul class="item">
+            <li class="ui horizontal list agent_list">
+              <span class="item agent_name">James Bukusi</span>
+              <span class="item agent_email">james@sprout.co.ke</span>
+              <span class="item agent_messages">1</span>
+              <span class="item agent_number">254724337339</span> 
             </li>
           </ul>      
           <ul class="item">

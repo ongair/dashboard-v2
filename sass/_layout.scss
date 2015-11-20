@@ -1300,7 +1300,7 @@ body{
     //////////////////////////recent_activity page////////////////////////
     .report_content{
       margin: 0;
-      overflow-x: auto;
+      // overflow-x: auto;
       position: relative;
       font-size: 1rem;
       display: block;
@@ -1314,6 +1314,7 @@ body{
         display: inline-block;
         width: 100%;
         height: 100%;
+        margin: 0;
         padding: 0;
         overflow-x: hidden;
         -webkit-transition: all 500ms ease;
@@ -1322,10 +1323,18 @@ body{
         -ms-transition: all 500ms ease;
         transition: all 500ms ease;
       }
-      .item.report_top{
-        // background-color: #cccccc;
-        font-weight: bold;
-        padding: 10px 1rem;
+      .report_top{
+       // display: inline-block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid rgba(34, 36, 38, 0.15); 
+        overflow-x: hidden;
+        .item{
+          // background-color: #cccccc;
+          font-weight: bold;
+          //padding: 10px 1rem;
+        }
       }
       .agent_list{
       width: 100%;

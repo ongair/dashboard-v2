@@ -946,7 +946,6 @@ body {
           padding: 0.7rem 0; }
     .right_content .column2 .report_content {
       margin: 0;
-      overflow-x: auto;
       position: relative;
       font-size: 1rem;
       display: block;
@@ -958,6 +957,7 @@ body {
         display: inline-block;
         width: 100%;
         height: 100%;
+        margin: 0;
         padding: 0;
         overflow-x: hidden;
         -webkit-transition: all 500ms ease;
@@ -965,9 +965,14 @@ body {
         -o-transition: all 500ms ease;
         -ms-transition: all 500ms ease;
         transition: all 500ms ease; }
-      .right_content .column2 .report_content .item.report_top {
-        font-weight: bold;
-        padding: 10px 1rem; }
+      .right_content .column2 .report_content .report_top {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+        overflow-x: hidden; }
+        .right_content .column2 .report_content .report_top .item {
+          font-weight: bold; }
       .right_content .column2 .report_content .agent_list {
         width: 100%;
         padding: 10px 0; }
