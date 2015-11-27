@@ -997,7 +997,7 @@ body {
         padding-left: 1rem; }
       .right_content .column2 .report_content .all_reports {
         width: 100%;
-        height: calc(100% - 43px);
+        height: calc(100%);
         margin: 0;
         padding: 0;
         overflow-x: hidden;

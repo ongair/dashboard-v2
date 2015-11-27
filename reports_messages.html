@@ -338,8 +338,9 @@ $(function () {
 
       <div class=" ui grid report_content">
         <div class="ui borderless two item menu report_top  messages_tabs">
-          <a class="active item" data-tab="first">Messages Recieved</a>
-          <a class="item" data-tab="second">Messages Sent</a>
+          <a class="active item" data-tab="first">Recent Messages Stats</a>
+          <a class="item" data-tab="second">Top 5 Most Active Contacts</a>
+          <a class="item" data-tab="third">Top 5 most active groups</a>
         </div>
         <div class="all_reports ui active tab" data-tab="first">      
           <div id="areachart" style="padding: 10px 0" ></div>
@@ -370,9 +371,27 @@ $(function () {
             </div>
           </div>
         </div>
-        <div class="all_reports ui tab" data-tab="second">      
-          <!-- <div id="areachart" style="padding: 10px 0" ></div> -->
-          <div class="ui three tiny statistics">
+        <div class="all_reports ui tab" data-tab="second">  
+          <div class="ui middle aligned divided list report_top">
+            <ul class="item">
+              <li class="ui horizontal list agent_list">
+                <span class="item agent_name">Name</span>
+                <span class="item agent_number">Phone Number</span> 
+                <span class="item agent_messages">Messages</span>
+              </li>
+            </ul>
+          </div>    
+          <div class="ui middle aligned divided list all_reports">  
+            <ul class="item">
+              <li class="ui horizontal list agent_list">
+                <span class="item agent_name">John Smallss</span>
+                <span class="item agent_number">254724337339</span> 
+                <span class="item agent_messages">0</span>
+                
+              </li>
+            </ul>      
+          </div>
+          <!-- <div class="ui tiny statistics ">
             <div class="statistic">
               <div class="value">
                 <i class="arrow down icon"></i>22
@@ -397,7 +416,82 @@ $(function () {
                 Reach
               </div>
             </div>
+          </div> -->
+        </div>
+        <div class="all_reports ui tab" data-tab="third">  
+          <div class="ui middle aligned divided list report_top">
+            <ul class="item">
+              <li class="ui horizontal list agent_list">
+                <span class="item agent_name">Name</span>
+                <span class="item agent_number">Members</span> 
+                <span class="item agent_messages">Messages (#)</span>
+                
+              </li>
+            </ul>
+          </div>    
+          <div class="ui middle aligned divided list all_reports">  
+            <ul class="item">
+              <li class="ui horizontal list agent_list">
+                <span class="item agent_name">John Smallss</span>
+                <span class="item agent_number">2</span> 
+                <span class="item agent_messages">0</span>  
+              </li>
+            </ul>        
+            <ul class="item">
+              <li class="ui horizontal list agent_list">
+                <span class="item agent_name">John Smallss</span>
+                <span class="item agent_number">2</span> 
+                <span class="item agent_messages">0</span>  
+              </li>
+            </ul>        
+            <ul class="item">
+              <li class="ui horizontal list agent_list">
+                <span class="item agent_name">John Smallss</span>
+                <span class="item agent_number">2</span> 
+                <span class="item agent_messages">0</span>  
+              </li>
+            </ul>        
+            <ul class="item">
+              <li class="ui horizontal list agent_list">
+                <span class="item agent_name">John Smallss</span>
+                <span class="item agent_number">2</span> 
+                <span class="item agent_messages">0</span>  
+              </li>
+            </ul>        
+            <ul class="item">
+              <li class="ui horizontal list agent_list">
+                <span class="item agent_name">John Smallss</span>
+                <span class="item agent_number">2</span> 
+                <span class="item agent_messages">0</span>  
+              </li>
+            </ul>         
           </div>
+          <!-- <div class="ui tiny statistics ">
+            <div class="statistic">
+              <div class="value">
+                <i class="arrow down icon"></i>22
+              </div>
+              <div class="label">
+                Messages Received
+              </div>
+            </div>
+            <div class="statistic">
+              <div class="value">
+                <i class="arrow down icon"></i>31,200
+              </div>
+              <div class="label">
+                Messages Sent
+              </div>
+            </div>
+            <div class="statistic">
+              <div class="value">
+                <i class="arrow up icon"></i>22
+              </div>
+              <div class="label">
+                Reach
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </div>
