@@ -953,10 +953,14 @@ body {
       .right_content .column2 .report_content .all_customers {
         overflow-x: auto;
         height: 100%; }
+        .right_content .column2 .report_content .all_customers .active_label {
+          display: none; }
         .right_content .column2 .report_content .all_customers .r_customers:last-child {
           margin-bottom: 1rem; }
         .right_content .column2 .report_content .all_customers .r_customers.active {
           border-top: 2px solid #21BA45; }
+          .right_content .column2 .report_content .all_customers .r_customers.active .active_label {
+            display: inline-block; }
         .right_content .column2 .report_content .all_customers .r_customers {
           margin: 1rem 1rem 0;
           padding: 0; }
@@ -971,6 +975,23 @@ body {
           .right_content .column2 .report_content .all_customers .r_customers .customer_content .message_header {
             border-bottom: 1px solid rgba(34, 36, 38, 0.15);
             padding: 0.5rem 0; }
+      .right_content .column2 .report_content .overview_stats {
+        width: 100%;
+        margin: 0; }
+        .right_content .column2 .report_content .overview_stats .statistic {
+          padding: 2rem 0;
+          border-radius: 5px;
+          width: 20%; }
+          .right_content .column2 .report_content .overview_stats .statistic .label, .right_content .column2 .report_content .overview_stats .statistic .value {
+            color: #ffffff; }
+        .right_content .column2 .report_content .overview_stats .stat_account {
+          background-color: #3498db; }
+        .right_content .column2 .report_content .overview_stats .stat_message {
+          background-color: #e74c3c; }
+        .right_content .column2 .report_content .overview_stats .stat_contact {
+          background-color: #1abc9c; }
+        .right_content .column2 .report_content .overview_stats .stat_media {
+          background-color: #b33679; }
       .right_content .column2 .report_content .item {
         padding-right: 1rem;
         padding-left: 1rem; }
@@ -1006,26 +1027,6 @@ body {
           width: 20%; }
         .right_content .column2 .report_content .agent_list .agent_number {
           width: 20%; }
-      .right_content .column2 .report_content .cust_list {
-        width: 100%;
-        padding: 10px 0; }
-        .right_content .column2 .report_content .cust_list .item {
-          margin: 0;
-          vertical-align: middle; }
-        .right_content .column2 .report_content .cust_list .cust_number {
-          width: 14%; }
-        .right_content .column2 .report_content .cust_list .cust_name {
-          width: 10%; }
-        .right_content .column2 .report_content .cust_list .cust_country {
-          width: 10%; }
-        .right_content .column2 .report_content .cust_list .cust_users {
-          width: 5%; }
-        .right_content .column2 .report_content .cust_list .cust_contacts {
-          width: 8%; }
-        .right_content .column2 .report_content .cust_list .cust_email {
-          width: 15%; }
-        .right_content .column2 .report_content .cust_list .cust_create {
-          width: 10%; }
     .right_content .column2 .autoresponder_content {
       margin: 0;
       position: relative;

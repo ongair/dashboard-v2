@@ -1309,11 +1309,17 @@ body{
       .all_customers{
         overflow-x: auto;
         height: 100%;
+        .active_label{
+            display: none;
+          }
         .r_customers:last-child{
           margin-bottom: 1rem;
         }
         .r_customers.active{
           border-top: 2px solid #21BA45;
+          .active_label{
+            display: inline-block;
+          }
         }
         .r_customers{
           margin: 1rem 1rem 0;
@@ -1339,6 +1345,33 @@ body{
           }
         }
       }
+
+      .overview_stats{
+        width: 100%;
+        margin: 0;
+        .statistic{
+          padding: 2rem 0;
+          border-radius: 5px;
+          //margin: 0;
+          width: 20%;
+          .label,.value{
+            color: #ffffff;
+          }
+        }
+        .stat_account{
+          background-color: #3498db;
+        }
+        .stat_message{
+          background-color: #e74c3c;
+        }
+        .stat_contact{
+          background-color: #1abc9c;
+        }
+        .stat_media{
+          background-color: #b33679;
+        }
+      }
+
 
 
       .item{// makes a single contact
@@ -1389,35 +1422,6 @@ body{
         .agent_number{
           width: 20%;
         } 
-      }
-      .cust_list{
-        width: 100%;
-        padding: 10px 0;
-        .item{
-          margin: 0;
-          vertical-align: middle;
-        }
-        .cust_number{
-          width: 14%;
-        }
-        .cust_name{
-          width: 10%;
-        }
-        .cust_country{
-          width: 10%;
-        }
-        .cust_users{
-          width: 5%;
-        }
-        .cust_contacts{
-          width: 8%;
-        }
-        .cust_email{
-          width: 15%;
-        }
-        .cust_create{
-          width: 10%;
-        }
       }
     }
 
