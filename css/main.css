@@ -950,6 +950,27 @@ body {
       font-size: 1rem;
       display: block;
       height: calc(100% - 55px); }
+      .right_content .column2 .report_content .all_customers {
+        overflow-x: auto;
+        height: 100%; }
+        .right_content .column2 .report_content .all_customers .r_customers:last-child {
+          margin-bottom: 1rem; }
+        .right_content .column2 .report_content .all_customers .r_customers.active {
+          border-top: 2px solid #21BA45; }
+        .right_content .column2 .report_content .all_customers .r_customers {
+          margin: 1rem 1rem 0;
+          padding: 0; }
+          .right_content .column2 .report_content .all_customers .r_customers .customer_header {
+            border-top: 0; }
+            .right_content .column2 .report_content .all_customers .r_customers .customer_header .ui.segment {
+              border-left: 0; }
+            .right_content .column2 .report_content .all_customers .r_customers .customer_header .cust_country {
+              margin: auto; }
+          .right_content .column2 .report_content .all_customers .r_customers .customer_content .customer_meta {
+            padding-top: 0; }
+          .right_content .column2 .report_content .all_customers .r_customers .customer_content .message_header {
+            border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+            padding: 0.5rem 0; }
       .right_content .column2 .report_content .item {
         padding-right: 1rem;
         padding-left: 1rem; }

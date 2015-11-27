@@ -1300,12 +1300,47 @@ body{
     //////////////////////////recent_activity page////////////////////////
     .report_content{
       margin: 0;
-      // overflow-x: auto;
+      //overflow-x: auto;
       position: relative;
       font-size: 1rem;
       display: block;
       height: calc(100% - 55px);//full height minus topbar menu height
       
+      .all_customers{
+        overflow-x: auto;
+        height: 100%;
+        .r_customers:last-child{
+          margin-bottom: 1rem;
+        }
+        .r_customers.active{
+          border-top: 2px solid #21BA45;
+        }
+        .r_customers{
+          margin: 1rem 1rem 0;
+          padding: 0;
+          .customer_header{
+            border-top: 0;
+            .ui.segment{
+              border-left: 0;
+            }
+            .cust_country{
+              margin: auto; 
+            }
+          }
+          .customer_content{
+            .customer_meta{
+              padding-top: 0;
+            }
+            .message_header{
+              border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+              //margin: 0;
+              padding: 0.5rem 0;
+            }
+          }
+        }
+      }
+
+
       .item{// makes a single contact
         padding-right: 1rem;
         padding-left: 1rem;
