@@ -1326,6 +1326,7 @@ body{
           padding: 0;
           .customer_header{
             border-top: 0;
+            background-color: #f0f0f0;
             .ui.segment{
               border-left: 0;
             }
@@ -1336,6 +1337,11 @@ body{
           .customer_content{
             .customer_meta{
               padding-top: 0;
+              h2{
+                font-weight: 100;
+                font-size: 35px;
+                margin: 0;
+              }
             }
             .message_header{
               border-bottom: 1px solid rgba(34, 36, 38, 0.15);
@@ -1381,10 +1387,11 @@ body{
       .all_reports{//div that changes width when column3 is toggled
         //display: inline-block;
         width: 100%;
-        height: calc(100%);
+        height: calc(100% - 42px);
         margin: 0;
         padding: 0;
         overflow-x: hidden;
+        overflow-y: auto; 
         -webkit-transition: all 500ms ease;
         -moz-transition: all 500ms ease;
         -o-transition: all 500ms ease;
@@ -1394,6 +1401,8 @@ body{
       .report_top{
        // display: inline-block;
         width: 100%;
+        height: initial !important;
+
         padding: 0;
         margin: 0;
         border-bottom: 1px solid rgba(34, 36, 38, 0.15); 
