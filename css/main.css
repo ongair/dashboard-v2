@@ -1002,7 +1002,7 @@ body {
         padding-left: 1rem; }
       .right_content .column2 .report_content .all_reports {
         width: 100%;
-        height: calc(100% - 42px);
+        height: calc(100%);
         margin: 0;
         padding: 0;
         overflow-x: hidden;
@@ -1034,6 +1034,8 @@ body {
           width: 20%; }
         .right_content .column2 .report_content .agent_list .agent_number {
           width: 20%; }
+    .right_content .column2 .report_content.extra_menu {
+      height: calc(100% - 95px); }
     .right_content .column2 .autoresponder_content {
       margin: 0;
       position: relative;
