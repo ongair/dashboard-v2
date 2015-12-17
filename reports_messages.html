@@ -31,7 +31,7 @@
 
   <script type="text/javascript">
       $(function () {
-        $('#areachart ').highcharts({
+        $('#areachart').highcharts({
             chart: {
                 type: 'areaspline'
             },
@@ -43,20 +43,52 @@
             //         'thebulletin.metapress.com</a>'
             // },
             xAxis: {
-                categories: [
-                    'Monday',
-                    'Tuesday',
-                    'Wednesday',
-                    'Thursday',
-                    'Friday',
-                    'Saturday',
-                    'Sunday'
-                ],
-                plotBands: [{ // visualize the weekend
-                    from: 4.5,
-                    to: 6.5,
-                    color: 'rgba(68, 170, 213, .2)'
-                }]
+                // categories: [
+                //     'Monday',
+                //     'Tuesday',
+                //     'Wednesday',
+                //     'Thursday',
+                //     'Friday',
+                //     'Saturday',
+                //     'Sunday'
+                // ],
+                // plotBands: [{ // visualize the weekend
+                //     from: 4.5,
+                //     to: 6.5,
+                //     color: 'rgba(68, 170, 213, .2)'
+                // }]
+                labels: {
+                  formatter: function() {
+                    console.log('Value: ', this.value);
+                    // return this.value;
+                    var label = '';
+                    switch(this.value) {
+                      case 0:
+                        label = 'Monday';
+                        break;
+                       case 1:
+                        label = 'Tuesday';
+                        break;
+                       case 2:
+                        label = 'Wednesday';
+                        break;
+                       case 3:
+                        label = 'Thursday';
+                        break;
+                       case 4:
+                        label = 'Friday';
+                        break;
+                       case 5:
+                        label = 'Saturday';
+                        break;
+                       case 6:
+                        label = 'Sunday';
+                        break;
+                    }
+                    return label;
+                  }
+                },
+                allowDecimals: false
             },
             yAxis: {
                 allowDecimals: false,
