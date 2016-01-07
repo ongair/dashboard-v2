@@ -368,13 +368,13 @@ body{
           width: 100%;
         }
       }
-      .item:hover{
+      .dropdown.item, .inline.dropdown{
+        font-size: 14px;
+      }
+      a.item:not(.toggle_column3):hover {
         box-shadow: 0px -2px 0em inset;
-        background: rgba(0,0,0,0.045);
+        background: rgba(0, 0, 0, 0.045);
         color: #b33679;
-        i{
-          color: #b33679;
-        }
       }
       .item.disabled:hover {
         cursor: default;
